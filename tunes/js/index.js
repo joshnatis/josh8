@@ -398,6 +398,7 @@ jQuery(function ($) {
                 "duration": "0:18",
                 "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__SUMOHOUSE_Mixed_Drink.mp3?raw=true"
             }],
+            
             buildPlaylist = $(tracks).each(function(key, value) {
                 var trackNumber = value.track,
                     trackName = value.name,
