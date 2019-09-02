@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel><title>Corduroy's Meditations</title><link>https://josh8.com/blog/index.html</link>
+<description>A cozy spot to sit and think :-)</description><language>en</language>
+<lastBuildDate>Mon, 17 Jun 2019 02:00:44 -0400</lastBuildDate>
+<pubDate>Mon, 17 Jun 2019 02:00:44 -0400</pubDate>
+<atom:link href="https://josh8.com/blog/feed.rss" rel="self" type="application/rss+xml" />
+<item><title>
+</title><description><![CDATA[
+]]></description><link>https://josh8.com/blog/this-is-a-test.html</link>
+<guid>https://josh8.com/blog/./this-is-a-test.html</guid>
+<dc:creator>Josh</dc:creator>
+<pubDate>Mon, 17 Jun 2019 02:00:27 -0400</pubDate></item>
+<item><title>
+Hello, World!
+</title><description><![CDATA[
+
+<p> Well, here we are. After a few weeks of procrastination I've finally gotten to setting up a blog. A tiny slice of the internet just for me! </p>
+<p> I'm hoping to use this as a means of reflecting on things -- I've been so busy lately that I've almost forgotten how to think. </p>
+
+<br>
+<img src="images/flowers.jpeg" style = "width: 25%; height: 25%">
+<p><i>Some nice flowers, for testing and aromatic purposes :-)</i></p>
+<br>
+<p> That's all from me for today! Good night internet. </p>
+<br>
+<p>Tags: <a href='tag_Hello-World.html'>Hello-World</a></p>
+
+<!-- text end -->
+]]></description><link>https://josh8.com/blog/hello-world.html</link>
+<guid>https://josh8.com/blog/./hello-world.html</guid>
+<dc:creator>Josh</dc:creator>
+<pubDate>Mon, 17 Jun 2019 01:58:27 -0400</pubDate></item>
+</channel></rss>
