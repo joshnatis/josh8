@@ -1,0 +1,183 @@
+<html>
+ <!-- TO DO LIST -->
+ <!-- 
+	1. Figure out how to use display_info function, and where to call it
+	2. Make picture load faster by using a lesser quality first, then replacing
+ -->
+
+
+<head>
+    <title>Josh8</title>
+    <link rel="stylesheet" href="lang-styles.css">
+    <link rel="icon" href="../favicon3.png">
+
+    <script>
+      function myFunction() {
+          var input, filter, ul, li, a, i, txtValue;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          ul = document.getElementById("myUL");
+          li = ul.getElementsByTagName("li");
+          for (i = 0; i < li.length; i++) {
+              a = li[i].getElementsByTagName("a")[0];
+              txtValue = a.textContent || a.innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                  li[i].style.display = "";
+              } else {
+                  li[i].style.display = "none";
+              }
+          }
+      }
+
+
+      const collegeTable = {
+        "CUNY Hunter College": "INFORMATION",
+        "CUNY Brooklyn College": "INFORMATION"
+      }
+
+      // NOT WORKING YET
+      function display_info(college){
+        document.getElementById(".desc").getElementsByTagName("CUNY Hunter College").style.display = "inline-block";
+        const desc = $(".desc");
+        desc[0].innerHTML =  collegeTable[college]
+      }
+    </script>
+    <!-- Hi, how are you? :) -->
+</head>
+ 
+<body>
+    <h3>Check What Programming Language(s) These Colleges Teach Their Computer Science Classes In!</h3>
+<br><br>
+ 
+<div>
+ 
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for colleges...">
+ 
+        <!-- <img src="smiley2.jpg" alt="le epic face" style = "height: 30px; width: 30px; display: inline-block; border: 1px solid black; margin-top: 10px;">*/ -->
+       
+ 
+        <ul id="myUL">
+ 
+            <!-- CUNY SCHOOLS --><!-- CUNY SCHOOLS -->
+            <!-- CUNY SCHOOLS --><!-- CUNY SCHOOLS -->
+          <li onclick="display_info('CUNY Hunter College')"><a href="#">CUNY Hunter College</a></li>
+          <li onclick="display_info('CUNY Brooklyn College')"><a href="#">CUNY Brooklyn College</a></li>
+          <li><a href="#">CUNY City College</a></li>
+          <li><a href="#">CUNY Queens College</a></li>
+          <li><a href="#">CUNY Baruch College</a></li>
+          <li><a href="#">CUNY College of Staten Island</a></li>
+          <li><a href="#">CUNY John Jay College</a></li>
+          <li><a href="#">CUNY Lehman College</a></li>
+          <li><a href="#">CUNY Medgar Evers College</a></li>
+          <li><a href="#">CUNY City Tech</a></li>
+          <li><a href="#">CUNY York College</a></li>
+          <li><a href="#">CUNY Borough of Manhattan Community College (BMCC)</a></li>
+          <li><a href="#">CUNY Kingsbourough Community College</a></li>
+          <li><a href="#">CUNY Bronx Community College</a></li>
+          <li><a href="#">CUNY Guttman Community College</a></li>
+          <li><a href="#">CUNY Hostos Community College</a></li>
+          <li><a href="#">CUNY LaGuardia Community College</a></li>
+          <li><a href="#">CUNY Queensborough Community College</a></li>
+ 
+ 
+            <!-- SUNY SCHOOLS --><!-- SUNY SCHOOLS -->
+            <!-- SUNY SCHOOLS --><!-- SUNY SCHOOLS -->
+          <li><a href="#">SUNY Stony Brook University</a></li>
+          <li><a href="#">SUNY Binghamton University</a></li>
+          <li><a href="#">SUNY University at Buffalo</a></li>  
+          <li><a href="#">SUNY University at Albany</a></li>
+          <li><a href="#">SUNY Adirondack</a></li>
+          <li><a href="#">SUNY Alfred State College</a></li>
+          <li><a href="#">SUNY Brockport</a></li>
+          <li><a href="#">SUNY Buffalo State</a></li>
+          <li><a href="#">SUNY Broome</a></li>
+          <li><a href="#">SUNY Canton</a></li>
+          <li><a href="#">SUNY Cayuga Community College</a></li>
+          <li><a href="#">SUNY Clinton Community College</a></li>
+          <li><a href="#">SUNY Cobleskill</a></li>
+          <li><a href="#">SUNY Columbia Greene Community College</a></li>
+          <li><a href="#">SUNY Corning Community College</a></li>
+          <li><a href="#">SUNY Cortland</a></li>
+          <li><a href="#">SUNY Delhi</a></li>
+          <li><a href="#">SUNY Dutchess Commmunity College</a></li>
+          <li><a href="#">SUNY Empire State College</a></li>
+          <li><a href="#">SUNY ESF</a></li>
+          <li><a href="#">SUNY ECC</a></li>
+          <li><a href="#">SUNY Farmingdale State College</a></li>
+          <li><a href="#">SUNY FIT</a></li>
+          <li><a href="#">SUNY FingerLakes Community College</a></li>
+          <li><a href="#">SUNY Fredonia State University</a></li>
+          <li><a href="#">SUNY Fulton-Montgomery Community College</a></li>
+          <li><a href="#">SUNY Genesee Community College</a></li>
+          <li><a href="#">SUNY Geneseo</a></li>
+          <li><a href="#">SUNY Herkimer</a></li>
+          <li><a href="#">SUNY Hudson Valley Community College</a></li>
+          <li><a href="#">SUNY Jamestown Community College</a></li>
+          <li><a href="#">SUNY Jefferson</a></li>
+          <li><a href="#">SUNY Maritime College</a></li>
+          <li><a href="#">SUNY Mohawk Valley Community College</a></li>
+          <li><a href="#">SUNY Monroe Community College</a></li>
+          <li><a href="#">SUNY Morrisville</a></li>
+          <li><a href="#">SUNY Nassau Community College</a></li>
+          <li><a href="#">SUNY New Paltz</a></li>
+          <li><a href="#">SUNY Niagara County Community College</a></li>
+          <li><a href="#">SUNY North Country Community College</a></li>
+          <li><a href="#">SUNY Old Westbury</a></li>
+          <li><a href="#">SUNY Oneonta</a></li>
+          <li><a href="#">SUNY Onondaga Community College</a></li>
+          <li><a href="#">SUNY Orange</a></li>
+          <li><a href="#">SUNY Oswego</a></li>
+          <li><a href="#">SUNY Plattsburgh</a></li>
+          <li><a href="#">SUNY Potsdam</a></li>
+          <li><a href="#">SUNY Purchase</a></li>
+          <li><a href="#">SUNY Rockland Community College</a></li>
+          <li><a href="#">SUNY Schenectady County Community College</a></li>
+          <li><a href="#">SUNY Suffolk County Community College</a></li>
+          <li><a href="#">SUNY Polytechnic Institute</a></li>
+          <li><a href="#">SUNY Sullivan County Community College</a></li>
+          <li><a href="#">SUNY Tompkins Cortland Community College</a></li>
+          <li><a href="#">SUNY Ulster County Community College</a></li>
+          <li><a href="#">SUNY Westchester Community College</a></li>
+ 
+          <!--TOP/IVY LEAGUE--><!--TOP/IVY LEAGUE-->
+          <!--TOP/IVY LEAGUE--><!--TOP/IVY LEAGUE-->
+           <li><a href="#">Princeton University</a></li>
+           <li><a href="#">Harvard University</a></li>
+           <li><a href="#">Columbia University</a></li>
+           <li><a href="#">Massachusetts Institute of Technology (MIT)</a></li>
+           <li><a href="#">University of Chicago</a></li>
+           <li><a href="#">Yale University</a></li>
+           <li><a href="#">Stanford University</a></li>
+           <li><a href="#">Duke University</a></li>
+           <li><a href="#">University of Pennsylvania</a></li>
+           <li><a href="#">John Hopkins University</a></li>
+           <li><a href="#">North Western University</a></li>
+           <li><a href="#">California Institute of Technology</a></li>
+           <li><a href="#">Darthmouth College</a></li>
+           <li><a href="#">Brown University</a></li>
+           <li><a href="#">Vanderbilt University</a></li>
+           <li><a href="#">Cornell University</a></li>
+           <li><a href="#">Rice University</a></li>
+           <li><a href="#">University of Notre Dame</a></li>
+           <li><a href="#">Carnegie Mellon University</a></li>
+           <li><a href="#">Tufts University</a></li>
+           <li><a href="#">New York University (NYU)</a></li>
+           <li><a href="#">Georgia Institute of Technology</a></li>
+ 
+            <!--University California UC-->
+            <!--University California UC-->
+           <li><a href="#">UC Los Angeles (UCLA)</a></li>
+           <li><a href="#">UC Berkeley</a></li>
+           <li><a href="#">UC Davis</a></li>
+           <li><a href="#">UC Irving</a></li>
+           <li><a href="#">UC San Diego</a></li>
+        </ul>
+        
+        <div class="desc">
+        	<p> hi </p>
+        </div>
+</div>
+ 
+</body>
+ 
+</html>

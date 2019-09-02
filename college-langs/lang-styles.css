@@ -1,0 +1,72 @@
+body {
+	background-image: url("abstract3.jpg");
+  	background-repeat: repeat;
+}
+
+h3 {
+	background-color: white;
+	border: solid 2px black;
+	padding: 5px;
+	margin: 0 auto;
+	display: inline-block;
+}
+
+background-image {
+    max-width:10%;
+    height:auto;
+}
+
+.desc {
+  display: none;
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  height: 400px;
+  width: 500px;
+  background-color: white;
+  color: black;
+  border: 3px solid black;
+  border-radius: 14px;
+
+}
+
+#myInput {
+  font-size: 16px; /* Increase font-size */
+  padding: 6px 10px 6px 10px; /* Add some padding */
+  /*border-top: 5px solid orange; 
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  border-bottom: 5px solid orange;*/
+  border: 2px solid black;
+  margin-bottom: 12px; /* Add some space below the input */
+  margin-top: 12px;
+}
+
+#myUL {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0px;
+  margin: 0;
+}
+
+#myUL li a {
+  display: inline-block;
+  border: 2.5px solid black; /* Add a border to all links */
+  margin-top: 1px; 
+  background-color: white; 
+  padding: 6px; /* Add some padding */
+  text-decoration: none; /* Remove default text underline */
+  font-size: 18px; /* Increase the font-size */
+  color: black; /* Add a black text color */
+  width: 30%;
+  /*text-shadow: 2px 1px pink;*/
+  border-radius: 14px;
+  text-align: center;
+  /*font-family: 'Neucha', bold;*/
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
