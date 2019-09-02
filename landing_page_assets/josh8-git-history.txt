@@ -1,0 +1,757 @@
+commit 10a887b3834bd64520a7f23aef6e41443e6b4fe1
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Tue Aug 27 03:29:53 2019 -0400
+
+    Add favorite talks section
+
+commit faaa0fc803de1e0adef2ef22708a4d8589aca90d
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Mon Aug 26 13:36:43 2019 -0400
+
+    Organize links section, add to birthdays
+
+commit 3ca4f2ea51c7fb8533741a26f0822d314fd765dd
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Wed Aug 14 04:30:13 2019 -0400
+
+    Add entries to quote section
+
+commit 608a6d3506797368f72d9fee16c15c90a52bc699
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Tue Aug 13 15:41:42 2019 -0400
+
+    Add link to landing page on sitemap
+
+commit ef678fd22f7e6064b77729a8a1e727c4dc00c4ad
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Mon Aug 12 20:36:28 2019 -0400
+
+    Add entries to links and quotes sections
+
+commit da6e73241005bae254300396b03f800e5a76af1c
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Mon Aug 12 20:32:23 2019 -0400
+
+    Create sitemap, link to it on landing page
+
+commit e56243faab4c48cd7f85ef5e266bb365ad26722d
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Mon Aug 12 13:10:10 2019 -0400
+
+    Add entries in quotes section
+
+commit a2be2b5fc4887446f6360442f2aa3ea7857b4170
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Mon Aug 12 13:09:33 2019 -0400
+
+    Fix typos in concert paper
+
+commit 8d9d7ed23bafb5d77f48e196d5bbc8030eae5e1d
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Wed Jul 31 20:01:25 2019 -0400
+
+    Add to quotes section
+
+commit a46636144eb3afa59384be43df3b9cc4f90fdaaf
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Mon Jul 29 19:40:22 2019 -0400
+
+    Convert song files to mp3
+
+commit 198d5429df7e721e23c169821d0a87c8a9796e65
+Merge: 559bb8b accc66e
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Wed Jul 17 19:13:46 2019 -0400
+
+    Merge branch 'master' of https://github.com/joshnatis/josh8
+
+commit 559bb8b97888d1eb689d115fcbf68274b09df883
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Wed Jul 17 19:13:32 2019 -0400
+
+    Add background audio; organize files
+
+commit accc66e14da37099ad03150afa88acfeb6213106
+Author: joshnatis <31445542+joshnatis@users.noreply.github.com>
+Date:   Wed Jul 17 18:44:54 2019 -0400
+
+    Update README.md
+
+commit 4baa6e1ac2bfe0985289dce701f3d18bcb41864f
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Wed Jul 17 16:51:47 2019 -0400
+
+    Expand ai-paper section to include multiple papers
+
+commit a103d3676436c09962473164797380997bee34b1
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Wed Jul 17 16:50:49 2019 -0400
+
+    Add entries to quotes and reads sections
+
+commit 5a9e055ccebb5973d9e03f45f84d5de448dd4bfb
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Fri Jun 21 02:20:26 2019 -0400
+
+    Fix path to wav files in tunes/ folder
+
+commit 1670963d223c86632570f5075bfade3c81cd4789
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Wed Jun 19 02:48:41 2019 -0400
+
+    Add photo, fix typo in home/index.html
+
+commit 91b4a694581c7eec389ebfef0ec975d28791b892
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Wed Jun 19 02:28:26 2019 -0400
+
+    Update home (Fill links section, add quotes section)
+
+commit f8b88a3ce9326c981ba5dc9dffe7075912116822
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Mon Jun 17 17:34:50 2019 -0400
+
+    Rename corduroy/ to home/, home.html to index.html
+
+commit 13ab26af2563e561097c53755d6138fd8ad6a8bc
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Mon Jun 17 17:30:16 2019 -0400
+
+    Rename college-langs, ai-paper, and corduroy folders and index files
+
+commit e101c3852c2b0aa77209cb254f98a7ff8616f505
+Merge: 9774c9f 652a739
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Mon Jun 17 17:21:18 2019 -0400
+
+    Merge branch 'master' of https://github.com/joshnatis/josh8
+
+commit 9774c9f8d5425694f76d9f5bd749755ab15a0288
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Mon Jun 17 17:21:06 2019 -0400
+
+    Rename music-player to tunes and tunes.html to index.html
+
+commit 652a739b744f81bce672c3d7f1ddab4bf562b493
+Author: joshnatis <31445542+joshnatis@users.noreply.github.com>
+Date:   Mon Jun 17 02:59:12 2019 -0400
+
+    Update README.md
+
+commit 9362ef60b3962a713d896b4db5cdfac7274191d9
+Author: joshnatis <31445542+joshnatis@users.noreply.github.com>
+Date:   Mon Jun 17 02:58:51 2019 -0400
+
+    Update README.md
+
+commit 2eecd85d1001b23e81581f9b48163ca963ce9639
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Mon Jun 17 02:53:59 2019 -0400
+
+    Add favicon
+
+commit 7ecff9f88837fd1b251ab120f11012bb8c2fee08
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Mon Jun 17 02:49:44 2019 -0400
+
+    Remove deprecated post from feed.rss
+
+commit 4a3ec42317ac4d413b50f48ea37b1a973abc11ed
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Mon Jun 17 02:34:09 2019 -0400
+
+    Link blog to Book #5
+
+commit 675fb0973f15fa49bb6dc0838ddbba44cd07e6f7
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Mon Jun 17 02:29:35 2019 -0400
+
+    Add blog webpage with Hello World
+
+commit fcfb5e4dc9ceaa5122f8fcdc3abedc1daf0d69d1
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Sun Jun 2 02:04:13 2019 -0400
+
+    Add Joe Armstrong to people section
+
+commit 5fa8afc15ffae6b61241b1e6464ffd824fe429d7
+Merge: 6638a13 722946f
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Sun May 26 20:21:24 2019 -0400
+
+    Merge branch 'master' of https://github.com/joshnatis/josh8
+
+commit 6638a134d0b0db98030d28dbb55b75004e422aab
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Sun May 26 20:21:17 2019 -0400
+
+    Add to Great Reads section
+
+commit 722946fda52337d9bb32ae2aead8b900a5e76d2a
+Author: joshnatis <31445542+joshnatis@users.noreply.github.com>
+Date:   Sun May 26 15:26:32 2019 -0400
+
+    Update README.md
+
+commit a0c8d78b77fac795f7f13154664e1b2d1f6e6601
+Author: joshnatis <31445542+joshnatis@users.noreply.github.com>
+Date:   Sun May 26 15:25:47 2019 -0400
+
+    Update README.md
+
+commit 0c4c4ece1ee72ca7258146f4346dd90e503f1f35
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Sat May 11 10:34:56 2019 -0400
+
+    Fix links to audio files
+
+commit 1c30bda0272c686241094eaae61775fa48278a15
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Sat May 11 10:31:40 2019 -0400
+
+    Change links to audio files from relative to exact
+
+commit 591df835c8c8e68188bc8ea02bc8cf0f514dced4
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Sat May 11 08:07:43 2019 -0400
+
+    Change relative links to GitHub links
+
+commit e8fafb04d2f80428a7daf41a598150caeba9b6b7
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Sat May 11 03:19:49 2019 -0400
+
+    Change JS to local files
+
+commit ae7fbcc68d77d1ac68ba0f9d3757e33bfe2517a2
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Sat May 11 02:47:51 2019 -0400
+
+    Fix links, add local CSS
+
+commit 22a818021b268a22d66247a4639fb84fe3a71e1e
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Sat May 11 02:38:04 2019 -0400
+
+    Fix link to CSS
+
+commit 7cc83b7cd40de502977209f55e011ffcb939bf5b
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Fri May 10 23:55:57 2019 -0400
+
+    Update link to music page
+
+commit f030aa5b93712f5fe1cb247611d3cb596f05a05b
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Fri May 10 23:50:07 2019 -0400
+
+    Add new page for music
+
+commit b6d6c1b24beb3e7ea713f814d988e80c50136c14
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Wed May 8 11:17:54 2019 -0400
+
+    Optimize images for web
+
+commit 21290a1c0d6a351ef5f397b1b19d10f01362c13f
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Wed May 8 10:43:16 2019 -0400
+
+    Validated HTML
+
+commit 168ddaae82c8934d526a144fa6ad18290272d140
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Sun May 5 19:26:59 2019 -0400
+
+    Add Windows XP buttons
+
+commit 6153905dadecfc080626e951339939ba8427e965
+Author: joshnatis <31445542+joshnatis@users.noreply.github.com>
+Date:   Sun May 5 18:25:52 2019 -0400
+
+    Update README.md
+
+commit ffb121117f1ac46dea0c90044af53a2b834aa8eb
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Sun May 5 18:18:54 2019 -0400
+
+    Change look of home.html, Add hyperlinks to table of contents
+
+commit ced3a145e696169346638e92e6d983ac51b1fe73
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Sun May 5 01:48:03 2019 -0400
+
+    Optimize for responsiveness
+
+commit 8cb66a0a39ab7858a10d12e6f2d2a3a5f04d6d54
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Sun May 5 01:40:16 2019 -0400
+
+    Optimize for responsiveness
+
+commit 446eba78ab301330ff79385adb2630a9a90211eb
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Sat May 4 19:05:01 2019 -0400
+
+    Add hyperlink to pipe in index.html
+
+commit 91136513997a0994583eaf7eaba9746cac488587
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Sat May 4 18:46:44 2019 -0400
+
+    Optimize for responsiveness
+
+commit e1ef6aa32a9aceb2e0822d23f4dbea56610a4751
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Fri May 3 23:49:02 2019 -0400
+
+    Optimize for responsive text
+
+commit 710d76eb9418f6a30b09894e8e17a956490231ed
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Fri May 3 21:31:58 2019 -0400
+
+    Update
+
+commit f15030c99fff4cd9ca6a286aa47fbcddf6d6cbc9
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Fri May 3 21:30:21 2019 -0400
+
+    Optimize for responsiveness
+
+commit 59b968033b24d862cc758f986278338264ba3132
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Fri May 3 14:27:40 2019 -0400
+
+    Optimize title for small screens
+
+commit 254874082da867affccd44578e4dad3f369229d3
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Fri May 3 14:25:23 2019 -0400
+
+    Optimize title for small screens
+
+commit 052af0d7b23fdef0efd63ac4d5f973f7fc94acba
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Fri May 3 14:10:45 2019 -0400
+
+    Optimize title for small screens
+
+commit c7a50112d796f362ce32751c75dcc10d6a83b977
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Fri May 3 14:04:07 2019 -0400
+
+    Optimize title for small screens
+
+commit 38b0ee5193baeb6ee36a84e3acf2fe9ef05f06c2
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Fri May 3 14:01:17 2019 -0400
+
+    Re-organize files
+
+commit ed88b8b681b3cfeae156817ff8d20989c82b181c
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Fri May 3 13:58:13 2019 -0400
+
+    Make map responsive
+
+commit 309b5831e4c9d49469e4de6820aed164c26719f2
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Fri May 3 13:35:35 2019 -0400
+
+    Redesign landing page
+
+commit c853edcf6c0f0948544b280ccadab67fa832f833
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Fri May 3 01:42:17 2019 -0400
+
+    Rename college-langs.html to langs.html
+
+commit f4c76e4e0dc84438d17f33ec5b207c93bdc70cb7
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Fri May 3 01:37:34 2019 -0400
+
+    Optimize image size for web
+
+commit 45eab49ba6077a6fa2b9757f82d735e3877a5e7d
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Fri May 3 01:35:56 2019 -0400
+
+    Optimize image size for web
+
+commit a73b7c8c4e0c791c71eb8e75deaf43e937c8035f
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Thu May 2 19:14:39 2019 -0400
+
+    Remove lab
+
+commit e45ea6eb3ccbef78febf6aae652c94bf49083a03
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Wed May 1 12:12:25 2019 -0400
+
+    Beautify birthdays section
+
+commit 2b1effacc8e5a4117a27a068dc626e36061bb925
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Thu Apr 25 21:41:56 2019 -0400
+
+    Add links to good reads
+
+commit cb03447962ad9510b4c843a45c77d9565a4ab956
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Thu Apr 25 16:22:46 2019 -0400
+
+    Update file names
+
+commit e7f4280268064269fd2979118a1ca89ab5c3a624
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Thu Apr 25 16:20:12 2019 -0400
+
+    Add responsiveness
+
+commit 5acdf3d33a0d6ca2af4f004127f09bae949fceec
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Thu Apr 25 16:19:21 2019 -0400
+
+    Linted HTML and CSS
+
+commit 3deab4f2fce4d0c344274fb18b55a76955596a51
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Thu Apr 25 16:01:54 2019 -0400
+
+    Attempt to fix birthday section
+
+commit 4d97cc3b3c7ca1790b6e4da1be4fede5b5f10037
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Thu Apr 25 15:57:59 2019 -0400
+
+    Add birthdays section + etc
+
+commit a5974669efe6834f3f8cd81907e31a6792d0669c
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Thu Apr 25 11:14:33 2019 -0400
+
+    Remove deprecated pages
+
+commit 27435021ada18607322a73f6b3f8eb351fb276f1
+Author: joshnatis <31445542+joshnatis@users.noreply.github.com>
+Date:   Tue Apr 23 23:00:49 2019 -0400
+
+    Add middle initials to some names
+
+commit 3162b4c5dac57030defbd0c4abfe169c12b228b1
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Tue Apr 23 21:50:30 2019 -0400
+
+    Add alt text for screen-readers
+
+commit 1ef159b3c22eb4ef9a337021f3b8e6339bb45ca1
+Author: joshnatis <31445542+joshnatis@users.noreply.github.com>
+Date:   Tue Apr 23 21:10:22 2019 -0400
+
+    Add maddog to list of notable people
+
+commit 27daa16843d232944ad918d7d1e9d6f32a4afdab
+Author: joshnatis <31445542+joshnatis@users.noreply.github.com>
+Date:   Tue Apr 23 21:07:01 2019 -0400
+
+    Update README.md
+
+commit 6fe010b474187aeab458369d46de7819a6090fba
+Author: joshnatis <31445542+joshnatis@users.noreply.github.com>
+Date:   Sun Apr 21 14:07:18 2019 -0400
+
+    Delete .DS_Store
+
+commit d1bbb2b5ba5bfb5471e96c50a2a7cf7f99d00a62
+Author: joshnatis <31445542+joshnatis@users.noreply.github.com>
+Date:   Sun Apr 21 14:07:00 2019 -0400
+
+    Delete .DS_Store
+
+commit 5bfeccf93720551cff3ced415616fde6aa3df819
+Merge: c4e43be 36e0f5f
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Sun Apr 21 14:05:18 2019 -0400
+
+    Merge branch 'master' of https://github.com/joshnatis/josh8
+
+commit c4e43be017b3d417aa3a8d80e4caacef68336915
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Sun Apr 21 14:05:13 2019 -0400
+
+    Beautify CSS
+
+commit 39711e066f04dbe903dce58e9eba3f8e1b999231
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Sun Apr 21 14:03:39 2019 -0400
+
+    Remove inline CSS
+
+commit 36e0f5fa4343a64c136aff19d00cced3ac9ffde5
+Merge: 64a21b0 adf4325
+Author: joshnatis <31445542+joshnatis@users.noreply.github.com>
+Date:   Sun Apr 21 13:59:50 2019 -0400
+
+    Merge pull request #2 from mmvvpp123/master
+    
+    Replace inline CSS with external stylesheet
+
+commit adf4325a0e6627c9ef761789302cc3d9509a475e
+Author: Sherzod <shermanjones99@gmail.com>
+Date:   Sun Apr 21 13:59:19 2019 -0400
+
+    fixed notes heading
+
+commit 78c4587c0d090cf922839b51e7ac81231a0e9cbc
+Author: Sherzod <shermanjones99@gmail.com>
+Date:   Sun Apr 21 13:51:03 2019 -0400
+
+    html and css updated
+
+commit 64a21b0ac6e844f2edebab79fac189ea781ccab7
+Merge: b096b50 81fa56c
+Author: joshnatis <31445542+joshnatis@users.noreply.github.com>
+Date:   Sun Apr 21 13:36:40 2019 -0400
+
+    Merge pull request #1 from mmvvpp123/master
+    
+    Beautify CSS
+
+commit 81fa56c83140529bc7926cca711bf1d20bca0694
+Author: Sherzod <shermanjones99@gmail.com>
+Date:   Sun Apr 21 13:27:30 2019 -0400
+
+    new css
+
+commit b096b501dfee885da19a2ad3e6302f51614fa2a8
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Tue Apr 16 15:35:10 2019 -0400
+
+    Add new page: 'Link Hoarding Cupboard'
+
+commit 0a4c94196a3f296e195631c3588e8314888d65f2
+Merge: b96094e 4759400
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Tue Apr 16 15:32:11 2019 -0400
+
+    Merge branch 'master' of https://github.com/joshnatis/josh8
+
+commit b96094e433f9c5d2129ae66d488ffc27a453375f
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Tue Apr 16 15:31:58 2019 -0400
+
+    Fix <span> bug, link to a new page
+
+commit 4759400563c96ca9ac3dd8ef0db84a292238c181
+Author: joshnatis <31445542+joshnatis@users.noreply.github.com>
+Date:   Fri Apr 5 19:03:13 2019 -0400
+
+    Update README.md
+
+commit 8f019f0c5d716c58163662829be3e47133a03bdd
+Author: joshnatis <31445542+joshnatis@users.noreply.github.com>
+Date:   Tue Apr 2 19:09:47 2019 -0400
+
+    Update README.md
+
+commit 010afebaf9cc8e8df4aeaa027947e56446fc899d
+Author: joshnatis <31445542+joshnatis@users.noreply.github.com>
+Date:   Tue Apr 2 04:10:34 2019 -0400
+
+    Update README.md
+
+commit 757a3b81bf785767a5c5f2537d69fff2a4256dd9
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Tue Apr 2 04:09:32 2019 -0400
+
+    Fix favicon duplicates
+
+commit fe166040b25be71c14e3c2a8519dcfe5084eddc1
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Tue Apr 2 04:09:12 2019 -0400
+
+    Add link to AI/Ethics paper
+
+commit 8b94607dec71c4e10cb1ea61f1a934f8d3017a4f
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Tue Apr 2 04:08:41 2019 -0400
+
+    Reduce multiple favicon files to one
+
+commit 77629df675357ee07c5738112cd51f034af3e523
+Merge: b2db8bf 1f7bc97
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Tue Apr 2 04:07:05 2019 -0400
+
+    Merge branch 'master' of https://github.com/joshnatis/josh8
+
+commit b2db8bff40a5e1a6692a510c4e455c6651d007fc
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Tue Apr 2 04:06:54 2019 -0400
+
+    Add page for AI/Ethics paper
+
+commit 1f7bc9718cacda6875283cf0eab922296e98dcce
+Author: joshnatis <31445542+joshnatis@users.noreply.github.com>
+Date:   Tue Mar 26 18:59:53 2019 -0400
+
+    Update README.md
+
+commit 7708d0886fd815b8128b3af1106778a802ea202d
+Author: joshnatis <31445542+joshnatis@users.noreply.github.com>
+Date:   Tue Mar 26 18:59:07 2019 -0400
+
+    Update README.md
+
+commit 4c493e7b89c661d68749a31e581e3fbc74ac68e0
+Author: joshnatis <31445542+joshnatis@users.noreply.github.com>
+Date:   Tue Mar 26 18:57:17 2019 -0400
+
+    Update README.md
+
+commit 5fbad664321cfa59e30c0793edacf25daf63a941
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Mon Mar 25 09:06:51 2019 -0400
+
+    Fix image proportions
+
+commit c24f50297c78eb78525bab0113dd5d4355d1c851
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Mon Mar 25 05:35:31 2019 -0400
+
+    Fix whatnext page
+
+commit 48a06a4d1ac92b30e3ddd5fa1706789e1302ba01
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Mon Mar 25 05:34:17 2019 -0400
+
+    Change CNAME location
+
+commit d5c8d1b4044635373f1e8b70bd5721f2fdba098c
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Mon Mar 25 05:32:14 2019 -0400
+
+    Fix accidental submodule
+
+commit a77bc9ac8475ee45b5186a9ad360cb281cc1a72a
+Author: joshnatis <31445542+joshnatis@users.noreply.github.com>
+Date:   Mon Mar 25 05:30:22 2019 -0400
+
+    Delete husky.scssc
+
+commit 4fe7205b2b8e60a992b24cc1d5c074d9be8c2c4b
+Author: joshnatis <31445542+joshnatis@users.noreply.github.com>
+Date:   Mon Mar 25 05:30:12 2019 -0400
+
+    Delete cloud-button.scssc
+
+commit 301da65939f9733e94af7c3d834b8968d1616700
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Mon Mar 25 05:21:40 2019 -0400
+
+    Add styles for landing page
+
+commit dde947079ad26cb1cc2c9a34e87831c57b2bc1e6
+Merge: 8ef3b93 78a052b
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Mon Mar 25 05:11:07 2019 -0400
+
+    Merge branch 'master' of https://github.com/joshnatis/josh8
+
+commit 8ef3b939c9644879b1f79fcd2feb964fad629795
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Mon Mar 25 05:10:52 2019 -0400
+
+    Create landing page
+
+commit 78a052b4432fae1ee390edd8aa51a8014ddf98bf
+Author: joshnatis <31445542+joshnatis@users.noreply.github.com>
+Date:   Fri Mar 22 17:06:00 2019 -0400
+
+    Update README.md
+
+commit d4c2f80f2310caf9d580111d7271d027531e1b0c
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Fri Mar 15 01:02:42 2019 -0400
+
+    Add function to display tables
+
+commit 3628b52f9e193c1a77357df700711667b0a4347a
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Tue Feb 26 03:12:55 2019 -0500
+
+    Add more colleges
+
+commit 6687abd9313f46ef1e4aefae6249620f76ee4e01
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Tue Feb 26 02:58:42 2019 -0500
+
+    Add SUNY Colleges
+
+commit 359768a12a173b44159ceba4060920225edf1193
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Tue Feb 26 02:08:37 2019 -0500
+
+    Fix favicon
+
+commit 68fdb15ba9a1a7e05e681eb3614bd8654ff66064
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Tue Feb 26 02:04:17 2019 -0500
+
+    Change font back to Ariel because it is the superior font
+
+commit dc165ba1cea1ad10f62e50c79b549ed87fa8943d
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Tue Feb 26 01:58:32 2019 -0500
+
+    Change font style
+
+commit a770b309a5cb13fa65c6b8374289d659eafeff63
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Tue Feb 26 01:55:00 2019 -0500
+
+    Change font to bold
+
+commit 1853cef0b5f2ddd92fc6776be878593917e8560c
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Tue Feb 26 01:53:41 2019 -0500
+
+    Add favicon
+
+commit c5bceb2ffd36c0a644807f986aa9e91539920aa8
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Tue Feb 26 01:53:13 2019 -0500
+
+    Change font of list items
+
+commit 67c4ee70a03256a3b6f21d40b19e857d4d4745b4
+Merge: 2c2290e 48d7243
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Tue Feb 26 01:40:44 2019 -0500
+
+    Merge branch 'master' of https://github.com/joshnatis/josh8
+
+commit 2c2290ea7b102de289be814431915946ebd23bcb
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Tue Feb 26 01:39:50 2019 -0500
+
+    Add functionality to search for colleges and cool css
+
+commit 48d724307256c2641556a5d48b57fe32009c5ec6
+Author: joshnatis <31445542+joshnatis@users.noreply.github.com>
+Date:   Mon Feb 25 12:55:13 2019 -0500
+
+    Create CNAME
+
+commit fd61d75617b6be0b7c893bb50d65cd5c32620a79
+Author: Josh Natis <joshnatis0@gmail.com>
+Date:   Mon Feb 25 12:42:18 2019 -0500
+
+    Add index.html
+
+commit eff87c5015bbd99f3ce5ffeae751263c640db6b4
+Author: joshnatis <31445542+joshnatis@users.noreply.github.com>
+Date:   Mon Feb 25 12:34:45 2019 -0500
+
+    Initial commit
