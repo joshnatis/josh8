@@ -131,7 +131,7 @@ jQuery(function ($) {
                 "track": 23,
                 "name": "coffee beans",
                 "duration": "1:08",
-                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__cofee_beans.mp3?raw=true"
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__coffee_beans.mp3?raw=true"
             }, {
                 "track": 24 ,
                 "name": "cart",
@@ -146,7 +146,7 @@ jQuery(function ($) {
                 "track": 26,
                 "name": "synthetics medley",
                 "duration": "2:05",
-                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__synthetics_medley.mp3?raw=true"
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__synthethics_medley.mp3?raw=true"
             }, {
                 "track": 27,
                 "name": "villas",
@@ -356,7 +356,7 @@ jQuery(function ($) {
                 "track": 68,
                 "name": "caś",
                 "duration": "1:07",
-                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__caś.mp3?raw=true"
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__cas.mp3?raw=true"
             }, {
                 "track": 69,
                 "name": "deep sea secrets",
