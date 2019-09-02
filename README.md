@@ -2,7 +2,7 @@
 ![Logo](https://github.com/joshnatis/josh8/blob/master/favicon3.png)
 https://josh8.com/
 
-**Currently, the site consists of five pages:**
+**Currently, the site consists of six pages:**
 * My [link-hoarding cupboard.](https://josh8.com/home) **[Perpetually IN PROGRESS]**
 
 * A [page for my music](https://josh8.com/tunes)
@@ -18,6 +18,8 @@ https://josh8.com/
    * Concert Report: A Trip Elsewhere (Rooftop)
    * Illmatic – Hip Hop's Magnum Opus
    * Self Reflection on Writing 
+   
+* A [sitemap](https://josh8.com/sitemap) (necessary to remedy by unintuitive landing page :P)
 
 
 **In the works:**
