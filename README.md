@@ -25,4 +25,6 @@ https://josh8.com/
 
 * Something regarding plants and elephants ♥
 
-
+**Note:**
+* In a blaze of glory, I attempted to clean the original <i>josh8</i> repository of all the junk files it had accumulated over time. StackOverflow proved to be a very dangerous resource, and I ended up messing some things up. So, I started fresh (I only moved the necessary files). I'm relatively sure all went well, but I can't shake the feeling that I've left something behind :(
+* Oringinal Repo: 129 Commits
