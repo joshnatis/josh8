@@ -1,0 +1,5 @@
+.DS_Store
+.backup.tar.gz
+.config
+.yesterday.tar.gz
+.bb.sh
