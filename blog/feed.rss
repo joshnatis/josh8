@@ -2,13 +2,67 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel><title>Corduroy's Meditations</title><link>https://josh8.com/blog/index.html</link>
 <description>A cozy spot to sit and think :-)</description><language>en</language>
-<lastBuildDate>Mon, 02 Sep 2019 20:40:25 -0400</lastBuildDate>
-<pubDate>Mon, 02 Sep 2019 20:40:25 -0400</pubDate>
+<lastBuildDate>Thu, 19 Sep 2019 01:14:47 -0400</lastBuildDate>
+<pubDate>Thu, 19 Sep 2019 01:14:47 -0400</pubDate>
 <atom:link href="https://josh8.com/blog/feed.rss" rel="self" type="application/rss+xml" />
+<item><title>
+Richard Matthew Stallman
+</title><description><![CDATA[
+
+<p>
+	Unfortunately, as of today 2019-16-09, Richard Stallman has resigned as president of the Free Software Foundation. 
+	I have to be honest, I don't agree with the outcome of this debacle. I am all for outing toxic people and removing them 
+	from communities, when deserved, but I believe that this situation was based on a complete misunderstanding of Stallman 
+	as a human being. As somebody who is exceptionally contrarian and pedantic, Stallman's behavior was completely characteristic
+	of his typical self -- a true character, with good intentions but a persona which is definitely an acquired taste. I'm not
+	attempting to glorify him. Understand, Stallman is not a normal person, he's not a millionaire business mogul, he's not 
+	a professor using his authority to manipulate his students into sleeping with him, he's not a predator -- he's an 
+	honest-to-god geek, hacker, nerd, creep straight out of a 70s/80s stereotype. On the political spectrum he's so far on
+	the left that he may as well be off the grid -- I am sure he was mistaken as "another conservative male defending Epstein".
+	On the Autism spectrum, he's likely present. A person with little to no social media exposure, no cell phone, ignorance to/of 
+	social rules, and who is a boomer has many things going against them when expected to conform to rapidly changing social standards.
+	<br><br>
+	<i> > Did I even really know who Richard Stallman was before those emails? To be honest, not really</i> - author of the Medium 
+	article calling to "Remove Richard Stallman".
+	<br>
+	<i> > "I’ve learned to understand how sex with a child can harm per psychologically [sic]." </i> - article on Stallman resigning
+	<br><br>
+	It is obvious that these people have no idea who Stallman is. If you've visited his website, you may have read about Stallman's
+	proposed alternative to the gender-neutral pronoun "they" -- "per". Stallman is seen using that pronoun above, but the author
+	of the article went ahead and presumed it was a typo. What else did they presume?
+	<br><br>
+
+	My world is shaken. To me, rms is as influential as Dennis Ritchie or Ken Thompson (terribly sorry to bring their names into this).
+	How will computer science live without Richard Stallman? I'm sorry, but I won't be removing Stallman from my homepage.
+	
+	<br><br>
+	Update: I liked <a href="https://www.wired.com/story/richard-stallman-and-the-fall-of-the-clueless-nerd/">this</a> article on the situation by Steven Levy.
+	I felt like it struck a balance between pitchforks and "incels defending Stallman".
+	Specifically, I appreciated this analysis:
+	<br><br>
+	<i>"If the question was 'When does obliviousness become inexcusable?' Selam Jie Gano had an answer. Now."</i>
+	<br><br>
+	I also liked Luke Smith's description of Stallman as someone who is ideologically consistent and proud of it.
+	Stallman's ignorance to social standards are what allow him to actually live up to this description.
+</p>
+
+<p>Tags: <a href='tag_stallman.html'>stallman</a>, <a href='tag_history.html'>history</a></p>
+
+
+
+
+
+
+
+<!-- text end -->
+]]></description><link>https://josh8.com/blog/richard-matthew-stallman.html</link>
+<guid>https://josh8.com/blog/./richard-matthew-stallman.html</guid>
+<dc:creator>Josh</dc:creator>
+<pubDate>Tue, 17 Sep 2019 11:48:46 -0400</pubDate></item>
 <item><title>
 An invaluable lesson learned
 </title><description><![CDATA[
-<h4> git good before you dig yourself a hole you can't get out of </h2>
+<h4> git good before you dig yourself a hole you can't get out of </h4>
 
 <p> I need to be more careful. In the past week I've messed up quite a few of
 my things. This post is a quick reflection on what I've done, so I can 
@@ -17,7 +71,7 @@ remember to be more thorough in the future.
 
 <p> So, what have I done? </p>
 
-<h3>#1</h3>
+<h4>#1</h4>
 <p>
 About a week back I got myself a "beater laptop" so I could freely experiment
 with it and not worry about messing anything up. Well, it turns out that
@@ -46,7 +100,7 @@ my actual HDD instead, which is definitely epic, proud of myself. Laptop still w
 it could've been worse.
 </p>
 
-<h3>#2</h3>
+<h4>#2</h4>
 <p>This trip-up doesn't have reprocussions as costly as #1, but it appears that I was walking on a 
 sentimental tightrope of whose existence I was not aware of for more than a year. You've likely heard
 of external hard drives -- they're typically used to back up your files. In order to actually back those
@@ -66,7 +120,7 @@ upset now though, as the organization of my external drive is confusing at best.
 I think the files are all still there.
 </p>
 
-<h3>#3</h3>
+<h4>#3</h4>
 <p>
 This situation, which inspired this post, was a royal mess which definitely took a few months off my life. Of course
 it had to do with git! This wasn't my first run-in with git -- I think I remember breaking a few repositories before,
@@ -94,7 +148,7 @@ from an old backup (thanks CCC for not deleting it), created a fresh repository,
 129 commits, though.
 </p>
 
-<h3>What did I learn?</h3>
+<h4>What did I learn?</h4>
 <p>It's too easy to forget that everything is an abstraction. I feel like I understand my environment and the tools that 
 I use, because I use them frequently enough to feel comfortable, but come on, I'm not a wizard yet and chances are neither are you.
 When feces hit the fan, it's time to stop being lazy and be VERY meticulous about your every move. From now on I will try my best
@@ -115,7 +169,7 @@ and that I should read "Git Internals - Plumbing and Porcelain". You should prob
 ]]></description><link>https://josh8.com/blog/an-invaluable-lesson-learned.html</link>
 <guid>https://josh8.com/blog/./an-invaluable-lesson-learned.html</guid>
 <dc:creator>Josh</dc:creator>
-<pubDate>Mon, 02 Sep 2019 20:39:50 -0400</pubDate></item>
+<pubDate>Mon, 02 Sep 2019 20:48:23 -0400</pubDate></item>
 <item><title>
 Hello, World!
 </title><description><![CDATA[
