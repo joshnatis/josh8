@@ -407,6 +407,11 @@ jQuery(function ($) {
             	"name": "library holly",
             	"duration": "1:23",
             	"file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__library_holly.mp3?raw=true"
+            }, {
+            	"track": 78,
+            	"name": "library holly",
+            	"duration": "1:23",
+            	"file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__metroloop.mp3?raw=true"
             }],
             
             buildPlaylist = $(tracks).each(function(key, value) {
