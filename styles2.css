@@ -11,29 +11,16 @@ body
 	background-repeat: no-repeat, repeat;
 	border: 3px solid black;
 	border-radius: 25px;
-	width: 47%;
-}
-
-.bookshelf
-{
-  background-repeat: no-repeat;
-	background-image:url('./landing_page_assets/bookshelf.png');
-	max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  border-bottom: 2px solid black;*/
-	/*height: 100%;*/
 }
 
 #bookshelf
 {
-	/*background-repeat: no-repeat;
-	background-image:url('./landing_page_assets/bookshelf.png');*/
-	max-width: 100%;
+  background-repeat: no-repeat;
+  background-image:url('./landing_page_assets/bookshelf.png');
+  border-bottom: 2px solid black;
+  max-width: 100%;
   max-height: 100%;
-  /*object-fit: contain;*/
-  border-bottom: 2px solid black;*/
-	/*height: 100%;*/
+  object-fit: contain;
 }
 
 .container
@@ -135,4 +122,3 @@ body
   	font-size: 90%;
   }
 }
- 
