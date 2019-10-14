@@ -10,7 +10,6 @@ https://josh8.com/
 * A [blog](https://josh8.com/blog)  :)
 
 * A [search tool](https://josh8.com/college-langs) for what programming languages universities use to teach their introductory programming classes **[IN PROGRESS]**
-    * There are many programming languages which CS deparments may choose to teach their introductory courses in, yet most students have either had no previous experience programming, or have taken AP Computer Science A which is taught solely using Java. It can't hurt to start preparing early!
     
 * A page containing various [papers](https://josh8.com/papers) I've written:
    * Artificial Intelligence and Ethics: A Compromise 
@@ -18,6 +17,8 @@ https://josh8.com/
    * Concert Report: A Trip Elsewhere (Rooftop)
    * Illmatic – Hip Hop's Magnum Opus
    * Self Reflection on Writing 
+   
+* A [page to send you adventuring through random professorial websites](https://josh8.com/professors), because professors are cool.
    
 * A [sitemap](https://josh8.com/sitemap) (necessary to remedy my unintuitive landing page :P)
 
