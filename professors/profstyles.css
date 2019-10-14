@@ -1,0 +1,64 @@
+.myButton {
+  box-shadow: 3px 4px 0px 0px #1564ad;
+  background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+  background-color:#79bbff;
+  border-radius:5px;
+  border:1px solid #337bc4;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:17px;
+  font-weight:bold;
+  padding:12px 44px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #528ecc;
+}
+
+.myButton:hover {
+  background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+  background-color:#378de5;
+}
+.myButton:active {
+  position:relative;
+  top:1px;
+}
+
+.profbg {
+   background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAJUlEQVQYV2NkwAT/GdHE/jMwMDAiC4IFQIpggjABuEq4CqhR/wEbSQcEChQUOwAAAABJRU5ErkJggg==)
+   repeat;
+}
+
+.floatext {
+  margin-top: 5px;
+  float: left; 
+  width: 100%;
+  letter-spacing: 3px;
+  text-shadow: 3px 2px red;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#about {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 0.88em;
+  border: 2px solid black; 
+  padding: 10px; 
+  display: inline-block; 
+  background-color: #C0D6DF 
+}
+
+#container {
+  background-color:#4A6FA5;
+  border: 3px solid black; 
+  border-radius: 5%; 
+  padding: 2%; 
+  width: 30%; 
+  margin: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  #container {
+    width: 60%;
+    height: 100%;
+  }
+}
