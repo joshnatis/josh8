@@ -417,6 +417,11 @@ jQuery(function ($) {
             	"name": "blue chalk",
             	"duration": "1:24",
             	"file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__blue_chalk.mp3?raw=true"
+            }, {
+            	"track": 81,
+            	"name": "cessaria",
+            	"duration": "2:15",
+            	"file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__cessaria.mp3?raw=true"
             }],
             
             buildPlaylist = $(tracks).each(function(key, value) {
