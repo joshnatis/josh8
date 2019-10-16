@@ -1,0 +1,61 @@
+---
+title: Abstract Turtles 
+author: by Josh
+output: html_document
+---
+
+<style>
+	body {
+		background-color: black;
+		color: white;
+	}
+
+	img {
+		padding-left: 15%;
+		padding-right: 15%;
+		border-left: 1px solid white;
+		border-right: 1px solid white;
+	}
+</style>
+
+*** 
+
+These turtles were brought into the universe using my [abstract art generator](https://github.com/joshnatis/abstract_art_generator), and later genetically modified with Photoshop.
+
+***
+
+<center>
+
+![](turtz.png)
+
+![](1.png)
+
+![](2.png)
+
+![](3.png)
+
+![](4.png)
+
+![](5.png)
+
+![](6.png)
+
+![](7.png)
+
+![](8.png)
+
+![](9.png)
+
+![](10.png)
+
+![](11.png)
+
+![](12.png)
+
+![](15.png)
+
+![](16.png)
+
+![](18.png)
+
+</center>

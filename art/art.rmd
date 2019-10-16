@@ -1,0 +1,96 @@
+---
+title: Art 
+author: by Josh
+output: html_document
+---
+
+<style>
+	body {
+		font-family: "Georgia", Verdana, Arial;
+		background-color: black;
+		color: white;
+	}
+
+	#kode {	
+		background-color: #957DAD;
+		width: 50%;
+		margin: auto;
+		padding: 1%;
+		padding-bottom: 0px; 
+		border: 3px solid white; 
+		border-radius: 5%;
+	}
+</style>
+
+*** 
+<div id="kode">
+```{bash}
+echo " __    __     _                          ";
+echo "/ / /\ \ \___| | ___ ___  _ __ ___   ___ ";
+echo "\ \/  \/ / _ \ |/ __/ _ \| '_ \` _ \ / _ \\";
+echo " \  /\  /  __/ | (_| (_) | | | | | |  __/";
+echo "  \/  \/ \___|_|\___\___/|_| |_| |_|\___|";
+printf "\nLast updated on %s :)" $(date +%x)
+```
+</div>
+<!-- ![caption](path) -->
+
+***
+
+![Mocha](pix/mocha2.png)
+
+![Pastels](pix/pastels.png)
+
+![Nerds](pix/colors.png)
+
+![Palette](pix/palette.png)
+
+![McDonald's Tunnel](pix/mcd.png)
+
+![Rabbiiit](pix/rabbit.png)
+
+![Swirlz](pix/swirlz.png)
+
+![Newgrounds](pix/scan1.jpg)
+
+![Charlie](pix/chrl.png)
+
+![cool](pix/cool.jpg)
+
+![forgot](pix/forgot.jpg)
+
+![lenny](pix/lenny.png)
+
+![spook](pix/moon3.jpg)
+
+![teach the babies](pix/teach_the_babies.png)
+
+![synechrome](pix/synechron.png)
+
+![berloga](pix/berloga.jpg)
+
+![forever by hand](pix/forev.png)
+
+![what she sees](pix/IMG_4543.jpg)
+
+![world](pix/world.png)
+
+![ether](pix/ether.jpg)
+
+![radicchio for algernon](pix/flower.png)
+
+![sad barack](pix/sad_barack.jpg)
+
+![sound](pix/sound.png)
+
+![self portrait](pix/self.png)
+
+![deathmatch](pix/deathmatch.png)
+
+![corduroy 2](pix/corduroy2.png)
+
+![biologia](pix/biologiaed.png)
+
+![pink peaches](pix/corduroy_pink.png)
+
+![seeds](pix/wasteland.png)
