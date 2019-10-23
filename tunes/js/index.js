@@ -422,6 +422,11 @@ jQuery(function ($) {
             	"name": "cessaria",
             	"duration": "2:15",
             	"file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__cessaria.mp3?raw=true"
+            }, {
+            	"track": 82,
+            	"name": "nöcht",
+            	"duration": "0:33",
+            	"file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__nocht.mp3?raw=true"
             }],
             
             buildPlaylist = $(tracks).each(function(key, value) {
