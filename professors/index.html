@@ -551,7 +551,8 @@
 
     		function randomSite() {
        			var i = parseInt(Math.random() * sites.length);
-        		location.href = sites[i];
+       			window.open(sites[i], 'blank_')
+        		//location.href = sites[i] + ;
    			}
 		</script>
 		
