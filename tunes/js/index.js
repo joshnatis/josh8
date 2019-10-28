@@ -432,6 +432,11 @@ jQuery(function ($) {
             	"name": "metal cheek",
             	"duration": "1:06",
             	"file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__metalcheek.mp3?raw=true"
+            }, {
+                "track": 84,
+                "name": "qux",
+                "duration": "0:32",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__qux.mp3?raw=true"
             }],
             
             buildPlaylist = $(tracks).each(function(key, value) {
