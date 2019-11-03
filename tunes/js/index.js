@@ -441,7 +441,7 @@ jQuery(function ($) {
                 "track": 85,
                 "name": "gerard way in 7th grade",
                 "duration": "1:20",
-                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__qw7gr.mp3?raw=true"
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__gw7gr.mp3?raw=true"
             }],
             
             buildPlaylist = $(tracks).each(function(key, value) {
