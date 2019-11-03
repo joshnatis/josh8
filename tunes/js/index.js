@@ -437,6 +437,11 @@ jQuery(function ($) {
                 "name": "qux",
                 "duration": "0:32",
                 "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__qux.mp3?raw=true"
+            }, {
+                "track": 85,
+                "name": "gerard way in 7th grade",
+                "duration": "1:20",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__qw7gr.mp3?raw=true"
             }],
             
             buildPlaylist = $(tracks).each(function(key, value) {
