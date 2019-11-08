@@ -442,11 +442,6 @@ jQuery(function ($) {
                 "name": "gerard way in 7th grade",
                 "duration": "1:20",
                 "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__qw7gr.mp3?raw=true"
-            }, {
-                "track": 86,
-                "name": "let us fall",
-                "duration": "2:19",
-                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__fall.mp3?raw=true"
             }],
             
             buildPlaylist = $(tracks).each(function(key, value) {
