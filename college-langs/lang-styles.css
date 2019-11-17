@@ -70,3 +70,10 @@ background-image {
 #myUL li a:hover:not(.header) {
   background-color: #eee; /* Add a hover effect to all links, except for headers */
 }
+
+
+@media screen and (max-width: 750px) {
+  #myUL {
+    width: 300%;
+  }
+}
