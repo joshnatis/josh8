@@ -6,6 +6,7 @@ https://josh8.com/
 * My [link-hoarding cupboard.](https://josh8.com/home) **[Perpetually IN PROGRESS]**
 
 * A [page for my music](https://josh8.com/tunes)
+    * This is less a programming feat and more a practical way to host my music -- I didn't write this code, I'm just using it.
 
 * A [blog](https://josh8.com/blog)  :)
 
@@ -25,6 +26,7 @@ https://josh8.com/
 * A [sitemap](https://josh8.com/sitemap) (necessary to remedy my unintuitive landing page :P)
 
 * [The Whomst've Page](https://josh8.com/whom) (sometimes referred to as 'About Me')
+    * I'm actually pretty proud of this one. I made it all by hand without referencing other sites and not much copy-pasting! (the same applies to the other pages too, but this one looks legit).
 
 
 **In the works:**
