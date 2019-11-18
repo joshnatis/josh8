@@ -2,7 +2,7 @@
 ![Logo](https://github.com/joshnatis/josh8/blob/master/favicon3.png)
 https://josh8.com/
 
-**Currently, the site consists of eight pages:**
+**Currently, the site consists of nine pages:**
 * My [link-hoarding cupboard.](https://josh8.com/home) **[Perpetually IN PROGRESS]**
 
 * A [page for my music](https://josh8.com/tunes)
@@ -23,6 +23,8 @@ https://josh8.com/
 * A [collection of digital doodles](https://josh8.com/art) and [turtles](https://josh8.com/art/turtles)
    
 * A [sitemap](https://josh8.com/sitemap) (necessary to remedy my unintuitive landing page :P)
+
+* [The Whomst've Page](https://josh8.com/whom) (sometimes referred to as 'About Me')
 
 
 **In the works:**
