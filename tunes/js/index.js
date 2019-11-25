@@ -447,6 +447,11 @@ jQuery(function ($) {
                 "name": "let us fall",
                 "duration": "2:19",
                 "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__fall.mp3?raw=true"
+            }, {
+                "track": 87,
+                "name": "icy cough",
+                "duration": "1:54",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__icy_cough.mp3?raw=true"
             }],
             
             buildPlaylist = $(tracks).each(function(key, value) {
