@@ -452,6 +452,11 @@ jQuery(function ($) {
                 "name": "icy cough",
                 "duration": "1:54",
                 "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__icy_cough.mp3?raw=true"
+            }, {
+                "track": 88,
+                "name": "porcupinez",
+                "duration": "1:02",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__porcupinez.mp3?raw=true"
             }],
             
             buildPlaylist = $(tracks).each(function(key, value) {
