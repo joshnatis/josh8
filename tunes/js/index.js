@@ -467,6 +467,16 @@ jQuery(function ($) {
                 "name": "checkered tablecloth",
                 "duration": "1:08",
                 "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__checkered_tablecloth.mp3?raw=true"
+            }, {
+                "track": 91,
+                "name": "hotpot",
+                "duration": "1:02",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__hotpot.mp3?raw=true"
+            }, {
+                "track": 92,
+                "name": "purple heater",
+                "duration": "0:43",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__purple_heater.mp3?raw=true"
             }],
             
             buildPlaylist = $(tracks).each(function(key, value) {
