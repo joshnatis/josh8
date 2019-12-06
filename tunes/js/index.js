@@ -477,6 +477,11 @@ jQuery(function ($) {
                 "name": "purple heater",
                 "duration": "0:43",
                 "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__purple_heater.mp3?raw=true"
+            }, {
+                "track": 93,
+                "name": "MIC. CHECK TWO",
+                "duration": "2:17",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__MIC_CHECK_TWO.mp3?raw=true"
             }],
             
             buildPlaylist = $(tracks).each(function(key, value) {
