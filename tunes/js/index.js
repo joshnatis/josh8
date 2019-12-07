@@ -482,6 +482,11 @@ jQuery(function ($) {
                 "name": "MIC. CHECK TWO",
                 "duration": "2:17",
                 "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__MIC_CHECK_TWO.mp3?raw=true"
+            }, {
+                "track": 94,
+                "name": "sunday",
+                "duration": "1:56",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__sunday.mp3?raw=true"
             }],
             
             buildPlaylist = $(tracks).each(function(key, value) {
