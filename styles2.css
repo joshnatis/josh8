@@ -122,3 +122,28 @@ body
   	font-size: 90%;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .main_table {
+    width: unset;
+    max-width: 47.2%;
+  }
+}
+
+@media screen and (min-width: 1575px) {  
+  #logo {
+    left: 66%;
+  }
+}
+
+@media screen and (min-width: 1800px) {  
+  #logo {
+    left: 65%;
+  }
+}
+
+@media screen and (min-width: 2000px) {  
+  #logo {
+    left: 63.5%;
+  }
+}
