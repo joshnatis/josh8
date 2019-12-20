@@ -487,6 +487,11 @@ jQuery(function ($) {
                 "name": "sunday",
                 "duration": "1:56",
                 "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__sunday.mp3?raw=true"
+            }, {
+                "track": 95,
+                "name": "scary hedgehogs",
+                "duration": "0:44",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__scary_hedgehogs.mp3?raw=true"
             }],
             
             buildPlaylist = $(tracks).each(function(key, value) {
