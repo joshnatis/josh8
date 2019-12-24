@@ -20,7 +20,7 @@ function displayTooltip(title, coordStr)
 
     var mCoords = coordStr.split(',');
 
-    hdc.globalAlpha = 1; //turn off transparency
+    hdc.globalAlpha = 1.0; //turn off transparency
     hdc.fillStyle = 'white';
     hdc.fillRect(mCoords[0], mCoords[1] - 50, (title.length * 10), 30); //rectangle
 
@@ -129,4 +129,6 @@ function myInit()
     hdc.fillStyle = 'blue';
     hdc.strokeStyle = 'black';
     hdc.lineWidth = 10;
+
+    myLeave();
 }
