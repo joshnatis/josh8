@@ -13,12 +13,33 @@ function randomColor() {
     return colors[Math.floor(Math.random() * colors.length)];
 }
 
+function displayTooltip(title, coordStr)
+{
+    if(title == "") //don't display tooltip if no title
+        return;
+
+    var mCoords = coordStr.split(',');
+
+    hdc.globalAlpha = 1; //turn off transparency
+    hdc.fillStyle = 'white';
+    hdc.fillRect(mCoords[0], mCoords[1] - 50, (title.length * 10), 30); //rectangle
+
+    hdc.lineWidth = 4;
+    hdc.fillStyle = 'black';
+    hdc.strokeRect(mCoords[0], mCoords[1] - 50, (title.length * 10), 30); //rectangle outline
+
+    hdc.font = "15px Georgia";
+    hdc.fillText(title, parseInt(mCoords[0]) + 5, mCoords[1] - 30);
+}
+
 // takes a string that contains coords eg - "227,307,261,309, 339,354, 328,371, 240,331"
 // draws a line from each co-ord pair to the next - assumes starting point needs to be repeated as ending point.
 function drawPoly(coOrdStr)
 {
-	hdc.globalAlpha = 0.8
+    hdc.lineWidth = 10;
+	hdc.globalAlpha = 0.8;
     hdc.fillStyle = randomColor();
+
     var mCoords = coOrdStr.split(',');
     var i, n;
     n = mCoords.length;
@@ -50,6 +71,9 @@ function myHover(element)
     var hoveredElement = element;
     var coordStr = element.getAttribute('coords');
     var areaType = element.getAttribute('shape');
+
+    var title = element.getAttribute('title');
+    displayTooltip(title, coordStr)
 
     switch (areaType)
     {
