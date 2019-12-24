@@ -8,7 +8,8 @@ var hdc;
 // shorthand func
 function byId(e){return document.getElementById(e);}
 
-function randomColor() {
+function randomColor() 
+{
     var colors = ["#ff0000", "#ffa500","#ffff00","#008000", "#0000ff", "#4b0082", "#ee82ee"];
     return colors[Math.floor(Math.random() * colors.length)];
 }
@@ -16,6 +17,9 @@ function randomColor() {
 function displayTooltip(title, coordStr)
 {
     if(title == "") //don't display tooltip if no title
+        return;
+
+    if (typeof coordStr === 'undefined')
         return;
 
     var mCoords = coordStr.split(',');
@@ -36,6 +40,10 @@ function displayTooltip(title, coordStr)
 // draws a line from each co-ord pair to the next - assumes starting point needs to be repeated as ending point.
 function drawPoly(coOrdStr)
 {
+    if (typeof coOrdStr === 'undefined')
+        return;
+
+    hdc.beginPath();
     hdc.lineWidth = 10;
 	hdc.globalAlpha = 0.8;
     hdc.fillStyle = randomColor();
@@ -57,6 +65,9 @@ function drawPoly(coOrdStr)
 
 function drawRect(coOrdStr)
 {
+    if (typeof coOrdStr === 'undefined')
+        return;
+
     var mCoords = coOrdStr.split(',');
     var top, left, bot, right;
     left = mCoords[0];
@@ -68,6 +79,9 @@ function drawRect(coOrdStr)
 
 function myHover(element)
 {
+    if (typeof element === 'undefined')
+        return;
+
     var hoveredElement = element;
     var coordStr = element.getAttribute('coords');
     var areaType = element.getAttribute('shape');
@@ -95,6 +109,10 @@ function myLeave()
 
 function myInit()
 {
+    // const context = canvas.getContext('2d');
+    // context.clearRect(0, 0, canvas.width, canvas.height);
+    // canvas.width = canvas.width;
+
     // get the target image
     var img = byId("bookshelf");
 
@@ -129,6 +147,4 @@ function myInit()
     hdc.fillStyle = 'blue';
     hdc.strokeStyle = 'black';
     hdc.lineWidth = 10;
-
-    myLeave();
 }
