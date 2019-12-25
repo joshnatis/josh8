@@ -2,6 +2,14 @@ body {
   text-align: justify;
 }
 
+pre {
+  line-height: 0em;
+}
+
+#people {
+  line-height: 0.2em;
+}
+
 .paragraph-div{
   width: 100vh;
   display: block;
