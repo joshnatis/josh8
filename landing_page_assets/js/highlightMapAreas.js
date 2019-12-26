@@ -45,7 +45,7 @@ function drawPoly(coOrdStr)
 
     hdc.beginPath();
     hdc.lineWidth = 10;
-	hdc.globalAlpha = 0.8;
+    hdc.globalAlpha = 0.8;
     hdc.fillStyle = randomColor();
 
     var mCoords = coOrdStr.split(',');
@@ -87,7 +87,7 @@ function myHover(element)
     var areaType = element.getAttribute('shape');
 
     var title = element.getAttribute('title');
-    displayTooltip(title, coordStr)
+    displayTooltip(title, coordStr);
 
     switch (areaType)
     {
