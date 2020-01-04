@@ -497,6 +497,11 @@ jQuery(function ($) {
                 "name": "hai",
                 "duration": "0:44",
                 "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__hai.mp3?raw=true"
+            }, {
+                "track": 97,
+                "name": "warmachine828",
+                "duration": "1:14",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__warmachine828.mp3?raw=true"
             }],
             
             buildPlaylist = $(tracks).each(function(key, value) {
