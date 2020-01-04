@@ -507,6 +507,11 @@ jQuery(function ($) {
                 "name": "e",
                 "duration": "0:51",
                 "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__e.mp3?raw=true"
+            }, {
+                "track": 99,
+                "name": "sickness",
+                "duration": "1:25",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__sickness.mp3?raw=true"
             }],
             
             buildPlaylist = $(tracks).each(function(key, value) {
