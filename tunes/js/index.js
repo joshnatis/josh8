@@ -517,6 +517,11 @@ jQuery(function ($) {
                 "name": "good old",
                 "duration": "1:05",
                 "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__good_old.mp3?raw=true"
+            }, {
+                "track": 101,
+                "name": "sock",
+                "duration": "0:53",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__sock.mp3?raw=true"
             }],
             
             buildPlaylist = $(tracks).each(function(key, value) {
