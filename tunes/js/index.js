@@ -492,6 +492,11 @@ jQuery(function ($) {
                 "name": "scary hedgehogs",
                 "duration": "0:44",
                 "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__scary_hedgehogs.mp3?raw=true"
+            }, {
+                "track": 96,
+                "name": "hai",
+                "duration": "0:44",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__hai.mp3?raw=true"
             }],
             
             buildPlaylist = $(tracks).each(function(key, value) {
