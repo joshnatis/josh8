@@ -502,6 +502,11 @@ jQuery(function ($) {
                 "name": "warmachine828",
                 "duration": "1:14",
                 "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__warmachine828.mp3?raw=true"
+            }, {
+                "track": 98,
+                "name": "e",
+                "duration": "0:51",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__e.mp3?raw=true"
             }],
             
             buildPlaylist = $(tracks).each(function(key, value) {
