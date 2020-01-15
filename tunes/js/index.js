@@ -532,6 +532,11 @@ jQuery(function ($) {
                 "name": " vice city",
                 "duration": "1:22",
                 "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__vice_city.mp3?raw=true"
+            }, {
+                "track": 104,
+                "name": " new york antipasto",
+                "duration": "1:38",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__new_york_antipasto.mp3?raw=true"
             }],
             
             buildPlaylist = $(tracks).each(function(key, value) {
