@@ -522,6 +522,16 @@ jQuery(function ($) {
                 "name": " sock",
                 "duration": "0:53",
                 "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__sock.mp3?raw=true"
+            }, {
+                "track": 102,
+                "name": " big macaque",
+                "duration": "0:34",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__big_macaque.mp3?raw=true"
+            }, {
+                "track": 103,
+                "name": " big macaque",
+                "duration": "0:34",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__big_macaque.mp3?raw=true"
             }],
             
             buildPlaylist = $(tracks).each(function(key, value) {
