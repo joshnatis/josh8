@@ -529,9 +529,9 @@ jQuery(function ($) {
                 "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__big_macaque.mp3?raw=true"
             }, {
                 "track": 103,
-                "name": " big macaque",
-                "duration": "0:34",
-                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__big_macaque.mp3?raw=true"
+                "name": " vice city",
+                "duration": "1:22",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__vice_city.mp3?raw=true"
             }],
             
             buildPlaylist = $(tracks).each(function(key, value) {
