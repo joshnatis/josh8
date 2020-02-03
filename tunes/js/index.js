@@ -547,6 +547,11 @@ jQuery(function ($) {
                 "name": " marble fountain",
                 "duration": "2:12",
                 "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__haussmann.mp3?raw=true"
+            }, {
+                "track": 107,
+                "name": " kindled progeny",
+                "duration": "1:21",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__kindled_progeny.mp3?raw=true"
             }],
             
             buildPlaylist = $(tracks).each(function(key, value) {
