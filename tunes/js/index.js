@@ -542,6 +542,11 @@ jQuery(function ($) {
                 "name": " marble fountain",
                 "duration": "1:00",
                 "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__white_fountain.mp3?raw=true"
+            }, {
+                "track": 106,
+                "name": " marble fountain",
+                "duration": "2:12",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__haussmann.mp3?raw=true"
             }],
             
             buildPlaylist = $(tracks).each(function(key, value) {
