@@ -537,6 +537,11 @@ jQuery(function ($) {
                 "name": " new york antipasto",
                 "duration": "1:38",
                 "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__new_york_antipasto.mp3?raw=true"
+            }, {
+                "track": 105,
+                "name": " marble fountain",
+                "duration": "1:00",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__white_fountain.mp3?raw=true"
             }],
             
             buildPlaylist = $(tracks).each(function(key, value) {
