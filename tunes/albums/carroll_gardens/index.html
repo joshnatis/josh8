@@ -1,0 +1,132 @@
+<!-- CODE LARGELY WRITTEN BY Sean Barrett, @ nothings.org
+	TAKEN WITH ABSOLUTELY NO PERMISSION :P
+ -->
+ 
+<html><head><meta http-equiv="Content-Type" content="text/html"><title>corduroy - carroll gardens</title><link rel="icon" type="image/png" href="cg.jpg"></head>
+<body>
+
+<style>
+#playlist,audio{background:#666;width:400px;padding:8px;}
+li.pl     a{color:#eeeedd;background:#333;padding:5px;display:block;}
+li.pl     a:hover{text-decoration:none;}
+li.active a{color:#5DB0E6;background:#333;padding:5px;display:block;text-decoration:none;}
+li.active a:hover{text-decoration:none;}
+ul.pl     { list-style-type: none; }
+</style>
+
+<h1 align="center">caroll gardens</h1>
+<h2 align="center"><small>by</small> corduroy </h2>
+<h3 align="center">2018 - 2020</h3>
+
+<center>
+<audio id="audio" preload="auto" tabindex="0" controls="" src="https://github.com/joshnatis/josh8/blob/master/tunes/songs/__new_york_antipasto.mp3?raw=true">
+  <source src="https://github.com/joshnatis/josh8/blob/master/tunes/songs/__new_york_antipasto.mp3?raw=true">
+</audio>
+
+<ul id="playlist" class="pl">
+<li class="pl active"><a href="https://github.com/joshnatis/josh8/blob/master/tunes/songs/__new_york_antipasto.mp3?raw=true"><b>new york antipasto</b></a></li>
+<li class="pl"><a href="https://github.com/joshnatis/josh8/blob/master/tunes/songs/__sunday.mp3?raw=true"><b>sunday</b></a></li>
+<li class="pl"><a href="#"><b>fizzzzzi snowflake</b></a></li>
+<li class="pl"><a href="https://github.com/joshnatis/josh8/blob/master/tunes/songs/__earrings.mp3?raw=true">earrings</a></li>
+<li class="pl"><a href="https://github.com/joshnatis/josh8/blob/master/tunes/songs/__purple_heater.mp3?raw=true">purple heater</a></li>
+<li class="pl"><a href="#">BONUS: k'nex</a></li>
+<li class="pl"><a href="https://github.com/joshnatis/josh8/blob/master/tunes/songs/__fall.mp3?raw=true"><b>let us fall</b></a></li>
+<li class="pl"><a href="https://github.com/joshnatis/josh8/blob/master/tunes/songs/__MIC_CHECK_TWO.mp3?raw=true">mic check 2</a></li>
+<li class="pl"><a href="https://github.com/joshnatis/josh8/blob/master/tunes/songs/__marc.mp3?raw=true">marc (feat. captain marc) </a></li>
+<li class="pl"><a href="https://github.com/joshnatis/josh8/blob/master/tunes/songs/__biglenny.mp3?raw=true">big lenny</a></li>
+<li class="pl"><a href="#">mozart(((</a></li>
+<li class="pl"><a href="https://github.com/joshnatis/josh8/blob/master/tunes/songs/__alex.mp3?raw=true">alex (feat. brother quaker aleksandr)</a></li>
+<li class="pl"><a href="https://github.com/joshnatis/josh8/blob/master/tunes/songs/__erth.mp3?raw=true">erth</a></li>
+<li class="pl"><a href="https://github.com/joshnatis/josh8/blob/master/tunes/songs/__north.mp3?raw=true">north</a></li>
+<li class="pl"><a href="https://github.com/joshnatis/josh8/blob/master/tunes/songs/__grandfather.mp3?raw=true">grandfather</a></li>
+<li class="pl"><a href="#">LIAR</a></li>
+<li class="pl"><a href="https://github.com/joshnatis/josh8/blob/master/tunes/songs/__sirens_on_my_stoop.mp3?raw=true">sirens on my stoop</a></li>
+<li class="pl"><a href="#">andata</a></li>
+<li class="pl"><a href="https://github.com/joshnatis/josh8/blob/master/tunes/songs/__clark2.mp3?raw=true">clark2</a></li>
+<li class="pl"><a href="#">caesarea</a></li>
+<li class="pl"><a href="https://github.com/joshnatis/josh8/blob/master/tunes/songs/__nocht.mp3?raw=true">nöcht</a></li>
+<li class="pl"><a href="#">cotton blues</a></li>
+<li class="pl"><a href="#">the sounds in my cochlea on february 14th</a></li>
+<li class="pl"><a href="https://github.com/joshnatis/josh8/blob/master/tunes/songs/__evenings_in_rome.mp3?raw=true">evenings in rome</a></li>
+</ul>
+
+<br>
+<pre>
+Carroll gardens, a collection of songs that I've manifested sometime during the last 2 years. 
+As such, my level of experience and even the DAWs I use vary throughout the album, so don't 
+expect anything too cohesive. Some of the songs were made in GarageBand, the majority were 
+made in Logic Pro X. Occasionally I've used a MIDI keyboard, but other than that, no physical 
+gear. Oh wait, one of the songs samples this huge dusty piano at Hunter College that I was 
+playing in my break before discrete math. Also, in the song with marc we used an electric 
+guitar, and LIAR has my old acoustic guitar with a hole in it. Other than that, it's all 
+virtual instruments, VSTs, and samples. I would like to give a shout out to compressors, 
+for making everything warm and fuzzy. That is all, enjoy, please.
+</pre>
+<br>
+</center>
+
+<hr><hr>
+
+<center>
+<pre>
+C A R R O L L
+
+
+
+<a href="https://soundcloud.com/corduroy2/carroll-gardens">CORDUROY</a>
+
+
+
+G A R D E N S
+</pre>
+<hr><hr>
+
+<br>
+<img src="cg.jpg" style="width: 50%;">
+<hr><hr>
+
+<pre> Thank you to Sean Barrett (aka nothings), for being cool. More importantly, I completely ripped this webpage from him, so check out his <a href="http://nothings.org/music/different/">superior album</a>.</pre>
+<hr><hr>
+
+
+</center>
+
+<script src="jquery.min.js"></script>
+<script>
+	init();
+	function init(){
+		var current = 0;
+		var audio = $('#audio');
+		var playlist = $('#playlist');
+		var tracks = playlist.find('li a');
+		var len = tracks.length - 1;
+		audio[0].volume = .90;
+		audio[0].play();
+		playlist.on('click','a', function(e){
+			e.preventDefault();
+			link = $(this);
+			current = link.parent().index();
+			run(link, audio[0]);
+		});
+		audio[0].addEventListener('ended',function(e){
+			current++;
+			if(current == len){
+				current = 0;
+				link = playlist.find('a')[0];
+			}else{
+				link = playlist.find('a')[current];    
+			}
+			run($(link),audio[0]);
+		});
+	}
+	function run(link, player){
+			player.src = link.attr('href');
+			par = link.parent();
+			par.addClass('active').siblings().removeClass('active');
+			player.load();
+			player.play();
+	}
+</script>
+
+
+</body></html>
