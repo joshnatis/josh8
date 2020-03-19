@@ -14,7 +14,7 @@ canvas
 .main_table
 {
 	margin-top: 3%;
-	background-image: url('/assets/images/wood_fuzz.png'), url('/assets/images/wood3.jpg') ;
+	background-image: url('/index/images/wood_fuzz.png'), url('/index/images/wood3.jpg') ;
 	background-repeat: no-repeat, repeat;
 	border: 3px solid black;
 	border-radius: 25px;
@@ -24,7 +24,7 @@ canvas
 #bookshelf
 {
   background-repeat: no-repeat;
-  background-image:url('/assets/images/bookshelf.png');
+  background-image:url('/index/images/bookshelf.png');
   border-bottom: 2px solid black;
   max-width: 100%;
   max-height: 100%;
