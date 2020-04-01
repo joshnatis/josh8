@@ -567,6 +567,96 @@ jQuery(function ($) {
                 "name": " suc",
                 "duration": "0:29",
                 "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__suc.mp3?raw=true"
+            }, {
+                "track": 111,
+                "name": " cotton blues",
+                "duration": "0:48",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__cotton_blues.mp3?raw=true"
+            }, {
+                "track": 112,
+                "name": " the sounds in my cochlea on february 14th",
+                "duration": "0:48",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__cochlea_feb14.mp3?raw=true"
+            }, {
+                "track": 113,
+                "name": " discotheque endormie",
+                "duration": "0:33",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__discotheque_endormie.mp3?raw=true"
+            }, {
+                "track": 114,
+                "name": " itoa",
+                "duration": "0:44",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__itoa.mp3?raw=true"
+            }, {
+                "track": 115,
+                "name": " knex",
+                "duration": "1:44",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__knex.mp3?raw=true"
+            }, {
+                "track": 116,
+                "name": " acrobat",
+                "duration": "0:54",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__acrobat.mp3?raw=true"
+            }, {
+                "track": 117,
+                "name": " marina",
+                "duration": "1:00",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__marina.mp3?raw=true"
+            }, {
+                "track": 118,
+                "name": " tututu",
+                "duration": "0:42",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__tututu.mp3?raw=true"
+            }, {
+                "track": 119,
+                "name": " pl",
+                "duration": "0:12",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__pl.mp3?raw=true"
+            }, {
+                "track": 120,
+                "name": " freak",
+                "duration": "0:24",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__freak.mp3?raw=true"
+            }, {
+                "track": 121,
+                "name": " j",
+                "duration": "0:23",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__j.mp3?raw=true"
+            }, {
+                "track": 121,
+                "name": " icy beatz",
+                "duration": "0:24",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__icy_beatz.mp3?raw=true"
+            }, {
+                "track": 122,
+                "name": " park side up",
+                "duration": "1:18",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__park_side_up.mp3?raw=true"
+            }, {
+                "track": 123,
+                "name": " oimoi",
+                "duration": "0:26",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__oimoi.mp3?raw=true"
+            }, {
+                "track": 124,
+                "name": " pliers on ear van gogh",
+                "duration": "0:27",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__pliers_on_ear_van_gogh.mp3?raw=true"
+            }, {
+                "track": 125,
+                "name": " pliers on ear van gogh",
+                "duration": "0:27",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__pliers_on_ear_van_gogh.mp3?raw=true"
+            }, {
+                "track": 126,
+                "name": " liv",
+                "duration": "1:24",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__liv.mp3?raw=true"
+            }, {
+                "track": 127,
+                "name": " queens",
+                "duration": "1:30",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__queens.mp3?raw=true"
             }],
             
             buildPlaylist = $(tracks).each(function(key, value) {
