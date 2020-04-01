@@ -644,16 +644,11 @@ jQuery(function ($) {
                 "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__pliers_on_ear_van_gogh.mp3?raw=true"
             }, {
                 "track": 125,
-                "name": " pliers on ear van gogh",
-                "duration": "0:27",
-                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__pliers_on_ear_van_gogh.mp3?raw=true"
-            }, {
-                "track": 126,
                 "name": " liv",
                 "duration": "1:24",
                 "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__liv.mp3?raw=true"
             }, {
-                "track": 127,
+                "track": 128,
                 "name": " queens",
                 "duration": "1:30",
                 "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__queens.mp3?raw=true"
