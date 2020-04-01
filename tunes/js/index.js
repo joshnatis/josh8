@@ -552,6 +552,21 @@ jQuery(function ($) {
                 "name": " kindled progeny",
                 "duration": "1:21",
                 "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__kindled_progeny.mp3?raw=true"
+            }, {
+                "track": 108,
+                "name": " sound2",
+                "duration": "1:06",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__sound2.mp3?raw=true"
+            }, {
+                "track": 109,
+                "name": " mozart2",
+                "duration": "1:04",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__mozart.mp3?raw=true"
+            }, {
+                "track": 110,
+                "name": " suc",
+                "duration": "0:29",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__suc.mp3?raw=true"
             }],
             
             buildPlaylist = $(tracks).each(function(key, value) {
