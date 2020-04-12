@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>Meditations</title>
+	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="./highlight/styles/pojoaque.css">
+</head>
+
+<body>
+
+<div id="blog">
+
+		<div id="header">
+			<h1 id="tit">Corduroy's Meditations</h1>
+			<p id="desc">A cozy spot to sit and think :-)</p>
+		</div>
+
+<div id="content"><br>
+	<div style="text-align: center">
+		<img alt="wall rug" id="wallrug" src="https://josh8.com/home/mocha3.jpg">
+		<br><br>
+		<button onclick="expand_all()">expand all</button>
+		<button onclick="collapse_all()">collapse all</button>
+	</div>
+	<br>
+	
+
+<div class="posts">
+
+
+<!-- 	<h2 class="post-title">
+			<button aria-expanded="false">
+			Example Post
+			<svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+				<rect class="vert" height="8" width="2" y="1" x="4"/>
+				<rect height="2" width="8" y="4" x="1"/>
+			</svg> 
+			</button> 
+			</h2>
+	<div hidden w3-include-html="out2.html"></div> -->
+
+
+	<h2 class="post-title">
+			<button aria-expanded="false">
+			<a class="post-link" href="posts/february.html">February</a>
+			<svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+				<rect class="vert" height="8" width="2" y="1" x="4"/>
+				<rect height="2" width="8" y="4" x="1"/>
+			</svg>   
+			</button>
+			</h2>
+	<div hidden w3-include-html="posts/february.html"></div>
+
+
+	<h2 class="post-title">
+			<button aria-expanded="false">
+			<a class="post-link" href="posts/why-so-many-rap-album-covers-look-the-same.html">Why so many rap album covers look the same</a>
+			<svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+				<rect class="vert" height="8" width="2" y="1" x="4"/>
+				<rect height="2" width="8" y="4" x="1"/>
+			</svg>   
+			</button>
+			</h2>
+			<div hidden w3-include-html="posts/why-so-many-rap-album-covers-look-the-same.html"></div>
+
+
+	<h2 class="post-title">
+			<button aria-expanded="false">
+			<a class="post-link" href="posts/an-incel-reading-of-sophocles-antigone.html"> An incel reading of Sophocles' Antigone</a>
+			<svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+				<rect class="vert" height="8" width="2" y="1" x="4"/>
+				<rect height="2" width="8" y="4" x="1"/>
+			</svg>   
+			</button>
+			</h2>
+	<div hidden w3-include-html="posts/an-incel-reading-of-sophocles-antigone.html"></div>
+
+
+	<h2 class="post-title">
+			<button aria-expanded="false">
+			<a class="post-link" href="posts/lesson_learned.html">Lesson learned</a>
+				<svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+				<rect class="vert" height="8" width="2" y="1" x="4"/>
+				<rect height="2" width="8" y="4" x="1"/>
+			</svg>   
+			</button>
+			</h2>
+	<div hidden w3-include-html="posts/lesson_learned.html"></div>
+
+
+	<h2 class="post-title">
+			<button aria-expanded="false">
+			<a class="post-link" href="posts/hello-world.html">Hello, World!</a>
+				<svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+				<rect class="vert" height="8" width="2" y="1" x="4"/>
+				<rect height="2" width="8" y="4" x="1"/>
+			</svg>   
+			</button>
+			</h2>
+	<div hidden w3-include-html="posts/hello-world.html"></div>
+
+</div> <!-- END POSTS -->
+
+<!-- FOOTER -->
+<p id="foot"><a onclick="window.scrollTo(0, 0);">↑ Back up top! ↑</a></p>
+
+<div id="footer">
+	With love, from <a href="https://github.com/joshnatis">Josh</a> &mdash; <a href="mailto:josh&#64;josh8&#46;com">josh&#64;josh8&#46;com</a>
+	<br><br>
+	Posts generated with <a href="https://github.com/joshnatis/phd">phd</a>, a markdown to html parser I wrote :)</div>
+</div>
+<!-- FOOTER -->
+
+
+</div> <!-- END CONTENT -->
+
+<script src="./highlight/highlight.pack.js"></script>
+<script src="js/scripts.js"></script>
+<script> includeHTML(); </script>
+</body>
+
+</html>
