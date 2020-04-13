@@ -28,9 +28,6 @@ function expand_all()
 		{	      
 			btn.setAttribute('aria-expanded', true);
 			target.hidden = false;
-
-			h.style.backgroundColor = "rgba(247, 200, 247, 0.3)";
-			// h.style.backgroundColor = "inherit";
 		}
 	})
 }
