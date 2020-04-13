@@ -1,3 +1,5 @@
+all_expanded = false;
+
 function collapse_all()
 {
 	const headings = document.querySelectorAll('h2');
@@ -11,7 +13,8 @@ function collapse_all()
 			btn.setAttribute('aria-expanded', false);
 			target.hidden = true;
 
-			// h.style.backgroundColor = "rgba(247, 200, 247, 0.3)"
+			if(all_expanded)
+				h.style.backgroundColor = "rgba(247, 200, 247, 0.3)"
 		}
 	})
 }
@@ -28,6 +31,10 @@ function expand_all()
 		{	      
 			btn.setAttribute('aria-expanded', true);
 			target.hidden = false;
+
+			h.style.backgroundColor = "white";
+
+			all_expanded = true;
 		}
 	})
 }
