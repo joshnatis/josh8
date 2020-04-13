@@ -194,6 +194,7 @@ h2 button:focus svg {
 button svg {
 	height: 1em;
 	margin-left: 0.5em;
+	cursor: pointer;
 }
 
 [aria-expanded="true"] .vert {
