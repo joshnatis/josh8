@@ -2,11 +2,12 @@
 ![Logo](https://github.com/joshnatis/josh8/blob/master/favicon3.png)
 https://josh8.com/
 
-**Currently, the site consists of nine pages:**
+**Currently, the site consists of the following pages:**
 * My [link-hoarding cupboard.](https://josh8.com/home) **[Perpetually IN PROGRESS]**
 
 * A [page for my music](https://josh8.com/tunes)
     * This is less a programming feat and more a practical way to host my music -- I didn't write this code, I'm just using it.
+    * Also some [albums](https://josh8.com/tunes/albums)
 
 * A [blog](https://josh8.com/blog)  :)
 
@@ -28,6 +29,7 @@ https://josh8.com/
 * [The Whomst've Page](https://josh8.com/whom) (sometimes referred to as 'About Me')
     * I'm actually pretty proud of this one. I made it all by hand without referencing other sites and not much copy-pasting! (the same applies to the other pages too, but this one looks legit).
 
+* [A Terminal Emulator as a 404 Page](https://josh8.com/404/4041.html), coz why not
 
 **In the works:**
 * A page where you can talk to Dog himself. Dog is very wise, and he will give you The Wisdom you seek. (He's also animated and probably doesn't work on Internet Explorer).
