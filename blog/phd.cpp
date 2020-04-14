@@ -7,9 +7,9 @@ using namespace std;
 #define NOT_FOUND -1
 
 
-/* _____ ____  _   _ ______ _____ _____ 
+/* _____ ____  _   _ ______ _____ _____
   / ____/ __ \| \ | |  ____|_   _/ ____|
- | |   | |  | |  \| | |__    | || |  __ 
+ | |   | |  | |  \| | |__    | || |  __
  | |   | |  | | . ` |  __|   | || | |_ |
  | |___| |__| | |\  | |     _| || |__| |
   \_____\____/|_| \_|_|    |_____\_____|*/
@@ -23,23 +23,23 @@ string config(const string &inputfn)
 	//==============================================================
 	//* path to the folder containing your images
 	//* (default: current folder)
-	const string PATH_TO_IMAGE_DIR = "/images";
+	const string PATH_TO_IMAGE_DIR = "./images";
 	const string FAVICON = "favicon.ico";
 	//==============================================================
 	//* path to the folder containing your css
 	//* (default: current folder)
-	const string PATH_TO_STYLES_DIR = "/styles";
+	const string PATH_TO_STYLES_DIR = "./styles";
 	const string USR_STYLESHEET = "styles.css";
 	//==============================================================
 	//* path to the folder containing your scripts
 	//* (default: current folder)
-	const string PATH_TO_SCRIPTS_DIR = "/js";
+	const string PATH_TO_SCRIPTS_DIR = "./js";
 	const string USR_SCRIPTS_FILE = "scripts.js";
 	//==============================================================
 	//* enable if using highlight.js for syntax highlighting
 	const bool USING_HIGHLIGHT_JS = true;
-	//* path to folder with higlight.js paraphernalia 
-	const string PATH_TO_HIGHLIGHT_JS = "/highlight";
+	//* path to folder with higlight.js paraphernalia
+	const string PATH_TO_HIGHLIGHT_JS = "./highlight";
 	//* one of the styles from highlight.js, in the styles/ dir
 	const string SYNTAX_HIGHLIGHT_STYLE = "pojoaque.css";
 	//==============================================================
@@ -69,10 +69,10 @@ string config(const string &inputfn)
 }
 
 
-/*_____  _____   ____ _______ ____ _________     _______  ______  _____ 
+/*_____  _____   ____ _______ ____ _________     _______  ______  _____
  |  __ \|  __ \ / __ \__   __/ __ \__   __\ \   / /  __ \|  ____|/ ____|
- | |__) | |__) | |  | | | | | |  | | | |   \ \_/ /| |__) | |__  | (___  
- |  ___/|  _  /| |  | | | | | |  | | | |    \   / |  ___/|  __|  \___ \ 
+ | |__) | |__) | |  | | | | | |  | | | |   \ \_/ /| |__) | |__  | (___
+ |  ___/|  _  /| |  | | | | | |  | | | |    \   / |  ___/|  __|  \___ \
  | |    | | \ \| |__| | | | | |__| | | |     | |  | |    | |____ ____) |
  |_|    |_|  \_\\____/  |_|  \____/  |_|     |_|  |_|    |______|_____/ */
 
@@ -104,13 +104,13 @@ void append_tabs(string &html_result, int curr_list_level);
 string remove_leading_whitespace(const string &md_line);
 void close_open_p_tag(string &html_result, bool &unclosed_p_tag, int consecutive_blank_lines);
 
-string replace(std::string subject, const std::string& search, 
+string replace(std::string subject, const std::string& search,
 	const std::string& replace);
-void replace_in_place(std::string &subject, const std::string& search, 
+void replace_in_place(std::string &subject, const std::string& search,
 	const std::string& replace);
 
 
-/*__  __          _____ _   _ 
+/*__  __          _____ _   _
  |  \/  |   /\   |_   _| \ | |
  | \  / |  /  \    | | |  \| |
  | |\/| | / /\ \   | | | . ` |
@@ -156,9 +156,9 @@ int main(int argc, char **argv)
 }
 
 
-/*_____        _____   _____ _____ _   _  _____ 
+/*_____        _____   _____ _____ _   _  _____
  |  __ \ /\   |  __ \ / ____|_   _| \ | |/ ____|
- | |__) /  \  | |__) | (___   | | |  \| | |  __ 
+ | |__) /  \  | |__) | (___   | | |  \| | |  __
  |  ___/ /\ \ |  _  / \___ \  | | | . ` | | |_ |
  | |  / ____ \| | \ \ ____) |_| |_| |\  | |__| |
  |_| /_/    \_\_|  \_\_____/|_____|_| \_|\_____|*/
@@ -178,7 +178,7 @@ string parse(string md_line, ifstream &fin, int &consecutive_blank_lines, bool &
 	}
 
 	//if the line only consists of <br> tags, don't wrap it in <p> tags
-	if(md_line.length() >= 4 && md_line.substr(0,4) == "<br>" && 
+	if(md_line.length() >= 4 && md_line.substr(0,4) == "<br>" &&
 		replace(md_line, "<br>", "") == "")
 	{
 		consecutive_blank_lines = 0;
@@ -287,7 +287,7 @@ void parse_emphases_to_html_driver(string &md_line)
 }
 
 //parses markdown emphasis syntax into html, in place
-void parse_emphases_to_html(string &md_line, const string &md_symbol, 
+void parse_emphases_to_html(string &md_line, const string &md_symbol,
 	const string &open_html_tag, const string &close_html_tag)
 {
 	const int symbol_len = md_symbol.length();
@@ -298,7 +298,7 @@ void parse_emphases_to_html(string &md_line, const string &md_symbol,
 	bool line_begins_with_symbol = md_line.substr(0, symbol_len) == md_symbol;
 
 	//while we find ** in the string
-	while(line_begins_with_symbol 
+	while(line_begins_with_symbol
 		|| ((open_index = md_line.find(md_symbol)) && open_index != NOT_FOUND))
 	{
 		//there is a **
@@ -340,7 +340,7 @@ void parse_images_to_html(string &md_line)
 
 	int open_bracket_index = 0;
 
-	while(line_begins_with_symbol || 
+	while(line_begins_with_symbol ||
 		((open_bracket_index = md_line.find("![")) && open_bracket_index != NOT_FOUND))
 	{
 		//found an ![
@@ -391,7 +391,7 @@ void parse_images_to_html(string &md_line)
 					//found a closing |
 
 					//get user specified styles
-					string styles = md_line.substr(open_pipe_index + 1, 
+					string styles = md_line.substr(open_pipe_index + 1,
 						closed_pipe_index - open_pipe_index - 1);
 
 					//remove styling metadata from content
@@ -420,7 +420,7 @@ void parse_urls_to_html(string &md_line)
 
 	int open_bracket_index = 0;
 
-	while(line_begins_with_symbol || 
+	while(line_begins_with_symbol ||
 		((open_bracket_index = md_line.find("[")) && open_bracket_index != NOT_FOUND))
 	{
 		//found an [
@@ -442,10 +442,10 @@ void parse_urls_to_html(string &md_line)
 			//found ]( and )
 
 			//hyperlink text (i.e. [the stuff in here](example.com))
-			string text = md_line.substr(open_bracket_index + 1, 
+			string text = md_line.substr(open_bracket_index + 1,
 				closed_bracket_index - open_bracket_index - 1);
 
-			string url = md_line.substr(closed_bracket_index + 2, 
+			string url = md_line.substr(closed_bracket_index + 2,
 				closed_paren_index - closed_bracket_index - 2);
 
 			//replace ]( with </a> (hence the 2, we're replacing 2 chars, "[(")
@@ -491,7 +491,7 @@ void parse_inline_code_to_html(string &md_line)
 
 	int open_backtick_index = 0;
 
-	while(line_begins_with_symbol || 
+	while(line_begins_with_symbol ||
 		((open_backtick_index = md_line.find("`")) && open_backtick_index != NOT_FOUND))
 	{
 		//found a `
@@ -620,6 +620,7 @@ bool parse_list_to_html(string &md_line, string &html_result, ifstream &fin)
 		//loop until md_line is no longer part of the list (doesn't start with "* " )
 		while(getline(fin, md_line))
 		{
+			parse_escaped_characters(md_line);
 			string trimmed_md_line = remove_leading_whitespace(md_line);
 			bool is_list = false;
 
@@ -747,8 +748,9 @@ void parse_blockquotes_to_html(string &md_line, string &html_result, ifstream &f
 
 void parse_escaped_characters(string &md_line)
 {
-	int escape_pos;
-	while((escape_pos = md_line.find("\\")) && escape_pos != -1 && escape_pos != md_line.length() - 1)
+	int escape_pos = md_line.find("\\");
+
+	while(escape_pos != NOT_FOUND && escape_pos != md_line.length() - 1)
 	{
 		switch(md_line[escape_pos + 1])
 		{
@@ -760,14 +762,20 @@ void parse_escaped_characters(string &md_line)
 			case '`': md_line.replace(escape_pos, 2, "&#96;"); break;
 			case '^': md_line.replace(escape_pos, 2, "&#94;"); break;
 			case '~': md_line.replace(escape_pos, 2, "&#126;"); break;
+			case '+': md_line.replace(escape_pos, 2, "&#43;"); break;
+			case '=': md_line.replace(escape_pos, 2, "&#61;"); break;
+			case '!': md_line.replace(escape_pos, 2, "&#33;"); break;
+			case '[': md_line.replace(escape_pos, 2, "&#91;"); break;
+			case '\\': md_line.replace(escape_pos, 2, "&#47;"); break;
 		}
+		escape_pos = md_line.find("\\", escape_pos + 1);
 	}
 }
 
-/*_    _ ______ _      _____  ______ _____   _____ 
+/*_    _ ______ _      _____  ______ _____   _____
  | |  | |  ____| |    |  __ \|  ____|  __ \ / ____|
- | |__| | |__  | |    | |__) | |__  | |__) | (___  
- |  __  |  __| | |    |  ___/|  __| |  _  / \___ \ 
+ | |__| | |__  | |    | |__) | |__  | |__) | (___
+ |  __  |  __| | |    |  ___/|  __| |  _  / \___ \
  | |  | | |____| |____| |    | |____| | \ \ ____) |
  |_|  |_|______|______|_|    |______|_|  \_\_____/ */
 
@@ -783,7 +791,7 @@ string replace(std::string subject, const std::string& search, const std::string
 		subject.replace(pos, search.length(), replace);
 		pos += replace.length();
 	}
-	
+
 	return subject;
 }
 

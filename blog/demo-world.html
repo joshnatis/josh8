@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>Demo World</title>
+	<link rel="stylesheet" href="./styles/styles.css">
+	<link rel="icon" href="./images/favicon.ico">
+	<script src="./js/scripts.js"></script>
+	<link rel="stylesheet" href="./highlight/styles/pojoaque.css">
+	<script src="./highlight/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<body>
+
+<h1> Demo World!</h1>
+
+<p>
+I've just redone my blog.
+</p>
+
+<p>
+One starry night I decided that I wanted to be able to write posts in Markdown, so I went on a quest looking for a utility to help me do that. It turned out that people really like having multiple dependencies for their tools! My poor computer only has ~4GB of disk space left at all times, so that dissuaded me quite efficiently. Then I got an idea...
+</p>
+
+<p style="text-align: center">
+<br>
+<img style="width: 30%; border: 2px solid black" alt="An idea" src="https://nicosteyn.files.wordpress.com/2011/01/einstein1-e1295937841431.jpg?w=900">
+<br><br>
+<i> An Idea </i>
+<br><br>
+</p>
+
+<hr>
+
+<h2> Beware The Ide<s><sub>s</sub></s>a of March</h2>
+
+<p>
+Alright that's enough idea-ing I think you get the point. It dawned on me that I could just maybe write <i>myself</i> a tool to do this, and that way I wouldn't have to download anything. I know, ridiculous. The first thing that came to mind was how easy it would be to parse headings into a corresponding html tag. I mean, consider this:
+</p>
+
+<pre><code class="md">This is the syntax for headings in Markdown
+
+# H1
+## H2
+### H3
+</code></pre>
+
+<pre><code class="html">&lt;!-- HTML corresponding to above MD --&gt;
+
+&lt;h1&gt; H1 &lt;/h1&gt;
+&lt;h2&gt; H2 &lt;/h2&gt;
+&lt;h3&gt; H3 &lt;/h3&gt;
+</code></pre>
+
+<p>
+It's essentially a for loop and an if statement, not so bad. So, I did that, and it <b><i>actually worked</i></b>. I spent that night further spaghetti-ing mycode, turning it from a smol angel hair, to a spaghetti, and eventually to a full blown lasagna (a single sheet or the entire dish, your choice).
+</p>
+
+<p>
+Long story short, I ended up writing <a href="https://github.com/joshnatis/phd"><b>PHD</b></a>, to which this post is an ode to, coz I'm using it right now. There are still a few bugs, and my focus wasn't being fully compatible with the Markdown spec (there are too many Markdowns and none of them are consistent), though I ended up getting most of the features down despite not setting out to initially. I also didn't think there'd be any way in hell my code would scale well cause I overused C++ STL string functions that are secretly computationally complex, but lo and behold it parsed a 3000 line Markdown file to HTML without any noticeable wait time. Sick!
+</p>
+
+<p style="text-align: center">
+<br>
+<img style="width: 20%" alt="gangsta euripides" src="https://user-images.githubusercontent.com/31445542/77646031-27847580-6f3a-11ea-8b5c-d5868bf4b6db.png">
+<br>
+<i> Say hello to our logo, Gangsta Euripides </i>
+<br><br>
+</p>
+
+<p>
+That's enough talk, I'll show you the feature list and demonstrate each point.
+</p>
+
+<hr>
+
+<h2> Features</h2>
+<ul>
+	<li>Headings
+	<ul>
+		<li><code class="inline-code">#</code>, <code class="inline-code">##</code>, <code class="inline-code">###</code>, ... <code class="inline-code">######</code></li>
+		<li>&lt; h1> through &lt; h6></li>
+	</ul>
+	</li>
+</ul>
+
+
+<ul>
+	<li>Emphasis
+	<ul>
+		<li><code class="inline-code">&#42;&#42;x&#42;&#42;</code> or <code class="inline-code">&#95;&#95;x&#95;&#95;</code> for <b>bold</b></li>
+		<li><code class="inline-code">&#42;x&#42;</code> or <code class="inline-code">&#95;x&#95;</code> for <i>italic</i></li>
+		<li><code class="inline-code">&#126;&#126;x&#126;&#126;</code> for <s>strikethrough</s></li>
+		<li><code class="inline-code">&#61;&#61;x&#61;&#61;</code> for <mark>highlight</mark></li>
+		<li><code class="inline-code">&#43;&#43;x&#43;&#43;</code> for <u>underline</u></li>
+		<li><code class="inline-code">&#94;x&#94;</code> for <sup>superscript</sup></li>
+		<li><code class="inline-code">&#126;x&#126;</code> for <sub>subscript</sub></li>
+	</ul>
+	</li>
+</ul>
+
+
+<ul>
+	<li>Code blocks
+	<ul>
+		<li><code class="inline-code">&#96;&#96;&#96;[optional language] &lt;newline&gt; ... &lt;newline&gt;&#96;&#96;&#96;</code></li>
+		<li>automatic syntax highlighting if you link the <code class="inline-code">highlight.js</code> script</li>
+	</ul>
+	</li>
+</ul>
+
+
+<ul>
+	<li>Inline code
+	<ul>
+		<li><code class="inline-code">&#96;This is inline code&#96;</code></li>
+		<li>This surrounds the inline code in <code class="inline-code">&lt;code&gt;</code> tags with the class <code class="inline-code">inline-code</code>. You can add styles for <code class="inline-code">.inline-code</code> to change how it looks.</li>
+	</ul>
+	</li>
+</ul>
+
+
+<ul>
+	<li>Images
+	<ul>
+		<li><code class="inline-code">&#33;&#91;alt](url)</code></li>
+		<li><code class="inline-code">&#33;&#91;alt](url)|inline css, e.g. width: 50%; height: 30%|</code></li>
+	</ul>
+	</li>
+</ul>
+
+
+<ul>
+	<li>Links
+	<ul>
+		<li><code class="inline-code">&#91;link text](https://url.com)</code></li>
+	</ul>
+	</li>
+</ul>
+
+
+<ul>
+	<li>&lt;hr> (horizontal rule)
+	<ul>
+		<li><code class="inline-code">---</code></li>
+	</ul>
+	</li>
+</ul>
+
+
+<ul>
+	<li>Line breaks
+	<ul>
+		<li>One or more blank lines between content in the markdown will yield a blank line in the resultant html</li>
+		<li>You can freely use <code class="inline-code">&lt;br&gt;</code> tags</li>
+	</ul>
+	</li>
+</ul>
+
+
+<ul>
+	<li>Blockquotes
+	<ul>
+		<li><code class="inline-code">&gt; this is all a blockquote</code></li>
+		<li>Consecutive <code class="inline-code">&gt;</code>'s with no blank lines between will all be funneled into a single blockquote</li>
+	</ul>
+	</li>
+</ul>
+
+
+<ul>
+	<li>Lists
+	<ul>
+		<li><code class="inline-code">* </code>, <code class="inline-code">+ </code>, or <code class="inline-code">- </code> for bulleted lists, <code class="inline-code">1.</code> (or any number) for numbered lists</li>
+		<li>To nest lists, include two spaces or a tab before your bullet point</li>
+	</ul>
+	</li>
+</ul>
+
+
+<ul>
+	<li>Escaped characters
+	<ul>
+		<li><code class="inline-code">&gt;</code>, <code class="inline-code">&amp;</code>, <code class="inline-code">&lt;</code>, <code class="inline-code">&#42;</code>, <code class="inline-code">&#95;</code>, <code class="inline-code">&#94;</code>, <code class="inline-code">&#126;</code>, <code class="inline-code">&#96;</code>, <code class="inline-code">&#43;</code>, <code class="inline-code">&#61;</code>, <code class="inline-code">&#33;</code>, <code class="inline-code">&#91;</code></li>
+	</ul>
+	</li>
+</ul>
+
+
+<hr>
+
+<h2> Quick demo</h2>
+
+<p>
+Damn, I actually found 2 serious bugs while typing that out, one of which is now resolved. Argh, I say.
+</p>
+
+<p>
+I'll end the PHD section with a snippit of a program, as code blocks are really the most exciting thing about this to me.
+</p>
+
+<pre><code class="cpp">#include &lt;iostream&gt;
+#include &lt;stack&gt;
+
+using namespace std;
+
+int main()
+{
+        stack&lt;string&gt; pancakes;
+
+        pancakes.push("Blueberry");
+        pancakes.push("Strawberry");
+        pancakes.push("Chocolate Chip");
+
+        while(!pancakes.empty())
+        {
+                cout &lt;&lt; pancakes.top() &lt;&lt; endl;
+                pancakes.pop():
+        }
+
+        return 0;
+}
+</code></pre>
+
+<p>
+Very nice, if I say so myself. I'm in a chocolate chip kind of mood rn.
+</p>
+
+<p>
+Next I'll briefly discuss how I restrucured the blog, and then you can go home.
+</p>
+
+<hr>
+
+<h2> W3Schools Actually Does Something Cool For Once</h2>
+
+<p>
+You heard it here first folks.
+</p>
+
+<p>
+Imagine this: you write a blog post in Markdown, convert it to HTML, and then simply "include" the new post in your main page. No copy pasting, no monkey business. That's what <i>I</i> was imagining. Unfortunately that wasn't as easy to do as it sounds, as including HTML isn't really a <i>thing</i>, but thankfully W3Schools pulled through with a nice little JavaScript <a href="https://www.w3schools.com/howto/howto_html_include.asp">function</a> that does just that. The function works by sending a XHTTPRequest to your server asking for the requested file, and then replacing an HTML placeholder you create on the main page with the contents of the file.
+</p>
+
+<p>
+It looks a bit like this:
+</p>
+
+<pre><code class="html">&lt;!-- header and stuff --&gt;
+
+&lt;body&gt;
+&lt;!-- other stuff --&gt;
+&lt;div w3-include-html="february.html"&gt;&lt;/div&gt;
+&lt;!-- other stuff --&gt;
+
+&lt;script src="scripts.js"&gt;includeHTML()&lt;/script&gt;
+&lt;/body&gt;
+</code></pre>
+
+<p>
+This solves the problem of not having to copy paste posts into the index.html, but it also leaves 2.5 new problems in its wake, since I wanted the posts to also be viewable individually on their own pages.
+</p>
+
+<p>
+<b>Problems</b>
+</p>
+
+<ol>
+	<li> Converting Markdown to HTML yields a file that only contains the post content, there are no containers and there's no page structure, just a page with text on it.<br><br></li>
+	<li> HTML files have headers with metadata, will including this in a file with its own metadata cause any issues?<br><br></li>
+	<li> If the post HTML files are in a different location than the index.html file they're being included in, relative paths to files can't be used.<br><br></li>
+</ol>
+
+
+<p>
+<b>Solutions</b>
+</p>
+
+<p>
+<b>Problem 1</b>: We can write a function that inserts the containers/page structure into the HTML
+</p>
+
+<p>
+<i>Note: I just copied the containers from my index.html page</i></p>
+
+<pre><code class="js">function inject_blog_structure()
+{
+	let body = document.getElementsByTagName("BODY")[0];
+
+	let above = "&lt;div id=\"blog\"&gt;\r\n\r\n\t\t&lt;div id=\"header\"&gt;\r\n\t\t\t&lt;h1 id=\"tit\"&gt;Corduroy\'s Meditations\
+	&lt;\/h1&gt;\r\n\t\t\t&lt;p id=\"desc\"&gt;A cozy spot to sit and think :-)&lt;\/p&gt;\r\n\t\t&lt;\/div&gt;\r\n\r\n&lt;div id=\"content\"&gt;"
+
+	let below = "&lt;!-- FOOTER --&gt;\r\n&lt;p id=\"foot\"&gt;&lt;a onclick=\"window.scrollTo(0, 0);\"&gt;\u2191 Back up top! \u2191&lt;\/a&gt;&lt;\/p&gt;\r\n\r\n&lt;div id=\"footer\"&gt;\r\n\t\
+	With love, from &lt;a href=\"https:\/\/github.com\/joshnatis\"&gt;Josh&lt;\/a&gt; &amp;mdash; &lt;a href=\"mailto:josh&amp;#64;josh8&amp;#46;com\"&gt;josh&amp;#64;josh8&amp;#46;com\
+	&lt;\/a&gt;\r\n\t&lt;br&gt;&lt;br&gt;\r\n\tPosts generated with &lt;a href=\"https:\/\/github.com\/joshnatis\/phd\"&gt;phd&lt;\/a&gt;, a markdown to html parser I wrote :)\
+	&lt;\/div&gt;\r\n&lt;\/div&gt;\r\n&lt;!-- FOOTER --&gt;\r\n\r\n\r\n\&lt;\/div&gt; &lt;!-- END CONTENT --&gt;\r\n"
+
+	body.innerHTML = above + body.innerHTML + below;
+}
+</code></pre>
+
+<p>
+Then simply call the script at the bottom of each post: <code class="inline-code">&lt;script&gt;inject&#95;blog&#95;structure();&lt;/script&gt;</code>
+</p>
+
+<p>
+<b>Problem 2</b>: Decapitate them
+</p>
+
+<p>
+<img style="width: 20%" alt="borat, very nice" src="https://i.imgflip.com/i89uf.jpg">
+</p>
+
+<pre><code class="js">//removes all html not within body tag
+function decapitate(html_content)
+{
+	let content = html_content.split("&lt;body&gt;");
+
+	if(content.length &gt;= 2) //in the case that &lt;body&gt; exists
+	{
+		content = content[1].trim();
+
+		//remove title from post
+		if(content.substring(0, 2) === "&lt;h")
+			content = content.substring(content.indexOf("\n") + 1);
+
+		content = content.split("&lt;/body&gt;");
+	}
+
+	return content[0];
+}
+</code></pre>
+<p>
+<i> It's not much, in fact it sucks, but it's honest work </i>
+</p>
+
+<p>
+<b>Problem 3</b>: Easy! Just use absolute paths and <s>everything will be fine</s>. Wait, what'd you say? For some reason this will work on localhost but not on GitHub pages? But that doesn't make any sense! Ok fuck it just put all of the posts and the index.html in the root directory so the paths are the same when posts are included and when they're viewed individually.
+</p>
+
+<hr>
+
+<h2> That is all</h2>
+
+<p>
+I hope you enjoyed, that's the end. My workflow to make a new post is as follows:
+</p>
+
+<ol>
+	<li> Write post in Markdown<br><br></li>
+	<li> Call <code class="inline-code">./phd post.md post.html</code><br><br></li>
+	<li> Make any slight manual adjustments to HTML if necessary<br><br></li>
+	<li> Insert <code class="inline-code">&lt;div w3-include-html="hello-world.html"&gt;&lt;/div&gt;</code> into index.html<br><br></li>
+	<li> <code class="inline-code">git add .</code>, <code class="inline-code">git commit -m "Imperative sentence for no good reason"</code>, <code class="inline-code">git push</code> (and don't forget to do <code class="inline-code">git pull</code> first because you definitely updated your README.md and forgot, so you'll get a merge conflict).<br><br></li>
+</ol>
+
+
+<p>
+Here are some resources if you wanted to create a similar setup:
+</p>
+
+<ul>
+	<li><a href="https://highlightjs.org/">HighlightJS for syntax highlighting</a></li>
+	<li><a href="https://www.w3schools.com/howto/howto_html_include.asp">Including HTML</a></li>
+	<li><a href="https://inclusive-components.design/collapsible-sections/">Collapsible sections</a></li>
+	<li><a href="https://github.com/joshnatis/phd">PHD, Markdown to HTML</a></li>
+	<li><a href="https://github.com/josh8/blog">This blog's repository</a></li>
+</ul>
+
+<hr>
+
+<h2> Notes</h2>
+<p>
+* bugs found while making this post: <b>4</b> <i>(add 1 if you count the one crawling on my wall)</i>
+</p>
+
+<p>
+* if you're interested in trying this out, be 'ware that XHTTP GET requests won't work locally (like, if you just open ~/blog/index.html in your browser). To test locally you can start a server on localhost. Here's how I do it:
+<br><br>
+Make a script, name it <code class="inline-code">server</code> or something
+<pre><code class="bash">#!/bin/bash
+
+DIRECTORY="$1"
+if [ -z "$DIRECTORY" ]; then
+        echo "Usage: server &lt;directory_path>"
+        exit
+fi
+
+cd "$DIRECTORY"
+
+python3 -m http.server 8080
+</code></pre>
+
+Call it: <code class="inline-code">server /path/to/blog/directory</code>, then open localhost:8080 in your browser.
+</p>
+
+
+<script>inject_blog_structure();</script>
+</body>
+</html>
