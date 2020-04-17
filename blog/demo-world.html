@@ -322,7 +322,7 @@ function decapitate(html_content)
 	{
 		content = content[1].trim();
 
-		//remove title from post
+		//remove title from post because we have the title in index.html already
 		if(content.substring(0, 2) === "&lt;h")
 			content = content.substring(content.indexOf("\n") + 1);
 
@@ -331,6 +331,8 @@ function decapitate(html_content)
 
 	return content[0];
 }
+
+//NOTE: i call this function in the includeHTML function on the response text from the server
 </code></pre>
 <p>
 <i> It's not much, in fact it sucks, but it's honest work </i>
@@ -366,7 +368,7 @@ Here are some resources if you wanted to create a similar setup:
 	<li><a href="https://www.w3schools.com/howto/howto_html_include.asp">Including HTML</a></li>
 	<li><a href="https://inclusive-components.design/collapsible-sections/">Collapsible sections</a></li>
 	<li><a href="https://github.com/joshnatis/phd">PHD, Markdown to HTML</a></li>
-	<li><a href="https://github.com/josh8/blog">This blog's repository</a></li>
+	<li><a href="https://github.com/joshnatis/josh8/tree/master/blog">This blog's repository</a></li>
 </ul>
 
 <hr>
