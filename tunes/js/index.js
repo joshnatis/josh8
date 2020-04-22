@@ -647,6 +647,61 @@ jQuery(function ($) {
                 "name": " queens",
                 "duration": "1:30",
                 "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__queens.mp3?raw=true"
+            }, {
+                "track": 127,
+                "name": " droplet",
+                "duration": "1:16",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__droplet.mp3?raw=true"
+            }, {
+                "track": 128,
+                "name": " peachsodaxxo",
+                "duration": "1:06",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__peachsodaxxo.mp3?raw=true"
+            }, {
+                "track": 129,
+                "name": " honey dark",
+                "duration": "1:29",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__honey_dark.mp3?raw=true"
+            }, {
+                "track": 130,
+                "name": " oxford coma",
+                "duration": "2:12",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__oxford_coma.mp3?raw=true"
+            }, {
+                "track": 130,
+                "name": " ball and chain",
+                "duration": "1:08",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__ball_and_chain.mp3?raw=true"
+            }, {
+                "track": 131,
+                "name": " mikey's april",
+                "duration": "1:05",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__mikeys_april.mp3?raw=true"
+            }, {
+                "track": 132,
+                "name": " noirshoppe",
+                "duration": "0:48",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__noirshoppe.mp3?raw=true"
+            }, {
+                "track": 133,
+                "name": " dmt pirate",
+                "duration": "0:35",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__dmt_pirate.mp3?raw=true"
+            }, {
+                "track": 134,
+                "name": " world and inhabitant",
+                "duration": "1:09",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__world_and_inhabitant.mp3?raw=true"
+            }, {
+                "track": 135,
+                "name": " parlor",
+                "duration": "1:22",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__parlor.mp3?raw=true"
+            }, {
+                "track": 136,
+                "name": " bitcrushed fish alien",
+                "duration": "2:04",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__bitcrushed_fish_alien.mp3?raw=true"
             }],
             
             buildPlaylist = $(tracks).each(function(key, value) {
