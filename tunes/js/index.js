@@ -707,6 +707,11 @@ jQuery(function ($) {
                 "name": " my friend sven",
                 "duration": "0:23",
                 "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__my_friend_sven.mp3?raw=true"
+            }, {
+                "track": 138,
+                "name": " stonks",
+                "duration": "0:48",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__stonks.mp3?raw=true"
             }],
             
             buildPlaylist = $(tracks).each(function(key, value) {
