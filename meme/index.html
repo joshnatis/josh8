@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>BigMemeEditor32</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="skysven.png">
+	<script src="scripts.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div id="main">
+		<a onclick="upload(displayUploadedImage)">
+			<div id="upload-image-placeholder">
+				<br><br><br><br>
+				<p id="upload-instructions">Click me to upload an image!</p>
+			</div>
+		</a>
+		<input id="upload-button" type="file" accept="image/*" name="image">
+
+
+		<div id="image-holder">
+			<canvas id="user-image-overlay"></canvas>
+			<img src="" id="user-image" alt="user uploaded image">
+		</div>
+
+		<div id="stuff-holder">
+			<div id="caption-holder">
+				<textarea placeholder="Top Text" class="caption-text" id="top-text"></textarea>
+				<textarea placeholder="Bottom Text" class="caption-text" id="bottom-text"></textarea>
+				<br><br>
+
+				<a href="#" class="btn" id="dl-btn" download="nicememe.jpg">Save Image</a>
+				<a href="#" class="btn" id="ul-btn" onclick="upload(displayUploadedImage)">Upload Image</a>
+			</div>
+
+			<div id="filter-holder">
+				<p class="slider_title" id="brightness_title">Brightness (0)</p><br>
+				<input type="range" min="-10" max="30" value="0" class="slider" id="brightness_slider"><br>
+				
+				<p class="slider_title" id="saturation_title">Saturation (0)</p><br>
+				<input type="range" min="0" max="300" value="0" class="slider" id="saturation_slider"><br>
+
+				<p class="slider_title" id="sharpen_title">Sharpen (0)</p><br>
+				<input type="range" min="0" max="300" value="0" class="slider" id="sharpen_slider"><br>
+
+				<p class="slider_title" id="contrast_title">Contrast (0)</p><br>
+				<input type="range" min="0" max="300" value="0" class="slider" id="contrast_slider"><br>
+
+				<p class="slider_title" id="noise_title">Noise (0)</p><br>
+				<input type="range" min="0" max="100" value="0" class="slider" id="noise_slider"><br>
+
+				<br><br>
+				<a href="#" class="btn" id="reset-btn" onclick="reset();">Reset</a>
+			</div>
+		</div>
+	</div>
+
+	<img src="gusta2.jpg" alt="the name is gusta, me gusta" id="megusta">
+
+
+<script> dragondrop() </script>
+<script type="text/javascript" src="caman.full.min.js"></script>
+</body>
