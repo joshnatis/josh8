@@ -1,0 +1,51 @@
+body {
+	text-align: center;
+	background-color: #52414C;
+}
+
+.category {
+	background-color: #596157;
+	margin-top: 1em;
+	border: 2px solid black;
+	border-radius: 5px;
+	width: 60%;
+	display: inline-block;
+}
+
+.book {
+	font-family: "Georgia", sans-serif;
+	font-size: 1em;
+	width: 40%;
+	padding: 1em;
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: #CFD186;
+	display: inline-block;
+	word-wrap: break-word
+}
+
+a { color: black; }
+a:hover { color: blue; }
+
+h1 {
+	border: 2px solid black;
+	border-radius: 5px;
+	padding: 0.1em 0.2em 0.1em 0.2em;
+	display: inline-block;
+	background-color: #5B8C5A;
+	margin-bottom: 0;
+}
+
+#apology {
+	border: 2px solid black;
+	border-radius: 5px;
+	padding: 0.1em 0.2em 0.1em 0.2em;
+	display: inline-block;
+	background-color: #5B8C5A;
+}
+
+#searchbar
+{
+	margin-top: 1em;
+	display: block;
+}
