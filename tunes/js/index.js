@@ -707,6 +707,16 @@ jQuery(function ($) {
                 "name": " stonks",
                 "duration": "0:48",
                 "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__stonks.mp3?raw=true"
+            }, {
+                "track": 138,
+                "name": " floater",
+                "duration": "0:56",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__floater.mp3?raw=true"
+            }, {
+                "track": 139,
+                "name": " seaside vinescape",
+                "duration": "1:14",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__seasidevinescape.mp3?raw=true"
             }],
             
             buildPlaylist = $(tracks).each(function(key, value) {
