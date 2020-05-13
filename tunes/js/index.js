@@ -717,6 +717,21 @@ jQuery(function ($) {
                 "name": " seaside vinescape",
                 "duration": "1:14",
                 "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__seasidevinescape.mp3?raw=true"
+            }, {
+                "track": 140,
+                "name": " chillin94",
+                "duration": "1:16",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__chillin94.mp3?raw=true"
+            }, {
+                "track": 141,
+                "name": " CHASING TAILS",
+                "duration": "0:47",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__CHASING_TAILS.mp3?raw=true"
+            }, {
+                "track": 142,
+                "name": " pearls",
+                "duration": "0:55",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__pearls.mp3?raw=true"
             }],
             
             buildPlaylist = $(tracks).each(function(key, value) {
