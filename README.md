@@ -2,6 +2,8 @@
 ![Logo](https://github.com/joshnatis/josh8/blob/master/favicon3.png)
 https://josh8.com/
 
+Email me :-) -- `josh at josh8 dot com`
+
 **Currently, the site consists of the following pages:**
 * My [link-hoarding cupboard.](https://josh8.com/home) **[Perpetually IN PROGRESS]**
 
