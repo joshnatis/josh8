@@ -732,6 +732,11 @@ jQuery(function ($) {
                 "name": " pearls",
                 "duration": "0:55",
                 "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__pearls.mp3?raw=true"
+            }, {
+                "track": 143,
+                "name": " silkapitan",
+                "duration": "1:01",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__silkapitan.mp3?raw=true"
             }],
             
             buildPlaylist = $(tracks).each(function(key, value) {
