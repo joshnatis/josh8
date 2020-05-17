@@ -99,6 +99,7 @@ a { text-decoration: none; }
 .about-text { font-family: 'Muli', sans-serif; }
 
 #bureaucracy_box:hover .about-text { color: white; }
+#bureaucracy_box:hover a { color: violet; }
 
 #title1{font-family: 'Calistoga', cursive;}
 #title2{font-family: 'Calistoga', cursive;}
