@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+	<title>Paint</title>
+	<link rel="stylesheet" href="styles.css">
+	<!-- <link rel="icon" href="skysven.png"> -->
+</head>
+
+<body>
+	<div id="container">
+		<div id="tools">
+			<button class="btn" onclick="reset();">Reset</button>
+			<hr>
+			<div class="slider_container">
+				<p id="line_width_title" class="slider_title">Line Width: 1px</p>
+				<input type="range" min="1" max="200" value="1" id="line_width_slider" class="slider">
+			</div>
+			<hr>
+			<div class="color_picker">
+				<p id="color_picker_title" class="slider_title">Color: #000000</p>
+				<input type="color" id="line_color" name="line_color" value="#000000">
+			</div>
+			<!-- <hr>
+			<button class="btn" id="upl_btn" onclick="document.getElementById('img_upload_input').click();">Insert Image</button>
+			<input id="img_upload_input" type="file" accept="image/*" name="image"> -->
+			<hr>
+			<p id="wip">This is a work in progress, I got lazy</p>
+			<hr>
+			<a href="#" class="btn" id="dl_btn" download="beautiful_painting.jpg">Download</a>
+			<hr>
+		</div>
+
+		<div id="paper">
+			<canvas id="canvas"></canvas>
+		</div>
+	</div>
+
+<script src="scripts.js"></script>
+<script>init();</script>
+</body>
