@@ -737,8 +737,33 @@ jQuery(function ($) {
                 "name": " silkapitan",
                 "duration": "1:01",
                 "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__silkapitan.mp3?raw=true"
+            }, {
+                "track": 144,
+                "name": " pegasus",
+                "duration": "0:35",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__pegasus.mp3?raw=true"
+            }, {
+                "track": 145,
+                "name": " tower von crystalle",
+                "duration": "0:44",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__tower_von_crystalle.mp3?raw=true"
+            }, {
+                "track": 146,
+                "name": " p",
+                "duration": "0:56",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__p.mp3?raw=true"
+            }, {
+                "track": 147,
+                "name": " ttttt",
+                "duration": "0:36",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__ttttt.mp3?raw=true"
+            }, {
+                "track": 148,
+                "name": " chuck",
+                "duration": "0:57",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__chuck.mp3?raw=true"
             }],
-            
+
             buildPlaylist = $(tracks).each(function(key, value) {
                 var trackNumber = value.track,
                     trackName = value.name,
