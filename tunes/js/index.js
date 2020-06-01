@@ -762,6 +762,21 @@ jQuery(function ($) {
                 "name": " chuck",
                 "duration": "0:57",
                 "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__chuck.mp3?raw=true"
+            }, {
+                "track": 149,
+                "name": " tab",
+                "duration": "1:05",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__tab.mp3?raw=true"
+            }, {
+                "track": 150,
+                "name": " green tea",
+                "duration": "1:35",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__green_tea.mp3?raw=true"
+            }, {
+                "track": 151,
+                "name": " tryna find my way back home ~~",
+                "duration": "1:28",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__tryna_find_my_way_back_home.mp3?raw=true"
             }],
 
             buildPlaylist = $(tracks).each(function(key, value) {
