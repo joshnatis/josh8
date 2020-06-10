@@ -377,7 +377,7 @@ jQuery(function ($) {
                 "name": "kakarot",
                 "duration": "0:49",
                 "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__kakorot(v2).mp3?raw=true"
-            }, {                
+            }, {
                 "track": 73,
                 "name": "mozart",
                 "duration": "0:32",
@@ -777,6 +777,11 @@ jQuery(function ($) {
                 "name": " tryna find my way back home ~~",
                 "duration": "1:28",
                 "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__tryna_find_my_way_back_home.mp3?raw=true"
+            }, {
+                "track": 152,
+                "name": "fuckin chamaleon",
+                "duration": "1:59",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__fuckin_chameleon.mp3?raw=true"
             }],
 
             buildPlaylist = $(tracks).each(function(key, value) {
