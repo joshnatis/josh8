@@ -781,7 +781,7 @@ jQuery(function ($) {
                 "track": 152,
                 "name": "fuckin chamaleon",
                 "duration": "1:59",
-                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__fuckin_chameleon.mp3?raw=true"
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__fuckin_chamaleon.mp3?raw=true"
             }],
 
             buildPlaylist = $(tracks).each(function(key, value) {
