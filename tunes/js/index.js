@@ -782,6 +782,26 @@ jQuery(function ($) {
                 "name": "fuckin chamaleon",
                 "duration": "1:59",
                 "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__fuckin_chamaleon.mp3?raw=true"
+            }, {
+                "track": 153,
+                "name": "chance",
+                "duration": "0:44",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__chance.mp3?raw=true"
+            }, {
+                "track": 154,
+                "name": "at night",
+                "duration": "0:44",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__at_night.mp3?raw=true"
+            }, {
+                "track": 155,
+                "name": "cyberfruit",
+                "duration": "0:39",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__cyberfruit.mp3?raw=true"
+            }, {
+                "track": 156,
+                "name": "can 'o crap",
+                "duration": "0:44",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__can_o_crap.mp3?raw=true"
             }],
 
             buildPlaylist = $(tracks).each(function(key, value) {
