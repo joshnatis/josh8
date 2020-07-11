@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Permuting Sounds Demo</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="icon" href="favicon.ico">
+
+	<style>
+		body
+		{
+			background-image: url("cybernetic.png");
+			background-size: cover;
+			overflow: hidden;
+			text-align: center;
+		}
+
+		#screen
+		{
+			margin-top: 2%;
+			display: inline-block;
+			border: 5px double black;
+			box-shadow: 5px 10px;
+			border-radius: 10px;
+			height: 65vh;
+			width: 75%;
+			background-color: #DDDDDD;
+			z-index: -1;
+		}
+
+		#textbox
+		{
+			text-align: justify;
+			padding-left: 1%;
+			padding-right: 1%;
+			background-color: white;
+			width: 55%;
+			display: inline-block;
+			margin-top: 2%;
+			border: 3px solid black;
+			border-radius: 10px;
+			font-size: 1.15em;
+			font-family: "Georgia", serif;
+			line-height: 1.5;
+		}
+
+		.container
+		{text-align: center;}
+
+		.left-container
+		{text-align: left;}
+
+		.right-container
+		{text-align: right; float: right;}
+
+		.hide { display: none; }
+
+		i { color: green; }
+
+		audio {
+			display: block;
+			margin-top: 2%;
+		    filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+		    width: 200px;
+		    height: 25px;
+		}
+
+		audio:hover
+		{
+			background-color: black;
+		}
+
+		.btn
+		{
+			border: 1px solid black;
+			border-radius: 10px;
+			padding: 0.7%;
+			background-color: pink;
+			cursor: pointer;
+		}
+
+		.btn:hover
+		{
+			/*background-color: #FF8888;*/
+			border: 2px solid blue;
+		}
+
+		.row
+		{
+			text-align: left;
+			margin-left: 2%;
+			margin-right: 2%;
+			border-bottom: 2px solid black;
+			vertical-align: center;
+		}
+
+		.note
+		{
+			margin-top: 5%;
+			margin-right: 5%;
+			float: right;
+			padding: 2%;
+			border: 2px solid black;
+			border-radius: 5%;
+			background-color: darkgray;
+		}
+
+		.clicked
+		{
+			background-color: blue;
+		}
+
+		.note:hover
+		{
+			background-color: blue;
+		}
+
+		img{width: 14%; border-right: 1px solid black; padding-right: 10px;}
+
+
+		@media only screen and (max-width: 1200px)
+		{
+		}
+
+		@media only screen and (max-width: 1050px)
+		{
+			#screen{height: auto;}
+		}
+
+		@media only screen and (max-width: 700px)
+		{
+			#textbox { padding-left: 3%; padding-right: 3%; width: 75%; margin-top: 5%;}
+			#screen { width: 85%; }
+		}
+
+		@media only screen and (max-width: 600px)
+		{
+			.note{margin-left: -0.5%;}
+		}
+
+		@media only screen and (max-width: 450px)
+		{
+			#textbox{ line-height: 1.5; }
+		}
+	</style>
+</head>
+
+<body>
+	<div id="screen">
+		<div class="row" id="kick_row">
+			<img src="kick.png" alt="kick">
+			<span class="note"></span>
+			<span class="note"></span>
+			<span class="note"></span>
+			<span class="note"></span>
+			<span class="note"></span>
+			<span class="note"></span>
+			<span class="note"></span>
+			<span class="note"></span>
+		</div>
+
+		<div class="row" id="snare_row">
+			<img src="snare.png" alt="snare">
+			<span class="note"></span>
+			<span class="note"></span>
+			<span class="note"></span>
+			<span class="note"></span>
+			<span class="note"></span>
+			<span class="note"></span>
+			<span class="note"></span>
+			<span class="note"></span>
+		</div>
+
+		<div class="row" id="hihat_row">
+			<img src="hihat.png" alt="hihat">
+			<span class="note"></span>
+			<span class="note"></span>
+			<span class="note"></span>
+			<span class="note"></span>
+			<span class="note"></span>
+			<span class="note"></span>
+			<span class="note"></span>
+			<span class="note"></span>
+		</div>
+	</div>
+
+	<div class="container">
+		<div id="textbox">
+			<p id="text">Sequence your drum sounds! Select the notes you want to be played in your drum loop by clicking on them. Click <btn onclick='listen();' class="btn">here</btn> to listen to your loop!</p>
+		</div>
+	</div>
+
+	<script>
+		let kick = "kick1.mp3";
+		let snare = "snare1.mp3";
+		let hihat = "hihat1.mp3";
+
+		let kick_sound = new Audio(kick);
+		let snare_sound = new Audio(snare);
+		let hihat_sound = new Audio(hihat);
+
+		let notes = document.getElementsByTagName("SPAN");
+		for(let i = 0; i < notes.length; ++i)
+		{
+			notes[i].addEventListener("click", function()
+			{
+				if(notes[i].style.backgroundColor != "blue")
+				{
+					notes[i].style.backgroundColor = "blue";
+					if(i < 8) kick_sound.play();
+					else if(i < 16) snare_sound.play();
+					else if(i < 24) hihat_sound.play();
+				}
+				else
+					notes[i].style.backgroundColor = "darkgray";
+			});
+		}
+
+		function listen()
+		{
+			let url = "https://joshnatis.github.io/drum_sequences/";
+			let loops = generateFilename();
+			let kickloop = new Audio(url + loops[0]);
+			let snareloop = new Audio(url + loops[1]);
+			let hatloop = new Audio(url + loops[2]);
+
+			kickloop.play();
+			snareloop.play();
+			hatloop.play();
+		}
+
+		//filename example: k1_45678.mp3
+		function generateFilename()
+		{
+			//each note is a span element
+			let notes = document.getElementsByTagName("SPAN");
+
+			//where kick, snare, and hihat are file names such as "kick1.mp3"
+			// (the user selected one of each type previously)
+			let kick_num = kick[kick.indexOf(".") - 1];
+			let snare_num = snare[snare.indexOf(".") - 1]; //e.g. 2
+			let hat_num = hihat[hihat.indexOf(".") - 1];
+
+			let kick_filename = "k" + kick_num + "_";
+			let snare_filename = "s" + snare_num + "_"; //e.g. s2_
+			let hat_filename = "h" + hat_num + "_";
+
+			//note that this is slightly different from how i present the code in the blog post
+			//the reason for this is that the leftmost visible "note" is actually notes[7], while the
+			// rightmost is notes[0] (this is cause they're floated left, i think)
+			//to deal with this i had to do some fufu stuff, seen below
+
+			for(let i = 7; i >= 0; --i)
+				if(notes[i].style.backgroundColor == "blue") kick_filename += (8 - i);
+
+			for(let i = 7; i >= 0; --i)
+				if(notes[8 + i].style.backgroundColor == "blue") snare_filename += (8 - i);
+
+			for(let i = 7; i >= 0; --i)
+				if(notes[16 + i].style.backgroundColor == "blue") hat_filename += (8 - i);
+
+			kick_filename += ".mp3";
+			snare_filename += ".mp3";
+			hat_filename += ".mp3";
+
+			return [kick_filename, snare_filename, hat_filename];
+		}
+	</script>
+</body>
