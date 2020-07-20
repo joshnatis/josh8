@@ -1,0 +1,174 @@
+body
+{
+	font-family: "Georgia", sans-serif;
+	padding: 1%;
+	background-image: url("bg2.png");
+	background-size: cover;
+}
+
+.input_text
+{
+    width: 100%;
+    min-height: 4em;
+    line-height: 18px;
+    border-width: 2px;
+    border-style: solid;
+    padding: 3px;
+    resize: none;
+    font: 16px Georgia, sans-serif;
+    line-height: normal;
+    box-shadow: gray 4px 3px 3px;
+    border: 2px solid black;
+}
+
+#input_text:hover
+{
+	transform: scale(1.01);
+	transition: 1s;
+}
+
+#input_container
+{
+	width: 100%;
+	display: inline-block;
+    float: left;
+}
+
+.side
+{
+	/*padding: 1%;*/
+	background-color: white;
+	border: 2px solid black;
+}
+
+#left
+{
+	margin-left: 1%;
+	float: left; 
+	width: 50%;
+	padding: 1%;
+}
+
+#right
+{
+	margin-right: 1%;
+	float: right;
+	width: 40%;
+	padding: 1%;
+}
+
+#input_btn
+{
+	border: 2px solid black;
+	border-radius: 10px;
+	font-size: 0.85em;
+	padding: 3px;
+	float: right;
+	cursor: pointer;
+	background-color: #BBBBBB;
+	margin-right: -3px;
+	margin-top: 3px;
+}
+
+#input_btn:hover
+{
+	background-color: gray;
+
+}
+
+#russian_side
+{
+	float: left;
+	width: 50%;
+}
+
+#english_side
+{
+	margin-right: 1.5%;
+	width: 45%;
+	float: right;
+}
+
+#output
+{
+	/*background-color: #DDDDFF;*/
+	background-color: #d2d2f2;
+	color: black;
+}
+
+pre
+{
+	overflow-x: auto;
+}
+
+@media screen and (max-width: 1435px)
+{
+	#right
+	{
+		float: none;
+		width: 70%;
+		margin-right:0;
+		margin-top:0;
+	}
+	#left
+	{
+		float: none;
+		margin-bottom: 5%;
+		width: 70%;
+		height: 10em;
+		margin-left:0;
+		margin-bottom:1em;
+	}
+	.container{margin-left: 25%;}
+}
+
+@media screen and (max-width: 1190px)
+{
+	.container{margin-left: 15%;}
+	#right{width: 80%;}
+	#left{width: 80%;}
+}
+
+@media screen and (max-width: 1050px)
+{
+	h1{font-size: 1.7em;}
+	#left{ padding: 2%;}
+	#right{padding: 2%;}
+}
+
+@media screen and (max-width: 900px)
+{
+	#right {width:90%;}
+	#left {width:90%;}
+	.container{margin-left: 5%;}
+}
+
+
+@media screen and (max-width: 700px)
+{
+	#left{width:95%;}
+	#right{width:95%;}
+	h1{font-size: 1.5em;}
+	.container{margin-left: 1%;}
+}
+
+@media screen and (max-width: 640px)
+{
+	#left{height:12em;}
+	.container{margin-left: 0;}
+	pre {/*font-size: 0.9em;*/}
+}
+
+@media screen and (max-width: 630px)
+{
+	#russian_side { float:none; width: 90%;}
+	#english_side { float:none; width: 90%;}
+	.input_text { min-height: 3em; margin-top: 1%;}
+}
+
+@media screen and (max-width: 500px)
+{
+	.container{width: 100%;}
+	#left{/*width: 100%; */height: 14em;}
+	#right{/*width: 100%;*/}
+}

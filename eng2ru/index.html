@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>An English to Russian Transliterator</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="../favicon.png">
+	<script src="./highlightjs/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<body>
+	<div class="container">
+	<div class="side" id="left">
+		<h1>An English to Russian Transliterator</h1>
+		<div id="russian_side">
+			<div id="input_container">
+					<textarea placeholder="Enter Your English Sentence Here!" class="input_text" id="input"></textarea>
+			</div>
+		</div>
+
+		<div id="english_side">
+			<textarea disabled placeholder="The Output Will Appear Here!" class="input_text" id="output"></textarea>
+		</div>
+	</div>
+
+	<div class="side" id="right">
+		<h2>The Program</h2>
+		<hr>	
+		<!-- <pre>#!/usr/bin/env python3
+
+import sys
+
+ENG_TO_RU_LETTERS = {'a':'а', 'b':'б', 'v':'в', 'g':'г', 'd':'д', 'e':'е',
+ 'z':'з', 'i':'и', 'k':'к', 'l':'л', 'm':'м', 'n':'н', 'o':'о',
+ 'p':'п', 'r':'р', 's':'с', 't':'т', 'f':'ф', 'h':'х', 'e':'э', 'u':'у',
+ 'j':'й', 'y':'й', 'w':'в', 'c':'к'}
+
+ENG_TO_RU_DIPHTHONGS = {"ch":"ч", "yu":"ю", "ts":"ц", "ya":"я", "sh":"ш",
+ "oo":"у", "yo":"ё", "ih":"ы", "ly ":"ли ", "ly":"лЬ", "zh":"ж", "eh":"э",
+ "ee":"и", "wh":"в", "i ":"aй "}
+
+if len(sys.argv) < 2:
+	print("Usage:", sys.argv[0], "&lt;phrase&gt;")
+	exit(1)
+
+phrase = ""
+for i in range(1, len(sys.argv)):
+	phrase += sys.argv[i].lower() + " "
+
+for key in ENG_TO_RU_DIPHTHONGS.keys():
+	phrase = phrase.replace(key, ENG_TO_RU_DIPHTHONGS[key])
+
+for letter in phrase:
+	try:
+		phrase = phrase.replace(letter, ENG_TO_RU_LETTERS[letter])
+	except:
+		pass
+
+print(phrase)</pre> -->
+<pre>function transliterate(phrase)
+{
+    phrase = phrase.toLowerCase();
+
+    let ENG_TO_RU_LETTERS = {'a':'а', 'b':'б', 'v':'в', 'g':'г', 'd':'д',
+        'e':'е', 'z':'з', 'i':'и', 'k':'к', 'l':'л', 'm':'м', 'n':'н',
+        'o':'о', 'p':'п', 'r':'р', 's':'с', 't':'т', 'f':'ф', 'h':'х',
+        'u':'у', 'j':'й', 'y':'й', 'w':'в', 'c':'к'};
+
+    let ENG_TO_RU_DIPHTHONGS = {"ch":"ч", "yu":"ю", "ts":"ц", "ya":"я",
+        "sh":"ш", "oo":"у", "yo":"ё", "ih":"ы", "ly ":"ли ", "ly":"лЬ",
+        "zh":"ж", "eh":"э", "ee":"и", "wh":"в", "i ":"aй "};
+
+    for(var key in ENG_TO_RU_DIPHTHONGS)
+        phrase = phrase.replace(key, ENG_TO_RU_DIPHTHONGS[key])
+
+    let replacement;
+    for(let i = 0; i < phrase.length; ++i)
+    {
+        replacement = ENG_TO_RU_LETTERS[phrase[i]];
+        if(replacement != null)
+            phrase = phrase.substring(0, i) + replacement + phrase.substring(i + 1);
+    }
+
+    return phrase;
+}</pre>
+
+	</div>
+	</div>
+
+	<script>
+		let input = document.getElementById("input");
+		let output = document.getElementById("output");
+
+		input.onkeyup = function() {
+			output.value = transliterate(this.value);
+		};
+
+		function transliterate(phrase)
+		{
+			phrase = phrase.toLowerCase();
+
+			let ENG_TO_RU_LETTERS = {'a':'а', 'b':'б', 'v':'в', 'g':'г', 'd':'д',
+				'e':'е', 'z':'з', 'i':'и', 'k':'к', 'l':'л', 'm':'м', 'n':'н',
+				'o':'о', 'p':'п', 'r':'р', 's':'с', 't':'т', 'f':'ф', 'h':'х',
+				'u':'у', 'j':'й', 'y':'й', 'w':'в', 'c':'к'};
+
+			let ENG_TO_RU_DIPHTHONGS = {"ch":"ч", "yu":"ю", "ts":"ц", "ya":"я",
+				"sh":"ш", "oo":"у", "yo":"ё", "ih":"ы", "ly ":"ли ", "ly":"лЬ",
+				"zh":"ж", "eh":"э", "ee":"и", "wh":"в", "i ":"aй "};
+
+			for(var key in ENG_TO_RU_DIPHTHONGS)
+				phrase = phrase.replace(key, ENG_TO_RU_DIPHTHONGS[key])
+
+			let replacement;
+			for(let i = 0; i < phrase.length; ++i)
+			{
+				replacement = ENG_TO_RU_LETTERS[phrase[i]];
+				if(replacement != null)
+					phrase = phrase.substring(0, i) + replacement + phrase.substring(i + 1);
+			}
+
+			return phrase;
+		}
+
+
+	</script>
+</body>
