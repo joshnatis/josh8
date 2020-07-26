@@ -819,9 +819,9 @@ jQuery(function ($) {
                 "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__parroting_about.mp3?raw=true"
             }, {
                 "track": 200,
-                "name": "in dive",
+                "name": "cute fizz",
                 "duration": "0:27",
-                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__in_dive.mp3?raw=true"
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__cute_fizz.mp3?raw=true"
             }, {
                 "track": 201,
                 "name": "b",
