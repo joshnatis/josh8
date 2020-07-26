@@ -802,6 +802,31 @@ jQuery(function ($) {
                 "name": "can 'o crap",
                 "duration": "0:44",
                 "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__can_o_crap.mp3?raw=true"
+            }, {
+                "track": 157,
+                "name": "love and mist",
+                "duration": "0:59",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__love_and_mist.mp3?raw=true"
+            }, {
+                "track": 158,
+                "name": "phrog",
+                "duration": "0:55",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__phrog.mp3?raw=true"
+            }, {
+                "track": 159,
+                "name": "parroting about",
+                "duration": "0:51",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__parroting_about.mp3?raw=true"
+            }, {
+                "track": 200,
+                "name": "in dive",
+                "duration": "0:27",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__in_dive.mp3?raw=true"
+            }, {
+                "track": 201,
+                "name": "b",
+                "duration": "0:56",
+                "file": "https://github.com/joshnatis/josh8/blob/master/tunes/songs/__b.mp3?raw=true"
             }],
 
             buildPlaylist = $(tracks).each(function(key, value) {
