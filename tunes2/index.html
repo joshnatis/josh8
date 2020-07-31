@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Corduroy's Tunes</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="../favicon3.png">
+</head>
+
+<body>
+	<div class="container">
+		<h3 id="title"></h3>
+		<br>
+		<div id="menubar">
+			<img src="refresh.png" alt="loop" id="refresh">
+			<img src="play.png" alt="play" class="pad" id="play">
+			<input class="slider pad" id="timebar" type="range" min="0" max="100" step="1" value="0" autocomplete="off" role="slider">
+			<p id="time">00:00 / 00:00</p>
+
+			<span id="soundctrl">
+				<img src="speaker2.png" alt="speaker" class="pad" id="speaker">
+				<input class="slider" id="volume" type="range" min="0" max="100" step="1" value="100" autocomplete="off" role="slider">
+			</span>
+		</div>
+
+		<div id="songs-container">
+			<!-- populate songs here -->
+		</div>
+	</div>
+
+	<script src="scripts.js"></script>
+</body>
