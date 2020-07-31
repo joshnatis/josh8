@@ -752,7 +752,7 @@ function initMenuBarStuff()
 	}
 
 	speaker_btn.onclick = function() {
-		CURRENT_VOLUME == 0 ? setVolume(100) : setVolume(0);
+		CURRENT_VOLUME == 0 ? setVolume(1) : setVolume(0);
 	}
 
 	volume_slider.oninput = function() {
@@ -761,7 +761,7 @@ function initMenuBarStuff()
 
 	time_slider.onchange = function() {
 		if(CURRENT_SONG != null)
-			CURRENT_SONG.currentTime = time_slider.value;
+		  CURRENT_SONG.currentTime = time_slider.value;
 	}
 }
 
@@ -865,7 +865,10 @@ function playNextSong(index, direction)
 		playSong(index);
 
 	else if(CURRENT_MODE == "LINEAR")
-		direction == "next" ? playSong((index + 1) % SONGS.length) : playSong(Math.max(0, (index - 1)));
+    {
+        if(direction == "next") playSong((index + 1) % SONGS.length);
+        else (index != 0) ? playSong(index - 1) : playSong(SONGS.length - 1);
+    }
 
 	else if(CURRENT_MODE == "SHUFFLE")
 	{
@@ -893,7 +896,7 @@ function updateTimeSlider(index)
 	}
 }
 
-function setVolume(vol, speaker_btn=document.getElementById("speaker"))
+function setVolume(vol)
 {
 	volume_slider.value = vol;
 
