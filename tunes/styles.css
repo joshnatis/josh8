@@ -163,13 +163,14 @@ img:hover
 
 @media screen and (max-width: 480px)
 {
-	#menu_bar { width: 150%;}
 	#volume { width: 20%; }
-	.song_boxes { width: 95%; }
-	body { width: 110%; }
+	.song_boxes { width: 85%; }
+	#soundctrl { display: none;}
 }
 
 @media screen and (max-width: 450px)
 {
-	#soundctrl { display: block;}
+	.container{text-align: left;}
+	body { font-size: 0.8em; }
+
 }
