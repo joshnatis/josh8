@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Cybernetic Cafe 98</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="../../favicon.png">
+</head>
+
+<body>
+	<div id="screen">
+		<div>
+			<img src="kick.png" alt="kick">
+			<img src="snare.png" alt="snare">
+			<img src="hihat.png" alt="hihat">
+		</div>
+		<br>
+
+		<div id="holder">
+			<div class="sound_choice">
+				<form>
+					<label for="kicks">Choose a kick:</label>
+					<select name="kicks" id="kicks">
+						<option value="kick1.mp3">Kick 1</option>
+						<option value="kick2.mp3">Kick 2</option>
+						<option value="kick3.mp3">Kick 3</option>
+					</select>
+				</form>
+				<audio controls><source src="kick1.mp3" type="audio/mp3"></audio>
+				<audio controls><source src="kick2.mp3" type="audio/mp3"></audio>
+				<audio controls><source src="kick3.mp3" type="audio/mp3"></audio>
+			</div>
+
+			<div class="sound_choice">
+				<form>
+					<label for="snares">Choose a snare:</label>
+					<select name="snares" id="snares">
+						<option value="snare1.mp3">Snare 1</option>
+						<option value="snare2.mp3">Snare 2</option>
+						<option value="snare3.mp3">Snare 3</option>
+					</select>
+				</form>
+				<audio controls><source src="snare1.mp3" type="audio/mp3"></audio>
+				<audio controls><source src="snare2.mp3" type="audio/mp3"></audio>
+				<audio controls><source src="snare3.mp3" type="audio/mp3"></audio>
+			</div>
+
+			<div class="sound_choice">
+				<form>
+					<label for="hihats">Choose a hi-hat:</label>
+					<select name="hihats" id="hihats">
+						<option value="hihat1.mp3">Hihat 1</option>
+						<option value="hihat2.mp3">Hihat 2</option>
+						<option value="hihat3.mp3">Hihat 3</option>
+					</select>
+				</form>
+				<audio controls><source src="hihat1.mp3" type="audio/mp3"></audio>
+				<audio controls><source src="hihat2.mp3" type="audio/mp3"></audio>
+				<audio controls><source src="hihat3.mp3" type="audio/mp3"></audio>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div id="textbox">
+			<p id="text">Pick your drum sounds! Click <btn onclick='submit();' id="btn">here</btn> when you're done!</p>
+		</div>
+	</div>
+
+	<script>
+		//credit for this function: https://gomakethings.com/how-to-get-the-value-of-a-querystring-with-native-javascript/
+		var getQueryString = function ( field, url ) {
+			var href = url ? url : window.location.href;
+			var reg = new RegExp( '[?&]' + field + '=([^&#]*)', 'i' );
+			var string = reg.exec(href);
+			return string ? string[1] : null;
+		};
+
+		let name = getQueryString('name').replace(/%20/g, " ");
+		let player = getQueryString('player');
+		let band = getQueryString('band').replace(/%20/g, " ");
+		let page = getQueryString('page');
+		let genre = getQueryString('genre');
+
+		if(genre == "electronic")
+		{
+			let options = document.getElementsByTagName("OPTION");
+			let sources = document.getElementsByTagName("SOURCE");
+
+			for(let i = 0; i < options.length; ++i)
+			{
+				options[i].value = "e_" + options[i].value;
+				let pos = (sources[i].src).lastIndexOf("/");
+				sources[i].src = (sources[i].src).slice(0, pos + 1) + "e_" + (sources[i].src).slice(pos + 1);
+			}
+		}
+
+		function submit()
+		{
+			let kick = document.getElementById("kicks").value;
+			let snare = document.getElementById("snares").value;
+			let hihat = document.getElementById("hihats").value;
+
+			if(page == "2")
+			{
+				let melody = getQueryString('melody');
+				let cmelody = getQueryString('cmelody');
+				let bassline = getQueryString('bassline');
+
+				window.location.href = "./sequencer?name=" + name + "&player=" + player + "&band=" + band + "&page=" + page + "&kick=" + kick + "&snare=" + snare + "&hihat=" + hihat + "&melody=" + melody + "&cmelody=" + cmelody + "&bassline=" + bassline;
+			}
+			else
+			{
+				window.location.href = "./sequencer?name=" + name + "&player=" + player + "&band=" + band + "&page=" + page + "&kick=" + kick + "&snare=" + snare + "&hihat=" + hihat +"&genre=" + genre;
+			}
+		}
+	</script>
+</body>

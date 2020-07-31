@@ -1,0 +1,135 @@
+body
+{
+	background-image: url("../../../cybernetic.png");
+	background-size: cover;
+	overflow: hidden;
+	text-align: center;
+}
+
+#screen
+{
+	margin-top: 2%;
+	display: inline-block;
+	border: 5px double black;
+	box-shadow: 5px 10px;
+	border-radius: 10px;
+	height: 65vh;
+	width: 75%;
+	background-color: #DDDDDD;
+	z-index: -1;
+}
+
+#textbox
+{
+	text-align: justify;
+	padding-left: 1%;
+	padding-right: 1%;
+	background-color: white;
+	width: 55%;
+	display: inline-block;
+	margin-top: 2%;
+	border: 3px solid black;
+	border-radius: 10px;
+	font-size: 1.15em;
+	font-family: "Georgia", serif;
+	line-height: 1.5;
+}
+
+.container
+{text-align: center;}
+
+.left-container
+{text-align: left;}
+
+.right-container
+{text-align: right; float: right;}
+
+.hide { display: none; }
+
+i { color: green; }
+
+audio {
+	display: block;
+	margin-top: 2%;
+    filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+    width: 200px;
+    height: 25px;
+}
+
+audio:hover
+{
+	background-color: black;
+}
+
+.btn
+{
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 0.7%;
+	background-color: pink;
+	cursor: pointer;
+}
+
+.btn:hover
+{
+	/*background-color: #FF8888;*/
+	border: 2px solid blue;
+}
+
+.row
+{
+	text-align: left;
+	margin-left: 2%;
+	margin-right: 2%;
+	border-bottom: 2px solid black;
+	vertical-align: center;
+}
+
+.note
+{
+	margin-top: 5%;
+	margin-right: 5%;
+	float: right;
+	padding: 2%;
+	border: 2px solid black;
+	border-radius: 5%;
+	background-color: darkgray;
+}
+
+.clicked
+{
+	background-color: blue;
+}
+
+.note:hover
+{
+	background-color: blue;
+}
+
+img{width: 14%; border-right: 1px solid black; padding-right: 10px;}
+
+
+@media only screen and (max-width: 1200px)
+{
+}
+
+@media only screen and (max-width: 1050px)
+{
+	#screen{height: auto;}
+}
+
+@media only screen and (max-width: 700px)
+{
+	#textbox { padding-left: 3%; padding-right: 3%; width: 75%; margin-top: 5%;}
+	#screen { width: 85%; }
+}
+
+@media only screen and (max-width: 600px)
+{
+	.note{margin-left: -0.5%;}
+}
+
+@media only screen and (max-width: 450px)
+{
+	#textbox{ line-height: 1.5; }
+}

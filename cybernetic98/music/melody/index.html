@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Cybernetic Cafe 98</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="../../favicon.png">
+</head>
+
+<body>
+	<div id="screen">
+		<div style="margin-top: 1%;">
+			<img src="piano.png" alt="piano">
+			<img src="sax.png" alt="sax">
+			<img src="bass.png" alt="bass">
+		</div>
+		<br>
+
+		<div id="holder">
+			<div class="sound_choice">
+				<form>
+					<label for="melodies">Choose a melody:</label>
+					<select name="melodies" id="melodies">
+						<option value="melody1.mp3">Melody 1</option>
+						<option value="melody2.mp3">Melody 2</option>
+						<option value="melody3.mp3">Melody 3</option>
+					</select>
+				</form>
+				<audio controls><source src="melody1.mp3" type="audio/mp3"></audio>
+				<audio controls><source src="melody2.mp3" type="audio/mp3"></audio>
+				<audio controls><source src="melody3.mp3" type="audio/mp3"></audio>
+			</div>
+
+			<div class="sound_choice">
+				<form>
+					<label for="snares">Choose another melody:</label>
+					<select name="counter_melodies" id="counter_melodies">
+						<option value="counter_melody1.mp3">Melody 1</option>
+						<option value="counter_melody2.mp3">Melody 2</option>
+						<option value="counter_melody2.mp3">Melody 3</option>
+					</select>
+				</form>
+				<audio controls><source src="counter_melody1.mp3" type="audio/mp3"></audio>
+				<audio controls><source src="counter_melody2.mp3" type="audio/mp3"></audio>
+				<audio controls><source src="counter_melody3.mp3" type="audio/mp3"></audio>
+			</div>
+
+			<div class="sound_choice">
+				<form>
+					<label for="basslines">Choose a bassline:</label>
+					<select name="basslines" id="basslines">
+						<option value="bassline1.mp3">Bassline 1</option>
+						<option value="bassline2.mp3">Bassline 2</option>
+						<option value="bassline3.mp3">Bassline 3</option>
+					</select>
+				</form>
+				<audio controls><source src="bassline1.mp3" type="audio/mp3"></audio>
+				<audio controls><source src="bassline2.mp3" type="audio/mp3"></audio>
+				<audio controls><source src="bassline3.mp3" type="audio/mp3"></audio>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div id="textbox">
+			<p id="text">Pick your melodic elements! Click <btn onclick='submit();' id="btn">here</btn> when you're done!</p>
+		</div>
+	</div>
+
+	<script>
+		//credit for this function: https://gomakethings.com/how-to-get-the-value-of-a-querystring-with-native-javascript/
+		var getQueryString = function ( field, url ) {
+			var href = url ? url : window.location.href;
+			var reg = new RegExp( '[?&]' + field + '=([^&#]*)', 'i' );
+			var string = reg.exec(href);
+			return string ? string[1] : null;
+		};
+
+		let name = getQueryString('name').replace(/%20/g, " ");
+		let player = getQueryString('player');
+		let band = getQueryString('band').replace(/%20/g, " ");
+		let page = getQueryString('page');
+		let kick = getQueryString('kick');
+		let snare = getQueryString('snare');
+		let hihat = getQueryString('hihat');
+		let genre =  getQueryString('genre');
+
+		if(genre == "electronic")
+		{
+			let options = document.getElementsByTagName("OPTION");
+			let sources = document.getElementsByTagName("SOURCE");
+
+			for(let i = 0; i < options.length; ++i)
+			{
+				options[i].value = "e_" + options[i].value;
+				let pos = (sources[i].src).lastIndexOf("/");
+				sources[i].src = (sources[i].src).slice(0, pos + 1) + "e_" + (sources[i].src).slice(pos + 1);
+			}
+		}
+
+		function submit()
+		{
+			let melody = document.getElementById("melodies").value;
+			let counter_melody = document.getElementById("counter_melodies").value;
+			let bassline = document.getElementById("basslines").value;
+
+			if(page == "2")
+			{
+				window.location.href = "../perform" + "?name=" + name + "&player=" + player + "&band=" + band + "&kick=" + kick + "&snare=" + snare + "&hihat=" + hihat + "&melody=" + melody + "&cmelody=" + counter_melody + "&bassline=" + bassline;
+			}
+			else
+			{
+				window.location.href = "../drums" + "?name=" + name + "&player=" + player + "&band=" + band + "&page=2" + "&melody=" + melody + "&cmelody=" + counter_melody + "&bassline=" + bassline + "&genre=" + genre;
+			}
+		}
+	</script>
+</body>

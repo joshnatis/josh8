@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Cybernetic Cafe 98</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="../favicon.png">
+	<script type="text/javascript" src="imageMapResizer.min.js"></script>
+	<script type="text/javascript" src="highlightMapAreas.js"></script>
+</head>
+
+<body>
+	<canvas id='myCanvas'></canvas>     <!-- gets re-positioned in myInit(); -->
+	<div id="screen">
+		<div class="left-container">
+			<button class="btn" id="choice1" type="button">Lofi Beats</button><br>
+			<button class="btn" id="choice2" type="button">Electronic</button>
+
+			<img id="instruments" src="instruments.png" usemap="#image-map" class="hide">
+
+			<map id="instruments_map" name="image-map" class="hide">
+			    <area onmouseover='myHover(this);' onmouseout='myLeave();' onclick='redirect("melody");'title="melody" coords="176,421,210,285,496,348,469,484,205,427" shape="poly">
+			    <area onmouseover='myHover(this);' onmouseout='myLeave();' onclick='redirect("drums");' title="drums" coords="9,257,22,238,39,220,50,204,62,187,69,177,62,175,46,174,40,172,39,147,39,118,40,93,40,81,54,83,71,81,69,35,45,30,29,23,25,9,50,12,77,12,91,18,118,24,122,34,107,38,102,53,102,65,105,80,129,34,143,33,161,33,177,33,239,32,253,38,268,38,299,39,295,48,282,51,275,51,262,50,250,50,242,61,246,72,257,85,263,75,263,62,272,70,271,91,269,115,272,128,283,146,286,157,287,167,286,177,282,196,287,212,309,248,301,252,280,215,265,235,252,244,239,255,215,259,192,255,174,244,158,233,151,235,145,226,138,248,133,253,132,276,126,276,124,234,129,226,123,216,112,203,108,186,108,177,93,174,99,187,104,215,104,230,96,230,92,193,87,221,80,222,79,180,65,197,66,213" shape="poly">
+			</map>
+		</div>
+		<img id="player" src="" alt="player">
+	</div>
+
+	<div class="container">
+		<div id="textbox">
+			<p id="text">That's the spirit, [X]! What kind of music do you want to cook up? <em>(P.S. - I haven't finished the electronic section yet)</em></p>
+		</div>
+	</div>
+
+	<script>
+		//credit for this function: https://gomakethings.com/how-to-get-the-value-of-a-querystring-with-native-javascript/
+		var getQueryString = function ( field, url ) {
+			var href = url ? url : window.location.href;
+			var reg = new RegExp( '[?&]' + field + '=([^&#]*)', 'i' );
+			var string = reg.exec(href);
+			return string ? string[1] : null;
+		};
+
+		let name = getQueryString('name').replace(/%20/g, " ");
+		let player = getQueryString('player').replace(/%20/g, " ");
+		let band = getQueryString('band').replace(/%20/g, " ");
+
+		let text = document.getElementById("text");
+		text.innerHTML = (text.innerHTML).replace(/\[X\]/g, "<i>"+name+"</i>");
+
+		let player_img = document.getElementById("player");
+		player_img.src = (player == "p1") ? "dj_jim.png" : "dj_janine.png";
+
+		let genre;
+
+		document.getElementById("choice1").addEventListener("click",function() {
+			//window.location.href = "./lofi?name=" + name + "&player=" + player + "&band=" + band + "&genre=hiphop";
+			genre = "lofi";
+			displayMap(genre);
+		});
+
+		document.getElementById("choice2").addEventListener("click",function() {
+			//window.location.href = "./electronic?name=" + name + "&player=" + player + "&band=" + band + "&genre=electronic";
+			genre = "electronic";
+			displayMap(genre);
+		});
+
+		function displayMap(genre)
+		{
+			document.getElementById("choice1").remove();
+			document.getElementById("choice2").remove();
+
+			document.getElementById("instruments").classList.remove("hide");
+			document.getElementById("instruments_map").classList.remove("hide");
+
+			document.getElementById("text").innerHTML = "Ooh, " + genre + "! I was hoping you'd pick that :). What element should we work on first?";
+
+			player_img.style.marginTop = "4%";
+			imageMapResize();
+			myInit();
+		}
+
+		function redirect(instrument)
+		{
+			window.location.href = "./" + instrument +  "?name=" + name + "&player=" + player + "&band=" + band + "&genre=" + genre + "&page=1";
+		}
+	</script>
+</body>

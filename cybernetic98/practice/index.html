@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Cybernetic Cafe 98</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="../favicon.png">
+</head>
+
+<body>
+	<div id="screen">
+		<img id="player" src="" alt="player">
+		<button class="btn" id="choice1" type="button">Escape to another country</button>
+		<button class="btn" id="choice2" type="button">Make a new song on the spot</button>
+	</div>
+
+	<div class="container">
+		<div id="textbox">
+			<p id="text">[X]: Hello? Mom? Please help, I just got hired to play a show but I'm completely unprepared. I can't even think of a single song to play.
+			The guys who hired me looked super scary too, like they were Italian mobsters or something. I can't mess this up, what should I do?
+			<br><br>[X]'s Mom: Sweetie, relax. The way I see it you only have two options:</p>
+		</div>
+	</div>
+
+	<script>
+		//credit for this function: https://gomakethings.com/how-to-get-the-value-of-a-querystring-with-native-javascript/
+		var getQueryString = function ( field, url ) {
+			var href = url ? url : window.location.href;
+			var reg = new RegExp( '[?&]' + field + '=([^&#]*)', 'i' );
+			var string = reg.exec(href);
+			return string ? string[1] : null;
+		};
+
+		let name = getQueryString('name').replace(/%20/g, " ");
+		let player = getQueryString('player').replace(/%20/g, " ");
+		let band = getQueryString('band').replace(/%20/g, " ");
+
+		let text = document.getElementById("text");
+		text.innerHTML = (text.innerHTML).replace(/\[X\]/g, "<u><i>"+name+"</i></u>");
+		text.innerHTML = (text.innerHTML).replace("'s Mom", "<u>'s Mom</u>")
+
+		let player_img = document.getElementById("player");
+		player_img.src = (player == "p1") ? "shocked_jim.png" : "shocked_janine.png";
+
+		document.getElementById("choice1").addEventListener("click",function() {
+			window.location.href = "../escape?name=" + name + "&player=" + player + "&band=" + band;
+		});
+
+		document.getElementById("choice2").addEventListener("click",function() {
+			window.location.href = "../music?name=" + name + "&player=" + player + "&band=" + band;
+		});
+	</script>
+</body>

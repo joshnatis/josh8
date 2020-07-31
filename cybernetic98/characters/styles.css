@@ -1,0 +1,84 @@
+body
+{
+	background-image: url("../cybernetic.png");
+	background-size: cover;
+	overflow: hidden;
+	text-align: center;
+}
+
+#screen
+{
+	margin-top: 2%;
+	display: inline-block;
+	border: 5px double black;
+	box-shadow: 5px 10px;
+	border-radius: 10px;
+	height: 65vh;
+	width: 75%;
+	background-color: #DDDDDD;
+	z-index: -1;
+}
+
+img
+{
+	width: 21%;
+	margin-right: 5%;
+	margin-top: 0.3%;
+}
+
+#p2{margin-right:0;}
+
+.red:hover  { background-color: red; transform:scale(0.97); transition: transform 0.5s; }
+.blue:hover { background-color: blue; transform:scale(0.97); transition: transform 0.5s;}
+
+#textbox
+{
+	background-color: white;
+	width: 45%;
+	display: inline-block;
+	margin-top: 2%;
+	border: 3px solid black;
+	border-radius: 10px;
+	font-size: 1.3em;
+	font-family: "Georgia", serif;
+}
+
+.container
+{
+	text-align: center;
+}
+
+#rain
+{
+	position: absolute;
+	width: 100%;
+	left: 0%;
+	z-index: -1;
+}
+
+@media only screen and (max-width: 1200px)
+{
+	img{width: 23%; margin-top:1%;}
+}
+
+@media only screen and (max-width: 1050px)
+{
+	img{width: 27%; margin-top:3%;}
+}
+
+@media only screen and (max-width: 880px)
+{
+	img{width: 32%; margin-top:3%;}
+	body{overflow: visible;}
+}
+
+@media only screen and (max-width: 740px)
+{
+	img{width: 40%; margin-top:3%;}
+}
+
+@media only screen and (max-width: 500px)
+{
+	img{width: 45%; margin-top:15%;}
+	#textbox{width: 70%;}
+}

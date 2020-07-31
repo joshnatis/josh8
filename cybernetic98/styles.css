@@ -1,0 +1,90 @@
+body
+{
+	background-image: url("cybernetic.png");
+	background-size: cover;
+	overflow: hidden;
+	text-align: center;
+}
+
+#welcome
+{
+	margin-top: 8%;
+	display: inline-block;
+	border: 5px double black;
+	box-shadow: 5px 10px;
+	border-radius: 10px;
+	height: 60vh;
+	width: 75%;
+	background-color: #DDDDDD;
+	z-index: -1;
+}
+
+#title
+{
+	font-size: 7em;
+	margin-top: 0.3em;
+	text-shadow: 2px 2px #ff0000;
+}
+
+#begin
+{
+	font-family: "Georgia";
+	background-color: white;
+	border: 2px solid black;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 5px 5px #222222;
+	padding: 1%;
+	display: inline-block;
+	font-size: 3em;
+	animation-name: example;
+	animation-duration: 3s;
+	animation-iteration-count: 10;
+}
+
+#begin:hover
+{
+	border: 4px solid blue;
+	/*transform: scale(1.15);
+	transition: transform 1s;*/
+}
+
+#comp
+{
+	position: absolute;
+	left:-9.5%;
+	top:-25%;
+	margin:0;
+	width: 120%;
+	z-index: -1;
+}
+
+#rain
+{
+	position: absolute;
+	width: 100%;
+	left: 0%;
+	z-index: -1;
+}
+
+@keyframes example
+{
+	0% {font-size: 3em;}
+	50% {font-size: 3.45em;}
+	100% {font-size: 3em;}
+}
+
+@media only screen and (max-width: 1270px)
+{
+	#begin{margin-top: -5%;}
+}
+
+@media only screen and (max-width: 733px)
+{
+	#title { font-size: 5em; }
+}
+
+@media only screen and (max-width: 500px)
+{
+	#title { font-size: 3em; }
+}

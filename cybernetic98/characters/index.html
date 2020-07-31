@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Cybernetic Cafe 98</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="../favicon.png">
+</head>
+
+<body>
+	<!-- <img id="rain" src="../rain.gif" alt="rain"> -->
+	<div id="screen">
+		<img class="red" id="p1" src="jim.png" alt="p1">
+		<img class="blue" id="p2" src="janine.png" alt="p2">
+	</div>
+
+	<div class="container">
+		<div id="textbox">
+			<p id="text">Welcome to the Cybernetic Cafe 98! Choose your character:</p>
+		</div>
+	</div>
+
+	<script>
+		let p1 = document.getElementById("p1");
+		let p2 = document.getElementById("p2");
+
+		p1.addEventListener("click", 
+			function a(e) {
+				e.currentTarget.removeEventListener(e.type, a); //only trigger event first time
+				removePlayer(p1, p2);
+			});
+
+		p2.addEventListener("click", 
+			function b(e) {
+				e.currentTarget.removeEventListener(e.type, b); 
+				removePlayer(p2, p1);
+			});
+
+		function removePlayer(p_keep, p_remove)
+		{
+			p_remove.style.width = "0px";
+			p_remove.style.margin = "0px";
+			p_keep.style.marginRight = "0px";
+			p_keep.classList.remove(p_keep.className);
+			chooseName(p_keep);
+		}
+
+		function chooseName(player) {
+			let text = document.getElementById("text");
+			text.innerHTML = "Nice! What's your name?";
+
+			let name_input = document.createElement("INPUT");
+			name_input.setAttribute("type", "text");
+			name_input.style.marginBottom = "20px";
+			name_input.style.fontFamily = "Georgia";
+			text.style.marginBottom = "10px";
+
+			let textbox = document.getElementById("textbox");
+			textbox.appendChild(name_input);
+
+			name_input.onkeypress = function(e) {
+				let key = e.keyCode || e.which;
+				if (key == 13) {
+					window.location.href = "../hiring?name=" + name_input.value + "&player=" + player.id;
+				}
+			};
+		}
+	</script>
+</body>

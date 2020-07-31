@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Cybernetic Cafe 98</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="../../favicon.png">
+</head>
+
+<body>
+	<div id="screen">
+		<img id="player" src="cafe2.png" alt="player">
+		<br><br>
+		<span id="song">Click to play your song!</span>
+	</div>
+
+	<div class="container">
+		<div id="textbox">
+			<p id="text">Time to perform! Let's see what the crowd thinks of your song...</p>
+		</div>
+	</div>
+
+	<script>
+		//credit for this function: https://gomakethings.com/how-to-get-the-value-of-a-querystring-with-native-javascript/
+		var getQueryString = function ( field, url ) {
+			var href = url ? url : window.location.href;
+			var reg = new RegExp( '[?&]' + field + '=([^&#]*)', 'i' );
+			var string = reg.exec(href);
+			return string ? string[1] : null;
+		};
+
+		function sleep(ms) {
+  			return new Promise(resolve => setTimeout(resolve, ms));
+		}
+
+		let name = getQueryString('name').replace(/%20/g, " ");
+		let player = getQueryString('player');
+		let band = getQueryString('band').replace(/%20/g, " ");
+		let kick= getQueryString('kick');
+		let snare= getQueryString('snare');
+		let hihat= getQueryString('hihat');
+		let melody= getQueryString('melody');
+		let cmelody= getQueryString('cmelody');
+		let bassline= getQueryString('bassline');
+
+		let text = document.getElementById("text");
+		//text.innerHTML = (text.innerHTML).replace(/\[NAME\]/g, "<i>"+name+"</i>");
+		//text.innerHTML = (text.innerHTML).replace(/\[BAND\]/g, "<i>"+band+"</i>");
+
+		let player_img = document.getElementById("player");
+		player_img.src = (player == "p1") ? "jim_perform.gif" : "janine_perform.gif";
+
+		let url = "https://joshnatis.github.io/drum_sequences/";
+		let loops = [new Audio(url + kick), new Audio(url + snare), new Audio(url + hihat), new Audio(melody), new Audio(cmelody), new Audio(bassline)];
+		
+		// for(let i = 0; i < 3; ++i)
+		// {
+		// 	loops[i].addEventListener('ended', function()
+		// 	{
+		// 		this.currentTime = 0;
+		// 		this.play();
+		// 	} false);
+		// }
+		let clicked = false;
+
+		document.getElementById("song").addEventListener("click", function()
+		{
+			if(!clicked)
+			{
+				text.innerHTML = "Congratulations, <i>" + name + "</i>! The crowd loved your performance -- I think <i>" + band + "</i> has a bright future ahead of them. <a href='../../..'>Try again?</a> <em>(P.S. - I didn't get the drums to sound right yet, sorry!)</em>";
+			}
+			clicked = true;
+			let songBtn = document.getElementById("song");
+
+			if(songBtn.style.borderColor != "red")
+			{
+				songBtn.style.boxShadow = "-10px 4px 10px grey";
+				songBtn.style.borderColor = "red";
+				songBtn.innerHTML = "Click here to pause your song!";
+				for(let i = 3; i < loops.length; ++i)
+					loops[i].play();
+			}
+			else
+			{
+				songBtn.style.borderColor = "black";
+				songBtn.style.boxShadow = "0px 0px 0px grey";
+				songBtn.innerHTML = "Click here to play your song!";
+				for(let i = 3; i < loops.length; ++i)
+				{
+					loops[i].pause();
+					loops[i].currentTime = 0;
+				}
+			}
+			// let kickloop = new Audio(url + kick);
+			// let snareloop = new Audio(url + snare);
+			// let hatloop = new Audio(url + hihat);
+			// let melodyloop = new Audio(melody);
+			// let cmelodyloop = new Audio(cmelody);
+			// let basslineloop = new Audio(bassline);
+
+			// melodyloop.play();
+			// for(let i = 0; i < loops.length; ++i)
+			// 	loops[i].play();
+		})
+	</script>
+</body>

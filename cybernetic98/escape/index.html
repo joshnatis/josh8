@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Cybernetic Cafe 98</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="../favicon.png">
+	<script type="text/javascript" src="imageMapResizer.min.js"></script>
+	<script type="text/javascript" src="highlightMapAreas.js"></script>
+</head>
+
+<body onload='myInit()'>
+	<div id="screen">
+		<canvas id='myCanvas'></canvas>
+		<div class="container"><img src="escape_vehicles.png" usemap="#image-map" id="choices" alt="escape choices"></div>
+
+		<map name="image-map">
+		    <area onmouseover='myHover(this, 1);' onmouseout='myLeave();' onclick='air()' alt="air" title="air" coords="263,0,0,499" shape="rect">
+		    <area onmouseover='myHover(this, 2);' onmouseout='myLeave();' onclick='water()' alt="water" title="water" coords="264,499,530,-1" shape="rect">
+		    <area onmouseover='myHover(this, 3);' onmouseout='myLeave();' onclick='land()' alt="land" title="land" coords="799,2,529,499" shape="rect">
+		</map>
+		<script>imageMapResize();</script>
+	</div>
+
+	<div class="container">
+		<div id="textbox">
+			<p id="text">Which route do you take?</p>
+		</div>
+	</div>
+
+	<script>
+		//credit for this function: https://gomakethings.com/how-to-get-the-value-of-a-querystring-with-native-javascript/
+		var getQueryString = function ( field, url ) {
+			var href = url ? url : window.location.href;
+			var reg = new RegExp( '[?&]' + field + '=([^&#]*)', 'i' );
+			var string = reg.exec(href);
+			return string ? string[1] : null;
+		};
+
+		let name = getQueryString('name').replace(/%20/g, " ");
+		let player = getQueryString('player').replace(/%20/g, " ");
+		let band = getQueryString('band').replace(/%20/g, " ");
+
+		function sleep(ms) {
+  			return new Promise(resolve => setTimeout(resolve, ms));
+		}
+
+		async function air()
+		{
+			document.getElementById("myCanvas").remove();
+			document.getElementsByTagName("MAP")[0].remove();
+			document.getElementById("choices").src = "escape_air.gif";
+
+			await sleep(4500);
+			document.getElementById("text").innerHTML = "You died! The owners of Cybernetic Cafe 98 bugged your phone and heard all about your plans. Where the hell did they get a pokémon? RIP <i>" + name + "</i>, I'm sure <i>" + band + "</i> would've recorded some fire tunes. <a href=\"..\">Try again?</a>";
+		}
+
+		async function water()
+		{
+			document.getElementById("myCanvas").remove();
+			document.getElementsByTagName("MAP")[0].remove();
+			document.getElementById("choices").src = "escape_water.gif";
+			let img = document.createElement("IMG");
+			img.src = "vacation_" + (player == "p1" ? "jim" : "janine") + ".png";
+			img.id = "player";
+			img.style.position = "absolute";
+			img.style.top = "20%";
+			img.style.right = "20%";
+			img.style.width = "10%";
+
+			await sleep(3500);
+			document.getElementById("text").innerHTML = "Phew, that was a close call, but you made it, <i>" + name + "</i>! Enjoy your lifelong vacation in the tropics... and don't you dare try to come back, ever, the owners of Cybernetic Cafe 98 are on the lookout for you. <a href=\"..\">Play again?</a>";
+			await sleep(800);
+			document.getElementById("screen").appendChild(img);
+
+		}
+
+		async function land() {
+			document.getElementById("myCanvas").remove();
+			document.getElementsByTagName("MAP")[0].remove();
+			document.getElementById("choices").src = "escape_land.gif";
+
+			await sleep(5000);
+			document.getElementById("text").innerHTML = "You died! The owners of Cybernetic Cafe 98 bugged your phone and heard all about your plans. You were right, these guys are definitely mobsters. RIP <i>" + name + "</i>, I'm sure <i>" + band + "</i> would've recorded some fire tunes. <a href=\"..\">Try again?</a>";
+		}
+	</script>
+</body>

@@ -1,0 +1,120 @@
+body
+{
+	background-image: url("../../cybernetic.png");
+	background-size: cover;
+	overflow: hidden;
+	text-align: center;
+}
+
+#screen
+{
+	margin-top: 2%;
+	display: inline-block;
+	border: 5px double black;
+	box-shadow: 5px 10px;
+	border-radius: 10px;
+	height: 65vh;
+	width: 75%;
+	background-color: #DDDDDD;
+	z-index: -1;
+}
+
+#textbox
+{
+	text-align: justify;
+	padding-left: 1%;
+	padding-right: 1%;
+	background-color: white;
+	width: 55%;
+	display: inline-block;
+	margin-top: 2%;
+	border: 3px solid black;
+	border-radius: 10px;
+	font-size: 1.15em;
+	font-family: "Georgia", serif;
+}
+
+.container
+{text-align: center;}
+
+.left-container
+{text-align: left; margin-left: 2%;}
+
+.right-container
+{text-align: right; float: right;}
+
+.hide { display: none; }
+
+i { color: green; }
+
+audio {
+	display: block;
+	margin-top: 2%;
+    filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+    width: 200px;
+    height: 25px;
+}
+
+audio:hover
+{
+	background-color: black;
+}
+
+.sound_choice
+{
+	margin-top: 5%;
+	margin-left: 5%;
+	float: left;
+	border: 2px solid grey;
+	border-radius: 10px;
+	background-color: darkgray;
+	padding: 1%;
+}
+
+#btn
+{
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 1%;
+	background-color: pink;
+	cursor: pointer;
+}
+
+#btn:hover
+{
+	/*background-color: #FF8888;*/
+	border: 2px solid blue;
+}
+
+#holder
+{
+	margin-left:auto; width:90%;
+}
+
+@media only screen and (max-width: 1200px)
+{
+	.sound_choice{margin-left: 1%; margin-top: 1%;}
+}
+
+@media only screen and (max-width: 1050px)
+{
+	img{width: 25%;}
+}
+
+@media only screen and (max-width: 700px)
+{
+	#textbox { padding-left: 3%; padding-right: 3%; width: 75%; margin-top: 5%;}
+	#screen { width: 85%; }
+	#holder{width:100%; margin-left: 22%; margin-top: -4%;}
+}
+
+@media only screen and (max-width: 600px)
+{
+	.sound_choice{margin-top:0;}
+}
+
+@media only screen and (max-width: 450px)
+{
+	#textbox{ line-height: 1.5; }
+	#holder{margin-left: 16%; margin-top: -7%;}
+}

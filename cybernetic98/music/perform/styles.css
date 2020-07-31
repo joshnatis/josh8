@@ -1,0 +1,85 @@
+body
+{
+	background-image: url("../../cybernetic.png");
+	background-size: cover;
+	overflow: hidden;
+	text-align: center;
+}
+
+#screen
+{
+	margin-top: 2%;
+	display: inline-block;
+	border: 5px double black;
+	box-shadow: 5px 10px;
+	border-radius: 10px;
+	height: 65vh;
+	width: 75%;
+	background-image: url("space.png");
+	z-index: -1;
+}
+
+#player
+{
+	width: 50%;
+	margin-left: auto;
+	margin-top: 2%;
+	display: inline;
+	border: 3px solid white;
+	border-radius: 10px;
+}
+
+#textbox
+{
+	text-align: justify;
+	padding-left: 1%;
+	padding-right: 1%;
+	background-color: white;
+	width: 55%;
+	display: inline-block;
+	margin-top: 2%;
+	border: 3px solid black;
+	border-radius: 10px;
+	font-size: 1.15em;
+	font-family: "Georgia", serif;
+}
+
+.container
+{text-align: center;}
+
+.left-container
+{text-align: left;}
+
+.hide { display: none; }
+
+i { color: green; }
+
+#song
+{
+	width: 1em;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 0.7%;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+#song:hover
+{
+	border: 2px solid blue;
+	background-color: #EEEEEE;
+}
+
+@media only screen and (max-width: 920px)
+{
+	#screen{height: auto;}
+	#song{font-size: 1.2em;}
+	body{ overflow: visible; }
+}
+
+@media only screen and (max-width: 650px)
+{
+	#textbox { padding-left: 3%; padding-right: 3%; width: 75%; margin-top: 5%;}
+	#screen { width: 85%; }
+}

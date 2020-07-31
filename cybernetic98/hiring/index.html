@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Cybernetic Cafe 98</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="../favicon.png">
+</head>
+
+<body>
+	<div id="screen">
+		<img id="owners" src="owners2.png" alt="owners">
+		<img id="player" src="" alt="player">
+	</div>
+
+	<div class="container">
+		<div id="textbox">
+			<p id="text">Cool! Nice to meet you, <i id="name">[X]</i>. I'm Carl, this here is Ken, and that's Dennis. We're the owners of this fine establishment,
+			and we're excited to have you play at our gig tonight. <br><br>You'll be opening for <u><i>effective. Power لُلُصّبُلُلصّبُررً ॣ ॣ ॣ ॣ 冗</i></u>,
+			I'm sure you've heard of them. What was the name of your band again?<input type="text" id="band_input"></p>
+		</div>
+
+		<div id="btn_holder" class="container">
+		</div>
+	</div>
+
+	<script>
+		//credit for this function: https://gomakethings.com/how-to-get-the-value-of-a-querystring-with-native-javascript/
+		var getQueryString = function ( field, url ) {
+			var href = url ? url : window.location.href;
+			var reg = new RegExp( '[?&]' + field + '=([^&#]*)', 'i' );
+			var string = reg.exec(href);
+			return string ? string[1] : null;
+		};
+
+		let name = getQueryString('name').replace(/%20/g, " ");
+		let player = getQueryString('player').replace(/%20/g, " ");
+
+		let text = document.getElementById("text");
+		text.innerHTML = (text.innerHTML).replace("[X]", name);
+
+		let player_img = document.getElementById("player");
+		player_img.src = (player == "p1") ? "jim.png" : "janine.png";
+
+		document.getElementById("band_input").onkeypress = function(e) {
+			let key = e.keyCode || e.which;
+			if (key == 13) {
+				let band_name = this.value;
+				text.innerHTML = "Ah, <i id='name'>" + band_name + "</i>. It's a bit tacky, but it'll do in a pinch. Well, you better get to practicing then!";
+
+				let cont_btn = document.createElement("BUTTON");
+				cont_btn.innerHTML = "CONTINUE";
+				cont_btn.id = "cont_btn";
+				document.getElementById("btn_holder").appendChild(cont_btn);
+
+				cont_btn.addEventListener("click", function() {
+					window.location.href = "../practice?name=" + name + "&player=" + player + "&band=" + band_name;
+				});
+			}
+		};
+	</script>
+</body>

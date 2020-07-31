@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Cybernetic Cafe 98</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="../../../favicon.png">
+</head>
+
+<body>
+	<div id="screen">
+		<div class="row" id="kick_row">
+			<img src="kick.png" alt="kick">
+			<span class="note"></span>
+			<span class="note"></span>
+			<span class="note"></span>
+			<span class="note"></span>
+			<span class="note"></span>
+			<span class="note"></span>
+			<span class="note"></span>
+			<span class="note"></span>
+		</div>
+
+		<div class="row" id="snare_row">
+			<img src="snare.png" alt="snare">
+			<span class="note"></span>
+			<span class="note"></span>
+			<span class="note"></span>
+			<span class="note"></span>
+			<span class="note"></span>
+			<span class="note"></span>
+			<span class="note"></span>
+			<span class="note"></span>
+		</div>
+
+		<div class="row" id="hihat_row">
+			<img src="hihat.png" alt="hihat">
+			<span class="note"></span>
+			<span class="note"></span>
+			<span class="note"></span>
+			<span class="note"></span>
+			<span class="note"></span>
+			<span class="note"></span>
+			<span class="note"></span>
+			<span class="note"></span>
+		</div>
+	</div>
+
+	<div class="container">
+		<div id="textbox">
+			<p id="text">Sequence your drum sounds! Select the notes you want to be played in your drum loop by clicking on them. Click <btn onclick='listen();' class="btn">here</btn> to listen to your loop, and <btn onclick='submit();' class="btn">here</btn> when you're done!</p>
+		</div>
+	</div>
+
+	<script>
+		//credit for this function: https://gomakethings.com/how-to-get-the-value-of-a-querystring-with-native-javascript/
+		var getQueryString = function ( field, url ) {
+			var href = url ? url : window.location.href;
+			var reg = new RegExp( '[?&]' + field + '=([^&#]*)', 'i' );
+			var string = reg.exec(href);
+			return string ? string[1] : null;
+		};
+
+		let name = getQueryString('name').replace(/%20/g, " ");
+		let player = getQueryString('player');
+		let band = getQueryString('band').replace(/%20/g, " ");
+		let page = getQueryString('page');
+		let genre = getQueryString('genre');
+		let kick = getQueryString('kick');
+		let snare = getQueryString('snare');
+		let hihat = getQueryString('hihat');
+
+		let kick_sound = new Audio(kick);
+		let snare_sound = new Audio(snare);
+		let hihat_sound = new Audio(hihat);
+
+		let notes = document.getElementsByTagName("SPAN");
+		for(let i = 0; i < notes.length; ++i)
+		{
+			notes[i].addEventListener("click", function()
+			{
+				if(notes[i].style.backgroundColor != "blue")
+				{
+					notes[i].style.backgroundColor = "blue";
+					if(i < 8) kick_sound.play();
+					else if(i < 16) snare_sound.play();
+					else if(i < 24) hihat_sound.play();
+				}
+				else
+					notes[i].style.backgroundColor = "darkgray";
+			});
+		}
+
+		function listen()
+		{
+			let url = "https://joshnatis.github.io/drum_sequences/";
+			let loops = generateFileName2();
+			let kickloop = new Audio(url + loops[0]);
+			let snareloop = new Audio(url + loops[1]);
+			let hatloop = new Audio(url + loops[2]);
+
+			kickloop.play();
+			snareloop.play();
+			hatloop.play();
+
+			//alert(url + generateFileName());
+			// let drumloop = new Audio(url + generateFileName());
+			// drumloop.play();
+			//window.location.href = url + generateFileName();
+			//window.location.href = "./sequencer?name=" + name + "&player=" + player + "&band=" + band + "&kick=" + kick + "&snare=" + snare + "&hihat=" + hihat;
+		}
+
+		function submit()
+		{
+			let loops = generateFileName2();
+			kick = loops[0];
+			snare = loops[1];
+			hihat = loops[2];
+
+			if(page == "2")
+			{
+				let melody = getQueryString('melody');
+				let cmelody = getQueryString('cmelody');
+				let bassline = getQueryString('bassline');
+				window.location.href = "../../perform?name=" + name + "&player=" + player + "&band=" + band + "&kick=" + kick + "&snare=" + snare + "&hihat=" + hihat + "&melody=" + melody + "&cmelody=" + cmelody + "&bassline=" + bassline;
+			}
+			else
+			{
+				window.location.href = "../../melody?name=" + name + "&player=" + player + "&band=" + band + "&kick=" + kick + "&snare=" + snare + "&hihat=" + hihat + "&page=2" + "&genre=" + genre;
+			}
+		}
+
+		// function generateFileName()
+		// {
+		// 	console.log(notes);
+		// 	//for example: lofi_111_k12345678_s12345678_h12345678.mp3
+		// 	let filename = "lofi_";
+
+		// 	let kick_num = kick[kick.indexOf(".") - 1];
+		// 	let snare_num = snare[snare.indexOf(".") - 1];
+		// 	let hat_num = hihat[hihat.indexOf(".") - 1];
+		// 	filename += kick_num + snare_num + hat_num;
+
+		// 	filename += "_k";
+		// 	for(let i = 0; i < 8; ++i)
+		// 	{
+		// 		if(notes[i].style.backgroundColor == "blue") {filename += (8 - i);}
+		// 	}
+
+		// 	filename += "_s";
+		// 	for(let i = 0; i < 8; ++i)
+		// 		if(notes[8 + i].style.backgroundColor == "blue") filename += (8 - i);
+
+		// 	filename += "_h";
+		// 	for(let i = 0; i < 8; ++i)
+		// 		if(notes[16 + i].style.backgroundColor == "blue") filename += (8 - i);
+
+		// 	filename += ".mp3";
+
+		// 	return filename;
+		// }
+
+		function generateFileName2()
+		{
+			//for example: k1_45678.mp3
+			let prefix = (genre == "electronic") ? "e_" : "";
+
+			let kick_num = kick[kick.indexOf(".") - 1];
+			let snare_num = snare[snare.indexOf(".") - 1];
+			let hat_num = hihat[hihat.indexOf(".") - 1];
+
+			let kick_filename = prefix + "k" + kick_num + "_";
+			let snare_filename = prefix + "s" + snare_num + "_";
+			let hat_filename = prefix + "h" + hat_num + "_";
+			//filename += kick_num + snare_num + hat_num;
+
+			for(let i = 7; i >= 0; --i)
+				if(notes[i].style.backgroundColor == "blue") kick_filename += (8 - i);
+
+			for(let i = 7; i >= 0; --i)
+				if(notes[8 + i].style.backgroundColor == "blue") snare_filename += (8 - i);
+
+			for(let i = 7; i >= 0; --i)
+				if(notes[16 + i].style.backgroundColor == "blue") hat_filename += (8 - i);
+
+			kick_filename += ".mp3";
+			snare_filename += ".mp3";
+			hat_filename += ".mp3";
+
+			return [kick_filename, snare_filename, hat_filename];
+		}
+
+		/* solution to hover effect not working after click (but slow to unclick, not worth it)
+		// if(notes[i].classList.contains("clicked"))
+				// 	notes[i].classList.remove("clicked");
+				// else
+				// {
+				// 	notes[i].classList.add("clicked");
+				// 	if(i < 8) kick_sound.play();
+				// 	else if(i < 16) snare_sound.play();
+				// 	else if(i < 24) hihat_sound.play();
+				// }
+		*/
+	</script>
+</body>

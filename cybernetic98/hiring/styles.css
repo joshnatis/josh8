@@ -1,0 +1,101 @@
+body
+{
+	background-image: url("../cybernetic.png");
+	background-size: cover;
+	overflow: hidden;
+	text-align: center;
+}
+
+#screen
+{
+	margin-top: 2%;
+	display: inline-block;
+	border: 5px double black;
+	box-shadow: 5px 10px;
+	border-radius: 10px;
+	height: 65vh;
+	width: 75%;
+	background-image: url("cafe2.png");
+	z-index: -1;
+}
+
+#player
+{
+	float: right;
+	width: 20%;
+	margin-right: 10%;
+	margin-top: 1%;
+}
+
+#owners
+{
+	float: left;
+	width: 40%;
+	margin-left: 10%;
+}
+
+
+#textbox
+{
+/*	line-height: 1.35;*/
+	text-align: justify;
+	padding-left: 1%;
+	padding-right: 1%;
+	background-color: white;
+	width: 55%;
+	display: inline-block;
+	margin-top: 2%;
+	border: 3px solid black;
+	border-radius: 10px;
+	font-size: 1.2em;
+	font-family: "Georgia", serif;
+}
+
+.container
+{
+	text-align: center;
+}
+
+#name { color: green; }
+
+#band_input
+{
+	display: inline;
+	font-family: "Georgia";
+	margin-left: 10px;
+}
+
+#cont_btn
+{
+	font-family: "Georgia";
+	background-color: black;
+	color: white;
+	border: 2px solid black;
+	text-align: center;
+	border-radius: 10px;
+	display: inline-block;
+	font-size: 2em;
+	margin-top: 1%;
+}
+
+#cont_btn:hover
+{
+	border: 2px solid red;
+}
+
+@media only screen and (max-width: 1000px)
+{
+	body{overflow: visible;}
+	#player{width: 25%;}
+	#owners{width: 45%;}
+}
+
+@media only screen and (max-width: 800px)
+{
+	#textbox { width: 75%; padding: 3%;}
+}
+
+@media only screen and (max-width: 600px)
+{
+	#screen { height: auto; margin-bottom: 2%; }
+}

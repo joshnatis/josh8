@@ -1,0 +1,104 @@
+body
+{
+	background-image: url("../cybernetic.png");
+	background-size: cover;
+	overflow: hidden;
+	text-align: center;
+}
+
+#screen
+{
+	margin-top: 2%;
+	display: inline-block;
+	border: 5px double black;
+	box-shadow: 5px 10px;
+	border-radius: 10px;
+	height: 65vh;
+	width: 75%;
+	background-image: url("space.png");
+	z-index: -1;
+}
+
+#player
+{
+	float: right;
+	width: 20%;
+	margin-right: 10%;
+	margin-top: 1%;
+	display: inline;
+}
+
+#textbox
+{
+	text-align: justify;
+	padding-left: 1%;
+	padding-right: 1%;
+	background-color: white;
+	width: 55%;
+	display: inline-block;
+	margin-top: 2%;
+	border: 3px solid black;
+	border-radius: 10px;
+	font-size: 1.15em;
+	font-family: "Georgia", serif;
+}
+
+.container
+{
+	text-align: center;
+}
+
+.btn
+{
+	float: left;
+	font-family: "Georgia";
+	background-color: white;
+	border: 2px solid black;
+	text-align: center;
+	border-radius: 10px;
+	display: inline-block;
+	font-size: 2em;
+	padding: 0.5%;
+	margin: 10% 10% 0 10%;
+}
+
+.btn:hover
+{
+	background-color: #CCCCFF;
+	border: 2px solid blue;
+	transform: scale(1.05);
+	transition: transform 1s;
+}
+
+i { color: green; }
+
+@media only screen and (max-width: 1150px)
+{
+	#player{ margin-right: 5%; }
+	#screen{height: auto;}
+}
+
+@media only screen and (max-width: 1030px)
+{
+	.btn { margin-left: 3%; margin-right: 0;}
+}
+
+@media only screen and (max-width: 920px)
+{
+	.btn { font-size: 1.5em; }
+	body{ overflow: visible; }
+}
+
+@media only screen and (max-width: 650px)
+{
+	#player{ margin-right: 1%; margin-top: 5%; width: 25%; }
+	.btn { font-size: 1.3em; }
+	#textbox { padding-left: 3%; padding-right: 3%; width: 75%; margin-top: 3%;}
+	#screen { width: 85%; }
+}
+
+@media only screen and (max-width: 520px)
+{
+	#player { margin-left: 0; margin-right: 0; }
+	.btn { font-size: 1.2em; }
+}
