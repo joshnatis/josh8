@@ -8,12 +8,9 @@ Email me :-) -- `josh at josh8 dot com`
 * My [link-hoarding cupboard.](https://josh8.com/home) **[Perpetually IN PROGRESS]**
 
 * A [page for my music](https://josh8.com/tunes)
-    * This is less a programming feat and more a practical way to host my music -- I didn't write this code, I'm just using it.
     * Also some [albums](https://josh8.com/tunes/albums)
 
 * A [blog](https://josh8.com/blog)  :)
-
-* A [search tool](https://josh8.com/college-langs) for what programming languages universities use to teach their introductory programming classes **[IN PROGRESS]**
     
 * A page containing various [papers](https://josh8.com/papers) I've written:
    * Artificial Intelligence and Ethics: A Compromise 
@@ -29,16 +26,13 @@ Email me :-) -- `josh at josh8 dot com`
 * A [sitemap](https://josh8.com/sitemap) (necessary to remedy my unintuitive landing page :P)
 
 * [The Whomst've Page](https://josh8.com/whom) (sometimes referred to as 'About Me')
-    * I'm actually pretty proud of this one. I made it all by hand without referencing other sites and not much copy-pasting! (the same applies to the other pages too, but this one looks legit).
 
-* [A Terminal Emulator as a 404 Page](https://josh8.com/404/4041.html), coz why not
+* [A Terminal Emulator as a 404 Page](https://josh8.com/404/1.html), coz why not
 
-**In the works:**
-* A page where you can talk to Dog himself. Dog is very wise, and he will give you The Wisdom you seek. (He's also animated and probably doesn't work on Internet Explorer).
+* [An Incomplete Drawing App That Doesn't Work on Mobile For Some Reason](https://josh8.com/paint)
 
-* Something regarding plants and elephants ♥
+* [A Meme Maker and Deepfryer](https://josh8.com/meme)
 
-**Note:**
-* In a blaze of glory, I attempted to clean the original <i>josh8</i> repository of all the junk files it had accumulated over time. StackOverflow proved to be a very dangerous resource, and I ended up messing some things up. So, I started fresh (I only moved the necessary files). I'm relatively sure all went well, but I can't shake the feeling that I've left something behind :(
-* [The Original Repository](https://github.com/joshnatis/josh8-historic) \[129 Commits]
-* [Recovered Commit History](/index/josh8-git-history.txt)
+* [My Library](https://josh8.com/library)
+
+* [A Sucky English To Russian Transliterator](https://josh8.com/eng2ru), which was ported from Python so my friends can use it online.
