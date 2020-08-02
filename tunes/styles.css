@@ -39,7 +39,7 @@ body
 	-webkit-appearance: none;
 	appearance: none;
 	height: 0.6em;
-	border-radius: 5px;  
+	border-radius: 5px;
 	background: black;
 	outline: none;
 	-webkit-transition: .2s;
@@ -53,7 +53,7 @@ body
 	appearance: none;
 	height: 1.75em;
 	width: 1.75em;
-	border-radius: 50%; 
+	border-radius: 50%;
 	/*background: rgb(255, 192, 203);*/
 	background: white;
 	border: 2px solid black;
@@ -164,7 +164,7 @@ img:hover
 @media screen and (max-width: 480px)
 {
 	#volume { width: 20%; }
-	.song_boxes { width: 85%; }
+	.song_boxes { width: 95%; }
 	#soundctrl { display: none;}
 }
 
