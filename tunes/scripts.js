@@ -664,6 +664,10 @@ const SONGS = [{
     "name": "anxiety spirals",
     "duration": "0:32",
     "file": "__anxiety_spirals.mp3"
+}, {
+    "name": "stiki",
+    "duration": "1:07",
+    "file": "__stiki.mp3"
 }];
 
 /*_____ _______    _______ ______  __      __     _____    _____
