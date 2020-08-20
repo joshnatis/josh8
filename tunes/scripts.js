@@ -668,6 +668,14 @@ const SONGS = [{
     "name": "stiki",
     "duration": "1:07",
     "file": "__stiki.mp3"
+}, {
+    "name": "moo",
+    "duration": "0:34",
+    "file": "__moo.mp3"
+}, {
+    "name": "never stop",
+    "duration": "1:04",
+    "file": "__never_stop.mp3"
 }];
 
 /*_____ _______    _______ ______  __      __     _____    _____
