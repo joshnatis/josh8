@@ -676,6 +676,14 @@ const SONGS = [{
     "name": "never stop",
     "duration": "1:04",
     "file": "__never_stop.mp3"
+}, {
+    "name": "ode to 347",
+    "duration": "0:50",
+    "file": "__ode_to_347.mp3"
+}, {
+    "name": "yo!",
+    "duration": "1:01",
+    "file": "__yo.mp3"
 }];
 
 /*_____ _______    _______ ______  __      __     _____    _____
