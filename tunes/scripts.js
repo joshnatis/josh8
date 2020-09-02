@@ -684,6 +684,18 @@ const SONGS = [{
     "name": "yo!",
     "duration": "1:01",
     "file": "__yo.mp3"
+}, {
+    "name": "aquarium",
+    "duration": "0:42",
+    "file": "__aquarium.mp3"
+}, {
+    "name": "sky86",
+    "duration": "1:04",
+    "file": "__sky86.mp3"
+}, {
+    "name": "animals, planets",
+    "duration": "1:42",
+    "file": "__animals_planets.mp3"
 }];
 
 /*_____ _______    _______ ______  __      __     _____    _____
