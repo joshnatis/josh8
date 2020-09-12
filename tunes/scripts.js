@@ -696,6 +696,14 @@ const SONGS = [{
     "name": "animals, planets",
     "duration": "1:42",
     "file": "__animals_planets.mp3"
+}, {
+    "name": "damn sounds like ur avoiding the rap battle tho",
+    "duration": "0:38",
+    "file": "__damn_sounds_like_ur_avoiding_the_rap_battle_tho.mp3"
+}, {
+    "name": "bubblebath",
+    "duration": "0:39",
+    "file": "__bubblebath.mp3"
 }];
 
 /*_____ _______    _______ ______  __      __     _____    _____
