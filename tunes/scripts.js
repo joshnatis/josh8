@@ -704,6 +704,18 @@ const SONGS = [{
     "name": "bubblebath",
     "duration": "0:39",
     "file": "__bubblebath.mp3"
+}, {
+    "name": "peaceful skeleton war",
+    "duration": "0:56",
+    "file": "__peaceful_skeleton_war.mp3"
+}, {
+    "name": "kawaii graveyard",
+    "duration": "1:21",
+    "file": "__peaceful_skeleton_war.mp3"
+}, {
+    "name": "ticonderoga46",
+    "duration": "0:48",
+    "file": "__ticonderoga46.mp3"
 }];
 
 /*_____ _______    _______ ______  __      __     _____    _____
