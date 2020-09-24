@@ -36,3 +36,5 @@ Email me :-) -- `josh at josh8 dot com`
 * [My Library](https://josh8.com/library)
 
 * [A Sucky English To Russian Transliterator](https://josh8.com/eng2ru), which was ported from Python so my friends can use it online.
+
+* A [directory of some software I've created](https://josh8.com/software)

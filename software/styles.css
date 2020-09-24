@@ -1,0 +1,49 @@
+body {
+	font-family: "Georgia", "Verdana", "Arial";
+	background-color: black;
+	color: white;
+	font-size: 1.1em;
+	margin-left: 15%;
+	margin-right: 15%;
+	padding-left: 1em;
+}
+a { color: limegreen; font-style: italic; }
+video { max-width: 95%; }
+h2 { /*font-weight: normal;*/ }
+.title { /*font-style: italic;*/ }
+.content {
+	margin-left: 3%;
+	margin-right: 3%;
+	background-color: rgba(30, 40, 200, 0.5);
+	padding: 2%;
+	border-radius: 10px;
+}
+.content p {
+	margin-top:0;
+}
+
+
+
+/*h1 { font-weight: normal; }
+h4 { font-weight: normal; }
+
+img { width: 90%; border: 1px solid white; border-radius: 3px;}
+.small { width: 60%; }
+.xsmall { width: 30%; }
+
+.container { text-align: center; width: 100%; }
+.caption { margin-top:0; font-size: 0.8em; }*/
+
+@media screen and (max-width: 750px) {
+	body {width: 95%; margin:0;}
+	pre {font-size: 0.7em;}
+}
+
+/*
+https://www.roland.com/us/company/employment_opportunities/
+https://www.google.com/search?q=audio+programmer+internship&oq=audio+programmer+internship&aqs=chrome..69i57.6617j0j4&sourceid=chrome&ie=UTF-8
+https://careers.twitter.com/content/dam/careers-twitter/university/DesignYourCareer2020.pdf#
+https://github.com/Pitt-CSC/NewGrad-2021
+https://intern.nasa.gov/
+https://github.com/Pitt-CSC/Summer2021-Internships
+*/
