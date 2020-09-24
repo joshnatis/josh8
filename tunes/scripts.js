@@ -711,7 +711,7 @@ const SONGS = [{
 }, {
     "name": "kawaii graveyard",
     "duration": "1:21",
-    "file": "__peaceful_skeleton_war.mp3"
+    "file": "__kawaii_graveyard.mp3"
 }, {
     "name": "ticonderoga46",
     "duration": "0:48",
