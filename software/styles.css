@@ -7,11 +7,14 @@ body {
 	margin-right: 15%;
 	padding-left: 1em;
 }
+
 a {
 	color: limegreen;
 	font-style: italic;
 }
+
 video { max-width: 95%; }
+
 .content {
 	margin-left: 3%;
 	margin-right: 3%;
@@ -22,7 +25,36 @@ video { max-width: 95%; }
 .content p {
 	margin-top:0;
 }
+
+.lang {
+	height: 0.5em;
+	width: 0.5em;
+	border-radius: 50%;
+	display: inline-block;
+	margin-left: 0.35em;
+}
+.c {background-color: #555555;}
+.cpp {background-color: #f34b7d;}
+.py {background-color: #3572A5;}
+.sh {background-color: #89e051;}
+.js {background-color: #f1e05a;}
+.html {background-color: #e34c26;}
+.css {background-color: #563d7c;}
+.make {background-color: #427819;}
+.shan {background-color: #008080;}
+
+.pl {
+	font-family: monospace;
+	margin-left: -1px;
+	transform: translateY(-1px);
+	font-size: 0.7em;
+	font-weight: normal;
+	display: inline-block;
+}
+.spacer { display: none; }
+
 @media screen and (max-width: 750px) {
 	body {width: 95%; margin:0;}
 	pre {font-size: 0.7em;}
+	.spacer { display: block; }
 }
