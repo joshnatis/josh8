@@ -35,6 +35,14 @@ hr {
   margin-right: 20vh;
 }
 
+#ppl {
+  font-family: monospace;
+  background-color: #111111;
+  padding:0.5%;
+  color: white;
+  border-radius: 3px;
+}
+
 /* ------- BIRTHDAY SECTION ---------- */
 /* Conveniently taken from W3schools :) */
 /* Three image containers (use 25% for four, and 50% for two, etc) */
@@ -94,7 +102,6 @@ hr {
   .windows_xp_buttons{
   	width: 4%;
   }
-
 }
 
 /*@media screen and (max-width: 731px) {

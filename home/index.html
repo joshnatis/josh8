@@ -54,59 +54,36 @@
 <hr>
 
             <div class="paragraph-div">
-                <h2>Notes</h2>
+
+                <h2 id = "the_history">The history and people of computing </h2>
                 <p>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    Note 0: This page looks like this on purpose. In this version of reality overrun by GUIs, JavaScript and the like, it's easy to forget about the most important part of your web page -- the content. If you go to the homepage of my site [as of 4/2019] you'll see a giant animated CSS dog which has nothing to do with my website. I'm a victim! Cool stuff looks cool, but it's important to not lose sight of the purpose of your project. Thus, maintaining this page will allow me to practice discipline and to keep HTML and CSS separated, as 'mechanism' and 'policy' should be separate. For more info, see <a href="http://www.catb.org/esr/writings/taoup/html/ch01s06.html">this</a>, and <a href="http://catb.org/~esr/html-hell.html">this</a>.         
-                </p>
-            </div>
-            <br>
-
-<hr>
-
-            <div class="paragraph-div">
-
-                <h2 id = "the_history">The history and people of Computer Science </h2>
-                <p>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    Much like everything else in life, CS didn't appear out of thin air. I seldom come across anyone interested in the culture and history of Computer Science and its subgroups, which is sad and kind of strange. The public view of CS seems to paint it as an ultra-practical skillset and a pathway to economic success. Perhaps this is a symptom of the divide between STEM and the humanities, or the inevitable side effect of Late Capitalism. Either way, to the layman, this rich history is virtually unknown, and Computer Science seems to be boiled down to the technical sum of its parts.
+                    Much like everything else in life, computer science didn't appear out of thin air. I seldom come across anyone interested in the culture and history of computing and its subgroups, which is sad and kind of strange. The public view of CS seems to paint it as an ultra-practical skillset and a pathway to economic success. Perhaps this is a symptom of the divide between STEM and the humanities, or the inevitable side effect of Late Capitalism. Either way, to the layman, this rich history is virtually unknown, and Computer Science seems to be boiled down to the technical sum of its parts.
                     <br><br><br>
                     
                     With that in mind, here's a list of people worth knowing (in no particular order):
                 </p>
-                    <ul id="people">
-                       <li><pre>Richard Stallman (rms)</pre></li>
-                       <li><pre>Eric S. Raymond (esr)</pre></li>
-                       <li><pre>Linus Torvalds</pre></li>
-                       <li><pre>Jon Hall (maddog)</pre></li>
-                       <li><pre>Dennis M. Ritchie (dmr)</pre></li>
-                       <li><pre>Ken L. Thompson (ken)</pre></li>
-                       <li><pre>Brian W. Kernighan (bwk)</pre></li>
-                       <li><pre>Donald Knuth (dek)</pre></li>
-                       <li><pre>John Von Neumann</pre></li>
-                       <li><pre>John G. Kemeny</pre></li>
-                       <li><pre>Alan Turing</pre></li>
-                       <li><pre>Ada Lovelace</pre></li>
-                       <li><pre>Charles Babbage</pre></li>
-                       <li><pre>Tim Berners-Lee</pre></li>
-                       <li><pre>Doug Engelbart</pre></li>
-                       <li><pre>Edsger Dijkstra</pre></li>
-                       <li><pre>John McCarthy</pre></li>
-                       <li><pre>Aaron Swartz</pre></li>
-                       <li><pre>Terry Davis</pre></li>
-                       <li><pre>Joe Armstrong</pre></li>
-                       <li><pre>Francesco Vianello</pre></li>
-                       <li><pre>Richard Feynman</pre></li>
-                       <li><pre>Leonard Susskind</pre></li>
-                       <li><pre>Isaac Newton</pre></li>
-                       <li><pre>Gottfried Wilhelm Leibniz</pre></li>
-                       <li><pre>Leonhard Euler</pre></li>
-                       <li><pre>George Boole</pre></li>
-                       <li><pre>Paul Erdös</pre></li>
-                   	   <li><pre>Vint Cerf</pre></li>
-                   </ul>
-                   <p>This list is severely incomplete.</p>
-                   <br>
+                <p id="ppl">
+                    Richard Stallman (rms), Eric S. Raymond (esr), Linus Torvalds, Jon Hall (maddog), Dennis M. Ritchie (dmr), Ken L. Thompson (ken), Brian W. Kernighan (bwk), Donald Knuth (dek), John Von Neumann, John G. Kemeny, Alan Turing, Ada Lovelace, Charles Babbage, Tim Berners-Lee, Doug Engelbart, Edsger Dijkstra, John McCarthy, Aaron Swartz, Terry Davis, Joe Armstrong, Francesco Vianello, Richard Feynman, Leonard Susskind, Isaac Newton, Gottfried Wilhelm Leibniz, Leonhard Euler, George Boole, Paul Erdös, Vint Cerf
+                </p>
+                <script>
+                    function color() {
+                        let r = Math.floor((Math.random() * 255));
+                        let g = Math.floor((Math.random() * 255));
+                        let b = Math.floor((Math.random() * 255));
+                        return "rgb(" + r + "," + g + "," + b + ");"
+                    }
+
+                    let ppl = document.getElementById("ppl");
+                    let str = "";
+                    ppl.innerHTML.split(",").forEach(name =>
+                        str += "<span style=\"white-space: nowrap; color: "
+                            + color() + "\">" + name + "</span>, ");
+                    ppl.innerHTML = str.slice(0, -2);
+                </script>
+                <p>This list is severely incomplete.</p>
+                <br>
+                <img alt="pjw" style="width: 10%;" src="pjw.jpg">
             </div>
 
 <hr>
