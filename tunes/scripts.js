@@ -716,6 +716,26 @@ const SONGS = [{
     "name": "ticonderoga46",
     "duration": "0:48",
     "file": "__ticonderoga46.mp3"
+}, {
+    "name": "moth",
+    "duration": "0:23",
+    "file": "__moth.mp3"
+} {
+    "name": "i will be a geezer at the park",
+    "duration": "0:36",
+    "file": "__geezer.mp3"
+},{
+    "name": "my father's piano",
+    "duration": "0:42",
+    "file": "__my_fathers_piano.mp3"
+},{
+    "name": "argonaut",
+    "duration": "0:10",
+    "file": "__argonaut.mp3"
+},{
+    "name": "m",
+    "duration": "1:17",
+    "file": "__m.mp3"
 }];
 
 /*_____ _______    _______ ______  __      __     _____    _____
