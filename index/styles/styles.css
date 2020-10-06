@@ -48,12 +48,12 @@ canvas
   margin-bottom: 3%;
 	text-align: center;
 	font-size: 2.8em;
-	font-family: Georgia, Arial, Helvetica, sans-serif;
+	font-family: Georgia, "Bitstream Vera Serif", serif;
 }
 
 .standard_text
 {
-	font-family: Georgia, Helvetica, sans-serif;
+	font-family: Georgia, "Bitstream Vera Serif", serif;
 	text-align: center;
 }
 
