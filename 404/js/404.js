@@ -14,8 +14,11 @@ const BG_COLOR = "#282828";
 const BUU_COLOR = "#FB607F"
 const ERROR_COLOR = "#FF0000";
 
-let files = ["blog", "about", "hat", "josh8", "resources"];
-let commands = ["help", "clear", "goto", "ls", "hello", "buu", "js"];
+const files = ["home", "blog", "tunes", "papers", "whom",
+	"professors",  "art", "turtles", "eng2ru", "meme", 
+	"library", "paint", "software", "josh8", "cybernetic98"];
+
+const commands = ["help", "clear", "goto", "ls", "hello", "buu", "js"];
 
 let lines = [];
 let output_log = [];
