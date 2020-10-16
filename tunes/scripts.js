@@ -736,6 +736,26 @@ const SONGS = [{
     "name": "m",
     "duration": "1:17",
     "file": "__m.mp3"
+}, {
+    "name": "fite",
+    "duration": "0:12",
+    "file": "__fite.mp3"
+}, {
+    "name": "sunwalk",
+    "duration": "0:12",
+    "file": "__sunwalk.mp3"
+}, {
+    "name": "reducer",
+    "duration": "0:57",
+    "file": "__reducer.mp3"
+}, {
+    "name": "friendly ock",
+    "duration": "0:17",
+    "file": "__friendly_ock.mp3"
+}, {
+    "name": "cappoouueeoueouccino",
+    "duration": "1:42",
+    "file": "__cappoouueeoueouccino.mp3"
 }];
 
 /*_____ _______    _______ ______  __      __     _____    _____
