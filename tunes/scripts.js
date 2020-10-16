@@ -800,6 +800,7 @@ function init()
 	populateSongs();
 	initMenuBarStuff();
 	initKeyboardShortcuts();
+	highlightQueriedSong();
 }
 
 function populateSongs()
@@ -894,13 +895,36 @@ function initKeyboardShortcuts()
 			return false;
 		}
 
-		else if(e.keyCode == 39) playNextSong(CURRENT_SONG_INDEX, "next"); //right arrow
-		else if(e.keyCode == 37) playNextSong(CURRENT_SONG_INDEX, "prev"); //left arrow
-		else if(e.keyCode == 38){window.scrollTo(0, 0); return false;} //up arrow
-		else if(e.keyCode == 40){window.scrollTo(0,document.body.scrollHeight); return false;} //down arrow
-		else if(e.keyCode == 76) toggleLoopMode(); //l
-		else if(e.keyCode == 77) CURRENT_VOLUME == 0 ? setVolume(100) : setVolume(0); //m
-		else if(e.keyCode == 83) toggleShuffleMode(); //s
+		else if(e.keyCode == 39 /* right */) playNextSong(CURRENT_SONG_INDEX, "next");
+		else if(e.keyCode == 37 /*  left */) playNextSong(CURRENT_SONG_INDEX, "prev");
+		else if(e.keyCode == 38 /*    up */) {window.scrollTo(0, 0); return false;}
+		else if(e.keyCode == 40 /*  down */) {window.scrollTo(0,document.body.scrollHeight); return false;}
+		else if(e.keyCode == 76 /*     l */) toggleLoopMode();
+		else if(e.keyCode == 77 /*     m */) CURRENT_VOLUME == 0 ? setVolume(100) : setVolume(0);
+		else if(e.keyCode == 83 /*     s */) toggleShuffleMode();
+	}
+}
+
+function highlightQueriedSong()
+{
+	let url = window.location.href;
+	let qpos = url.search("q=");
+	if(qpos == -1) return;
+	let query = url.substring(qpos + 2).replace(/%20/g, " ").replace(/_/g, " ");
+
+	let titles = document.getElementsByClassName("song_titles");
+	for(let i = 0; i < titles.length; ++i)
+	{
+		if(titles[i].innerHTML.includes(query))
+		{
+			titles[i].style.border = "2px solid #89cdd3";
+			titles[i].onclick = function() {
+				titles[i].style.border = null;
+				titles[i].removeAttribute("onclick");
+			}
+			titles[i].scrollIntoView();
+			return;
+		}
 	}
 }
 
