@@ -321,29 +321,29 @@ const SONGS = [{
     "duration": "1:48",
     "file": "__Agamemnon.mp3"
 }, {
-	"name": "library holly",
-	"duration": "1:23",
-	"file": "__library_holly.mp3"
+    "name": "library holly",
+    "duration": "1:23",
+    "file": "__library_holly.mp3"
 }, {
-	"name": "metroloop",
-	"duration": "1:00",
-	"file": "__metroloop.mp3"
+    "name": "metroloop",
+    "duration": "1:00",
+    "file": "__metroloop.mp3"
 }, {
-	"name": "blue chalk",
-	"duration": "1:24",
-	"file": "__blue_chalk.mp3"
+    "name": "blue chalk",
+    "duration": "1:24",
+    "file": "__blue_chalk.mp3"
 }, {
-	"name": "cessaria",
-	"duration": "2:15",
-	"file": "__cessaria.mp3"
+    "name": "cessaria",
+    "duration": "2:15",
+    "file": "__cessaria.mp3"
 }, {
-	"name": "nöcht",
-	"duration": "0:33",
-	"file": "__nocht.mp3"
+    "name": "nöcht",
+    "duration": "0:33",
+    "file": "__nocht.mp3"
 }, {
-	"name": "metal cheek",
-	"duration": "1:06",
-	"file": "__metalcheek.mp3"
+    "name": "metal cheek",
+    "duration": "1:06",
+    "file": "__metalcheek.mp3"
 }, {
     "name": "qux",
     "duration": "0:32",
@@ -756,6 +756,10 @@ const SONGS = [{
     "name": "cappoouueeoueouccino",
     "duration": "1:42",
     "file": "__cappoouueeoueouccino.mp3"
+}, {
+    "name": "harps",
+    "duration": "1:21",
+    "file": "__harps.mp3"
 }];
 
 /*_____ _______    _______ ______  __      __     _____    _____
