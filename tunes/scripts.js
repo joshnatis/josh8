@@ -760,6 +760,26 @@ const SONGS = [{
     "name": "harps",
     "duration": "1:21",
     "file": "__harps.mp3"
+}, {
+    "name": "33LD4",
+    "duration": "0:17",
+    "file": "__33LD4.mp3"
+}, {
+    "name": "say goodnight to my little friend",
+    "duration": "1:16",
+    "file": "__say_goodnight_to_my_little_friend.mp3"
+}, {
+    "name": "we really wave ninjas",
+    "duration": "0:32",
+    "file": "__we_really_wave_ninjas.mp3"
+}, {
+    "name": "walking cheems outside the castle",
+    "duration": "0:42",
+    "file": "__walking_cheems_outside_the_castle.mp3"
+}, {
+    "name": "deadwoods",
+    "duration": "0:46",
+    "file": "__deadwoods.mp3"
 }];
 
 /*_____ _______    _______ ______  __      __     _____    _____
