@@ -1,6 +1,5 @@
 //TODO FIX DRAGGING TIMEBAR (oninput vs onchange, or both?)
 //move songs to external json file
-//test mobile
 //todo - make shuffle previous go to previous song in history
 //todo - change songbox to song_container
 
@@ -780,6 +779,22 @@ const SONGS = [{
     "name": "deadwoods",
     "duration": "0:46",
     "file": "__deadwoods.mp3"
+}, {
+    "name": "gourd af",
+    "duration": "0:42",
+    "file": "__gourd_af.mp3"
+}, {
+    "name": "alien coffin",
+    "duration": "0:33",
+    "file": "__alien_coffin.mp3"
+}, {
+    "name": "drowned9/ru",
+    "duration": "0:54",
+    "file": "__drowned9ru.mp3"
+}, {
+    "name": "say less more often",
+    "duration": "0:51",
+    "file": "__say_less_more_often.mp3"
 }];
 
 /*_____ _______    _______ ______  __      __     _____    _____
