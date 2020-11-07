@@ -784,6 +784,10 @@ const SONGS = [{
     "duration": "0:33",
     "file": "__alien_coffin.mp3"
 }, {
+    "name": "kurt talk 2",
+    "duration": "0:44",
+    "file": "__kurt_talk_2.mp3"
+}, {
     "name": "drowned9/ru",
     "duration": "0:54",
     "file": "__drowned9ru.mp3"
@@ -791,6 +795,18 @@ const SONGS = [{
     "name": "say less more often",
     "duration": "0:51",
     "file": "__say_less_more_often.mp3"
+}, {
+    "name": "meat radio",
+    "duration": "2:13",
+    "file": "__meat_radio.mp3"
+}, {
+    "name": "furry fiend",
+    "duration": "0:42",
+    "file": "__furry_fiend.mp3"
+}, {
+    "name": "very haircut",
+    "duration": "0:46",
+    "file": "__very_haircut.mp3"
 }];
 
 /*_____ _______    _______ ______  __      __     _____    _____
