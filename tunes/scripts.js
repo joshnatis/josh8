@@ -780,10 +780,6 @@ const SONGS = [{
     "duration": "0:46",
     "file": "__deadwoods.mp3"
 }, {
-    "name": "gourd af",
-    "duration": "0:42",
-    "file": "__gourd_af.mp3"
-}, {
     "name": "alien coffin",
     "duration": "0:33",
     "file": "__alien_coffin.mp3"
