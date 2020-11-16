@@ -807,6 +807,14 @@ const SONGS = [{
     "name": "very haircut",
     "duration": "0:46",
     "file": "__very_haircut.mp3"
+}, {
+    "name": "apollonia",
+    "duration": "2:22",
+    "file": "__apollonia.mp3"
+}, {
+    "name": "headass medal",
+    "duration": "1:23",
+    "file": "__headass_medal.mp3"
 }];
 
 /*_____ _______    _______ ______  __      __     _____    _____
