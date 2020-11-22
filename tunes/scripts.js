@@ -823,6 +823,10 @@ const SONGS = [{
     "name": "where da fuck is my shyt",
     "duration": "0:44",
     "file": "__where_da_fuck_is_my_shit.mp3"
+}, {
+    "name": "astigmatism ;(",
+    "duration": "0:43",
+    "file": "__astigmatism.mp3"
 }];
 
 /*_____ _______    _______ ______  __      __     _____    _____
