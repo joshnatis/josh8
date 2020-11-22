@@ -815,6 +815,14 @@ const SONGS = [{
     "name": "headass medal",
     "duration": "1:23",
     "file": "__headass_medal.mp3"
+}, {
+    "name": "my sunflower",
+    "duration": "0:54",
+    "file": "__my_sunflower.mp3"
+}, {
+    "name": "where da fuck is my shyt",
+    "duration": "0:44",
+    "file": "__where_da_fuck_is_my_shit.mp3"
 }];
 
 /*_____ _______    _______ ______  __      __     _____    _____
