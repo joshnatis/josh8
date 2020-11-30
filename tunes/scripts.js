@@ -827,6 +827,14 @@ const SONGS = [{
     "name": "astigmatism ;(",
     "duration": "0:43",
     "file": "__astigmatism.mp3"
+}, {
+    "name": "cute fox",
+    "duration": "0:37",
+    "file": "__cute_fox.mp3"
+}, {
+    "name": "thoughts",
+    "duration": "1:37",
+    "file": "__thoughts.mp3"
 }];
 
 /*_____ _______    _______ ______  __      __     _____    _____
