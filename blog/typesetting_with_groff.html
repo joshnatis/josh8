@@ -41,7 +41,7 @@ Also, fun fact, <a href="https://www.linuxjournal.com/article/1158">most man pag
 <h3> Why Groff?</h3>
 
 <p>
-Groff has essentially been obsoleted by more advanced typesetting tools like TeX (and its children), but it is part of a very lightweight environment that comes preinstalled on some POSIX systems, so I posit that it is still worth checking out. Besides that, it's part of a rich lineage of programs stemming from Bell Labs, which is reason enough for me :).
+Groff has essentially been obsoleted by more advanced typesetting tools like TeX (and its children), but it is part of a very lightweight environment that comes preinstalled on some UNIX-like systems, so I posit that it is still worth checking out. Besides that, it's part of a rich lineage of programs stemming from Bell Labs, which is reason enough for me :).
 </p>
 
 <p>
@@ -109,7 +109,7 @@ Once you've saved that, it's time to compile it into PostScript and then convert
 # this will output the resultant PostScript to standard out:
 $  groff -ms file.ms
 
-# let's put the PostScript in a file instead, using input redirection
+# let's put the PostScript in a file instead, using output redirection
 $ gross -ms file.ms &gt; file.ps
 
 # now we can convert this PostScript file to a PDF
