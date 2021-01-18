@@ -42,6 +42,8 @@ video { max-width: 95%; }
 .css {background-color: #563d7c;}
 .make {background-color: #427819;}
 .shan {background-color: #008080;}
+.sql {background-color: lightgreen;}
+.arduino {background-color: lightblue;}
 
 .pl {
 	font-family: monospace;
