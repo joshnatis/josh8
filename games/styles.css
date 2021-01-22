@@ -1,0 +1,132 @@
+body
+{
+	background-color: #265b5f;
+	font-family: "Georgia", "Bitstream Vera Serif", serif;
+	margin:0;
+}
+
+.row
+{
+	text-align: left;
+}
+
+.icon
+{
+	text-align: center;
+	display: inline-block;
+	margin: 1em;
+	cursor: pointer;
+}
+
+.icon-image:hover
+{
+	transition: 0.3s;
+	width: 7.5em;
+	border-color: white;
+}
+
+.icon-image
+{
+	width: 7em;
+	border: 2px solid black;
+	border-radius: 10px;
+	box-shadow: 5px 5px black;
+}
+
+.icon-title
+{
+	color: #eee;
+	text-shadow: 2px 2px black;
+	margin-top:0.5%;
+
+	-webkit-touch-callout: none; /* iOS Safari */
+	  -webkit-user-select: none; /* Safari */
+	   -khtml-user-select: none; /* Konqueror HTML */
+	     -moz-user-select: none; /* Old versions of Firefox */
+	      -ms-user-select: none; /* Internet Explorer/Edge */
+	          user-select: none; /* Non-prefixed version, currently*/
+}
+
+.dock-icon
+{
+	border: 2px solid black;
+	border-radius: 10px;
+	position:absolute;
+	bottom:0;
+	margin: 1em;
+	width:5em;
+	box-shadow: 5px 5px black;
+	cursor: pointer;
+}
+
+.dock-icon:hover
+{
+	width:5.2em;
+	transition: 0.2s;
+	border-color: white;
+}
+
+#random-icon
+{
+	right:0;
+}
+
+#home-icon
+{
+	right: 2em;
+	bottom: 1em;
+}
+
+#dock-border
+{
+	border-left: 2px solid black;
+	height: 95%;
+	position: absolute;
+	bottom: 1em;
+	right: 10em;
+}
+
+#bubble
+{
+	position: absolute;
+	opacity: 0.1;
+	top:0;
+	right:0;
+	width: 50%;
+	z-index: -999;
+	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+@media screen and (min-width: 1000px) {
+	#home-icon:hover
+	{
+		transition: 0.5s;
+		right: 6em;
+		bottom: 0em;
+	}
+
+	.dock-icon:hover
+	{
+		width:5.5em;
+		transition: 0.3s;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	#home-icon { right: 6em; bottom: 0; }
+	#dock-border
+	{
+		border-left:0;
+		border-top: 2px solid black;
+		height: auto;
+		width: 90%;
+		bottom: 7em;
+		right:1.5em;
+	}
+
+}
