@@ -835,6 +835,58 @@ const SONGS = [{
     "name": "thoughts",
     "duration": "1:37",
     "file": "__thoughts.mp3"
+}, {
+    "name": "buddy durress jumps out of a speeding taxi",
+    "duration": "0:17",
+    "file": "__buddy_durress_jumps_out_of_a_taxi.mp3"
+}, {
+    "name": "catnap",
+    "duration": "0:41",
+    "file": "__catnap.mp3"
+}, {
+    "name": "lol2",
+    "duration": "0:12",
+    "file": "__lol2.mp3"
+}, {
+    "name": "baby evan in the jungle",
+    "duration": "0:17",
+    "file": "__baby_evan_in_the_jungle.mp3"
+}, {
+    "name": "stegasaurus",
+    "duration": "0:29",
+    "file": "__stegasaurus.mp3"
+}, {
+    "name": "sad apple",
+    "duration": "0:46",
+    "file": "__sad_apple.mp3"
+}, {
+    "name": "interplanetary catbus",
+    "duration": "1:04",
+    "file": "__interplanetary_catbus.mp3"
+}, {
+    "name": "fantasy_star",
+    "duration": "0:23",
+    "file": "__fantasy_star.mp3"
+}, {
+    "name": "𝙱𝙸𝙶 𝙵𝙰𝚃 𝙰𝙻𝙸𝙴𝙽 𝙱𝙾𝚈𝙵𝚁𝙸𝙴𝙽𝙳",
+    "duration": "1:38",
+    "file": "__big_fat_alien_boyfriend.mp3"
+}, {
+    "name": "feedback",
+    "duration": "2:14",
+    "file": "__feedback.mp3"
+}, {
+    "name": "turkish deep state",
+    "duration": "0:36",
+    "file": "__turkish_deep_state.mp3"
+}, {
+    "name": "My mom bought a rock painting activity",
+    "duration": "1:27",
+    "file": "__My_mom_bought_a_rock_painting_activity.mp3"
+}, {
+    "name": "bashkirian waste and the master plan",
+    "duration": "8:54",
+    "file": "__bashkirian_waste_and_the_master_plan.mp3"
 }];
 
 /*_____ _______    _______ ______  __      __     _____    _____
