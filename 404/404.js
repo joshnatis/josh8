@@ -16,9 +16,12 @@ function randomizeTexture()
 function hammingDistance(target, actual)
 {
 	let max = (target.length > actual.length) ? target.length : actual.length;
-	let min = (target.length > actual.length) ? actual.length : target.length;
-	let distance = max - min;
 
+	/* make strings the same length for a more fair comparison */
+	target = target.padEnd(max, " ");
+	actual = actual.padEnd(max, " ");
+
+	let distance = 0;
 	for(let i = 0; i < target.length; ++i)
 		if(target[i] != actual[i])
 			distance++;
@@ -28,13 +31,26 @@ function hammingDistance(target, actual)
 
 function fuzzySearch(target, table)
 {
-	const THRESHOLD = 5; /* lenience of fuzzy search */
-	for(let item in table)
+	const THRESHOLD = 3; /* lenience of fuzzy search */
+
+	let min = Number.MAX_VALUE;
+	let hit = -1;
+
+	for(let i = 0; i < table.length; ++i)
 	{
-		if(hammingDistance(target, item) <= THRESHOLD)
-			return [true, key];
+		let max = Math.max(target.length, table[i].length);
+		let diff = hammingDistance(target, table[i]);
+
+		if(diff < min)
+		{
+			min = diff;
+			hit = i;
+		}
 	}
-	return [false, ""];
+	if(min <= THRESHOLD)
+		return [true, table[hit]];
+	else
+		return [false, ""];
 }
 
 function displayFuzzySearch()
@@ -51,11 +67,8 @@ function displayFuzzySearch()
 	if(found)
 	{
 		let msg = document.getElementById("msg");
-		msg.innerHTML = "Did you mean to go to <a href=\"josh8.com/"
+		msg.innerHTML = "Did you mean to go to <a href=\"https://josh8.com/"
 			+ correction + "\">/"
 			+ correction + "</a>?";
-
-		console.log("correction: " + correction);
 	}
-	else console.log("correction for " + searchTerm + " not found");
 }
