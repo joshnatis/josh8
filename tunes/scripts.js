@@ -855,11 +855,7 @@ const SONGS = [{
     "name": "stegasaurus",
     "duration": "0:29",
     "file": "__stegasaurus.mp3"
-}, {
-    "name": "sad apple",
-    "duration": "0:46",
-    "file": "__sad_apple.mp3"
-}, {
+},{
     "name": "interplanetary catbus",
     "duration": "1:04",
     "file": "__interplanetary_catbus.mp3"
@@ -887,6 +883,10 @@ const SONGS = [{
     "name": "bashkirian waste and the master plan",
     "duration": "8:54",
     "file": "__bashkirian_waste_and_the_master_plan.mp3"
+}, {
+    "name": "this is a recurring death",
+    "duration": "0:40",
+    "file": "__this_is_a_recurring_death.mp3"
 }];
 
 /*_____ _______    _______ ______  __      __     _____    _____
