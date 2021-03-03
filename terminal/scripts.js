@@ -15,8 +15,8 @@ const BUU_COLOR = "#FB607F"
 const ERROR_COLOR = "#FF0000";
 
 const files = ["home", "blog", "tunes", "papers", "whom",
-	"professors",  "art", "turtles", "eng2ru", "meme", 
-	"library", "paint", "software", "cybernetic98", "games"];
+	"professors",  "art", "turtles", "meme", "library",
+	"paint", "software", "cybernetic98", "games"];
 
 const commands = ["help", "clear", "goto", "ls", "hello", "buu", "js"];
 
