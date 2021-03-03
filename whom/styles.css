@@ -87,19 +87,19 @@ a { text-decoration: none; }
   text-align: center;
 }
 
-#bureaucracy_box:hover
+/*#bureaucracy_box:hover
 {
 	background-color: black;
 	transition: 0.3s;
 	transform: scale(1.05);
 	opacity: 0.5;
 	filter: alpha(opacity=50)
-}
+}*/
 
 .about-text { font-family: 'Muli', sans-serif; }
 
-#bureaucracy_box:hover .about-text { color: white; }
-#bureaucracy_box:hover a { color: violet; }
+/*#bureaucracy_box:hover .about-text { color: white; }
+#bureaucracy_box:hover a { color: violet; }*/
 
 #title1{font-family: 'Calistoga', cursive;}
 #title2{font-family: 'Calistoga', cursive;}
