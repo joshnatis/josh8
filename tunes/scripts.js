@@ -887,6 +887,34 @@ const SONGS = [{
     "name": "this is a recurring death",
     "duration": "0:40",
     "file": "__this_is_a_recurring_death.mp3"
+}, {
+    "name": "gimme a minute uhh...",
+    "duration": "0:58",
+    "file": "__gime_a_minute_uhh.mp3"
+}, {
+    "name": "dark gray wave machine",
+    "duration": "2:01",
+    "file": "__dark_gray_wave_machine.mp3"
+}, {
+    "name": "space sandwich",
+    "duration": "1:01",
+    "file": "__space_sandwich.mp3"
+}, {
+    "name": "surely you're joking",
+    "duration": "1:37",
+    "file": "__sure.mp3"
+}, {
+    "name": "peche lambic beer",
+    "duration": "0:44",
+    "file": "__peche_lambic_beer.mp3"
+}, {
+    "name": "violet",
+    "duration": "0:22",
+    "file": "__violet.mp3"
+}, {
+    "name": "drive-by downloads",
+    "duration": "0:30",
+    "file": "__drive-by_downloads.mp3"
 }];
 
 /*_____ _______    _______ ______  __      __     _____    _____
