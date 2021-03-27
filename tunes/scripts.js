@@ -915,6 +915,26 @@ const SONGS = [{
     "name": "drive-by downloads",
     "duration": "0:30",
     "file": "__drive-by_downloads.mp3"
+}, {
+    "name": "aw cute butterfly",
+    "duration": "0:44",
+    "file": "__aw_cute_butterfly.mp3"
+}, {
+    "name": "oblong",
+    "duration": "0:30",
+    "file": "__oblong.mp3"
+}, {
+    "name": "cchips2",
+    "duration": "0:27",
+    "file": "__cchips2.mp3"
+}, {
+    "name": "cchips3",
+    "duration": "0:20",
+    "file": "__cchips3.mp3"
+}, {
+    "name": "freeze",
+    "duration": "1:04",
+    "file": "__freeze.mp3"
 }];
 
 /*_____ _______    _______ ______  __      __     _____    _____
