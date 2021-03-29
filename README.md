@@ -27,14 +27,12 @@ Email me :-) -- `josh at josh8 dot com`
 
 * [The Whomst've Page](https://josh8.com/whom) (sometimes referred to as 'About Me')
 
-* [A Terminal Emulator as a 404 Page](https://josh8.com/404/1.html), coz why not
+* [A Terminal Emulator](https://josh8.com/terminal) coz why not
 
 * [An Incomplete Drawing App That Doesn't Work on Mobile For Some Reason](https://josh8.com/paint)
 
 * [A Meme Maker and Deepfryer](https://josh8.com/meme)
 
 * [My Library](https://josh8.com/library)
-
-* [A Sucky English To Russian Transliterator](https://josh8.com/eng2ru), which was ported from Python so my friends can use it online.
 
 * A [directory of some software I've created](https://josh8.com/software)
