@@ -935,6 +935,18 @@ const SONGS = [{
     "name": "freeze",
     "duration": "1:04",
     "file": "__freeze.mp3"
+}, {
+    "name": "lucas",
+    "duration": "1:04",
+    "file": "__lucas.mp3"
+}, {
+    "name": "i dont like girls with nice teeth",
+    "duration": "1:04",
+    "file": "__lucas.mp3"
+}, {
+    "name": "tu again?",
+    "duration": "1:27",
+    "file": "__tu_again.mp3"
 }];
 
 /*_____ _______    _______ ______  __      __     _____    _____
