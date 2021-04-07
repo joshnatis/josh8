@@ -941,8 +941,8 @@ const SONGS = [{
     "file": "__lucas.mp3"
 }, {
     "name": "i dont like girls with nice teeth",
-    "duration": "1:04",
-    "file": "__lucas.mp3"
+    "duration": "1:18",
+    "file": "__idontlikegirlswithniceteeth.mp3"
 }, {
     "name": "tu again?",
     "duration": "1:27",
