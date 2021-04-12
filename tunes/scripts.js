@@ -947,6 +947,14 @@ const SONGS = [{
     "name": "tu again?",
     "duration": "1:27",
     "file": "__tu_again.mp3"
+}, {
+    "name": "a worm was here first",
+    "duration": "1:06",
+    "file": "__a_worm_was_here_first.mp3"
+}, {
+    "name": "static fields",
+    "duration": "0:24",
+    "file": "__static_fields.mp3"
 }];
 
 /*_____ _______    _______ ______  __      __     _____    _____
