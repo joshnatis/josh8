@@ -962,7 +962,7 @@ const SONGS = [{
 }, {
     "name": "drain jesus",
     "duration": "0:14",
-    "file": " __drain_jesus.mp3"
+    "file": "__drain_jesus.mp3"
 }, {
     "name": "russian cybercriminals, or, are you sure you want to land on the moon?",
     "duration": "0:53",
