@@ -967,6 +967,10 @@ const SONGS = [{
     "name": "russian cybercriminals, or, are you sure you want to land on the moon?",
     "duration": "0:53",
     "file": "__russian_cybercriminals.mp3"
+}, {
+    "name": "woe is the transgression",
+    "duration": "1:09",
+    "file": "__oe.mp3"
 }];
 
 /*_____ _______    _______ ______  __      __     _____    _____
