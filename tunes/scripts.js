@@ -955,6 +955,18 @@ const SONGS = [{
     "name": "static fields",
     "duration": "0:24",
     "file": "__static_fields.mp3"
+}, {
+    "name": "massage my ears",
+    "duration": "0:37",
+    "file": "__massage_my_ears.mp3"
+}, {
+    "name": "drain jesus",
+    "duration": "0:14",
+    "file": " __drain_jesus.mp3"
+}, {
+    "name": "russian cybercriminals, or, are you sure you want to land on the moon?",
+    "duration": "0:53",
+    "file": "__russian_cybercriminals.mp3"
 }];
 
 /*_____ _______    _______ ______  __      __     _____    _____
