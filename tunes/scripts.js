@@ -971,6 +971,14 @@ const SONGS = [{
     "name": "woe is the transgression",
     "duration": "1:09",
     "file": "__oe.mp3"
+}, {
+    "name": "how we relate",
+    "duration": "0:52",
+    "file": "__how_we_relate.mp3"
+}, {
+    "name": "blowin off steam",
+    "duration": "0:25",
+    "file": "__blowin_off_steam.mp3"
 }];
 
 /*_____ _______    _______ ______  __      __     _____    _____
