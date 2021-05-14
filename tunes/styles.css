@@ -4,6 +4,7 @@ body
 	color: white;
 	font-size: 1.05rem;
 	font-family: "Oxygen", HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin-top: 0;
 }
 
 .container
@@ -13,6 +14,16 @@ body
 
 #menubar
 {
+	position: fixed;
+	top: 0;
+	width: 99%;
+	background-color: black;
+	margin-top: 0;
+}
+
+#title
+{
+	margin-bottom: 1%;
 }
 
 .pad
@@ -23,8 +34,6 @@ body
 #timebar
 {
 	width: 30%;
-	/*vertical-align: top;
-	margin-top: 0.6%;*/
 	transform: translateY(-70%);
 }
 
@@ -54,7 +63,6 @@ body
 	height: 1.75em;
 	width: 1.75em;
 	border-radius: 50%;
-	/*background: rgb(255, 192, 203);*/
 	background: white;
 	border: 2px solid black;
 	cursor: pointer;
@@ -86,6 +94,11 @@ body
 {
 	display: inline-block;
 	transform: translateY(-45%);
+}
+
+#songs-container
+{
+	margin-top: 5.9em;
 }
 
 .song_boxes
@@ -148,8 +161,6 @@ img:hover
 
 @media screen and (max-width: 880px)
 {
-	/*.container { width: 100%; border: 1px solid blue;}
-	#menubar { width: 100%; border: 1px solid red;}*/
 	body { font-size: 0.9em; }
 	#volume { width: 15%; }
 }
@@ -172,5 +183,4 @@ img:hover
 {
 	.container{text-align: left;}
 	body { font-size: 0.8em; }
-
 }
