@@ -979,6 +979,10 @@ const SONGS = [{
     "name": "blowin off steam",
     "duration": "0:25",
     "file": "__blowin_off_steam.mp3"
+}, {
+    "name": "swagged up",
+    "duration": "0:24",
+    "file": "__swagged_up.mp3"
 }];
 
 /*_____ _______    _______ ______  __      __     _____    _____
