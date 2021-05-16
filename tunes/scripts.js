@@ -1,7 +1,4 @@
-//TODO FIX DRAGGING TIMEBAR (oninput vs onchange, or both?)
 //move songs to external json file
-//todo - make shuffle previous go to previous song in history
-//todo - change songbox to song_container
 
 /*_____       _______
  |  __ \   /\|__   __|/\
@@ -1012,6 +1009,7 @@ const speaker_btn = document.getElementById("speaker");
 const volume_slider = document.getElementById("volume");
 const time_slider = document.getElementById("timebar");
 const time_text = document.getElementById("time");
+const songs_container = document.getElementById("songs-container");
 
 /*_____ _   _ _____ _______    _____ _______ _    _ ______ ______
  |_   _| \ | |_   _|__   __|  / ____|__   __| |  | |  ____|  ____|
@@ -1052,8 +1050,8 @@ function populateSongs()
 			playSong(i, songbox);
 		};
 
-		document.getElementById("songs-container").appendChild(songbox);
-		document.getElementById("songs-container").appendChild(BR);
+		songs_container.appendChild(songbox);
+		songs_container.appendChild(BR);
 	}
 }
 
@@ -1129,6 +1127,7 @@ function initKeyboardShortcuts()
 		else if(e.keyCode == 76 /*     l */) toggleLoopMode();
 		else if(e.keyCode == 77 /*     m */) CURRENT_VOLUME == 0 ? setVolume(100) : setVolume(0);
 		else if(e.keyCode == 83 /*     s */) toggleShuffleMode();
+        else if(e.keyCode == 82 /*     r */) reverseSongs();
 	}
 }
 
@@ -1277,6 +1276,16 @@ function toggleShuffleMode()
 			toggleLoopMode();
 		CURRENT_MODE = "SHUFFLE";
 	}
+}
+
+function reverseSongs()
+{
+    let kids = songs_container.childNodes;
+    for(let i = kids.length - 1; i >= 0; --i)
+    {
+        let child = songs_container.removeChild(kids[i]);
+        songs_container.appendChild(child);
+    }
 }
 
 /*_    _ ______ _      _____  ______ _____   _____
