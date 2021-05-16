@@ -980,6 +980,10 @@ const SONGS = [{
     "name": "swagged up",
     "duration": "0:24",
     "file": "__swagged_up.mp3"
+}, {
+    "name": "a direct reference to purple music",
+    "duration": "1:32",
+    "file": "__a_direct_reference_to_purple_music.mp3"
 }];
 
 /*_____ _______    _______ ______  __      __     _____    _____
