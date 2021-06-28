@@ -987,7 +987,7 @@ const SONGS = [{
 }, {
     "name": "trancey prance",
     "duration": "1:08",
-    "file": "__trancey_prance"
+    "file": "__trancey_prance.mp3"
 }, {
     "name": "torreador",
     "duration": "0:23",
