@@ -984,6 +984,30 @@ const SONGS = [{
     "name": "a direct reference to purple music",
     "duration": "1:32",
     "file": "__a_direct_reference_to_purple_music.mp3"
+}, {
+    "name": "trancey prance",
+    "duration": "1:08",
+    "file": "__trancey_prance"
+}, {
+    "name": "torreador",
+    "duration": "0:23",
+    "file": "__torreador.mp3"
+}, {
+    "name": "doink by the beach",
+    "duration": "1:15",
+    "file": "__doink_by_the_beach.mp3"
+}, {
+    "name": "STRAPPED",
+    "duration": "0:41",
+    "file": "__STRAPPED.mp3"
+}, {
+    "name": "movie sketch 1",
+    "duration": "0:31",
+    "file": "__movie_sketch_1.mp3"
+}, {
+    "name": "movie sketch 2",
+    "duration": "0:48",
+    "file": "__movie_sketch_2.mp3"
 }];
 
 /*_____ _______    _______ ______  __      __     _____    _____
