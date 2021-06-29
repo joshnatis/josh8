@@ -1008,6 +1008,14 @@ const SONGS = [{
     "name": "movie sketch 2",
     "duration": "0:48",
     "file": "__movie_sketch_2.mp3"
+}, {
+    "name": "skoold",
+    "duration": "1:11",
+    "file": "__skoold.mp3"
+}, {
+    "name": "wachu",
+    "duration": "0:16",
+    "file": "__wachu.mp3"
 }];
 
 /*_____ _______    _______ ______  __      __     _____    _____
