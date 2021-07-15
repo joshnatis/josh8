@@ -1016,6 +1016,14 @@ const SONGS = [{
     "name": "wachu",
     "duration": "0:16",
     "file": "__wachu.mp3"
+}, {
+    "name": "E0000002.wav",
+    "duration": "1:24",
+    "file": "__E0000002.mp3"
+}, {
+    "name": "synth cookies",
+    "duration": "1:20",
+    "file": "__synth_cookies.mp3"
 }];
 
 /*_____ _______    _______ ______  __      __     _____    _____
