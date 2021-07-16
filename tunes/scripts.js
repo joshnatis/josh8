@@ -1024,6 +1024,14 @@ const SONGS = [{
     "name": "synth cookies",
     "duration": "1:20",
     "file": "__synth_cookies.mp3"
+}, {
+    "name": "il ragazzo",
+    "duration": "0:44",
+    "file": "__il_ragazzo.mp3"
+}, {
+    "name": "alice hi",
+    "duration": "0:17",
+    "file": "__alice_hi.mp3"
 }];
 
 /*_____ _______    _______ ______  __      __     _____    _____
