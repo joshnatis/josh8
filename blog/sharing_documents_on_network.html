@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>src/sharing_documents_on_network</title>
+	<link rel="stylesheet" href="./styles/styles.css">
+	<link rel="icon" href="./images/favicon.ico">
+	<script src="./js/scripts.js"></script>
+	<link rel="stylesheet" href="./highlight/styles/pojoaque.css">
+	<script src="./highlight/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+
+	<style>
+		.mycomps {
+			width: 50%;
+			border: 5px double black;
+			border-radius: 2px;
+			box-shadow: 3px 3px black;
+			margin-right: 2%;
+		}
+	</style>
+</head>
+
+<body>
+
+<h1> Sharing Documents Between Computers on a Network</h1>
+
+<p>
+<p class="subtitle">July 18, 2021 &mdash; Josh </p>
+</p>
+
+<p>
+You ever move a file between computers by emailing it to yourself? Or maybe you've typed out a long incoherent link by hand to avoid having to send it to yourself somehow? These things have always annoyed me -- today I came up with a cool way to share documents between hosts on the same network.
+</p>
+
+<p>
+Let's say these are my computers, and I want to send some files from Bob to Alice:
+</p>
+
+<p>
+<img alt="Xerox Alto aka Bob" src="images/bob.png" class="mycomps" style="width:35%">
+<img alt="PDP-11 aka Alice" src="images/alice.png" class="mycomps">
+</p>
+
+<p>
+Firstly, we'll have Bob open up one of his ports and start an HTTP server on that port. For this, we can use Python: <code class="inline-code">python3 -m http.server 8080</code>.
+</p>
+
+<p>
+ The contents of the directory in which you started the server are now available if one navigates to the socket. For Bob this is simple, he can go to <code class="inline-code">localhost:8080</code> in his browser. "Aha", thinks Alice, "a1l B0bz phil3z r b3l0ng 2 us... just need to make my way to <code class="inline-code">localhost:8080</code>". Not so fast, Alice, <code class="inline-code">localhost</code> is just a hostname that refers to the current computer used to access it, so you are just to maneuvering to your own port. Instead, we need to get Bob's (local) IP address and navigate there.
+</p>
+
+<p>
+There are a shit ton of ways to get your IP address, here are two that worked on my machines:
+</p>
+
+<p>
+With the <code class="inline-code">ipconfig</code> utility:</p>
+
+<ul>
+	<li><code class="inline-code">$ ipconfig getifaddr en0</code></li>
+</ul>
+
+<p>
+With the <code class="inline-code">ip</code> utility:</p>
+
+<ul>
+	<li><code class="inline-code">$ ip a show wlp3s0 | grep 192 | cut -d' ' -f6 | cut -d'/' -f1</code></li>
+</ul>
+
+
+<p>
+(Change <i>en0</i> and <i>wlp3s0</i> to your respective interface names; also doing grep 192 won't be right if you have a weird private IP address lol so maybe just go through the entire output manually and find your IP)
+</p>
+
+<p>
+Ok, so we ran some command and found out that Bob's address is <code class="inline-code">192.168.0.1</code>. Alice can go to <code class="inline-code">192.168.0.1:8080</code> in her browser and she will see all of the files in Bob's directory. Yay!
+</p>
+
+<hr>
+
+<p>
+I wrote a shell script to kind of automate this process, it may or may not be useful to you:
+</p>
+
+<pre><code class="bash">#!/bin/bash
+
+# usage: `share` or `share &lt;path&gt;` or `share &lt;text&gt;`
+# your computer's ip will be printed -- navigate to it on your other device
+# you will be prompted with "%:", enter text or a path to a file you want to share
+# files will be copied into the server directory until you quit the program
+# text will be appended to `text.html`
+# ctrl-c to quit :P
+
+IP=$(~/bin/getip) # replace this with something that'll get your ip address
+PORT="8080"
+
+create() {
+        curdir=$PWD
+        tmpdir=$(mktemp -d)
+        cd "$tmpdir"
+        python3 -m http.server $PORT &amp; 2&gt; /dev/null
+        SERVER_PID=$!
+        cd "$curdir"
+}
+
+destroy() {
+        kill $SERVER_PID
+        wait $SERVER_PID 2&gt;/dev/null
+        rm -r "$tmpdir"
+        exit
+}
+
+trap destroy INT
+create
+tput bold; echo "$IP:$PORT" ; tput sgr0
+query="$1"
+while true; do
+        query="${query/#\~/$HOME}"  # this is a bashism, sorry everyone
+        if [ -e "$query" ]; then
+                cp "$query" "$tmpdir"
+        else
+                echo "&lt;p&gt;$query&lt;/p&gt;" &gt;&gt; "$tmpdir/text.html"
+        fi
+        read -p "%: " query
+done
+destroy
+</code></pre>
+
+<hr>
+
+<p>
+<i>NB: If you have an ssh/ftp/sftp/scp/etc/abcdefg server running on the serving computer then probably just use that instead of this hack.</i>
+</p>
+
+<script>inject_blog_structure();</script>
+</body>
+</html>
