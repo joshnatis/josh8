@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>On Further Study of Operating Systems</title>
+	<link rel="stylesheet" href="./styles/styles.css">
+	<link rel="icon" href="./images/favicon.ico">
+	<script src="./js/scripts.js"></script>
+	<link rel="stylesheet" href="./highlight/styles/pojoaque.css">
+	<script src="./highlight/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+
+	<style>
+		ol li {
+			margin-bottom: 0.8em;
+		}
+		ol ul {
+			margin-top: 0.3em;
+		}
+		ul li {
+			margin-bottom: 0.3em;
+		}
+	</style>
+</head>
+
+<body>
+
+<h1> On Further Study of Operating Systems</h1>
+
+<p class="subtitle">July 22, 2021 &mdash; Josh </p>
+
+<p>
+Last semester I was a teaching assistant for our operating systems course at Hunter College, g0oD TiM3s. I wrote this message to the class and figured it would be cool to share it here too.
+</p>
+
+<p>
+I also have a bunch of related links etc saved for myself <a href="https://github.com/chamomile-labs/operating-systems">here</a> if this is something you're interested in.
+</p>
+
+<hr>
+
+<p>
+Hi all,
+</p>
+
+<p>
+This is Josh, one of your TAs. Thank you for a great semester. I hope you found the course interesting and learned something new. This is a post about approaches you could take to learn more about operating systems on your own time (and links to a bunch of resources). <b>Note that this has nothing to do with the final exam, so please ignore this message until you have time to read it.</b>
+</p>
+
+<p>
+I'll start with a classification of operating systems courses by John Lions:
+</p>
+
+<blockquote> There seem to be three main approaches to teaching Operating Systems.
+<br><br>
+First there is the “general principles” approach, wherein fundamental principles are expounded, and illustrated by references to various existing systems. This is the approach advocated by the COSINE Committee, but in our view, many students are not mature or experienced enough to profit from it.
+<br><br>
+The second approach is the “building block” approach, wherein the students are enabled to synthesize a small scale or “toy” operating system for themselves. While undoubtedly this can be a valuable exercise, if properly organised, it cannot but fail to encompass the complexity and sophistication of real operating systems, and is usually biased towards one aspect of operating system design, such as process synchronisation.
+<br><br>
+The third approach is the “case study” approach. This is the one originally recommended for the Systems Programming course in “Curriculum ’68”, the report of the ACM Curriculum Committee on Computer Science, published in the March, 1968 issue of the “Communications of the ACM”. Ten years ago, this approach, which advocates devoting “most of the course to the study of a single system” was unrealistic because the cost of providing adequate student access to a suitable system was simply too high.
+</blockquote>
+<p>
+This quote is from 1976, but for the most part this still holds true. Our course was of the first type, a (relatively in depth) survey of general principles. As professor Weiss said in the first slide of Chapter 1, <i>"This is an overview of computer operating systems. It is not an in-depth study of them"</i>. Clearly, there is still a lot left to learn. Here are some ideas:
+</p>
+
+<h2> Continuing Our Approach</h2>
+
+<p>
+As professor Weiss mentioned at the end of class today, our course has covered the chapters from the textbook regarding <i>processes</i>. The other half of the chapters are for the most part centered around <i>hardware-related</i> topics (Main Memory, Virtual Memory, Mass-Storage Structure, I/O Systems) and other fundamental operating system structures (File-System Interface, File-System Implementation, File-System Internals, Security, Protection, Virtual MachinesNetworks and Distributed Systems). Reading the remainder of the textbook seems like a good place to start in learning more about those topics. There are also publisher slides for those chapters linked on <a href="http://compsci.hunter.cuny.edu/~sweiss/course&#95;materials/csci340/csci340&#95;spr21.php">our course's home page</a>.
+</p>
+
+<h2> The "Case Study" Approach</h2>
+
+<p>
+The classic "case study" operating systems text is John Lions' <i>A Commentary on the Sixth Edition UNIX Operating System</i> -- it's an analytical commentary on the Version 6 UNIX source code (chosen because of its simplicity and consiceness). You can find a PDF of the book <a href="http://www.lemis.com/grog/Documentation/Lions/">here</a>.
+</p>
+
+<p>
+The V6 source code is quite old, written in a pre-ANSI dialect of C, and meant to run on a PDP-11. A modern rendition of this code exists and is used in many operating systems courses today -- it's called xv6, and you can find more information about it <a href="https://pdos.csail.mit.edu/6.828/2020/xv6.html">here</a>. The <a href="https://en.wikipedia.org/wiki/Xv6#Educational&#95;use">Wikipedia article on xv6</a> links to many pages of courses using xv6 to teach, so maybe following along with one of those courses would be a good way to proceed.
+</p>
+
+<p>
+Another choice is Andrew Tanenbaum's text based on MINIX, a teaching operating system he wrote. The text is called <i>Operating Systems: Design and Implementation</i>. In class we discussed a <a href="https://www.oreilly.com/openbook/opensources/book/appa.html">flame war</a> between Tanenbaum and Linus Torvalds regarding microkernels vs monolithic kernels -- the reason they were having this conversation in the first place is because Linux was a free 'rewrite' (well, more than that) of MINIX. As the direct predecessor to Linux, MINIX has historical significance. According to Tanenbaum, this book is somewhere between a practical and theoretical study of operating systems.
+</p>
+
+<p>
+The last choice I will mention is the most modern and maybe the most pragmatic. <i>The Design and Implementation of the FreeBSD Operating System</i>, as the title says, is a text on FreeBSD, which itself is a modern free and open source Unix-like operating system. Along with the <a href="https://github.com/freebsd/freebsd-src">FreeBSD source code</a>, this might be a very good learning resource.
+</p>
+
+<h2> Systems Programming</h2>
+
+<p>
+Many of the code examples we've seen in class this semester revolved around using the API presented by the operating system (i.e. system calls) to perform some function. This is how system programs are written (recall the definition of a system program, for example stuff in <code class="inline-code">/bin</code> like <code class="inline-code">ls</code>, <code class="inline-code">bash</code>, etc). Now that you are familiar with some of the facilities provided by the operating system, you can use them to write such utilities yourself. Maybe this is more of interest to you than big ideas about operating systems. This is also a good way to get more familiar with C, as most system programs written for Unix-like systems are written in C.
+</p>
+
+<p>
+A good way to go about this may be to read the source code of common command-line utilities, and to try to re-implement them by yourself. Parties responsible for different operating systems may write utilities in drastically different ways -- specifically GNU utilities were <i>"often intentionally written in an odd style to remove all questions of Unix copyright infringement at the time that they were written"</i>, so keep this in mind when reading. Here are links to utilities from <a href="https://github.com/freebsd/freebsd-src/tree/main/bin">FreeBSD</a>, <a href="https://github.com/coreutils/coreutils/tree/master/src">GNU</a>, <a href="https://git.suckless.org/9base/files.html">Plan 9</a>, and <a href="http://heirloom.sourceforge.net/">The Heirloom Project</a>. You can likely find other implementations online. Here's a link to a <a href="https://www.youtube.com/channel/UCcFVlUyZm22BB6-pPqxZSMg/videos">YouTube channel</a> with videos of implementing a few utilities (including <code class="inline-code">cat</code>, <code class="inline-code">chmod</code>, <code class="inline-code">echo</code>, and <code class="inline-code">mkdir</code>).
+</p>
+
+<p>
+<i>The Unix Programming Environment</i> by Kernighan and Pike is a great book that may also come in handy. I've personally read half of this one so I can recommend it. Another one is <a href="http://www.catb.org/~esr/writings/taoup"><i>The Art of UNIX Programming</i></a> by Eric Raymond. Supposedly <i>Advanced Programming in the Unix Environment</i> by Richard Stevens is a canonical UNIX systems programming book as well.
+</p>
+
+<p>
+Two more useful documents are <a href="https://clig.dev/">Command Line Interface Guidelines</a> (<i>"An open-source guide to help you write better command-line programs, taking traditional UNIX principles and updating them for the modern day"</i>) and perhaps <a href="http://cristal.inria.fr/~weis/info/commandline.html">In the Beginning was the Command Line</a>.
+</p>
+
+<p>
+Don't forget that the professor has written a bunch of demos for us in the <code class="inline-code">/data/biocs/b/student.accounts/cs340&#95;sw/demos</code> directory -- these are a great resource. He's also taught a UNIX systems programming course before: here is its <a href="http://compsci.hunter.cuny.edu/~sweiss/course&#95;materials/cs82010/cs82010&#95;spr13.php">webpage</a>.
+</p>
+
+<h2> Alternative Operating Systems and Languages</h2>
+
+<p>
+You may notice that there has been a strong emphasis on UNIX specifically in our course and in most of the resources I have linked. UNIX struck a balance between simplicity and expressiveness, and for historical reasons has persisted until now despite being created in the early 70s. It may or may not be the end all be all of operating systems, though.
+</p>
+
+<h3> Moving Past C?</h3>
+
+<p>
+Because UNIX and C co-evolved at Bell Labs, they share a heritage, and UNIX + its system utilities are mostly written in C. There are pros and cons to this.</p>
+
+<ol>
+	<li> C and UNIX were built with each other in mind, so they are a good match.</li>
+	<li> C is a thin layer over the PDP-11 computer's architecture instruction set, and that is the machine UNIX was built for. This means that on a PDP-11 you will for the most part know exactly how your C program will operate on your computer, which is great for those who have a thorough understanding of how their computer works (the language grants you all the control you need). But, I'd hedge a bet and say <a href="https://queue.acm.org/detail.cfm?id=3212479">your computer is not a PDP-11</a>. On many modern computers, C is no longer a low level language, as it does not reflect the underlying architecture and how the computer works.</li>
+	<li> C is fundamentally unsafe and insecure (e.g. buffer overflows can be exploited), and because of this many of the foundational technologies our society is built on are insecure, too. This is one of the main inspirations for new languages like Rust, which aim to be safe from the start (and many systems and utilities are being re-written in such languages).
+	<ul>
+		<li><a href="http://trevorjim.com/using-an-unsafe-language-is-a-design-flaw/">Using an unsafe language is a design flaw</a></li>
+		<li><i>Computer Security Principles and Practice</i> Chapters 10, 11, 12</li>
+		<li><a href="https://www.redox-os.org/">RedoxOS</a> (<i>"Redox is a Unix-like Operating System written in Rust"</i>)</li>
+		<li>Another approach is using tools to formally verify the correctness of C programs, such as what is being done with the <a href="https://sel4.systems/">Sel4 Microkernel</a></li>
+		</ul>
+	</li>
+	<li> C's extensive usage of pointers makes some optimization and parallelization very difficult or impossible.</li>
+	<li> C is an imperative language built (for the most part) for the Von Neumann Architecture model of computing. If one wants to experiment with different ways of thinking about languages and architectures, C is not the place to look.</li>
+</ol>
+
+
+<h3> Alternatives</h3>
+
+<p>
+In short, the above is meant to communicate the idea that there are other alternatives to C and UNIX, and we should look for them and study them to get a better idea of what is possible.
+</p>
+
+<p>
+Here's a start:</p>
+
+<ul>
+	<li><a href="http://cat-v.org/">Plan 9</a> - a research operating system from Bell Labs, file system as a universal interface, innovative approach to a GUI and text editing, etc</li>
+	<li><a href="https://en.wikipedia.org/wiki/Inferno&#95;(operating&#95;system">Inferno</a>) - a research distributed, embedded operating system from Bell Labs with a type-safe system language called Limbo</li>
+	<li><a href="https://people.inf.ethz.ch/wirth/ProjectOberon/PO.System.pdf">Oberon</a> - via Niklaus Wirth, an operating system with Oberon as the system language</li>
+	<li><a href="https://en.wikipedia.org/wiki/Smalltalk">Smalltalk</a> - both a language and an operating system from Xerox PARC</li>
+	<li><a href="http://tunes.org/">The TUNES OS/Language Project</a></li>
+</ul>
+
+
+<p>
+There are also experimental Unices (Unix-es?) and kernels, such as the <a href="https://www.gnu.org/software/hurd/">GNU Hurd</a>, <a href="https://www.cs.cmu.edu/afs/cs/project/mach/public/www/mach.html">Mach Kernel</a>, and <a href="https://www.haiku-os.org/">Haiku</a>.
+</p>
+
+<p>
+You may also be interested in Multics, which was a complex predecessor to UNIX. There were a lot of great ideas in Multics that made it into UNIX, and perhaps some that did not. Here are some places to look: <a href="https://multicians.org/">https://multicians.org/</a>, <a href="http://web.mit.edu/afs/net/user/srz/www/multics.html">http://web.mit.edu/afs/net/user/srz/www/multics.html</a>, <a href="http://people.csail.mit.edu/saltzer/Multics/Multics-Documents/Multics-Documents.html">http://people.csail.mit.edu/saltzer/Multics/Multics-Documents/Multics-Documents.html</a>, <a href="https://ban.ai/multics/doc/">https://ban.ai/multics/doc/</a>.
+</p>
+
+<h2> General Resources</h2>
+<ul>
+	<li>Andreas Kling's <a href="https://www.youtube.com/watch?v=Fa9SwYfH2NI&list=PLMOpZvQB55bczV5&#95;3DxTLDm37v&#95;F6iCKA">SerenityOS videos</a></li>
+</ul>
+
+
+<p>
+That's all, thanks again for a great semester and thank you for reading. If you need any help locating resources I didn't directly link to then send me an email. Similarly if you have any questions or just want to discuss further. I look forward to hearing from you!
+</p>
+
+<p>
+Josh
+</p>
+
+<hr>
+
+<script>inject_blog_structure();</script>
+</body>
+</html>
