@@ -1032,6 +1032,10 @@ const SONGS = [{
     "name": "alice hi",
     "duration": "0:17",
     "file": "__alice_hi.mp3"
+}, {
+    "name": "blue map cafe",
+    "duration": "0:56",
+    "file": "__blue_cafe_map.mp3"
 }];
 
 /*_____ _______    _______ ______  __      __     _____    _____
