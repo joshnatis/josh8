@@ -1036,6 +1036,22 @@ const SONGS = [{
     "name": "blue map cafe",
     "duration": "0:56",
     "file": "__blue_cafe_map.mp3"
+}, {
+    "name": "chinggis moment",
+    "duration": "0:18",
+    "file": "__chinggis_moment.mp3"
+}, {
+    "name": "baltic bits",
+    "duration": "0:51",
+    "file": "__baltic_bits.mp3"
+}, {
+    "name": "nightcluub",
+    "duration": "0:59",
+    "file": "__nightcluub.mp3"
+}, {
+    "name": "oppenheimer security hearing",
+    "duration": "0:42",
+    "file": "__oppenheimer_security_hearing.mp3"
 }];
 
 /*_____ _______    _______ ______  __      __     _____    _____
