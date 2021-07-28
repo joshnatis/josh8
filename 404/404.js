@@ -55,7 +55,7 @@ function fuzzySearch(target, table)
 
 function displayFuzzySearch()
 {
-	const PAGES = ["cybernetic98", "papers", "whom", "eng2ru", "professors",
+	const PAGES = ["cybernetic98", "papers", "who", "eng2ru", "professors",
 		"library", "sitemap", "art", "games", "meme", "software", "blog", "home",
 		"paint", "tunes", "terminal"];
 
