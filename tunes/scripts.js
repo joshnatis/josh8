@@ -1052,6 +1052,10 @@ const SONGS = [{
     "name": "oppenheimer security hearing",
     "duration": "0:42",
     "file": "__oppenheimer_security_hearing.mp3"
+}, {
+    "name": "shaker",
+    "duration": "0:28",
+    "file": "__shaker.mp3"
 }];
 
 /*_____ _______    _______ ______  __      __     _____    _____
