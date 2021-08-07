@@ -1,0 +1,28 @@
+#!/bin/sh
+
+CC="g++"
+CFLAGS="-Wall -Wextra -pedantic -std=c++14"
+
+if [ $# -ne 1 ]; then
+	echo "Usage: $0 <library path>"
+	exit
+fi
+
+#1. build executable if it's not already built
+if [ ! -f "sync" ]; then
+	$CC $CFLAGS sync.cpp -o sync
+fi
+
+#2. generate a JSON string representing the content of the library
+# actually it's not JSON cause there are trailing commas but it's fine
+# -R for recursive, -p for trailing /
+prevdir="$PWD"
+cd "$1"
+ls -Rp | sed 's/CNAME/''/' | "$prevdir"/sync > "$prevdir"/library.json
+
+#3. prepend created up-to-date JSON to template to create complete script
+cd "$prevdir"
+cat library.json template.js > scripts.js
+
+#4. clean up
+rm library.json
