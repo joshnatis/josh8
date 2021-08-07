@@ -1064,6 +1064,10 @@ const SONGS = [{
     "name": "level with me",
     "duration": "1:12",
     "file": "__level_with_me.mp3"
+}, {
+    "name": "back to lalaland",
+    "duration": "0:20",
+    "file": "__back_to_lalaland.mp3"
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
