@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>Command-line Audio on a Mac</title>
+	<link rel="stylesheet" href="./styles/styles.css">
+	<link rel="icon" href="./images/favicon.ico">
+	<script src="./js/scripts.js"></script>
+	<link rel="stylesheet" href="./highlight/styles/pojoaque.css">
+	<script src="./highlight/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+
+  <style>
+    .collapsible {
+      background-color: lightgray;
+      padding: 0.5% 2% 0.5% 2%;
+      border-radius: 10px;
+      height: 3em;
+      overflow-y: hidden;
+    }
+    .collapsible-title {
+      font-weight: bold;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    .collapsible-title:before {
+      content: '+';
+      background-color: black;
+      color: white;
+      font-family: monospace;
+      border: 1px solid gray;
+      padding: 0% 1% 0% 1%;
+      border-radius: 30%;
+      margin-right: 1%;
+    }
+    video {
+      max-width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+<h1> Command-line Audio on a Mac (Without Installing Anything)</h1>
+<style>
+  .collapsible {
+    background-color: lightgray;
+    padding: 0.5% 2% 0.5% 2%;
+    border-radius: 10px;
+    height: 3em;
+    overflow-y: hidden;
+  }
+  .collapsible-title {
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .collapsible-title:before {
+    content: '+';
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    border: 1px solid gray;
+    padding: 0% 1% 0% 1%;
+    border-radius: 30%;
+    margin-right: 1%;
+  }
+  video {
+    max-width: 100%;
+  }
+</style>
+
+<p class="subtitle">August 5, 2021 &mdash; Josh </p>
+
+<p>
+You don't need to install anything on Mac OS to start having fun with sound.
+</p>
+
+<p>
+<img alt="disc" src="images/disc.gif">
+</p>
+
+<hr>
+
+<h2> Audio File Playback</h2>
+
+<p>
+One can play an audio file using <code class="inline-code">afplay</code> (Audio File Play):</p>
+
+<pre><code class="sh">$ afplay example.mp3
+▭
+</code></pre>
+<p>
+Once the song is finished, control will be returned to your shell (or you can press <code class="inline-code">CTRL-C</code>).
+</p>
+
+<div class="collapsible" id="background-audio">
+<p class="collapsible-title">Background Audio:</p>
+<p>
+If you want to continue using the shell without waiting for the process to finish, you can run <code class="inline-code">afplay</code> in the background:</p>
+
+<pre><code class="sh">$ afplay example.mp3 &amp;
+[1] 7946
+</code></pre>
+<p>
+In this example, 7946 is the process ID (PID) of the instance of <code class="inline-code">afplay</code> that's now running -- if you want to terminate the process before it ends you can use <code class="inline-code">kill</code>:</p>
+
+<pre><code class="sh">$ kill 7946
+</code></pre>
+<p>
+If you don't remember the PID, you can also do <code class="inline-code">killall afplay</code>, or:</p>
+
+<pre><code class="sh">$ jobs
+[1]+  Running                 afplay example.mp3 &amp;
+$ fg 1 # then hit CTRL-C
+</code></pre>
+<p>
+(These utilities are part of a system known as <i>job control</i>).
+</p>
+</div>
+
+<p>
+Although <code class="inline-code">afplay</code> doesn't say it directly, I believe it supports the following file formats:
+</p>
+
+<blockquote><i>.3gp, .3g2, .aac, .adts .ac3, .aifc, .aiff, .aif, .amr, .m4a, .m4r, .m4b, .caf, .ec3, .flac, .mp1, .mpeg, .mpa, .mp2, .mp3, .mp4, .snd, .au, .sd2., .wav</i></blockquote>
+
+<p>
+So basically anything besides OGG files and some Windows stuff? (BTW, I found this information by running <code class="inline-code">afconvert -hf</code>, so it's possible that the same does not apply to <code class="inline-code">afplay</code>).
+</p>
+
+<p>
+Other than that, the only functionality it really has is playing songs at different rates (i.e. slower or faster).
+</p>
+
+<h2> Audio File Information</h2>
+
+<p>
+One can view the metadata of an audio file using <code class="inline-code">afinfo</code> (Audio File Info):</p>
+
+<pre><code class="plaintext">$ afinfo example.mp3
+
+File:           /Users/Josh/example.mp3
+File type ID:   MPG3
+Num Tracks:     1
+----
+Data format:     2 ch,  44100 Hz, '.mp3' (0x00000000) 0 bits/channel, 0 bytes/packet, 1152 frames/packet, 0 bytes/frame
+                no channel layout.
+estimated duration: 330.893061 sec
+audio bytes: 6612816
+audio packets: 12667
+bit rate: 159878 bits per second
+packet size upper bound: 1052
+maximum packet size: 835
+audio data file offset: 526
+optimized
+audio 14590464 valid frames + 576 priming + 1344 remainder = 14592384
+----
+</code></pre>
+
+<p>
+The <i>estimated duration</i> field comes in handy often. Hint: <code class="inline-code">afinfo example.mp3 | grep "duration:" | cut -d' ' -f3</code> will get you the duration of an audio file in seconds.
+</p>
+
+<h2> Audio File Format Conversion</h2>
+
+<p>
+Honestly I've never used this one (<code class="inline-code">afconvert</code>) and it supposedly doesn't work with <code class="inline-code">mp3</code> files. This <a href="https://apple.stackexchange.com/questions/365616/what-are-the-command-line-options-for-afconvert">StackExchange thread</a> has good directions.
+</p>
+
+<h2> FFMPEG Equivalents</h2>
+
+<p>
+<i>FFMPEG is not deprecated!</i> (meme)
+</p>
+
+<p>
+FFMPEG is another command-line utility capable of playing audio (and also video) -- it's huge and much more powerful than the <code class="inline-code">af*</code> utilities I've shown you, but not installed by default, so it's no fun :P. Regardless, here are some FFMPEG commands that provide similar functionality as seen above:
+</p>
+
+<pre><code class="sh"># -- afplay example.mp3 --
+$ ffplay -nodisp -loglevel panic example.mp3
+
+# -- afinfo example.mp3 --
+$ ffprobe example.mp3
+
+# -- afinfo example.mp3 | grep "duration:" | cut -d' ' -f3 --
+$ ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 example.mp3
+
+# convert mp3 file to a wav file
+$ ffmpeg -i example.mp3 example.wav
+</code></pre>
+
+<h2> Speech Synthesis</h2>
+
+<p>
+This one is one of my favorites to play with -- the utility <code class="inline-code">say</code> converts text to audible speech.
+</p>
+
+<pre><code class="sh">$ say hello world
+</code></pre>
+
+<audio style="display: block; filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%); width: 200px; height: 25px;" controls><source src="images/say_helloworld.mp3" type="audio/mp3"></audio>
+
+<p>
+As if that isn't fun enough, here's some other stuff you can do with <code class="inline-code">say</code>:
+</p>
+
+<pre><code class="sh"># say 'hello world' very slowly [1]
+$ say -r 1 hello world
+
+# save output to a file
+$ say hello world -o hello.aif
+
+# list available voices
+$ say -v?
+Alex                en_US    # Most people recognize me by my voice.
+Alice               it_IT    # Salve, mi chiamo Alice e sono una voce italiana.
+Alva                sv_SE    # Hej, jag heter Alva. Jag är en svensk röst.
+Amelie              fr_CA    # Bonjour, je m’appelle Amelie. Je suis une voix canadienne.
+...
+
+# say something in a russian accent [2]
+$ say -v Yuri hello there, eye am yuri
+
+# have a conversation... [3]
+$ say -v Yuri milena, what is your favorite color ; say -v Milena it is blue of course
+
+# make a beat real quick [4]
+$ while true ; do say -r 200 supW ; done
+
+# interactive! [5]
+$ say --interactive=/green spending each day the color of the leaves
+</code></pre>
+<p>
+[1]: <audio style="filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%); width: 200px; height: 25px;" controls><source src="images/say_1.mp3" type="audio/mp3"></audio>
+<br>
+[2]: <audio style="filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%); width: 200px; height: 25px;" controls><source src="images/say_2.mp3" type="audio/mp3"></audio>
+<br>
+[3]: <audio style="filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%); width: 200px; height: 25px;" controls><source src="images/say_3.mp3" type="audio/mp3"></audio>
+<br>
+[4]: <audio style="filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%); width: 200px; height: 25px;" controls><source src="images/say_4.mp3" type="audio/mp3"></audio>
+<br><br>
+[5]: <video playsinline controls style="vertical-align: middle;"> <source src="images/say_interactive.mp4" type="video/mp4"></video>
+</p>
+
+I've even used the output from <code class="inline-code">say</code> in a song that I made (I tried to experiment with autotune to make it sound like singing):
+<br><br>
+<audio style="filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%); width: 200px; height: 25px;" controls><source src="images/say_furryfiend.mp3" type="audio/mp3"></audio>
+
+<p>
+But wait, there's more. Apple's speech synthesis supports the TUNE format, which allows you to <i>"shape the overall melody and timing of an utterance... for example ... to make an utterance sound as if it is spoken with emotion"</i>.
+</p>
+
+<p>
+To demonstrate this, create a file named <code class="inline-code">apple.txt</code> (or whatever) with the following contents:</p>
+
+<pre><code class="plaintext">[[inpt TUNE]]
+~
+AA {D 120; P 176.9:0 171.4:22 161.7:61}
+r {D 60; P 166.7:0}
+~
+y {D 210; P 161.0:0}
+UW {D 70; P 178.5:0}
+_
+S {D 290; P 173.3:0 178.2:8 184.9:19 222.9:81}
+1AX {D 280; P 234.5:0 246.1:39}
+r {D 170; P 264.2:0}
+~
+y {D 200; P 276.9:0 274.9:17 271.0:50}
+UW {D 40; P 265.0:0 264.3:50}
+_
+b {D 140; P 263.6:0 263.5:13 263.3:60}
+r {D 110; P 263.1:0 260.4:43}
+1UX {D 30; P 256.8:0 256.8:6}
+S {D 190; P 256.1:0}
+t {D 20; P 252.0:0 253.6:47}
+~
+y {D 30; P 255.5:0 257.8:45}
+AO {D 40; P 260.6:0 260.0:56}
+r {D 40; P 259.5:0}
+_
+t {D 190; P 251.3:0 250.0:16 245.9:68}
+1IY {D 260; P 243.4:0 248.1:8 286.1:72 288.5:84}
+T {D 220; P 291.6:0 262.8:27 220.0:67 184.8:100}
+? {D 300}
+[[inpt TEXT]]
+</code></pre>
+<p>
+Then, once you call <code class="inline-code">say -f apple.txt</code>, you will hear this:
+</p>
+
+<audio style="display: block; filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%); width: 200px; height: 25px;" controls><source src="images/say_apple.mp3" type="audio/mp3"></audio>
+
+<p>
+So cool!!! This example was taken from Apple's <a href="images/speech-synthesis.pdf">Speech Synthesis Programming Guide</a>.
+</p>
+
+<h2>Command-line Music Player</h2>
+
+You can make a command-line music player like the one pictured below just by using these primitives along with other standard shell utilities.
+
+<br><br>
+<video muted playsinline controls>
+  <source src="images/teapot.mp4" type="video/mp4">
+</video>
+<br><br>
+
+<p>The full source code is <a href="https://github.com/joshnatis/teapot">here</a>, but let's build a skeleton as an example.</p>
+<pre><code class="bash">#!/bin/bash
+
+stop_song() {
+  if [ ! -z $PID ]; then
+    kill $PID
+    # to avoid stderr output whenever we stop a song
+    wait $PID 2>/dev/null
+  fi
+}
+
+cleanup() {
+  stop_song
+  clear
+  exit 0
+}
+
+# catch ctrl-c press so we can stop the audio before quitting
+trap cleanup INT
+
+# &lt;-- START HERE :P
+
+# invoke the player by providing a path to a directory with audio files
+if [ $# -ne 1 ]; then
+  echo "Usage: $0 &lt;dir&gt;"
+  exit
+fi
+
+MUSIC_DIR="$1"
+cd "$MUSIC_DIR"
+
+# the 2> /dev/null is just to avoid extraneous output coming up on the screen
+NUM_SONGS=$(ls *.mp3 2> /dev/null | wc -l)
+if [ "$NUM_SONGS" -eq 0 ]; then
+  echo "Found no MP3 files in $MUSIC_DIR"
+  exit
+fi
+
+#array of filenames of all mp3 files in directory
+MUSIC_LIST=(*.mp3)
+
+# play songs one by one until user quits
+INDEX=0
+while true; do
+  SONG_NAME="${MUSIC_LIST[$INDEX]}"
+  SONG_PATH="$MUSIC_DIR/$SONG_NAME"
+
+  DURATION=$(afinfo "$SONG_PATH" | grep "duration:" | cut -d' ' -f3)
+  #chop off decimal portion (`read -t` only takes integers)
+  DURATION=${DURATION%.*}
+
+  # play the song and capture the process id so we can stop it later
+  afplay "$SONG_PATH" &
+  PID=$!
+
+  # print pretty stuff (put le ascii art here)
+  clear
+  echo "==="
+  echo "Playing Song #$INDEX:"
+  echo "$SONG_NAME"
+  echo "==="
+  echo "(n)ext, (p)rev, (q)uit"
+
+  # show menu until the song finishes or user selects an option
+  read -n 1 -t "$DURATION" CHOICE
+  # basically just increment or decrement the index depending on choice
+  if   [ "$CHOICE" = "q" ]; then
+    cleanup
+  elif [ "$CHOICE" = "n" ] || [ -z "$CHOICE" ]; then
+    INDEX=$(($INDEX+1))
+    if [ $INDEX -eq $NUM_SONGS ]; then INDEX=0; fi
+  elif [ "$CHOICE" = "p" ]; then
+    INDEX=$(($INDEX-1))
+    if [ $INDEX -lt 0 ]; then INDEX=0; fi
+  fi
+
+  stop_song
+done
+</code></pre>
+
+Try this at home!
+
+<hr>
+
+<div class="collapsible">
+<p class="collapsible-title">Reference</p>
+
+<h4> afplay</h4>
+<pre><code class="plaintext">$ afplay --help
+
+    Audio File Play
+    Version: 2.0
+    Copyright 2003-2013, Apple Inc. All Rights Reserved.
+    Specify -h (-help) for command options
+
+Usage:
+afplay [option...] audio_file
+
+Options: (may appear before or after arguments)
+  {-v | --volume} VOLUME
+    set the volume for playback of the file
+  {-h | --help}
+    print help
+  { --leaks}
+    run leaks analysis
+  {-t | --time} TIME
+    play for TIME seconds
+  {-r | --rate} RATE
+    play at playback rate
+  {-q | --rQuality} QUALITY
+    set the quality used for rate-scaled playback (default is 0 - low quality, 1 - high quality)
+  {-d | --debug}
+    debug print output
+</code></pre>
+
+<h4> afinfo</h4>
+<pre><code class="plaintext">$ afinfo --help
+
+   Audio File Info
+   Version: 2.0
+   Copyright 2003-2016, Apple Inc. All Rights Reserved.
+   Specify -h (-help) for command options
+
+Usage:
+afinfo [option...] audio_file(s)
+
+Options: (may appear before or after arguments)
+  {-h --help}
+    print help
+  {-b --brief}
+    print a brief (one line) description of the audio file
+  {-r --real}
+    get the estimated duration after obtaining the real packet count
+  { --leaks }
+        run leaks at the end
+  { -i --info }
+      print contents of the InfoDictionary
+  { -u --userprop } 4-cc
+      find and print a property or user data property (as string or bytes) [does not print to xml]
+  { -x --xml }
+      print output in xml format
+  { --warnings }
+      print warnings if any (by default warnings are not printed in non-xml output mode)
+</code></pre>
+
+<h4> afconvert</h4>
+<pre><code class="plaintext">$ afconvert --help
+
+    Audio File Convert
+    Version: 2.0
+    Copyright 2003-2013, Apple Inc. All Rights Reserved.
+    Specify -h (-help) for command options
+
+Usage:
+afconvert [option...] input_file [output_file]
+    Options may appear before or after the direct arguments. If output_file
+    is not specified, a name is generated programmatically and the file
+    is written into the same directory as input_file.
+afconvert input_file [-o output_file [option...]]...
+    Output file options apply to the previous output_file. Other options
+    may appear anywhere.
+
+General options:
+    { -d | --data } data_format[@sample_rate][/format_flags][#frames_per_packet]
+        [-][BE|LE]{F|[U]I}{8|16|24|32|64}          (PCM)
+            e.g.   BEI16   F32@44100
+        or a data format appropriate to file format (see -hf)
+        format_flags: hex digits, e.g. '80'
+        Frames per packet can be specified for some encoders, e.g.: samr#12
+        A format of "0" specifies the same format as the source file,
+            with packets copied exactly.
+        A format of "N" specifies the destination format should be the
+            native format of the lossless encoded source file (alac, FLAC only)
+    { -c | --channels } number_of_channels
+        add/remove channels without regard to order
+    { -m | --channelmap } list of input channels in output
+        set a channel map, mapping which input channel goes to each output channel.
+        channel number starts at zero. -1 makes a silent output channel.
+        For example, to reverse a stereo stream: -m 1 0
+    { -l | --channellayout } layout_tag
+        layout_tag: name of a constant from CoreAudioTypes.h
+          (prefix "kAudioChannelLayoutTag_" may be omitted)
+        if specified once, applies to output file; if twice, the first
+          applies to the input file, the second to the output file
+    { -b | --bitrate } total_bit_rate_bps
+         e.g. 256000 will give you roughly:
+             for stereo source: 128000 bits per channel
+             for 5.1 source: 51000 bits per channel
+                 (the .1 channel consumes few bits and can be discounted in the
+                 total bit rate calculation)
+    { -q | --quality } codec_quality
+        codec_quality: 0-127
+    { -r | --src-quality } src_quality
+        src_quality (sample rate converter quality): 0-127 (default is 127)
+    { --src-complexity } src_complexity
+        src_complexity (sample rate converter complexity): line, norm, bats minp
+    { -s | --strategy } strategy
+        bitrate allocation strategy for encoding an audio track
+        0 for CBR, 1 for ABR, 2 for VBR_constrained, 3 for VBR
+    --prime-method method
+        decode priming method (see AudioConverter.h)
+    --prime-override samples_prime samples_remain
+        can be used to override the priming information stored in the source
+        file to the specified values. If -1 is specified for either, the value
+        in the file is used.
+    --no-filler
+        don't page-align audio data in the output file
+    --soundcheck-generate
+        analyze audio, add SoundCheck data to the output file
+    --media-kind "media kind string"
+        media kinds are: "Audio Ad", "Video Ad" 
+    --anchor-loudness
+        set a single precision floating point value to
+        indicate the anchor loudness of the content in dB
+        Note that for MP4 and M4* file types, this requires that the 
+        --soundcheck-generate option is also enabled.
+    --anchor-generate
+        Analyze audio and add dialogue anchor level data to output file
+        Note that for MP4 and M4* file types, this requires that the 
+        --soundcheck-generate option is also enabled.
+    --generate-hash
+        generate an SHA-1 hash of the input audio data and add it to the output file.
+    --codec-manuf codec_manuf
+        specify the codec with the specified 4-character component manufacturer
+        code
+    --dither algorithm
+        algorithm: 1-2
+    --mix
+        enable channel downmixing
+    { -u | --userproperty } property value
+        set an arbitrary AudioConverter property to a given value
+        property is a four-character code; value can be a signed
+        32-bit integer or a single precision floating point value.
+        e.g. '-u vbrq &lt;sound_quality&gt;' sets the sound quality level
+             (&lt;sound_quality&gt;: 0-127)
+        May not be used in a transcoding situation.
+    -ud property value
+        identical to -u except only applies to a decoder. Fails if there is no
+        decoder.
+    -ue property value
+        identical to -u except only applies to an encoder. Fails if there is no
+        encoder.
+
+Input file options:
+    --decode-formatid data_format_id
+        For input audio files with multiple data format layers (e.g. AAC_HE), 
+        specify by format id (e.g. 'aach') which layer of the input file to
+        decode.
+    --read-track track_index
+        For input files containing multiple tracks, the index (0..n-1)
+        of the track to read and convert.
+    --offset number_of_frames
+        the starting offset in the input file in frames. (The first frame is
+        frame zero.)
+    --soundcheck-read
+         read SoundCheck data from source file and set it on any destination
+         file(s) of appropriate filetype (.m4a, .caf).
+    --copy-hash
+         copy an SHA-1 hash chunk, if present, from the source file to the output file.
+    --gapless-before filename
+        file coming before the current input file of a gapless album
+    --gapless-after filename
+        file coming after the current input file of a gapless album
+
+Output file options:
+    -o filename
+        specify an (additional) output file.
+    { -f | --file } file_format
+        use -hf for a complete list of supported file/data formats
+    --condensed-framing field_size_in_bits
+        specify storage size in bits for externally framed packet sizes.
+        Supported value is 16 for aac in m4a and m4b file format.
+
+Other options:
+    { -v | --verbose }
+        print progress verbosely
+    { -t | --tag }
+        If encoding to CAF, store the source file's format and name in a user
+        chunk. If decoding from CAF, use the destination format and filename
+        found in a user chunk.
+    { --leaks }
+        run leaks at the end of the conversion
+    { --profile }
+        collect and print performance information
+
+Help options:
+    { -hf | --help-formats }
+        print a list of supported file/data formats
+    { -h | --help }
+        print this help
+</code></pre>
+
+<h4> say</h4>
+<pre><code class="plaintext">SAY(1)         Speech Synthesis Manager     SAY(1)
+
+
+
+NAME
+       say - Convert text to audible speech
+
+SYNOPSIS
+     say [-v voice] [-r rate] [-o outfile [audio format options] | -n name:port | -a device] [-f file | string ...]
+
+DESCRIPTION
+       This tool uses the Speech Synthesis manager to convert input text to
+       audible speech and either play it through the sound output device
+       chosen in System Preferences or save it to an AIFF file.
+
+OPTIONS
+       string
+     Specify the text to speak on the command line. This can consist of
+     multiple arguments, which are considered to be separated by spaces.
+
+       -f file, --input-file=file
+     Specify a file to be spoken. If file is - or neither this parameter
+     nor a message is specified, read from standard input.
+
+       -v voice, --voice=voice
+     Specify the voice to be used. Default is the voice selected in
+     System Preferences. To obtain a list of voices installed in the
+     system, specify '?' as the voice name.
+
+       -r rate, --rate=rate
+     Speech rate to be used, in words per minute.
+
+       -o out.aiff, --output-file=file
+     Specify the path for an audio file to be written. AIFF is the
+     default and should be supported for most voices, but some voices
+     support many more file formats.
+
+       -n name, --network-send=name
+       -n name:port, --network-send=name:port
+       -n :port, --network-send=:port
+       -n :, --network-send=:
+     Specify a service name (default "AUNetSend") and/or IP port to be
+     used for redirecting the speech output through AUNetSend.
+
+       -a ID, --audio-device=ID
+       -a name, --audio-device=name
+     Specify, by ID or name prefix, an audio device to be used to play
+     the audio. To obtain a list of audio output devices, specify '?' as
+     the device name.
+
+       --progress
+     Display a progress meter during synthesis.
+
+       -i, --interactive, --interactive=markup
+     Print the text line by line during synthesis, highlighting words as
+     they are spoken. Markup can be one of
+
+     o   A terminfo capability as described in terminfo(5), e.g. bold,
+         smul, setaf 1.
+
+     o   A color name, one of black, red, green, yellow, blue, magenta,
+         cyan, or white.
+
+     o   A foreground and background color from the above list,
+         separated by a slash, e.g. green/black. If the foreground color
+         is omitted, only the background color is set.
+
+     If markup is not specified, it defaults to smso, i.e. reverse
+     video.
+
+       If the input is a TTY, text is spoken line by line, and the output
+       file, if specified, will only contain audio for the last line of the
+       input.  Otherwise, text is spoken all at once.
+
+AUDIO FORMATS
+       Starting in MacOS X 10.6, file formats other than AIFF may be
+       specified, although not all third party synthesizers may initially
+       support them. In simple cases, the file format can be inferred from the
+       extension, although generally some of the options below are required
+       for finer grained control:
+
+       --file-format=format
+     The format of the file to write (AIFF, caff, m4af, WAVE).
+     Generally, it's easier to specify a suitable file extension for the
+     output file. To obtain a list of writable file formats, specify '?'
+     as the format name.
+
+       --data-format=format
+     The format of the audio data to be stored. Formats other than
+     linear PCM are specified by giving their format identifiers (aac,
+     alac). Linear PCM formats are specified as a sequence of:
+
+     Endianness (optional)
+         One of BE (big endian) or LE (little endian). Default is native
+         endianness.
+
+     Data type
+         One of F (float), I (integer), or, rarely, UI (unsigned
+         integer).
+
+     Sample size
+         One of 8, 16, 24, 32, 64.
+
+     Most available file formats only support a subset of these sample
+     formats.
+
+     To obtain a list of audio data formats for a file format specified
+     explicitly or by file name, specify '?' as the format name.
+
+     The format identifier optionally can be followed by @samplerate and
+     /hexflags for the format.
+
+       --channels=channels
+     The number of channels. This will generally be of limited use, as
+     most speech synthesizers produce mono audio only.
+
+       --bit-rate=rate
+     The bit rate for formats like AAC. To obtain a list of valid bit
+     rates, specify '?' as the rate. In practice, not all of these bit
+     rates will be available for a given format.
+
+       --quality=quality
+     The audio converter quality level between 0 (lowest) and 127
+     (highest).
+
+ERRORS
+       say returns 0 if the text was spoken successfully, otherwise non-zero.
+       Diagnostic messages will be printed to standard error.
+
+EXAMPLES
+    say Hello, World
+    say -v Alex -o hi -f hello_world.txt
+    say --interactive=/green spending each day the color of the leaves
+    say -o hi.aac 'Hello, [[slnc 200]] World'
+    say -o hi.m4a --data-format=alac Hello, World.
+    say -o hi.caf --data-format=LEF32@8000 Hello, World
+
+    say -v '?'
+    say --file-format=?
+    say --file-format=caff --data-format=?
+    say -o hi.m4a --bit-rate=?
+
+SEE ALSO
+       "Speech Synthesis Programming Guide"
+
+
+
+1.0         2017-02-16        SAY(1)
+</code></pre>
+</div>
+
+<script>inject_blog_structure();</script>
+<script>
+  let collapsibles = document.getElementsByClassName("collapsible");
+  [...collapsibles].forEach(section => {
+    let title = section.querySelector(".collapsible-title");
+    if(title)
+    {
+      title.onclick = function() {
+        if(section.style.overflowY != "visible")
+        {
+          section.style.overflowY = "visible";
+          section.style.height = "auto";
+        }
+        else
+        {
+          section.style.overflowY = "hidden";
+          section.style.height = "3em";
+        }
+      }
+    }
+  });
+</script>
+</body>
+</html>
