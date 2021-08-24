@@ -1068,6 +1068,22 @@ const SONGS = [{
     "name": "back to lalaland",
     "duration": "0:20",
     "file": "__back_to_lalaland.mp3"
+}, {
+    "name": "prarie",
+    "duration": "0:48",
+    "file": "__prarie.mp3"
+}, {
+    "name": "cU@cyberia2nite?",
+    "duration": "0:32",
+    "file": "__cyberia_nite.mp3"
+}, {
+    "name": "a wise dj spanish fly once said smoke that onion, smoke that onion, keep on smoking that onion, onion",
+    "duration": "1:08",
+    "file": "__spanishfly.mp3"
+}, {
+    "name": "hyperbolic pizza party and/or ice cream party",
+    "duration": "1:44",
+    "file": "__hyperspace_pizza_party.mp3"
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
