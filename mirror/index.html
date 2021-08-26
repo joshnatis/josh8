@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Amazing Mirror</title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="icon" href="images/ice.jpg">
+		<style>
+			body {
+				font-family: "Georgia", "Bitstream Vera Serif", serif;
+				text-align: center;
+				background-color: #AEC6CF;
+			}
+			.center-container {
+				text-align: center;
+			}
+			#main-container {
+				width: 65%;
+				background-color: #dee8eb;
+				display: inline-block;
+				border: 0.2em solid #7ea4b3;
+				border-radius: 10px;
+				padding-bottom: 2%;
+			}
+
+			hr {
+				border: none;
+				border-top: 3px double #333;
+				color: #333;
+				overflow: visible;
+				text-align: center;
+				height: 5px;
+				width: 75%;
+			}
+			hr:after {
+				background: #dee8eb;
+				content: '§';
+				padding: 0 4px;
+				position: relative;
+				top: -13px;
+			}
+			blockquote {
+				margin: 0;
+			}
+			blockquote {
+				padding: 0.5%;
+				border-left: 0.5em solid #AEC6CF;
+			}
+			blockquote::before {
+				content: '\201C';
+			}
+			blockquote::after {
+				content: '\201D';
+			}
+
+			#mirror {
+				border: 4px solid black;
+				border-radius: 10px;
+				box-shadow: 3px 3px black;
+				width: 30%;
+			}
+			#worrydream-quote {
+				max-width: 35em;
+				display: inline-block;
+			}
+			#attribution {
+				color: gray;
+			}
+			.archive-entry {
+				display: block;
+				margin-bottom: 1%;
+			}
+			.archive-entry * {
+				vertical-align: middle;
+			}
+			.archives {
+				display: inline-block;
+				text-align: left;
+			}
+			#subtitle {
+				margin-bottom: 0.5em;
+				text-decoration: underline;
+			}
+
+			@media screen and (max-width: 990px) {
+				#main-container {
+					width: 85%;
+				}
+			}
+			@media screen and (max-width: 750px) {
+				#main-container {
+					width: 98%;
+				}
+				#mirror {
+					width: 40%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="main-container">
+			<div class="center-container">
+				<h1 id="title">Amazing Mirror</h1>
+				<img id="mirror" src="images/mirror.png" alt="kirby's amazing mirror">
+				<br><br>
+				<blockquote id="worrydream-quote">
+					Vannevar Bush's "library of a million volumes, compressed into one end of a desk" may sound quaint to us today. Bush naively assumed that immediate access to a million volumes would require the physical presence of those million volumes. His proposal -- a million volumes in every desk.
+					<br><br>
+					The web, of course, took a different approach. A million volumes, yes, but our desks remain empty. Instead, when we summon a volume, we are granted a transient and ephemeral peek at its sole instance, out there somewhere in the world, typically secured within a large institution.
+					<br><br>
+					Two thoughts:
+					<br><br>
+					It's interesting that life itself chose Bush's approach. Every cell of every organism has a full copy of the genome. That works pretty well -- DNA gets damaged, cells die, organisms die, the genome lives on. It's been working pretty well for about 4 billion years.
+					<br><br>
+					It's also interesting to consider how someone from Bush's time might view our situation. For someone who's thinking about a library in every desk, going on the web today might feel like visiting the Library of Alexandria. Things <a href="http://en.wikipedia.org/wiki/Destruction_of_the_Library_of_Alexandria">didn't work out so well</a> with the Library of Alexandria.
+					<br><br>
+					It's not working so well <a href="https://twitter.com/worrydream/status/478087637031325697">today either</a>.
+					<br><br>
+					We, as a species, are currently putting together a universal repository of knowledge and ideas, unprecedented in scope and scale. Which information-handling technology should we model it on? The one that's worked for 4 billion years and is responsible for our existence? Or the one that's led to the greatest intellectual tragedies in history?
+				</blockquote>
+				<br>
+				<i id="attribution">- Bret Victor, <a href="http://worrydream.com/TheWebOfAlexandria/">http://worrydream.com/TheWebOfAlexandria/</a></i>
+				<!-- <p>Cybernetic ships sink too, archive what you care about NOW.</p> -->
+			</div>
+			<br>
+			<hr>
+			<div class="center-container">
+				<div class="archives">
+					<h2 id="subtitle">Archives</h2>
+					<span class="archive-entry">
+					<img class="icon" src="images/layout.gif" alt="icon">
+					<a href="./commandline.html">In the Beginning was the Command Line by Neal Stephenson</a>
+					</span>
+					<span class="archive-entry">
+					<img class="icon" src="images/layout.gif" alt="icon">
+					<a href="./amiga.html">A History of the Amiga by Jeremy Reimer</a>
+					</span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
