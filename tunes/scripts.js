@@ -1084,6 +1084,14 @@ const SONGS = [{
     "name": "hyperbolic pizza party and/or ice cream party",
     "duration": "1:44",
     "file": "__hyperspace_pizza_party.mp3"
+}, {
+    "name": "beep ;x",
+    "duration": "0:24",
+    "file": "__beep.mp3"
+}, {
+    "name": "i want peace",
+    "duration": "0:56",
+    "file": "__i_want_peace.mp3"
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
