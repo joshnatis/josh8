@@ -1092,6 +1092,18 @@ const SONGS = [{
     "name": "i want peace",
     "duration": "0:56",
     "file": "__i_want_peace.mp3"
+}, {
+    "name": "bump",
+    "duration": "0:37",
+    "file": "__bump.mp3"
+}, {
+    "name": "dimitri finds out",
+    "duration": "1:02",
+    "file": "__vladimir.mp3"
+}, {
+    "name": "nems and necro on bay parkway",
+    "duration": "1:33",
+    "file": "__nems_and_necro_on_bay_parkway.mp3"
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
