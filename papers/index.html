@@ -1,47 +1,113 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 	<head>
-		<title>Corduroy's Papers</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="./assets/styles.css">
-		<link rel="icon" href="/favicon3.png">
+		<title>Papers</title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="icon" href="../favicon3.png">
+		<style>
+			body {
+				font-family: "Georgia", "Bitstream Vera Serif", serif;
+				text-align: center;
+				background-color: #AEC6CF;
+			}
+			.center-container {
+				text-align: center;
+			}
+			#main-container {
+				width: 65%;
+				background-color: #dee8eb;
+				display: inline-block;
+				border: 0.2em solid #7ea4b3;
+				border-radius: 10px;
+				padding-bottom: 2%;
+				min-height: 100%;
+			}
+			#title {
+				text-decoration: underline;
+			}
 
-		<script type="text/javascript" src="/index/js/imageMapResizer.min.js"></script> <!-- resizes map along with image -->
+			hr {
+				border: none;
+				border-top: 3px double #333;
+				color: #333;
+				overflow: visible;
+				text-align: center;
+				height: 5px;
+				width: 75%;
+			}
+			hr:after {
+				background: #dee8eb;
+				content: '§';
+				padding: 0 4px;
+				position: relative;
+				top: -13px;
+			}
+			blockquote {
+				margin: 0;
+			}
+			blockquote {
+				padding: 0.5%;
+				border-left: 0.5em solid #AEC6CF;
+			}
+			blockquote::before {
+				content: '\201C';
+			}
+			blockquote::after {
+				content: '\201D';
+			}
+
+			.archive-entry {
+				display: block;
+				margin-bottom: 1%;
+			}
+			.archive-entry * {
+				vertical-align: middle;
+			}
+			.archives {
+				display: inline-block;
+				text-align: left;
+			}
+			#subtitle {
+				margin-bottom: 0.5em;
+				text-decoration: underline;
+			}
+
+			@media screen and (max-width: 990px) {
+				#main-container {
+					width: 85%;
+				}
+			}
+			@media screen and (max-width: 750px) {
+				#main-container {
+					width: 96%;
+					padding: 4%;
+				}
+				body {
+					margin:0;
+				}
+				.archive-entry {
+					margin-bottom: 3%;
+				}
+			}
+		</style>
 	</head>
-
 	<body>
-		<br>
-		
-
-		<map name = "bubbles_map">
-
-		    <area alt="" title="Concert Report" href="Concert_Report.pdf" shape="poly" coords="298,209,308,214,311,220,312,230,304,235,295,239,279,245,262,247,246,248,228,246,217,244,205,239,197,233,191,224,199,212,212,206,229,202,247,201,269,201" />
-
-		    <area alt="" title="Cryptography Paper" href="DM_CRYPT.pdf" shape="poly" coords="125,200,114,202,97,203,84,204,69,202,55,198,47,196,38,193,31,186,33,178,42,171,57,166,73,164,89,163,107,164,121,164,135,166,147,170,156,174,162,182,161,188,153,193,141,198,132,200" />
-
-		    <area alt="" title="AI and Ethics" href="ai" shape="poly" coords="176,79,189,80,199,80,210,82,220,85,228,88,236,92,242,98,244,108,239,117,229,124,216,128,202,133,183,134,165,134,149,131,136,128,127,121,119,115,115,106,119,96,128,89,149,80" />
-
-		    <area alt="" title="Self Reflection on Writing" href="Self_Reflection_Essay.pdf" shape="poly" coords="255,138,253,146,255,156,264,162,275,166,290,170,311,172,331,173,358,171,379,165,395,156,397,141,381,130,362,124,339,120,303,122,273,126" />
-
-		    <area alt="" title="Illmatic -- Hip Hop's Magnum Opus" href="illmatic_Magnum_Opus.pdf" shape="poly" coords="431,179,416,182,404,186,392,194,384,203,382,213,389,226,404,236,421,242,442,243,462,243,477,240,489,237,498,231,505,225,510,217,511,202,499,193,487,187,464,180" />
-	
-		</map>
-				<img id = "paper_bubbles" src="./assets/paper_bubbles.png" alt = "Image of Tree with Links to Various Writings" usemap = "#bubbles_map">
-				<script> imageMapResize(); </script>
-
-
-		<iframe src="./assets/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe> <!-- warm up Chrome to play audio -->
-
-		<audio id = "ajax" autoplay loop> 
-      		<source src="./assets/ajax.mp3">
-		</audio>	
-
-		<script> 
-			console.log("penis");
-  			var audio = document.getElementById("ajax"); //song name is Ajax by the Alchemist
-  			audio.volume = 0.5; //using javascript to lower the audio volume because HTML5 audio doesn't work
-		</script>
-
+		<div id="main-container">
+			<div class="center-container">
+				<h1 id="title">Papers</h1>
+				<p>Just some stuff I've written that doesn't fit into the format of a blogpost.</p>
+				<div class="archives">
+					<span class="archive-entry">
+					<img class="icon" src="doc.gif" alt="icon">
+					<a href="./Concert_Report.pdf">Concert Report: A Trip Elsewhere (Rooftop)</a>
+					</span>
+					<span class="archive-entry">
+					<img class="icon" src="doc.gif" alt="icon">
+					<a href="./Community_Systems.pdf">Community Systems as a Learning Tool and Incentive</a>
+					</span>
+				</div>
+			</div>
+		</div>
 	</body>
-	</html>
+</html>
