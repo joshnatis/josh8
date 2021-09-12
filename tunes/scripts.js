@@ -1104,6 +1104,18 @@ const SONGS = [{
     "name": "nems and necro on bay parkway",
     "duration": "1:33",
     "file": "__nems_and_necro_on_bay_parkway.mp3"
+}, {
+    "name": "sewer rat 3",
+    "duration": "1:32",
+    "file": "__sewer_rat_3.mp3"
+}, {
+    "name": "telephone psychopath",
+    "duration": "0:49",
+    "file": "__telephone_psychopath.mp3"
+}, {
+    "name": "gnos",
+    "duration": "0:44",
+    "file": "__gnos.mp3"
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
