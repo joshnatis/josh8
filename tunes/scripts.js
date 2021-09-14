@@ -1116,6 +1116,10 @@ const SONGS = [{
     "name": "gnos",
     "duration": "0:44",
     "file": "__gnos.mp3"
+}, {
+    "name": "jexus",
+    "duration": "0:42",
+    "file": "__jexus.mp3"
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
