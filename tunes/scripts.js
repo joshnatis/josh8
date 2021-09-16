@@ -1120,6 +1120,14 @@ const SONGS = [{
     "name": "jexus",
     "duration": "0:42",
     "file": "__jexus.mp3"
+}, {
+    "name": "evropa",
+    "duration": "1:00",
+    "file": "__evropa.mp3"
+}, {
+    "name": "logicus lakefront",
+    "duration": "0:47",
+    "file": "__logicus_lakefront.mp3"
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
