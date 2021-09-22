@@ -1,3 +1,9 @@
+if(!window.AudioContext) {
+	let shim = document.createElement("script");
+	shim.src = "https://cdn.rawgit.com/mohayonao/web-audio-api-shim/master/build/web-audio-api-shim.min.js";
+	document.body.appendChild(shim);
+}
+
 let audioContext;
 
 let playing = false;
@@ -42,7 +48,6 @@ function onAudioUpload(e) {
 	let reader = new FileReader();
 	reader.onload = async function() {
 		let arrayBuffer = this.result;
-		console.log(arrayBuffer)
 
 		play_btn.onclick = function() {
 			/* making a copy with .slice() is necessary for later re-use */
