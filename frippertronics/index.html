@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Loops</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="icon" href="../favicon3.png">
+
+	<style>
+		html, body {
+			height: 100%;
+		}
+
+		.center-container {
+			text-align: center;
+		}
+
+		#title-div h1 {
+			font-family: 'bragaoutline', "Georgia", "Bitstream Vera Serif", serif;
+			font-size: 300%;
+			text-shadow: -2px 2px rgba(0,0,255,0.4);
+			display: block;
+			margin-top: 0;
+			margin-bottom: -0.5%;
+		}
+		#title-div p {
+			font-family: 'bragaitalic', "Georgia", "Bitstream Vera Serif", serif;
+			font-size: 150%;
+			margin-top: 0;
+			margin-bottom: 1%
+		}
+
+		#machine
+		{
+			font-family: "Georgia", "Bitstream Vera Serif", serif;
+			text-align: left;
+			width: 75%;
+			background-color: rgba(0, 0, 255, 0.2);
+			box-shadow: 5px 5px blue;
+			border: 2px solid black;
+			border-radius: 10px;
+			padding: 1em;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		#upload-space {
+			width: 25%;
+			padding: 0% 1% 0% 1%;
+			border: 2px dashed grey;
+			border-radius: 10px;
+			background-color: rgb(200,200,200);
+			text-align: center;
+			cursor: pointer;
+			display: inline-block;
+		}
+
+		#upload-space:hover {
+			background-color: rgba(0,0,255,0.2);
+		}
+
+		#upload_btn {
+			display: none;
+		}
+
+		.controls-space {
+			display: inline-block;
+			vertical-align: middle;
+			border: 2px solid black;
+			border-radius: 10px;
+			padding: 0.5%;
+			background-color: rgba(0,0,255,0.2);
+		}
+
+		#loop_checkbox {
+			float: right;
+			vertical-align: middle;
+		}
+
+		.connexion {
+			vertical-align: middle;
+			margin-left: 1%;
+			margin-right: 1%;
+		}
+
+		#play_btn {
+			font-family: "bragaregular", "Georgia", "Bitstream Vera Serif", serif;
+			font-size: 200%;
+			background-color: rgba(0,0,255,0.2);
+			vertical-align: middle;
+			border: 2px solid black;
+			border-radius: 10px;
+			padding: 0.5%;
+			cursor: pointer;
+			display: inline-block;
+		}
+
+		#play_btn:hover {
+			background-color: rgba(0,0,255,0.4);
+		}
+
+		hr {
+		    border: none;
+		    border-top: 3px double #333;
+		    color: #333;
+		    overflow: visible;
+		    text-align: center;
+		    height: 5px;
+		}
+
+		hr:after {
+		    background: #fff;
+		    content: '§';
+		    padding: 0 4px;
+		    position: relative;
+		    top: -13px;
+		}
+
+		#pagebreak {
+			margin: 3% 3% 0% 3%;
+		}
+
+		.inline-code {
+		    background-color: #eee;
+		    border-radius: 3px;
+		    font-family: courier, monospace;
+		    padding: 0 3px;
+		}
+
+		#documentation {
+			width: 50%;
+			text-align: left;
+			display: inline-block;
+		}
+
+		#documentation h2 {
+			text-decoration: underline;
+			font-family: "Georgia", "Bitstream Vera Serif", serif;
+		}
+
+		.sample_btn {
+			font-family: "bragaregular", "Georgia", "Bitstream Vera Serif", serif;
+			font-size: 150%;
+			background-color: rgba(0,0,255,0.2);
+			vertical-align: middle;
+			border: 2px solid black;
+			border-radius: 10px;
+			padding: 0.5%;
+			cursor: pointer;
+			display: inline-block;
+			margin-bottom: 2%
+		}
+
+		.sample_btn:hover {
+			background-color: rgba(0,0,255,0.4);
+		}
+
+		@font-face {
+		    font-family: 'bragaoutline';
+		    src: url('assets/braga_outline-webfont.woff') format('woff');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+		@font-face {
+		    font-family: 'bragaitalic';
+		    src: url('assets/braga_italic-webfont.woff') format('woff');
+		    font-weight: normal;
+		    font-style: normal;
+
+		}
+		@font-face {
+		    font-family: 'bragaregular';
+		    src: url('assets/braga-webfont.woff') format('woff');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+
+		@media screen and (max-width: 1175px) {
+			#machine { width: 90%; }
+			#documentation { width: 75%; }
+		}
+		@media screen and (max-width: 800px) { /* 675  1175 */
+			#machine { text-align: center; width: 75%;}
+			#upload-space { display: block; width: auto; }
+			.connexion { 
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 4%;
+				margin-bottom: 4%;
+			}
+			.controls-space { padding: 2%; }
+			#play_btn { padding: 2%; }
+			#pagebreak { margin-top: 10%; }
+		}
+		@media screen and (max-width: 400px) {
+			#documentation { width: 90%; }
+			#documentation blockquote { 
+				width: 85%;
+				margin-left: 10%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="center-container">
+		<div id="title-div">
+			<h1>Frippertronicsizer</h1>
+			<p>say that 3 times fast...</p>
+		</div>
+
+		<div id="machine">
+			<div id="upload-space">
+				<p>Click me to upload some audio!</p>
+				<input id="upload_btn" type="file" accept="audio/*" name="audio">
+			</div>
+
+			<svg class="connexion" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13 18v-4h-7v-4h7v-4l6 6-6 6zm-1-16c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12z"/></svg>
+
+			<div class="controls-space">
+				<span>Rate1:</span>
+				<input type="range" min="1" max="1.05" value="1" step="any" class="slider" id="rate1_slider">
+				<br>
+				<span>Rate2:</span>
+				<input type="range" min="1" max="1.05" value="1.005" step="any" class="slider" id="rate2_slider">
+			</div>
+
+			<svg class="connexion" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13 18v-4h-7v-4h7v-4l6 6-6 6zm-1-16c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12z"/></svg>
+
+			<div class="controls-space">
+				<span>Start:</span>
+				<input type="range" min="0" max=".99" value="0" step="any" class="slider" id="start_slider">
+				<br>
+				<span>Loop:</span>
+				<input type="range" min="0.1" max="10" value="2" step="any" class="slider" id="loop_slider">
+				<input type="checkbox" id="loop_checkbox" checked>
+			</div>
+
+			<svg class="connexion" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13 18v-4h-7v-4h7v-4l6 6-6 6zm-1-16c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12z"/></svg>
+
+			<div id="play_btn">
+				PLAY
+			</div>
+		</div>
+
+		<hr id="pagebreak">
+
+		<div id="documentation">
+			<h2>Explanation</h2>
+			<p>
+				<blockquote>"Performing and listening to a gradual musical process resembles: pulling back a swing, releasing it, and observing it gradually come to rest; turning over an hour glass and watching the sand slowly run through the bottom; placing your feet in the sand by the ocean's edge and watching, feeling, and listening to the waves gradually bury them." - <a href="https://ccnmtl.columbia.edu/draft/ben/feld/mod1/readings/reich.html">Steve Reich</a></blockquote>
+				You can call this <i>phase music</i>, or <i>Frippertronics</i>, take your pick :P.
+				<blockquote>
+				"What we are hearing are two identical tape loops playing at the same time. There's one in the left ear and one in the right. But one of those loops is running <i>ever so slightly faster than the other.</i>
+
+				The difference is so small you don't even notice it at first, but after a while it amounts to a <i>phase shift</i> between the two loops that keeps growing bigger and bigger as time goes by. First it sounds like there's an echo. Then the echo transforms into a repeating effect, and then it builds into a series of strange combinations of sounds as different parts of the sample overlap with others. At the halfway point the loops start to approach each other again, and we go back through repetition and echo to unison." - <a href="https://teropa.info/blog/2016/07/28/javascript-systems-music.html">Tero Parviainen</a>
+				</blockquote>
+			</p>
+			<h2>Usage</h2>
+			<p>Upload an audio file. We will use it to fashion two tape loops playing at different speeds (<span class="inline-code">rate1</span> and <span class="inline-code">rate2</span>). Use the <span class="inline-code">start</span> parameter to set where in the audio your tape loop should begin, and the <span class="inline-code">loop</span> parameter to to set how long the audio should play until it restarts. (The settings are applied once you click the play button).
+				<br><br>
+			<b>WARNING</b>: if you have a weak computer make sure your files are of a reasonable size (like under 20MB), as the whole file will be read into memory.</p>
+			<h2>Samples</h2>
+			<p>If you don't have any audio files on hand but want to play around anyways feel free to select one of these sample files:</p>
+			<span>
+				<div class="sample_btn" id="sample_btn_1">Sample 1</div>
+				<div class="sample_btn" id="sample_btn_2">Sample 2</div>
+				<div class="sample_btn" id="sample_btn_3">Sample 3</div>
+			</span>
+		</div>
+	</div>
+
+	<script src="scripts.js"></script>
+</body>
+</html>
