@@ -1,6 +1,6 @@
 if(!window.AudioContext) {
 	let shim = document.createElement("script");
-	shim.src = "https://cdn.rawgit.com/mohayonao/web-audio-api-shim/master/build/web-audio-api-shim.min.js";
+	shim.src = "assets/web-audio-api-shim.min.js";
 	document.body.appendChild(shim);
 }
 
