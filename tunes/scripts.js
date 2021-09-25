@@ -1132,6 +1132,18 @@ const SONGS = [{
     "name": "neverspace",
     "duration": "1:19",
     "file": "__neverspace.mp3"
+}, {
+    "name": "mecha-kanye",
+    "duration": "0:56",
+    "file": "__mecha_kanye.mp3"
+}, {
+    "name": "caterpillarz",
+    "duration": "0:24",
+    "file": "__caterpillarz.mp3"
+}, {
+    "name": "fat lazy fat lazy",
+    "duration": "0:45",
+    "file": "__fat_lazy.mp3"
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
