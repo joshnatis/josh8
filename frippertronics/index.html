@@ -220,11 +220,11 @@
 			<svg class="connexion" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13 18v-4h-7v-4h7v-4l6 6-6 6zm-1-16c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12z"/></svg>
 
 			<div class="controls-space">
-				<span>Rate1:</span>
-				<input type="range" min="1" max="1.05" value="1" step="any" class="slider" id="rate1_slider">
+				<span>Pitch:</span>
+				<input type="range" min="-1200" max="1200" value="0" step="1" class="slider" id="pitch_slider">
 				<br>
-				<span>Rate2:</span>
-				<input type="range" min="1" max="1.05" value="1.005" step="any" class="slider" id="rate2_slider">
+				<span>Phase:</span>
+				<input type="range" min="1" max="1.05" value="1.005" step="any" class="slider" id="phase_slider">
 			</div>
 
 			<svg class="connexion" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13 18v-4h-7v-4h7v-4l6 6-6 6zm-1-16c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12z"/></svg>
@@ -259,7 +259,7 @@
 				</blockquote>
 			</p>
 			<h2>Usage</h2>
-			<p>Upload an audio file. We will use it to fashion two tape loops playing at different speeds (<span class="inline-code">rate1</span> and <span class="inline-code">rate2</span>). Use the <span class="inline-code">start</span> parameter to set where in the audio your tape loop should begin, and the <span class="inline-code">loop</span> parameter to to set how long the audio should play until it restarts. (The settings are applied once you click the play button).
+			<p>Upload an audio file. We will use it to fashion two tape loops playing at different speeds (the extent of the difference being controlled by the <span class="inline-code">phase</span> slider). The greater the phase, the more out-of-sync the audio channels will get. Use the <span class="inline-code">start</span> parameter to set where in the audio your tape loop should begin, and the <span class="inline-code">loop</span> parameter to to set the loop's length (how long the audio should play until it restarts). Note that the settings are applied once you click the play button, rather than taking effect as you change them.
 				<br><br>
 			<b>WARNING</b>: if you have a weak computer make sure your files are of a reasonable size (like under 20MB), as the whole file will be read into memory.</p>
 			<h2>Samples</h2>

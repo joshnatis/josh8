@@ -5,6 +5,7 @@ if(!window.AudioContext) {
 }
 
 let audioContext;
+let pitchSupported;
 
 let playing = false;
 let demo = false;
@@ -18,7 +19,7 @@ let demo = false;
 let upload_btn;
 let upload_box;
 let play_btn;
-let rate1_slider, rate2_slider, start_slider, loop_slider;
+let pitch_slider, phase_slider, start_slider, loop_slider;
 let loop_checkbox;
 /* -------------------- */
 
@@ -32,11 +33,21 @@ document.body.onload = function() {
 	}
 
 	play_btn      = document.getElementById("play_btn");
-	rate1_slider  = document.getElementById("rate1_slider");
-	rate2_slider  = document.getElementById("rate2_slider");
+	pitch_slider  = document.getElementById("pitch_slider");
+	phase_slider  = document.getElementById("phase_slider");
 	start_slider  = document.getElementById("start_slider");
 	loop_slider   = document.getElementById("loop_slider");
 	loop_checkbox = document.getElementById("loop_checkbox");
+
+	pitchSupported = ("detune" in new AudioContext().createBufferSource());
+	if(!pitchSupported) /* hide pitch slider */
+	{
+		pitch_slider.style.display = "none";
+		let ctrls = pitch_slider.parentNode;
+		ctrls.querySelector("span").style.display = "none";
+		ctrls.querySelector("br").remove();
+		phase_slider.style.verticalAlign = "middle";
+	}
 
 	enableSampleButtons();
 }
@@ -75,8 +86,8 @@ async function loopAudio(arrayBuffer)
 {
 	audioContext.decodeAudioData(arrayBuffer)
 	.then(audioBuffer => {
-		let rate1  = rate1_slider.value;
-		let rate2  = rate2_slider.value;
+		let pitch  = pitch_slider.value;
+		let phase  = phase_slider.value;
 
 		let loop = loop_checkbox.checked;
 
@@ -86,12 +97,12 @@ async function loopAudio(arrayBuffer)
 		if(proposed_stop > stop || !loop) stop = audioBuffer.duration;
 		else                              stop = proposed_stop;
 
-		startLoop(audioBuffer, 1,  rate1, start, stop, loop);
-		startLoop(audioBuffer, -1, rate2, start, stop, loop);
+		startLoop(audioBuffer,  1,  1,    start, stop, loop, pitch);
+		startLoop(audioBuffer, -1, phase, start, stop, loop, pitch);
 	})
 }
 
-function startLoop(audioBuffer, pan, rate, start, stop, loop) {
+function startLoop(audioBuffer, pan, rate, start, stop, loop, pitch) {
 	let sourceNode = audioContext.createBufferSource();
 	let pannerNode = audioContext.createStereoPanner();
 
@@ -100,6 +111,8 @@ function startLoop(audioBuffer, pan, rate, start, stop, loop) {
 	sourceNode.loopStart = start;
 	sourceNode.loopEnd = stop;
 	sourceNode.playbackRate.value = rate;
+	if(pitchSupported)
+		sourceNode.detune.value = pitch;
 
 	pannerNode.pan.value = pan;
 
@@ -138,25 +151,26 @@ function enableSampleButtons() {
 		if(sample_btn.id == "sample_btn_1") {
 			path = "assets/stafford-cybernetics.mp3";
 			applySettings = function() {
-				rate1_slider.value = 1;
-				rate2_slider.value = 1.02109375;
+				pitch_slider.value = 1;
+				phase_slider.value = 1.02109375;
 				start_slider.value = 0.293632466814159;
 				loop_slider.value  = 2;
-				
+				loop_checkbox.checked = true;
 			}
 		} else if(sample_btn.id == "sample_btn_2") {
 			path = "assets/sewerslvt.mp3";
 			applySettings = function() {
-				rate1_slider.value = 1.0044040376102;
-				rate2_slider.value = 1.02175055309735;
+				pitch_slider.value = 1;
+				phase_slider.value = 1.01734652;
 				start_slider.value = 0.171935840707965;
 				loop_slider.value  = 6.673534290354;
+				loop_checkbox.checked = true;
 			}
 		} else if(sample_btn.id == "sample_btn_3") {
 			path = "assets/capoxxo-heartbeat.mp3";
 			applySettings = function() {
-				rate1_slider.value = 1;
-				rate2_slider.value = 1.01711144911504;
+				pitch_slider.value = 1;
+				phase_slider.value = 1.01711144911504;
 				start_slider.value = 0.191922013274336;
 				loop_checkbox.checked = false;
 			}
