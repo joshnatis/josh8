@@ -125,7 +125,7 @@ function startLoop(audioBuffer, pan, rate, start, stop, loop, pitch) {
 function clearUploadBox(filename) {
 	let p = upload_box.querySelector("p");
 	p.textContent = filename;
-	upload_box.id = "";
+	upload_box.id = "uploaded-song-box";
 	upload_box.className = "controls-space";
 	upload_box.style.fontWeight = "bold";
 
