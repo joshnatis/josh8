@@ -1144,6 +1144,14 @@ const SONGS = [{
     "name": "fat lazy fat lazy",
     "duration": "0:45",
     "file": "__fat_lazy.mp3"
+}, {
+    "name": "rainbow fish story",
+    "duration": "0:45",
+    "file": "__rainbow_fish_story.mp3"
+}, {
+    "name": "waiting",
+    "duration": "0:22",
+    "file": "__waiting.mp3"
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
