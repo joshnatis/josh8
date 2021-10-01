@@ -1152,6 +1152,26 @@ const SONGS = [{
     "name": "waiting",
     "duration": "0:22",
     "file": "__waiting.mp3"
+}, {
+    "name": "ed, tom, n matt",
+    "duration": "0:40",
+    "file": "__ed_tom_n_matt.mp3"
+}, {
+    "name": "stress fields",
+    "duration": "0:14",
+    "file": "__stess_field.mp3"
+}, {
+    "name": "weird stroll",
+    "duration": "0:24",
+    "file": "__weird_stroll.mp3"
+}, {
+    "name": "heavy eyes",
+    "duration": "0:34",
+    "file": "__heavy_eyes.mp3"
+}, {
+    "name": "interstellar san pelegrino",
+    "duration": "1:16",
+    "file": "__interstellar_san_pelegrino.mp3"
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
