@@ -1172,6 +1172,18 @@ const SONGS = [{
     "name": "interstellar san pelegrino",
     "duration": "1:16",
     "file": "__interstellar_san_pelegrino.mp3"
+}, {
+    "name": "q laser",
+    "duration": "0:21",
+    "file": "__q_laser.mp3"
+}, {
+    "name": "expansion pack",
+    "duration": "1:27",
+    "file": "__expansion_pack.mp3"
+}, {
+    "name": "times of nachos",
+    "duration": "0:59",
+    "file": "__times_of_nachos.mp3"
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
