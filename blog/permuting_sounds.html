@@ -16,11 +16,9 @@
 
 <h1> Permuting sounds</h1>
 <h5> <i>How I used ffmpeg to generate variations of drum loops</i></h5>
-<p>
 <p class="subtitle">July 10, 2020 &mdash; Josh </p>
 <br>
 <img style="border: 2px solid black; border-radius: 5px;" alt="drum sequencer" src="images/sequencer.jpg">
-</p>
 
 <p>
 &#42;<i>record scratch</i>&#42;<br>&#42;<i>freeze frame</i>&#42;<br><br>Yup, that's me. You're probably wondering how I ended up in this situation. <i>Shit wait, that meme doesn't really apply to this situation. Oh well.</i>
@@ -57,8 +55,7 @@ My initial idea was to have a repository of every possible drum loop the user co
 There are <code class="inline-code">256</code> ways we can arrange a single sound clip (e.g. <i>kick1.mp3</i>) in those 8 positions. Since there are 3 versions of each instrument, and 3 instruments in total, we'd need <code class="inline-code">(256 &#42; 3) &#42; 3 = 2304</code> files to capture every possible loop for each single sound. Here's what I mean:
 </p>
 
-<p>
-<div style="display:inline-block; margin-left: 15%;"><i>Possible arrangements. Let k1 mean kick1.mp3, s2 mean snare2.mp3, and etc.</i></p>
+<div style="display:inline-block; margin-left: 15%;"><i>Possible arrangements. Let k1 mean kick1.mp3, s2 mean snare2.mp3, and etc.</i>
 
 <pre><code class="c">1	2	3	4	5	6	7	8
 ------------------------------------------------------------
@@ -89,9 +86,7 @@ And an example of the second row:
 <audio style="display: block; filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%); width: 200px; height: 25px;" controls><source src="images/loop_sample2.mp3" type="audio/mp3"></audio>
 </p>
 
-<p>
 </div>
-</p>
 
 <p>
 The complete table would have 2304 rows in it. And, as you can see/hear, this only considers loops of a single instrument, not ones with all three elements. Can you smell the complexity? Each row can be combined with any other two rows (given that each row is a distinct instrument), which yields... a huge number, man. I don't even know how to calculate that.
@@ -184,8 +179,7 @@ To generate this glorified Tic-Tac-Toe game, I pleaded for help on Discord, and 
 Ok maybe it's a two-liner, but it's still a one-liner in my heart. That produced <code class="inline-code">256</code> lines of <code class="inline-code">X</code>s and <code class="inline-code">O</code>s (cause as I mentioned there are <code class="inline-code">256</code> ways to arrange a sound clip in 8 spots). Each of these lines represents a potential drum loop.
 </p>
 
-<p>
-<div style="display:inline-block; margin-left: 35%;"><i>Some sample output:</i></p>
+<div style="display:inline-block; margin-left: 35%;"><i>Some sample output:</i>
 
 <pre><code class="">OOXOOXOO
 OOXOOXOX
@@ -198,9 +192,7 @@ OOXOXOXX
 OOXOXXOO
 OOXOXXOX
 </code></pre>
-<p>
 </div>
-</p>
 
 <p>
 Now, we just have to generate a bunch of files for FFMPEG based on each line of this output. I elected to do this in C++, cause I'm comfy :3 with its IO libraries and I was just trying to get stuff done.
