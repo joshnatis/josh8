@@ -1184,6 +1184,26 @@ const SONGS = [{
     "name": "times of nachos",
     "duration": "0:59",
     "file": "__times_of_nachos.mp3"
+}, {
+    "name": "school lunch slop *plop*",
+    "duration": "0:30",
+    "file": "__school_lunch_slop_plop.mp3"
+}, {
+    "name": "gnome weapons school",
+    "duration": "0:30",
+    "file": "__gnome_weapons_school.mp3"
+}, {
+    "name": "tunnel snail world",
+    "duration": "0:48",
+    "file": "__tunnel_snail_world.mp3"
+}, {
+    "name": "what the dog doin (prod. dj eugenics a.k.a. bigbuu32)",
+    "duration": "0:17",
+    "file": "__what_the_dog_doin_dj_eugenics.mp3"
+}, {
+    "name": "zelly2",
+    "duration": "1:22",
+    "file": "__zelly2.mp3"
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
