@@ -1204,6 +1204,34 @@ const SONGS = [{
     "name": "zelly2",
     "duration": "1:22",
     "file": "__zelly2.mp3"
+}, {
+    "name": "experiment.01",
+    "duration": "0:36",
+    "file": "__experiment01.mp3"
+}, {
+    "name": "beached!",
+    "duration": "1:06",
+    "file": "__beached.mp3"
+}, {
+    "name": "midnight cashew run",
+    "duration": "0:41",
+    "file": "__midnight_cashew_run.mp3"
+}, {
+    "name": "fire mario",
+    "duration": "0:36",
+    "file": "__fire_mario.mp3"
+}, {
+    "name": "adventure.v1",
+    "duration": "0:42",
+    "file": "__adventurev1.mp3"
+}, {
+    "name": "adventure.v2",
+    "duration": "1:07",
+    "file": "__adventurev2.mp3"
+}, {
+    "name": "alien thunderdome",
+    "duration": "0:29",
+    "file": "__alien_thunderdome.mp3"
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
