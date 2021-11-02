@@ -1232,6 +1232,22 @@ const SONGS = [{
     "name": "alien thunderdome",
     "duration": "0:29",
     "file": "__alien_thunderdome.mp3"
+}, {
+    "name": "experiment.02",
+    "duration": "4:38",
+    "file": "__experiment02.mp3"
+}, {
+    "name": "candyflipper",
+    "duration": "0:48",
+    "file": "__candyflipper.mp3"
+}, {
+    "name": "son of a gun",
+    "duration": "1:27",
+    "file": "__son_of_a_gun.mp3"
+}, {
+    "name": "deep quine",
+    "duration": "1:03",
+    "file": "__deep_quine.mp3"
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
