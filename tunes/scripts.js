@@ -1248,6 +1248,26 @@ const SONGS = [{
     "name": "deep quine",
     "duration": "1:03",
     "file": "__deep_quine.mp3"
+}, {
+    "name": "cyber fatigue",
+    "duration": "1:29",
+    "file": "__cyber_fatigue.mp3"
+}, {
+    "name": "sharp turn",
+    "duration": "0:38",
+    "file": "__sharp_turn.mp3"
+}, {
+    "name": "boss",
+    "duration": "0:36",
+    "file": "__boss.mp3"
+}, {
+    "name": "experiment.03",
+    "duration": "4:16",
+    "file": "__experiment03.mp3"
+}, {
+    "name": "space dust",
+    "duration": "1:11",
+    "file": "__space_dust.mp3"
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
