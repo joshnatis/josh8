@@ -1268,6 +1268,46 @@ const SONGS = [{
     "name": "space dust",
     "duration": "1:11",
     "file": "__space_dust.mp3"
+}, {
+    "name": "ain't",
+    "duration": "0:54",
+    "file": "__aint.mp3"
+}, {
+    "name": "gary's laboratory",
+    "duration": "0:32",
+    "file": "__garys_laboratory.mp3"
+}, {
+    "name": "arctic circle",
+    "duration": "0:40",
+    "file": "__arctic_circle.mp3"
+}, {
+    "name": "big z",
+    "duration": "2:00",
+    "file": "__big_z.mp3"
+}, {
+    "name": "experiment.04",
+    "duration": "1:39",
+    "file": "__experiment04.mp3"
+}, {
+    "name": "blunt",
+    "duration": "2:48",
+    "file": "__blunt.mp3"
+}, {
+    "name": "alice",
+    "duration": "3:24",
+    "file": "__alice.mp3"
+}, {
+    "name": "face",
+    "duration": "0:32",
+    "file": "__face.mp3"
+}, {
+    "name": "nos",
+    "duration": "3:44",
+    "file": "__nos.mp3"
+}, {
+    "name": "pretty sailor",
+    "duration": "1:21",
+    "file": "__pretty_sailor.mp3"
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
