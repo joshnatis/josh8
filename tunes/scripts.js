@@ -1308,6 +1308,70 @@ const SONGS = [{
     "name": "pretty sailor",
     "duration": "1:21",
     "file": "__pretty_sailor.mp3"
+}, {
+    "name": "floral g-shock",
+    "duration": "1:02",
+    "file": "__floral_gshock.mp3"
+}, {
+    "name": "if and only if",
+    "duration": "0:27",
+    "file": "__if_and_only_if.mp3"
+}, {
+    "name": "whatevs",
+    "duration": "0:32",
+    "file": "__whatevs.mp3"
+}, {
+    "name": "groovy snowflake",
+    "duration": "0:38",
+    "file": "__groovy_snowflake.mp3"
+}, {
+    "name": "crawly",
+    "duration": "0:10",
+    "file": "__crawly.mp3"
+}, {
+    "name": "red velvet bear",
+    "duration": "0:46",
+    "file": "__red_velvet_bear.mp3"
+}, {
+    "name": "sheer cold",
+    "duration": "2:08",
+    "file": "__sheer_cold.mp3"
+}, {
+    "name": "domovoy",
+    "duration": "3:21",
+    "file": "__domovoy.mp3"
+}, {
+    "name": "nz2",
+    "duration": "0:43",
+    "file": "__nz2.mp3"
+}, {
+    "name": "pyramid1",
+    "duration": "0:29",
+    "file": "__pyramid1.mp3"
+}, {
+    "name": "dome",
+    "duration": "1:39",
+    "file": "__dome.mp3"
+}, {
+    "name": "fingers",
+    "duration": "0:38",
+    "file": "__fingers.mp3"
+}, {
+    "name": "lunarbom",
+    "duration": "0:37",
+    "file": "__lunarbom.mp3"
+}, {
+    "name": "break yourself",
+    "duration": "0:43",
+    "file": "__break_yourself.mp3"
+}, {
+    "name": "neversoft eyeball",
+    "duration": "0:36",
+    "file": "__neversoft_eyeball.mp3"
+}, {
+    "name": "cozy прогулка",
+    "duration": "2:50",
+    "file": "__cozy_progulka.mp3"
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
