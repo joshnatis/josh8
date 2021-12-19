@@ -1372,6 +1372,34 @@ const SONGS = [{
     "name": "cozy прогулка",
     "duration": "2:50",
     "file": "__cozy_progulka.mp3"
+}, {
+    "name": "sheeps",
+    "duration": "0:48",
+    "file": "__sheeps.mp3"
+}, {
+    "name": "moody furniture",
+    "duration": "1:15",
+    "file": "__moody_furniture.mp3"
+}, {
+    "name": "pano",
+    "duration": "0:45",
+    "file": "__pano.mp3"
+}, {
+    "name": "bits",
+    "duration": "2:06",
+    "file": "__bits.mp3"
+}, {
+    "name": "persian rug breaks the 4th wall",
+    "duration": "1:06",
+    "file": "__persian_rug.mp3"
+}, {
+    "name": "basically what i hear when i listen to yeezus",
+    "duration": "1:20",
+    "file": "__yeezus.mp3"
+}, {
+    "name": "dj rediska",
+    "duration": "1:09",
+    "file": "__dj_rediska.mp3"
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
