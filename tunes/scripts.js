@@ -1428,6 +1428,38 @@ const SONGS = [{
     "name": "the elf's march",
     "duration": "1:28",
     "file": "__the_elfs_march.mp3"
+}, {
+    "name": "hadouken",
+    "duration": "0:27",
+    "file": "__hadouken.mp3"
+}, {
+    "name": "David Shawty, whose real name is David Salazar",
+    "duration": "1:24",
+    "file": "__davidshawty.mp3"
+}, {
+    "name": "highway through maine",
+    "duration": "1:26",
+    "file": "__highway_through_maine.mp3"
+}, {
+    "name": "glacier",
+    "duration": "0:41",
+    "file": "__glacier.mp3"
+}, {
+    "name": "san andreas train",
+    "duration": "1:07",
+    "file": "__san_andreas_train.mp3"
+}, {
+    "name": "metal birds island",
+    "duration": "3:08",
+    "file": "__metal_birds_island.mp3"
+}, {
+    "name": "wooden teeth jabroni",
+    "duration": "0:40",
+    "file": "__militia.mp3"
+}, {
+    "name": "pink party",
+    "duration": "0:50",
+    "file": "__pink_dance.mp3"
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
