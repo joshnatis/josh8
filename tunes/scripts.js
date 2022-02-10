@@ -1400,6 +1400,34 @@ const SONGS = [{
     "name": "dj rediska",
     "duration": "1:09",
     "file": "__dj_rediska.mp3"
+}, {
+    "name": "gigi ferrari",
+    "duration": "1:02",
+    "file": "__gigi_ferrari.mp3"
+}, {
+    "name": "guitunnel",
+    "duration": "0:25",
+    "file": "__guitunnel.mp3"
+}, {
+    "name": "my gf says my sound design sucks",
+    "duration": "0:25",
+    "file": "__my_gf_says_my_sound_design_sucks.mp3"
+}, {
+    "name": "direct line",
+    "duration": "0:38",
+    "file": "__direct_line.mp3"
+}, {
+    "name": "new stamp :)",
+    "duration": "0:24",
+    "file": "__new_stamp.mp3"
+}, {
+    "name": "my tail",
+    "duration": "1:29",
+    "file": "__my_tail.mp3"
+}, {
+    "name": "the elf's march",
+    "duration": "1:28",
+    "file": "__the_elfs_march.mp3"
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
