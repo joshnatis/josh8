@@ -1482,8 +1482,12 @@ const SONGS = [{
     "file": "__angels.mp3",
 }, {
     "name": "BAM",
-    "duration": "2:05",
+    "duration": "1:04",
     "file": "__BAM.mp3",
+}, {
+    "name": "blast a charlatan",
+    "duration": "1:03",
+    "file": "__blast_a_charlatan.mp3",
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
