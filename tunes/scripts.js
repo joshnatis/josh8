@@ -1462,15 +1462,15 @@ const SONGS = [{
     "file": "__pink_dance.mp3"
 }, {
     "name": "BWAUGHH",
-    "duration": "00:36",
+    "duration": "0:36",
     "file": "__BWAUGHH.mp3",
 }, {
     "name": "back to space",
-    "duration": "00:50",
+    "duration": "0:50",
     "file": "__back_to_space.mp3",
 }, {
     "name": "niceday",
-    "duration": "00:53",
+    "duration": "0:53",
     "file": "__niceday.mp3",
 }];
 
