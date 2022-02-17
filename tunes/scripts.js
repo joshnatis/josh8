@@ -1472,6 +1472,18 @@ const SONGS = [{
     "name": "niceday",
     "duration": "0:53",
     "file": "__niceday.mp3",
+}, {
+    "name": "spongebab",
+    "duration": "0:54",
+    "file": "__spongebab.mp3",
+}, {
+    "name": "angels",
+    "duration": "0:42",
+    "file": "__angels.mp3",
+}, {
+    "name": "BAM",
+    "duration": "2:05",
+    "file": "__BAM.mp3",
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
