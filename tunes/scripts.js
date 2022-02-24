@@ -1488,6 +1488,26 @@ const SONGS = [{
     "name": "blast a charlatan",
     "duration": "1:03",
     "file": "__blast_a_charlatan.mp3",
+}, {
+    "name": "lovetheme4",
+    "duration": "1:07",
+    "file": "__lovetheme4.mp3",
+}, {
+    "name": "grenade2",
+    "duration": "1:50",
+    "file": "__grenade2.mp3",
+}, {
+    "name": "slvt",
+    "duration": "1:02",
+    "file": "__slvt.mp3",
+}, {
+    "name": "gamelan",
+    "duration": "1:14",
+    "file": "__gamelan.mp3",
+}, {
+    "name": "paracetamol",
+    "duration": "0:57",
+    "file": "__paracetamol.mp3",
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
