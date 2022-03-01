@@ -1508,6 +1508,22 @@ const SONGS = [{
     "name": "paracetamol",
     "duration": "0:57",
     "file": "__paracetamol.mp3",
+}, {
+    "name": "robot2008",
+    "duration": "1:30",
+    "file": "__robot2008.mp3",
+}, {
+    "name": "premo",
+    "duration": "1:23",
+    "file": "__premo.mp3",
+}, {
+    "name": "blue sands",
+    "duration": "1:02",
+    "file": "__bluesands.mp3",
+}, {
+    "name": "rescue heroes",
+    "duration": "1:30",
+    "file": "__rescueheroes.mp3",
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
