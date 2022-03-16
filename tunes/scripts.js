@@ -1524,6 +1524,38 @@ const SONGS = [{
     "name": "rescue heroes",
     "duration": "1:30",
     "file": "__rescueheroes.mp3",
+}, {
+    "name": "posted upright",
+    "duration": "1:11",
+    "file": "__posted_upright.mp3",
+}, {
+    "name": "friend",
+    "duration": "0:49",
+    "file": "__friend.mp3",
+}, {
+    "name": "izbushka",
+    "duration": "2:43",
+    "file": "__izbushka.mp3",
+}, {
+    "name": "twirl",
+    "duration": "0:40",
+    "file": "__twirl.mp3",
+}, {
+    "name": "babachka",
+    "duration": "0:28",
+    "file": "__babachka.mp3",
+}, {
+    "name": "freindship club",
+    "duration": "2:10",
+    "file": "__freindship-club.mp3",
+}, {
+    "name": "El-P's 9mm",
+    "duration": "1:06",
+    "file": "__elp.mp3",
+}, {
+    "name": "somber mario",
+    "duration": "1:35",
+    "file": "__somber_mario.mp3",
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
