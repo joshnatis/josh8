@@ -1557,10 +1557,6 @@ const SONGS = [{
     "duration": "1:35",
     "file": "__somber_mario.mp3",
 }, {
-    "name": "briefcase",
-    "duration": "1:11",
-    "file": "__briefcase.mp3",
-}, {
     "name": "for teh lulz",
     "duration": "0:24",
     "file": "__for_teh_lulz.mp3",
