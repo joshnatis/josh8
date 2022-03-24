@@ -1556,6 +1556,50 @@ const SONGS = [{
     "name": "somber mario",
     "duration": "1:35",
     "file": "__somber_mario.mp3",
+}, {
+    "name": "briefcase",
+    "duration": "1:11",
+    "file": "__briefcase.mp3",
+}, {
+    "name": "for teh lulz",
+    "duration": "0:24",
+    "file": "__for_teh_lulz.mp3",
+}, {
+    "name": "soft scissors",
+    "duration": "0:40",
+    "file": "__soft_scissors.mp3",
+}, {
+    "name": "walk",
+    "duration": "0:49",
+    "file": "__walk.mp3",
+}, {
+    "name": "rains",
+    "duration": "0:32",
+    "file": "__rains.mp3",
+}, {
+    "name": "hail",
+    "duration": "0:40",
+    "file": "__hail.mp3",
+}, {
+    "name": "magnemite",
+    "duration": "0:32",
+    "file": "__magnemite.mp3",
+}, {
+    "name": "goodbye plane",
+    "duration": "0:57",
+    "file": "__goodbye_plane.mp3",
+}, {
+    "name": "violins",
+    "duration": "2:00",
+    "file": "__violins.mp3",
+}, {
+    "name": "playboi carti type beat (feat. tha liddo)",
+    "duration": "0:27",
+    "file": "__playboi_carti_type_beat.mp3",
+}, {
+    "name": "palm trees",
+    "duration": "0:50",
+    "file": "__palm_trees.mp3",
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
