@@ -1596,6 +1596,30 @@ const SONGS = [{
     "name": "palm trees",
     "duration": "0:50",
     "file": "__palm_trees.mp3",
+}, {
+    "name": "wash",
+    "duration": "1:20",
+    "file": "__wash.mp3",
+}, {
+    "name": "get out",
+    "duration": "3:24",
+    "file": "__get_out.mp3",
+}, {
+    "name": "pinballs",
+    "duration": "1:39",
+    "file": "__pinballs.mp3",
+}, {
+    "name": "this is your copilot speaking",
+    "duration": "1:37",
+    "file": "__this_is_your_copilot_speaking.mp3",
+}, {
+    "name": "escape",
+    "duration": "0:43",
+    "file": "__escape.mp3",
+}, {
+    "name": "with the ferocity of one thousand gnashed teeth",
+    "duration": "2:52",
+    "file": "__with_the_ferocity_of_one_thousand_gnashed_teeth.mp3",
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
