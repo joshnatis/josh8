@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Aa</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+	<style>
+		#stuff {
+			font-size: 1000%;
+			font-family: Arial, sans-serif;
+			font-weight: bold;	
+		}
+	</style>
+</head>
+
+<body>
+	<marquee id="stuff" scrollamount="7">turn on javascript my friend</marquee>
+
+<script>
+let sentences = [
+"When he had to picnic on the beach, he purposely put sand in other people’s food.",
+"The water flowing down the river didn’t look that powerful from the car",
+"When money was tight, he'd get his lunch money from the local wishing well.",
+"The swirled lollipop had issues with the pop rock candy.",
+"When she didn’t like a guy who was trying to pick her up, she started using sign language.",
+"I ate a sock because people on the Internet told me to.",
+"I’m a living furnace.",
+"The fact that there's a stairway to heaven and a highway to hell explains life well.",
+"The bird had a belief that it was really a groundhog.",
+"There are over 500 starfish in the bathroom drawer.",
+"Three years later, the coffin was still full of Jello.",
+"He had accidentally hacked into his company's server.",
+"It's never comforting to know that your fate depends on something as unpredictable as the popping of corn.",
+"She was too busy always talking about what she wanted to do to actually do any of it.",
+"I want a giraffe, but I'm a turtle eating waffles.",
+"He appeared to be confusingly perplexed.",
+"The shark-infested South Pine channel was the only way in or out.",
+"For some unfathomable reason, the response team didn't consider a lack of milk for my cereal as a proper emergency.",
+"Mom didn’t understand why no one else wanted a hot tub full of jello.",
+"Separation anxiety is what happens when you can't find your phone.",
+"She traveled because it cost the same as therapy and was a lot more enjoyable.",
+"I love eating toasted cheese and tuna sandwiches.",
+"She did her best to help him.",
+"The stench from the feedlot permeated the car despite having the air conditioning on recycled air.",
+"The gloves protect my feet from excess work.",
+"When he asked her favorite number, she answered without hesitation that it was diamonds.",
+"The secret code they created made no sense, even to them.",
+"He wondered if it could be called a beach if there was no sand.",
+"Gwen had her best sleep ever on her new bed of nails.",
+"The irony of the situation wasn't lost on anyone in the room.",
+"David subscribes to the 'stuff your tent into the bag' strategy over nicely folding it.",
+"Writing a list of random sentences is harder than I initially thought it would be.",
+"The white water rafting trip was suddenly halted by the unexpected brick wall.",
+"They say people remember important moments in their life well, yet no one even remembers their own birth.",
+"He decided to live his life by the big beats manifesto.",
+"Andy loved to sleep on a bed of nails.",
+"She can live her life however she wants as long as she listens to what I have to say.",
+"Malls are great places to shop; I can find everything I need under one roof.",
+"Flesh-colored yoga pants were far worse than even he feared.",
+"It's never been my responsibility to glaze the donuts.",
+"I only enjoy window shopping when the windows are transparent.",
+"Blue sounded too cold at the time and yet it seemed to work for gin.",
+"Barking dogs and screaming toddlers have the unique ability to turn friendly neighbors into cranky enemies.",
+"She learned that water bottles are no longer just to hold liquid, but they're also status symbols.",
+"The mysterious diary records the voice.",
+"25 years later, she still regretted that specific moment.",
+"It caught him off guard that space smelled of seared steak.",
+"I'm confused: when people ask me what's up, and I point, they groan.",
+"The sudden rainstorm washed crocodiles into the ocean.",
+"They decided to plant an orchard of cotton candy.",
+];
+
+// thanks and roses to the guy on stack overflow
+function shuffle(array) {
+	let currentIndex = array.length,  randomIndex;
+	// While there remain elements to shuffle...
+	while (currentIndex != 0) {
+
+		// Pick a remaining element...
+		randomIndex = Math.floor(Math.random() * currentIndex);
+		currentIndex--;
+
+		// And swap it with the current element.
+		[array[currentIndex], array[randomIndex]] = [
+		 array[randomIndex], array[currentIndex]];
+	}
+
+	return array;
+}
+
+let random_sentences = shuffle(sentences);
+let result = random_sentences.join(' ');
+let thing = document.getElementById("stuff");
+thing.innerHTML = result;
+</script>
+
+</body>
+</html>
