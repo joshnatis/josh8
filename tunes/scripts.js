@@ -1620,6 +1620,42 @@ const SONGS = [{
     "name": "with the ferocity of one thousand gnashed teeth",
     "duration": "2:52",
     "file": "__with_the_ferocity_of_one_thousand_gnashed_teeth.mp3",
+}, {
+    "name": "troubled",
+    "duration": "1:31",
+    "file": "__troubled.mp3",
+}, {
+    "name": "bruh",
+    "duration": "1:21",
+    "file": "__bruh.mp3",
+}, {
+    "name": "ship",
+    "duration": "0:48",
+    "file": "__ship.mp3",
+}, {
+    "name": "devotion",
+    "duration": "0:17",
+    "file": "__devotion.mp3",
+}, {
+    "name": "emerald",
+    "duration": "1:23",
+    "file": "__emerald.mp3",
+}, {
+    "name": "five star hotel",
+    "duration": "1:48",
+    "file": "__five_star_hotel.mp3",
+}, {
+    "name": "slushie",
+    "duration": "1:36",
+    "file": "__slushie.mp3",
+}, {
+    "name": "bubble up",
+    "duration": "0:59",
+    "file": "__bubble_up.mp3",
+}, {
+    "name": "emocean",
+    "duration": "0:42",
+    "file": "__emocean.mp3",
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
