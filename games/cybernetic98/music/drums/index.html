@@ -86,14 +86,16 @@
 
 		if(genre == "electronic")
 		{
-			let options = document.getElementsByTagName("OPTION");
-			let sources = document.getElementsByTagName("SOURCE");
+			let audios = document.getElementsByTagName("audio");
+			let options = document.getElementsByTagName("option");
+			let sources = document.getElementsByTagName("source");
 
 			for(let i = 0; i < options.length; ++i)
 			{
 				options[i].value = "e_" + options[i].value;
 				let pos = (sources[i].src).lastIndexOf("/");
 				sources[i].src = (sources[i].src).slice(0, pos + 1) + "e_" + (sources[i].src).slice(pos + 1);
+				audios[i].src = sources[i].src;
 			}
 		}
 
