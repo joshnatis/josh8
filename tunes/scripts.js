@@ -1656,6 +1656,18 @@ const SONGS = [{
     "name": "emocean",
     "duration": "0:42",
     "file": "__emocean.mp3",
+}, {
+    "name": "caverns",
+    "duration": "1:01",
+    "file": "__caverns.mp3",
+}, {
+    "name": "the beach",
+    "duration": "0:49",
+    "file": "__the_beach.mp3",
+}, {
+    "name": "fuji nights",
+    "duration": "3:21",
+    "file": "__fuji_nights.mp3",
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
