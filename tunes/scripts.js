@@ -7,7 +7,6 @@
  | |__| / ____ \| |/ ____ \
  |_____/_/    \_\_/_/    \_\*/
 
-const SONGPATH = "https://github.com/joshnatis/josh8/blob/master/tunes/songs/";
 const SONGS = [{
     "name": "私とあなたが結婚した木へ散歩",
     "duration": "0:24",
@@ -1857,7 +1856,7 @@ function playSong(index, songbox = document.getElementsByClassName("song_boxes")
 		CURRENT_SONG_CONTAINER.classList.remove("clicked_song_boxes");
 	}
 
-	CURRENT_SONG = new Audio(SONGPATH + SONGS[index].file + "?raw=true");
+	CURRENT_SONG = new Audio('songs/' + SONGS[index].file);
 	CURRENT_SONG_INDEX = index;
 	CURRENT_SONG_CONTAINER = songbox;
 	CURRENT_SONG.volume = CURRENT_VOLUME;
