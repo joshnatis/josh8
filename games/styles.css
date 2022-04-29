@@ -21,7 +21,7 @@ body
 .icon-image:hover
 {
 	transition: 0.3s;
-	width: 7.5em;
+	transform: scale(1.05);
 	border-color: white;
 }
 
