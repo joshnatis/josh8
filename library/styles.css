@@ -116,6 +116,42 @@ hr:after {
 }
 
 @media screen and (max-width: 440px) {
-  #search-btn { display: none; }
-  #search-bar { margin-right: 0.5%; }
+	#search-btn { display: none; }
+	#search-bar { margin-right: 0.5%; }
+}
+
+@media screen and (min-width: 730px) {
+	body {
+		padding-bottom: 1em;
+		border-right: 2px solid black;
+		border-bottom: 2px solid black;
+	}
+	.books {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+}
+
+@media screen and (min-width: 730px) {
+	body {
+		width: 50%;
+		padding-bottom: 1em;
+		border-right: 2px solid black;
+		border-bottom: 2px solid black;
+	}
+	.books {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+}
+
+
+@media screen and (min-width: 730px) and (max-width: 1230px) {
+	body {	width: 70%; }
+}
+
+@media screen and (min-width: 730px) and (max-width: 880px) {
+	body {	width: 85%; }
 }
