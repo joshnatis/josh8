@@ -36,7 +36,7 @@ function populateWithBooks(category, category_div)
 	{
 		let a = document.createElement("a");
 		a.href = URL + category + "/" + books[i];
-		a.textContent = books[i].replaceAll("%20", " ").replaceAll("_", " ");
+		a.textContent = unescape(books[i]);
 		a.className = "book-link";
 		let img = document.createElement("img");
 		img.src = "images/223.ico";
@@ -62,28 +62,29 @@ function populateWithBooks(category, category_div)
 	}
 }
 
+function expand()
+{
+	let books_div = document.getElementsByClassName("books");
+	[...books_div].forEach(div => {
+		div.style.display = "block";
+	});
+}
+
+function collapse()
+{
+	let books_div = document.getElementsByClassName("books");
+	[...books_div].forEach(div => {
+		div.style.display = "none";
+	});
+}
+
 function enableButtons()
 {
 	let expand_btns = document.getElementsByClassName("expand");
 	let collapse_btns = document.getElementsByClassName("collapse");
 
-	[...expand_btns].forEach(btn => {
-		btn.onclick = function() {
-			let books_div = document.getElementsByClassName("books");
-			[...books_div].forEach(div => {
-				div.style.display = "block";
-			});
-		}
-	});
-
-	[...collapse_btns].forEach(btn => {
-		btn.onclick = function() {
-			let books_div = document.getElementsByClassName("books");
-			[...books_div].forEach(div => {
-				div.style.display = "none";
-			});
-		}
-	});
+	[...expand_btns].forEach(btn => { btn.onclick = expand; });
+	[...collapse_btns].forEach(btn => { btn.onclick = collapse; });
 
 	let search_btn = document.getElementById("search-btn");
 	let search_bar = document.getElementById("search-bar");
@@ -97,50 +98,70 @@ function enableButtons()
 	{
     	if(!e) e = window.event;
     	let keyCode = e.code || e.key;
-		if(keyCode == 'Enter')
-		{
+		if(keyCode == 'Enter') {
 			search(search_bar.value);
 		}
 		return true;
 	}
 }
 
+function unescape(s)
+{
+	return s.replaceAll("%20", " ").replaceAll("_", " ");
+}
+
+function libraryContains(target)
+{
+	for(category in LIBRARY) {
+		for(let i = 0; i < LIBRARY[category].length; ++i) {
+			let title = LIBRARY[category][i].toLowerCase();
+			if(title.includes(target)) {
+				return [true, category, unescape(title)];
+			}
+		}
+	}
+	return false;
+}
+
 function search(target)
 {
+	target = target.toLowerCase();
+
 	/* unhighlight previous search result */
 	let prevresult = document.getElementById("search-result");
 	if(prevresult) prevresult.id = "";
 
-	let targetFound = false;
-	for(category in LIBRARY)
-	{
-		if(LIBRARY[category].includes(target))
-			targetFound = true;
-	}
+	if(target == "") return;
 
-	if(targetFound)
-	{
-		/* expand all and scroll to the link */
-		let book_links = document.getElementsByClassName("book-link");
-		[...book_links].forEach(e => {
-			if(e.textContent == target)
-			{
-				let books_div = document.getElementsByClassName("books");
-				[...books_div].forEach(div => {
-					div.style.display = "block";
-				});
+	let [targetFound, foundInCategory, result] = libraryContains(target);
+	if(!targetFound) return;
 
-				e.scrollIntoView(true);
-				e.id = "search-result";
-				return;
-			}
-		});
-	}
+	expand();
 
-	/* todo: 'contains' rather than exact match */
-	/* todo: fuzzy search, maybe */
+	/* first letter of title is image :P */
+	foundInCategory = foundInCategory.substring(1);
+
+	let categoryTitles = document.getElementsByClassName("category-title");
+	[...categoryTitles].forEach(categoryTitle => {
+		if(categoryTitle.textContent != foundInCategory) return;
+
+		/* books are in a <div> under the category title */
+		let booksInCategory = categoryTitle
+			.parentNode
+			.nextElementSibling
+			.getElementsByClassName("book-link");
+
+		/* scroll to result and highlight it */
+		for(let i = 0; i < booksInCategory.length; ++i) {
+			let bookTitle = booksInCategory[i].text.toLowerCase();
+			if(bookTitle != result) continue;
+
+			booksInCategory[i].scrollIntoView();
+			booksInCategory[i].id = "search-result";
+			return;
+		}
+	});
 }
-
 
 populate();
 enableButtons();
