@@ -1,189 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<title>Meditations</title>
-	<link rel="stylesheet" href="./styles/styles.css">
-	<link rel="icon" href="./images/favicon.ico">
-	<link rel="stylesheet" href="./highlight/styles/pojoaque.css">
+	<link rel="stylesheet" href="src/styles.css">
+	<link rel="icon" href="img/favicon.ico">
 </head>
 
 <body>
-
-<div id="blog">
-
+	<div id="blog">
 		<div id="header">
 			<h1 id="tit">Corduroy's Meditations</h1>
 			<p id="desc">A cozy spot to sit and think :-)</p>
 		</div>
 
-<div id="content"><br>
-	<div style="text-align: center">
-		<img alt="wall rug" id="wallrug" src="https://josh8.com/home/mocha3.jpg">
-		<br><br>
-		<button onclick="expand_all()">expand all</button>
-		<button onclick="collapse_all()">collapse all</button>
+		<div id="content">
+			<img alt="wall rug" id="wallrug" src="https://josh8.com/home/mocha3.jpg">
+			<hr>
+			<div id="posts">
+				<h2 class="year">2021</h2>
+				<a class="post" href="commandline-audio-mac.html">Command-line Audio on a Mac (Without Installing Anything)</a>
+				<a class="post" href="further_study_of_operating_systems.html">On Further Study of Operating Systems</a>
+				<a class="post" href="sharing_documents_on_network.html">Sharing Documents Between Computers on a Network</a>
+				<a class="post" href="wars_of_computing.html">Holy Wars of Computing</a>
+
+				<h2 class="year">2020</h2>
+				<a class="post" href="typesetting_with_groff.html">Typesetting Documents With Groff</a>
+				<a class="post" href="permuting_sounds.html">Permuting sounds</a>
+				<a class="post" href="demo-world.html">Demo, World! Markdown to HTML</a>
+				<a class="post" href="february.html">February</a>
+
+				<h2 class="year">2019</h2>
+				<a class="post" href="why-so-many-rap-album-covers-look-the-same.html">Why so many rap album covers look the same</a>
+				<a class="post" href="an-incel-reading-of-sophocles-antigone.html"> An incel reading of Sophocles' Antigone</a>
+				<a class="post" href="lesson_learned.html">Lesson learned</a>
+				<a class="post" href="hello-world.html">Hello, World!</a>
+			</div>
+
+			<p id="foot"><a onclick="window.scrollTo(0, 0);">↑ Back up top! ↑</a></p>
+			<div id="footer">
+				With love, from <a href="https://github.com/joshnatis">Josh</a> &mdash; <a href="mailto:josh&#64;josh8&#46;com">josh&#64;josh8&#46;com</a>
+				<br><br>
+				Posts generated with <a href="https://github.com/joshnatis/phd">phd</a>, a markdown to html parser I wrote :)
+			</div>
+		</div>
 	</div>
-	<br>
-
-
-<div class="posts">
-	<h2 class="post-title">
-            <button aria-expanded="false">
-            <a class="post-link" href="commandline-audio-mac.html">Command-line Audio on a Mac (Without Installing Anything)</a>
-            <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
-                    <rect class="vert" height="8" width="2" y="1" x="4"/>
-                    <rect height="2" width="8" y="4" x="1"/>
-            </svg>
-            </button>
-            </h2>
-    <div hidden w3-include-html="commandline-audio-mac.html"></div>
-
-    <h2 class="post-title">
-            <button aria-expanded="false">
-            <a class="post-link" href="further_study_of_operating_systems.html">On Further Study of Operating Systems</a>
-            <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
-                    <rect class="vert" height="8" width="2" y="1" x="4"/>
-                    <rect height="2" width="8" y="4" x="1"/>
-            </svg>
-            </button>
-            </h2>
-    <div hidden w3-include-html="further_study_of_operating_systems.html"></div>
-
-    <h2 class="post-title">
-            <button aria-expanded="false">
-            <a class="post-link" href="sharing_documents_on_network.html">Sharing Documents Between Computers on a Network</a>
-            <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
-                    <rect class="vert" height="8" width="2" y="1" x="4"/>
-                    <rect height="2" width="8" y="4" x="1"/>
-            </svg>
-            </button>
-            </h2>
-    <div hidden w3-include-html="sharing_documents_on_network.html"></div>
-
-	<h2 class="post-title">
-		<button aria-expanded="false">
-		<a class="post-link" href="wars_of_computing.html">Holy Wars of Computing</a>
-		<svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
-			<rect class="vert" height="8" width="2" y="1" x="4"/>
-			<rect height="2" width="8" y="4" x="1"/>
-		</svg>
-		</button>
-		</h2>
-	<div hidden w3-include-html="wars_of_computing.html"></div>
-
-	<h2 class="post-title">
-		<button aria-expanded="false">
-		<a class="post-link" href="typesetting_with_groff.html">Typesetting Documents With Groff</a>
-		<svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
-			<rect class="vert" height="8" width="2" y="1" x="4"/>
-			<rect height="2" width="8" y="4" x="1"/>
-		</svg>
-		</button>
-		</h2>
-	<div hidden w3-include-html="typesetting_with_groff.html"></div>
-
-	<h2 class="post-title">
-		<button aria-expanded="false">
-		<a class="post-link" href="permuting_sounds.html">Permuting sounds</a>
-		<svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
-			<rect class="vert" height="8" width="2" y="1" x="4"/>
-			<rect height="2" width="8" y="4" x="1"/>
-		</svg>
-		</button>
-		</h2>
-	<div hidden w3-include-html="permuting_sounds.html"></div>
-
-	<h2 class="post-title">
-			<button aria-expanded="false">
-			<a class="post-link" href="demo-world.html">Demo, World! Markdown to HTML</a>
-			<svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
-				<rect class="vert" height="8" width="2" y="1" x="4"/>
-				<rect height="2" width="8" y="4" x="1"/>
-			</svg>
-			</button>
-			</h2>
-	<div hidden w3-include-html="demo-world.html"></div>
-
-
-	<h2 class="post-title">
-			<button aria-expanded="false">
-			<a class="post-link" href="february.html">February</a>
-			<svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
-				<rect class="vert" height="8" width="2" y="1" x="4"/>
-				<rect height="2" width="8" y="4" x="1"/>
-			</svg>
-			</button>
-			</h2>
-	<div hidden w3-include-html="february.html"></div>
-
-
-	<h2 class="post-title">
-			<button aria-expanded="false">
-			<a class="post-link" href="why-so-many-rap-album-covers-look-the-same.html">Why so many rap album covers look the same</a>
-			<svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
-				<rect class="vert" height="8" width="2" y="1" x="4"/>
-				<rect height="2" width="8" y="4" x="1"/>
-			</svg>
-			</button>
-			</h2>
-	<div hidden w3-include-html="why-so-many-rap-album-covers-look-the-same.html"></div>
-
-
-	<h2 class="post-title">
-			<button aria-expanded="false">
-			<a class="post-link" href="an-incel-reading-of-sophocles-antigone.html"> An incel reading of Sophocles' Antigone</a>
-			<svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
-				<rect class="vert" height="8" width="2" y="1" x="4"/>
-				<rect height="2" width="8" y="4" x="1"/>
-			</svg>
-			</button>
-			</h2>
-	<div hidden w3-include-html="an-incel-reading-of-sophocles-antigone.html"></div>
-
-
-	<h2 class="post-title">
-			<button aria-expanded="false">
-			<a class="post-link" href="lesson_learned.html">Lesson learned</a>
-				<svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
-				<rect class="vert" height="8" width="2" y="1" x="4"/>
-				<rect height="2" width="8" y="4" x="1"/>
-			</svg>
-			</button>
-			</h2>
-	<div hidden w3-include-html="lesson_learned.html"></div>
-
-
-	<h2 class="post-title">
-			<button aria-expanded="false">
-			<a class="post-link" href="hello-world.html">Hello, World!</a>
-				<svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
-				<rect class="vert" height="8" width="2" y="1" x="4"/>
-				<rect height="2" width="8" y="4" x="1"/>
-			</svg>
-			</button>
-			</h2>
-	<div hidden w3-include-html="hello-world.html"></div>
-
-</div> <!-- END POSTS -->
-
-<!-- FOOTER -->
-<p id="foot"><a onclick="window.scrollTo(0, 0);">↑ Back up top! ↑</a></p>
-
-<div id="footer">
-	With love, from <a href="https://github.com/joshnatis">Josh</a> &mdash; <a href="mailto:josh&#64;josh8&#46;com">josh&#64;josh8&#46;com</a>
-	<br><br>
-	Posts generated with <a href="https://github.com/joshnatis/phd">phd</a>, a markdown to html parser I wrote :)</div>
-</div>
-<!-- FOOTER -->
-
-
-</div> <!-- END CONTENT -->
-
-<script src="./highlight/highlight.pack.js"></script>
-<script src="./js/scripts.js"></script>
-<script> includeHTML(); </script>
 </body>
-
 </html>

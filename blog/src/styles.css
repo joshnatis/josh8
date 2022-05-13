@@ -56,18 +56,36 @@ blockquote::after {
 }
 
 .inline-code {
-    background-color: #eee;
+	background-color: #eee;
+	font-family: courier, monospace;
     border-radius: 3px;
-    font-family: courier, monospace;
     padding: 0 3px;
 }
 
+button {
+	background: #000;
+	color: #fff;
+	border: 0;
+	font-size: 0.85rem;
+	border-radius: 0.25rem;
+	cursor: pointer;
+	margin: 0.1%;
+}
+
+button:hover {
+
+}
+
+.center {
+	text-align: center;
+}
+
 #blog {
-	padding:5px;
 	background-color:#DDD;
-	width:100%;
+	width: 100%;
 	max-width: 54.625em;
 	margin: 1.5em auto;
+	padding: 5px;
 }
 
 #header {
@@ -104,8 +122,9 @@ blockquote::after {
 }
 
 #foot {
-	margin-top:2em;
+	margin-top: 2em;
 	text-align:center;
+	cursor: pointer;
 }
 
 #footer {
@@ -123,26 +142,24 @@ blockquote::after {
 
 #wallrug {
 	width: 100%;
+	margin-left: auto;
 }
 
-.post-title {
-	/*background-color: rgba(247, 200, 247, 0.3);*/
+#posts {
+	margin-top: -1%;
 }
 
-.post-link {
-	text-decoration: none;
+.post {
+	display: block;
+	font-size: 1.5em;
+	font-weight: bold;
 	color: black;
-	/* make it harder to miss expand button misclick title instead */
-	margin-right: 0.1em;
+	border-bottom: 2px solid black;
+	padding: 1%;
 }
 
-.post-link:hover {
-  	transition: 0.3s;
-	transform: scale(1.05);
-	box-shadow: 5px 6px;
-	border: 2px solid black;
-	padding: 3px;
-	background-color: white;
+.post:hover {
+	background-color: lightgray;
 }
 
 .subtitle {
@@ -150,62 +167,52 @@ blockquote::after {
 	margin-top: 1px;
 }
 
-
-/*
-COLLAPSIBLE POST STYLES
-VIA https://inclusive-components.design/collapsible-sections/
-THANK YOU, THIS IS AWESOME!
-*/
-
-button {
+.year {
+	/*font-weight: normal;
+	display: inline-block;
+	border-bottom: 5px solid #cde3f8;
+	box-shadow: 2px 5px black;
+	background-color: black;
+	color:  white;
+	border-radius: ;
+	padding: 1%;*/
 	background: #000;
 	color: #fff;
 	border: 0;
-	font-size: 0.85rem;
 	border-radius: 0.25rem;
+	display: inline-block;
+	padding: 0.5%;
+	margin-bottom: 1%;
+	font-weight: normal;
 }
 
-.posts {
-	border-width: 2px 0;
-	border-style: solid;
+.collapsible {
+	background-color: lightgray;
+	padding: 0.5% 2% 0.5% 2%;
+	border-radius: 10px;
+	height: 3em;
+	overflow-y: hidden;
+	box-shadow: 5px 5px black;
 }
-
-.posts h2 {
-	margin: 0;
+.collapsible:hover {
+	background-color: darkgray;
+	transition: 0.3s;
 }
-
-.posts > div + h2 {
-	border-top: 2px solid;
-}
-
-h2 button {
-	all: inherit;
-	border: 0;
-	display: flex;
-	justify-content: space-between;
-	width: 100%;
-	padding: 0.5em 0;
-}
-
-h2 button:focus svg {
-	outline: 2px solid;
-}
-
-button svg {
-	height: 1em;
-	margin-left: 0.5em;
+.collapsible-title {
+	font-weight: bold;
+	text-decoration: underline;
 	cursor: pointer;
 }
-
-[aria-expanded="true"] .vert {
-	display: none;
+.collapsible-title:before {
+	content: '+';
+	background-color: black;
+	color: white;
+	font-family: monospace;
+	border: 1px solid gray;
+	padding: 0% 1% 0% 1%;
+	border-radius: 30%;
+	margin-right: 1%;
 }
-
-[aria-expanded] rect {
-	fill: currentColor;
-}
-
-/* MEDIA QUERIES */
 
 @media screen and (max-width: 750px) {
 	body {
@@ -215,7 +222,8 @@ button svg {
 	}
 	#tit {font-size: 2.5em;}
 	#footer { line-height: 150%; }
-	.post-title { font-size: small; }
+	.post { font-size: small; }
+	.year { font-size: small; }
 }
 
 @media screen and (max-width: 1000px) {

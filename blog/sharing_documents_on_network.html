@@ -4,11 +4,13 @@
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<title>Sharing Documents Between Computers on a Network</title>
-	<link rel="stylesheet" href="./styles/styles.css">
-	<link rel="icon" href="./images/favicon.ico">
-	<script src="./js/scripts.js"></script>
-	<link rel="stylesheet" href="./highlight/styles/pojoaque.css">
-	<script src="./highlight/highlight.pack.js"></script>
+	<link rel="stylesheet" href="src/styles.css">
+	<link rel="icon" href="img/favicon.ico">
+
+	<noscript><style>body{background-color:white;padding:1%;max-width:600px;}</style></noscript>
+
+	<link rel="stylesheet" href="src/highlight/styles/pojoaque.css">
+	<script src="src/highlight/highlight.pack.js"></script>
 	<script>hljs.initHighlightingOnLoad();</script>
 
 	<style>
@@ -25,7 +27,6 @@
 <body>
 
 <h1> Sharing Documents Between Computers on a Network</h1>
-
 <p class="subtitle">July 18, 2021 &mdash; Josh </p>
 
 <p>
@@ -37,8 +38,8 @@ Let's say these are my computers, and I want to send some files from Bob to Alic
 </p>
 
 <p>
-<img alt="Xerox Alto aka Bob" src="images/bob.png" class="mycomps" style="width:35%">
-<img alt="PDP-11 aka Alice" src="images/alice.png" class="mycomps">
+<img alt="Xerox Alto aka Bob" src="img/bob.png" class="mycomps" style="width:35%">
+<img alt="PDP-11 aka Alice" src="img/alice.png" class="mycomps">
 </p>
 
 <p>
@@ -133,6 +134,7 @@ destroy
 <i>NB: If you have an ssh/ftp/sftp/scp/etc/abcdefg server running on the serving computer then probably just use that instead of this hack.</i>
 </p>
 
-<script>inject_blog_structure();</script>
+<script src="src/scripts.js"></script>
+<script>injectBlogStructure();</script>
 </body>
 </html>

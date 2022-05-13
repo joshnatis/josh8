@@ -4,71 +4,22 @@
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<title>Command-line Audio on a Mac</title>
-	<link rel="stylesheet" href="./styles/styles.css">
-	<link rel="icon" href="./images/favicon.ico">
-	<script src="./js/scripts.js"></script>
-	<link rel="stylesheet" href="./highlight/styles/pojoaque.css">
-	<script src="./highlight/highlight.pack.js"></script>
+	<link rel="stylesheet" href="src/styles.css">
+	<link rel="icon" href="img/favicon.ico">
+
+	<noscript><style>body{background-color:white;padding:1%;max-width:600px;}</style></noscript>
+
+	<link rel="stylesheet" href="src/highlight/styles/pojoaque.css">
+	<script src="src/highlight/highlight.pack.js"></script>
 	<script>hljs.initHighlightingOnLoad();</script>
 
-  <style>
-    .collapsible {
-      background-color: lightgray;
-      padding: 0.5% 2% 0.5% 2%;
-      border-radius: 10px;
-      height: 3em;
-      overflow-y: hidden;
-    }
-    .collapsible-title {
-      font-weight: bold;
-      text-decoration: underline;
-      cursor: pointer;
-    }
-    .collapsible-title:before {
-      content: '+';
-      background-color: black;
-      color: white;
-      font-family: monospace;
-      border: 1px solid gray;
-      padding: 0% 1% 0% 1%;
-      border-radius: 30%;
-      margin-right: 1%;
-    }
-    video {
-      max-width: 100%;
-    }
-  </style>
+	<style>
+		video {max-width: 100%;}
+	</style>
 </head>
 
 <body>
 <h1> Command-line Audio on a Mac (Without Installing Anything)</h1>
-<style>
-  .collapsible {
-    background-color: lightgray;
-    padding: 0.5% 2% 0.5% 2%;
-    border-radius: 10px;
-    height: 3em;
-    overflow-y: hidden;
-  }
-  .collapsible-title {
-    font-weight: bold;
-    text-decoration: underline;
-    cursor: pointer;
-  }
-  .collapsible-title:before {
-    content: '+';
-    background-color: black;
-    color: white;
-    font-family: monospace;
-    border: 1px solid gray;
-    padding: 0% 1% 0% 1%;
-    border-radius: 30%;
-    margin-right: 1%;
-  }
-  video {
-    max-width: 100%;
-  }
-</style>
 
 <p class="subtitle">August 5, 2021 &mdash; Josh </p>
 
@@ -77,7 +28,7 @@ You don't need to install anything on Mac OS to start having fun with sound.
 </p>
 
 <p>
-<img alt="disc" src="images/disc.gif">
+<img alt="disc" src="img/disc.gif">
 </p>
 
 <hr>
@@ -200,7 +151,7 @@ This one is one of my favorites to play with -- the utility <code class="inline-
 <pre><code class="sh">$ say hello world
 </code></pre>
 
-<audio style="display: block; filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%); width: 200px; height: 25px;" controls><source src="images/say_helloworld.mp3" type="audio/mp3"></audio>
+<audio style="display: block; filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%); width: 200px; height: 25px;" controls><source src="img/say_helloworld.mp3" type="audio/mp3"></audio>
 
 <p>
 As if that isn't fun enough, here's some other stuff you can do with <code class="inline-code">say</code>:
@@ -233,20 +184,20 @@ $ while true ; do say -r 200 supW ; done
 $ say --interactive=/green spending each day the color of the leaves
 </code></pre>
 <p>
-[1]: <audio style="filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%); width: 200px; height: 25px;" controls><source src="images/say_1.mp3" type="audio/mp3"></audio>
+[1]: <audio style="filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%); width: 200px; height: 25px;" controls><source src="img/say_1.mp3" type="audio/mp3"></audio>
 <br>
-[2]: <audio style="filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%); width: 200px; height: 25px;" controls><source src="images/say_2.mp3" type="audio/mp3"></audio>
+[2]: <audio style="filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%); width: 200px; height: 25px;" controls><source src="img/say_2.mp3" type="audio/mp3"></audio>
 <br>
-[3]: <audio style="filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%); width: 200px; height: 25px;" controls><source src="images/say_3.mp3" type="audio/mp3"></audio>
+[3]: <audio style="filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%); width: 200px; height: 25px;" controls><source src="img/say_3.mp3" type="audio/mp3"></audio>
 <br>
-[4]: <audio style="filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%); width: 200px; height: 25px;" controls><source src="images/say_4.mp3" type="audio/mp3"></audio>
+[4]: <audio style="filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%); width: 200px; height: 25px;" controls><source src="img/say_4.mp3" type="audio/mp3"></audio>
 <br><br>
-[5]: <video playsinline controls style="vertical-align: middle;"> <source src="images/say_interactive.mp4" type="video/mp4"></video>
+[5]: <video playsinline controls style="vertical-align: middle;"> <source src="img/say_interactive.mp4" type="video/mp4"></video>
 </p>
 
 I've even used the output from <code class="inline-code">say</code> in a song that I made (I tried to experiment with autotune to make it sound like singing):
 <br><br>
-<audio style="filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%); width: 200px; height: 25px;" controls><source src="images/say_furryfiend.mp3" type="audio/mp3"></audio>
+<audio style="filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%); width: 200px; height: 25px;" controls><source src="img/say_furryfiend.mp3" type="audio/mp3"></audio>
 
 <p>
 But wait, there's more. Apple's speech synthesis supports the TUNE format, which allows you to <i>"shape the overall melody and timing of an utterance... for example ... to make an utterance sound as if it is spoken with emotion"</i>.
@@ -290,10 +241,10 @@ T {D 220; P 291.6:0 262.8:27 220.0:67 184.8:100}
 Then, once you call <code class="inline-code">say -f apple.txt</code>, you will hear this:
 </p>
 
-<audio style="display: block; filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%); width: 200px; height: 25px;" controls><source src="images/say_apple.mp3" type="audio/mp3"></audio>
+<audio style="display: block; filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%); width: 200px; height: 25px;" controls><source src="img/say_apple.mp3" type="audio/mp3"></audio>
 
 <p>
-So cool!!! This example was taken from Apple's <a href="images/speech-synthesis.pdf">Speech Synthesis Programming Guide</a>.
+So cool!!! This example was taken from Apple's <a href="img/speech-synthesis.pdf">Speech Synthesis Programming Guide</a>.
 </p>
 
 <h2>Command-line Music Player</h2>
@@ -302,7 +253,7 @@ You can make a command-line music player like the one pictured below just by usi
 
 <br><br>
 <video muted playsinline controls>
-  <source src="images/teapot.mp4" type="video/mp4">
+  <source src="img/teapot.mp4" type="video/mp4">
 </video>
 <br><br>
 
@@ -750,27 +701,11 @@ SEE ALSO
 </code></pre>
 </div>
 
-<script>inject_blog_structure();</script>
+<script src="src/scripts.js"></script>
 <script>
-  let collapsibles = document.getElementsByClassName("collapsible");
-  [...collapsibles].forEach(section => {
-    let title = section.querySelector(".collapsible-title");
-    if(title)
-    {
-      title.onclick = function() {
-        if(section.style.overflowY != "visible")
-        {
-          section.style.overflowY = "visible";
-          section.style.height = "auto";
-        }
-        else
-        {
-          section.style.overflowY = "hidden";
-          section.style.height = "3em";
-        }
-      }
-    }
-  });
+	injectBlogStructure();
+	enableCollapsibles();
 </script>
+
 </body>
 </html>
