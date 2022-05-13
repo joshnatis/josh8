@@ -1710,6 +1710,7 @@ init();
 
 function init()
 {
+	SONGS.reverse(); /* reverse chronological order */
 	populateSongs();
 	initMenuBarStuff();
 	initKeyboardShortcuts();
