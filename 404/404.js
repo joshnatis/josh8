@@ -10,7 +10,7 @@ function randomizeTexture()
 {
 	const NUM_TEXTURES = 38;
 	let n = parseInt(1 + Math.random() * NUM_TEXTURES);
-	document.body.style.backgroundImage = "url('404/images/texture" + n + ".png')";
+	document.body.style.backgroundImage = "url('/404/images/texture" + n + ".png')";
 }
 
 function hammingDistance(target, actual)
