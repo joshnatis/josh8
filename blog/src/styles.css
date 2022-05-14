@@ -205,6 +205,16 @@ button:hover {
 	margin-right: 1%;
 }
 
+.pdf::before {
+	content: " ";
+	background: url("../img/paper.gif");
+	width: 20px; height: 15px;
+	display: inline-block;
+	margin-right: 5px;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+}
+
 @media screen and (max-width: 750px) {
 	body {
 		width: 99%; 
@@ -215,6 +225,12 @@ button:hover {
 	#footer { line-height: 150%; }
 	.post { font-size: small; }
 	.year { font-size: small; }
+	.pdf::before {
+		width: 11px; height: 10px;
+		background-size: 11px 10px;
+		vertical-align: unset;
+		margin-right: 3px;
+	}
 }
 
 @media screen and (max-width: 1000px) {
