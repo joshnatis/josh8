@@ -1668,6 +1668,38 @@ const SONGS = [{
     "name": "fuji nights",
     "duration": "3:21",
     "file": "__fuji_nights.mp3",
+}, {
+    "name": "nat",
+    "duration": "1:55",
+    "file": "__nat.mp3",
+}, {
+    "name": "fly away",
+    "duration": "1:49",
+    "file": "__fly_away.mp3",
+}, {
+    "name": "wind vane",
+    "duration": "3:08",
+    "file": "__wind_vane.mp3",
+}, {
+    "name": "show you how",
+    "duration": "0:33",
+    "file": "__show_you_how.mp3",
+}, {
+    "name": "file city",
+    "duration": "1:06",
+    "file": "__file_city.mp3",
+}, {
+    "name": "YMO",
+    "duration": "0:42",
+    "file": "__YMO.mp3",
+}, {
+    "name": "rip dj rashad",
+    "duration": "0:26",
+    "file": "__rip_dj_rashad.mp3",
+}, {
+    "name": "7\" record",
+    "duration": "1:56",
+    "file": "__7inch_record.mp3",
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
