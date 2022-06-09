@@ -1,0 +1,47 @@
+#main {
+	font-family: "Georgia";
+	background-color: CornflowerBlue;
+	text-align: center;
+	display: inline-block;
+	border: 2px solid black;
+	padding: 0% 2% 2% 2%;
+}
+
+#notes {
+	display: inline-block;
+	margin: 1%;
+	width: 60%;
+}
+
+.note {
+	font-size: 150%;
+	padding: 1%;
+	margin: 1%;
+	margin-bottom: 2%;
+	border: 1px solid black;
+	border-radius: 10px;
+	background-color: pink;
+	box-shadow: 3px 3px black;
+	cursor: pointer;
+	display: inline-block;
+	width: 1.5em;
+	height: 1.5em;
+}
+
+.note:hover {
+	background-color: #E75480 !important;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+@media screen and (max-width: 450px) {
+	#notes { width: 90%; }
+}
