@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>Is 'Worse is Better' a Neurosis?</title>
+	<link rel="stylesheet" href="src/styles.css">
+	<link rel="icon" href="img/favicon.ico">
+
+	<noscript><style>body{background-color:white;padding:1%;max-width:600px;}</style></noscript>
+</head>
+
+<h1> Is 'Worse is Better' a Neurosis?</h1>
+<p class="subtitle">June 9, 2022 &mdash; Josh </p>
+
+<p>
+Or is it a rare moment of lucidity? (Haha get it, <a href="https://en.wikipedia.org/wiki/Lucid_Inc.">Lucid</a>). It's likely that some of this will not make sense if you haven't read <a href="https://www.dreamsongs.com/RiseOfWorseIsBetter.html"><i>The Rise of Worse is Better</i></a> by Richard Gabriel, give it a read if you haven't yet.
+</p>
+
+<p>
+I came across this excerpt from a blog post the other day:</p>
+
+<blockquote> It was horrible: being a "suckless" project, it omits every feature which could possibly be useful in editing a font, instead presenting you with a bare grid which you have to use arrow keys (mouse support is bloated, didn't you know) to manipulate. Not to mention that it doesn't even create a BDF font, it stores the font in a textual format devoid of any metadata (it expects the font height/width to be in the directory name), which you must then manually convert  to a BDF font via a provided script. Needless to say, it was a pain to use. </blockquote>
+<p>
+<i>(Unfortunately I lost the source of where I read this).</i>
+</p>
+
+<p>
+I usually find myself in the 'simplicity' camp, but things like this make me question my sanity. At times, I find myself not implementing useful features to avoid making the source code more gnarly and complex. Have I gone too far!? "Make everything as simple as possible, but not simpler." [1] <b>But not simpler</b>. At the end of the day the user does not see the code, as long as the interface is consistent and intuitive, so is the program, because a successful interface to a program <i>is</i> the program. Right? It feels neurotic to obsess over the elegance and simplicity of a program that is to be used (rather than just admired). I just can't bring myself to add one more kludgy special case in exchange for a convenience in the interface. Am I wrong? Or am I just a few notches of discipline away from figuring it all out -- after all, "symmetry is a complexity-reducing concept; seek it everywhere" [2]. Like I said, it's hard to tell if this is a neurotic or enlightened practice.
+</p>
+
+<p>
+One thing I am relatively certain of at this point is that constraints are a good thing. In general, not just in programming. At the very least, having constraints somehow makes my brain work better and feel happier.
+</p>
+
+<p>
+Maybe the only reason I'm even having this dilemma is because I've gotten this far without ever letting myself write completely spaghettified code (by my standards anyway), and its merits would become obvious if I became unhinged and implemented hundreds of little features in a drunken stupor. I don't want to find out!
+</p>
+
+<p>
+I think two good measures to take are 1) eating your own dog food, and 2) not being a masochist. Taken together, those things will more or less help you imagine how a user would feel using your program. Being sane and lazy enough to avoid doing keyboard acrobatics just to do simple tasks will force you into designing an appropriate interface, not overbudgeting for a simple implementation.
+</p>
+
+<p>
+Or I don't know, maybe the Multics guys were right.
+</p>
+
+<hr>
+
+<p>
+I'm implicitly invoking/alluding to texts, ideologies, people, and historic events in this post. Because of that, some things might not make sense, as the context to understand what I'm saying isn't written here. Especially if one of my friends is reading this, don't worry guys I'm fine haha... I don't eat dogfood... unless. I think I understand why philosophy is so difficult to read now, they're all alluding to random Greeks and cultural milieus that no longer exist.
+</p>
+
+<p>
+I don't know where else to include this in the post so I'll just keep driveling here. Just like symmetry is a complexity reducing concept, so is having a narrative. Not a narrative in terms of how the code works (implementation), but what the program is doing as whole (interface). A narrative can coax our brain into abstracting the program into something we can think about naturally, we don't need to remember all the specifics / a set of facts, just the idea behind them. Strive for symmetry, stay orthogonal, and always consider the narrative.
+</p>
+
+<hr>
+
+<h2>References</h2>
+<p>
+	[1] Oh great another fake Einstein quote. Apparently the real one is: "It can scarcely be denied that the supreme goal of all theory is to make the irreducible basic elements as simple and as few as possible without having to surrender the adequate representation of a single datum of experience".
+
+	<br><br>
+
+	[2] <a href="http://www.cs.yale.edu/homes/perlis-alan/quotes.html">Alan Perlis' Epigrams in Programming.</a>
+</p>
+
+<h2>Further Reading</h2>
+<ul>
+	<li>Anything that Rob Pike says</li>
+	<li><a href="http://harmful.cat-v.org/cat-v/">cat -v Considered Harmful</a></li>
+	<li>Casey Muratori's blog posts: <a href="https://caseymuratori.com/blog_0015">'Semantic Compression'</a> and <a href="https://caseymuratori.com/blog_0016">'Complexity and Granularity'</a></li>
+	<li>Notes on the UNIX philosophy, especially when contrasted with other systems.</li>
+	<li><a href="https://en.wikipedia.org/wiki/Multics">Multics</a>, especially when contrasted with UNIX</li>
+</ul>
+
+I also found this passage from Kant's <i>The Critique of Pure Reason</i> to be relevant. This stuff is a little off-topic from 'Worse is Better' but it is relevant to the more general conflict of simplicity vs. complexity, at least to me.
+
+<br><br>
+<blockquote style="font-family: monospace; max-width: 30em; max-width: 80ch;">
+Finally, as regards clarity, the reader has a right to demand first dis-
+cursive (logical) clarity, through concepts, but then also intuitive
+(aesthetic) clarity, through intuitions, that is, through examples or
+other illustrations in concreto. I have taken sufficient care for the former.
+That was essential to my undertaking but was also the contingent cause
+of the fact that I could not satisfy the second demand, which is less strict
+but still fair. In the progress of my labor I have been almost constantly 
+undecided how to deal with this matter. Examples and illustrations al-
+ways appeared necessary to me, and hence actually appeared in their
+proper place in my first draft. But then I looked at the size of my task
+and the many objects with which I would have to do, and I became
+aware that this alone, treated in a dry, merely scholastic manner, would
+suffice to fill an extensive work; thus I found it inadvisable to swell it
+further with examples and illustrations, which are necessary only for a
+popular aim, especially since this work could never be made suitable for
+popular use, and real experts in this science do not have so much need
+for things to be made easy for them; although this would always be
+agreeable, here it could also have brought with it something counter-
+productive. The Abbe Terrasson says that if the size of a book is mea-
+sured not by the number of pages but by the time needed to understand
+it, then it can be said of many a book that it would be much shorter
+if it were not so short. But on the other hand, if we direct our view
+toward the intelligibility of a whole of speculative cognition that is
+wide-ranging and yet is connected in principle, we could with equal
+right say that many a book would have been much clearer if it had
+not been made quite so clear. For the aids to clarity help in the parts
+but often confuse in the whole, since the reader cannot quickly enough
+attain a survey of the whole; and all their bright colors paint over and
+make unrecognizable the articulation or structure of the system, which
+yet matters most when it comes to judging its unity and soundness.
+</blockquote>
+
+<div style="text-align: center; margin-top: 5%">
+	<img src="img/pike.png" alt="rob pike" style="max-width:175px;">
+	<img src="img/dickgabriel.jpg" alt="dick gabriel">
+</div>
+
+<script src="src/scripts.js"></script>
+<script>injectBlogStructure();</script>
+</body>
+</html>
