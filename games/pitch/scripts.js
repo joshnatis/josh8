@@ -40,26 +40,6 @@ document.body.onload = function() {
 
 	dom_notes.forEach(note => {
 		note.onclick = checkanswer;
-		// note.onclick = function() {
-		// 	let note_played = NOTES[CURRENT];
-		// 	let note_clicked = note.innerHTML;
-		// 	if(note_played == note_clicked) {
-		// 		main.style.backgroundColor = BG_CORRECT;
-		// 		delay(500).then(() => {
-		// 			main.style.backgroundColor = BG_DEFAULT;
-		// 			game();
-		// 		});
-		// 	} else {
-		// 		main.style.backgroundColor = BG_INCORRECT;
-		// 		let actual_note = [...notes].find(n => n.innerHTML == note_played);
-		// 		actual_note.style.backgroundColor = BG_NOTE_SELECTED;
-		// 		delay(500).then(() => {
-		// 			main.style.backgroundColor = BG_DEFAULT;
-		// 			actual_note.style.backgroundColor = BG_NOTE_DEFAULT;
-		// 			game();
-		// 		});
-		// 	}
-		// }
 	});
 
 	let start_btn = document.getElementById('start');
