@@ -1700,6 +1700,34 @@ const SONGS = [{
     "name": "7\" record",
     "duration": "1:56",
     "file": "__7inch_record.mp3",
+}, {
+    "name": "battle1",
+    "duration": "1:09",
+    "file": "__battle1.mp3",
+}, {
+    "name": "serial experiments",
+    "duration": "0:45",
+    "file": "__serial_experiments.mp3",
+}, {
+    "name": "griffin peter bandicam",
+    "duration": "0:54",
+    "file": "__griffin_peter_bandicam.mp3",
+}, {
+    "name": "tmobile swaqq",
+    "duration": "1:47",
+    "file": "__tmobile_swaqq.mp3",
+}, {
+    "name": "waiting room2",
+    "duration": "0:38",
+    "file": "__waiting_room2.mp3",
+}, {
+    "name": "mechanical turk",
+    "duration": "0:22",
+    "file": "__mechanical_turk.mp3",
+}, {
+    "name": "winter wonderland abstraction",
+    "duration": "3:04",
+    "file": "__winter_wonderland_abstraction.mp3",
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
