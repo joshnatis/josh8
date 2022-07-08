@@ -1728,6 +1728,34 @@ const SONGS = [{
     "name": "winter wonderland abstraction",
     "duration": "3:04",
     "file": "__winter_wonderland_abstraction.mp3",
+}, {
+    "name": "holocene",
+    "duration": "1:39",
+    "file": "__holocene.mp3",
+}, {
+    "name": "horserider",
+    "duration": "1:25",
+    "file": "__horserider.mp3",
+}, {
+    "name": "cities",
+    "duration": "0:44",
+    "file": "__cities.mp3",
+}, {
+    "name": "nicehatlady",
+    "duration": "0:29",
+    "file": "__nicehatlady.mp3",
+}, {
+    "name": "cheeky mustache",
+    "duration": "0:59",
+    "file": "__cheeky_mustache.mp3",
+}, {
+    "name": "sleep machine",
+    "duration": "0:30",
+    "file": "__sleep_machine.mp3",
+}, {
+    "name": "twin peaks",
+    "duration": "5:53",
+    "file": "__twin_peaks.mp3",
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
