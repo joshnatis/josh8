@@ -1756,6 +1756,42 @@ const SONGS = [{
     "name": "twin peaks",
     "duration": "5:53",
     "file": "__twin_peaks.mp3",
+}, {
+    "name": "death forest",
+    "duration": "1:16",
+    "file": "__death_forest.mp3",
+}, {
+    "name": "apparition",
+    "duration": "0:06",
+    "file": "__apparition.mp3",
+}, {
+    "name": "harping on piano",
+    "duration": "1:59",
+    "file": "__harping_on_piano.mp3",
+}, {
+    "name": "dj shower freak (prod. bigbuu32)",
+    "duration": "0:47",
+    "file": "__dj_shower_freak.mp3",
+}, {
+    "name": "jimmy cosmonaut",
+    "duration": "2:05",
+    "file": "__jimmy_cosmonaut.mp3",
+}, {
+    "name": "planet namek",
+    "duration": "0:16",
+    "file": "__planet_namek.mp3",
+}, {
+    "name": "lithuanian baby (hyperpop version)",
+    "duration": "0:57",
+    "file": "__lithuanian_baby_(hyperpop_version).mp3",
+}, {
+    "name": "lithuanian baby (crystal castles version)",
+    "duration": "1:03",
+    "file": "__lithuanian_baby_(crystal_castles_version).mp3",
+}, {
+    "name": "Toodle-Fucking-Oo",
+    "duration": "1:14",
+    "file": "__Toodle-Fucking-Oo.mp3",
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
