@@ -1792,6 +1792,10 @@ const SONGS = [{
     "name": "Toodle-Fucking-Oo",
     "duration": "1:14",
     "file": "__Toodle-Fucking-Oo.mp3",
+}, {
+    "name": "asdf",
+    "duration": "0:51",
+    "file": "__asdf.mp3",
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
