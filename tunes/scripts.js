@@ -1769,7 +1769,7 @@ const SONGS = [{
     "duration": "1:59",
     "file": "__harping_on_piano.mp3",
 }, {
-    "name": "dj shower freak (prod. bigbuu32)",
+    "name": "universal shower (prod. dj shower freak)",
     "duration": "0:47",
     "file": "__dj_shower_freak.mp3",
 }, {
@@ -1796,6 +1796,34 @@ const SONGS = [{
     "name": "asdf",
     "duration": "0:51",
     "file": "__asdf.mp3",
+}, {
+    "name": "g",
+    "duration": "0:27",
+    "file": "__g.mp3",
+}, {
+    "name": "ambulance blue",
+    "duration": "0:30",
+    "file": "__ambulance_blue.mp3",
+}, {
+    "name": "seaweed",
+    "duration": "0:54",
+    "file": "__seaweed.mp3",
+}, {
+    "name": "bing chilling",
+    "duration": "1:15",
+    "file": "__bing_chilling.mp3",
+}, {
+    "name": "picture",
+    "duration": "0:53",
+    "file": "__picture.mp3",
+}, {
+    "name": "white rabbits",
+    "duration": "1:02",
+    "file": "__white_rabbits.mp3",
+}, {
+    "name": "his dissent",
+    "duration": "4:58",
+    "file": "__his_dissent.mp3",
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
