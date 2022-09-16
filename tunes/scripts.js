@@ -1824,6 +1824,26 @@ const SONGS = [{
     "name": "his dissent",
     "duration": "4:58",
     "file": "__his_dissent.mp3",
+}, {
+    "name": "cereal and concurrent",
+    "duration": "1:23",
+    "file": "__cereal_and_concurrent.mp3",
+}, {
+    "name": "sea of flowers",
+    "duration": "0:43",
+    "file": "__sea_of_flowers.mp3",
+}, {
+    "name": "beach 4 nerds",
+    "duration": "2:24",
+    "file": "__beach_4_nerds.mp3",
+}, {
+    "name": "ciani arcade",
+    "duration": "1:17",
+    "file": "__ciani_arcade.mp3",
+}, {
+    "name": "clubbing in club penguin",
+    "duration": "0:30",
+    "file": "__clubbing_in_club_penguin.mp3",
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
