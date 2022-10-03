@@ -1844,6 +1844,42 @@ const SONGS = [{
     "name": "clubbing in club penguin",
     "duration": "0:30",
     "file": "__clubbing_in_club_penguin.mp3",
+}, {
+    "name": "anime female",
+    "duration": "0:54",
+    "file": "__anime_female.mp3",
+}, {
+    "name": "metallic-5s",
+    "duration": "1:43",
+    "file": "__metallic-5s.mp3",
+}, {
+    "name": "rainbow fish story pt2",
+    "duration": "1:14",
+    "file": "__rainbow_fish_story_pt2.mp3",
+}, {
+    "name": "pops",
+    "duration": "0:53",
+    "file": "__pops.mp3",
+}, {
+    "name": "bluebird",
+    "duration": "2:27",
+    "file": "__bluebird.mp3",
+}, {
+    "name": "face the fresh air",
+    "duration": "1:09",
+    "file": "__face_the_fresh_air.mp3",
+}, {
+    "name": "james ferraro loud pack",
+    "duration": "0:36",
+    "file": "__james_ferraro_loud_pack.mp3",
+}, {
+    "name": "fuckingswag",
+    "duration": "1:12",
+    "file": "__fuckingswag.mp3",
+}, {
+    "name": "warm springs",
+    "duration": "3:21",
+    "file": "__warm_springs.mp3",
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
