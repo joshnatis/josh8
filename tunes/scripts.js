@@ -1880,6 +1880,42 @@ const SONGS = [{
     "name": "warm springs",
     "duration": "3:21",
     "file": "__warm_springs.mp3",
+}, {
+    "name": "disturbiak",
+    "duration": "0:48",
+    "file": "__disturbiak.mp3",
+}, {
+    "name": "cherry",
+    "duration": "1:49",
+    "file": "__cherry.mp3",
+}, {
+    "name": "aaaaa2",
+    "duration": "0:43",
+    "file": "__aaaaa2.mp3",
+}, {
+    "name": "acd.vocals.17",
+    "duration": "0:46",
+    "file": "__acd.vocals.17.mp3",
+}, {
+    "name": "massive genius",
+    "duration": "1:10",
+    "file": "__massive_genius.mp3",
+}, {
+    "name": "echoa1",
+    "duration": "2:05",
+    "file": "__echoa1.mp3",
+}, {
+    "name": "echoa2",
+    "duration": "0:30",
+    "file": "__echoa2.mp3",
+}, {
+    "name": "the palisades cliffs",
+    "duration": "2:26",
+    "file": "__the_palisades_cliffs.mp3",
+}, {
+    "name": "pea shooter",
+    "duration": "1:20",
+    "file": "__pea_shooter.mp3",
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
