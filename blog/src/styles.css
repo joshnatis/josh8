@@ -20,45 +20,45 @@ code {
 }
 
 hr {
-    border: none;
-    border-top: 3px double #333;
-    color: #333;
-    overflow: visible;
-    text-align: center;
-    height: 5px;
+	border: none;
+	border-top: 3px double #333;
+	color: #333;
+	overflow: visible;
+	text-align: center;
+	height: 5px;
 }
 
 hr:after {
-    background: #fff;
-    content: '§';
-    padding: 0 4px;
-    position: relative;
-    top: -13px;
+	background: #fff;
+	content: '§';
+	padding: 0 4px;
+	position: relative;
+	top: -13px;
 }
 
 blockquote {
-    margin: 0;
+	margin: 0;
 }
 
 blockquote {
-    padding: 15px;
-    background: #eee;
-    border-radius: 5px;
+	padding: 15px;
+	background: #eee;
+	border-radius: 5px;
 }
 
 blockquote::before {
-    content: '\201C';
+	content: '\201C';
 }
 
 blockquote::after {
-    content: '\201D';
+	content: '\201D';
 }
 
 .inline-code {
 	background-color: #eee;
 	font-family: courier, monospace;
-    border-radius: 3px;
-    padding: 0 3px;
+	border-radius: 3px;
+	padding: 0 3px;
 }
 
 button {
@@ -69,10 +69,6 @@ button {
 	border-radius: 0.25rem;
 	cursor: pointer;
 	margin: 0.1%;
-}
-
-button:hover {
-
 }
 
 .center {
@@ -117,7 +113,7 @@ button:hover {
 #desc {
 	margin: 0;
 	font-size: large;
-    margin-bottom: 0.8em;
+	margin-bottom: 0.8em;
 }
 
 #foot {
@@ -221,10 +217,12 @@ button:hover {
 		overflow-x: hidden; 
 		margin: 0;
 	}
-	#tit {font-size: 2.5em;}
+
+	#tit    { font-size: 2.5em;  }
 	#footer { line-height: 150%; }
-	.post { font-size: small; }
-	.year { font-size: small; }
+	.post   { font-size: small;  }
+	.year   { font-size: small;  }
+
 	.pdf::before {
 		width: 11px; height: 10px;
 		background-size: 11px 10px;
