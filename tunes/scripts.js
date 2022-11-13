@@ -1916,6 +1916,22 @@ const SONGS = [{
     "name": "pea shooter",
     "duration": "1:20",
     "file": "__pea_shooter.mp3",
+}, {
+    "name": "devotion 2",
+    "duration": "0:37",
+    "file": "__devotion_2.mp3",
+}, {
+    "name": "backstab",
+    "duration": "0:24",
+    "file": "__backstab.mp3",
+}, {
+    "name": "epicswag",
+    "duration": "0:45",
+    "file": "__epicswag.mp3",
+}, {
+    "name": "tachyon",
+    "duration": "0:36",
+    "file": "__tachyon.mp3",
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
