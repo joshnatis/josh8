@@ -1948,6 +1948,10 @@ const SONGS = [{
     "name": "harley gray",
     "duration": "2:42",
     "file": "__harley_gray.mp3",
+}, {
+    "name": "golf pencil dance",
+    "duration": "1:14",
+    "file": "__golf_pencil_dance.mp3",
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
