@@ -1932,6 +1932,22 @@ const SONGS = [{
     "name": "tachyon",
     "duration": "0:36",
     "file": "__tachyon.mp3",
+}, {
+    "name": "a happy little kettle",
+    "duration": "2:39",
+    "file": "__a_happy_little_kettle.mp3",
+}, {
+    "name": "paw",
+    "duration": "0:52",
+    "file": "__paw.mp3",
+}, {
+    "name": "by candlelight",
+    "duration": "2:43",
+    "file": "__by_candlelight.mp3",
+}, {
+    "name": "harley gray",
+    "duration": "2:42",
+    "file": "__harley_gray.mp3",
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
