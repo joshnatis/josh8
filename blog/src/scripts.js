@@ -5,7 +5,7 @@ function injectBlogStructure()
 
 	let below = "<!-- FOOTER -->\r\n<p id=\"foot\"><a onclick=\"window.scrollTo(0, 0);\">\u2191 Back up top! \u2191<\/a><\/p>\r\n\r\n<div id=\"footer\">\r\n\t\
 	With love, from <a href=\"https:\/\/github.com\/joshnatis\">Josh<\/a> &mdash; <a href=\"mailto:josh&#64;josh8&#46;com\">josh&#64;josh8&#46;com\
-	<\/a>\r\n\t<br><br>\r\n\tPosts generated with <a href=\"https:\/\/github.com\/joshnatis\/phd\">phd<\/a>, a markdown to html parser I wrote :)\
+	<\/a>\r\n\t<br><br>\r\n\tPosts generated with <a href=\"https:\/\/github.com\/joshnatis\/phd\">phd<\/a>, a markdown to html compiler I wrote :)\
 	<\/div>\r\n<\/div>\r\n<!-- FOOTER -->\r\n\r\n\r\n\<\/div> <!-- END CONTENT -->\r\n"
 
 	document.body.innerHTML = above + document.body.innerHTML + below;
