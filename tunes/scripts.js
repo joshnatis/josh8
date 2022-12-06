@@ -1952,6 +1952,54 @@ const SONGS = [{
     "name": "golf pencil dance",
     "duration": "1:14",
     "file": "__golf_pencil_dance.mp3",
+}, {
+    "name": "applying pressure",
+    "duration": "1:09",
+    "file": "__applying_pressure.mp3",
+}, {
+    "name": "leaf scene",
+    "duration": "0:42",
+    "file": "__leaf_scene.mp3",
+}, {
+    "name": "new paltz nights",
+    "duration": "0:35",
+    "file": "__new_paltz_nights.mp3",
+}, {
+    "name": "strawberry fields",
+    "duration": "1:20",
+    "file": "__strawberry_fields.mp3",
+}, {
+    "name": "safe with me",
+    "duration": "1:27",
+    "file": "__safe_with_me.mp3",
+}, {
+    "name": "outer space rubiks",
+    "duration": "0:51",
+    "file": "__outer_space_rubiks.mp3",
+}, {
+    "name": "pleasantries",
+    "duration": "0:59",
+    "file": "__pleasantries.mp3",
+}, {
+    "name": "a raga for the blue carpet",
+    "duration": "2:34",
+    "file": "__a_raga_for_the_blue_carpet.mp3",
+}, {
+    "name": "RodsAndCones",
+    "duration": "1:43",
+    "file": "__RodsAndCones.mp3",
+}, {
+    "name": "the rabbi",
+    "duration": "1:38",
+    "file": "__the_rabbi.mp3",
+}, {
+    "name": "thomas waltz",
+    "duration": "1:13",
+    "file": "__thomas_waltz.mp3",
+}, {
+    "name": "dat kokibucha",
+    "duration": "0:24",
+    "file": "__dat_kokibucha.mp3",
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
