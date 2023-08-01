@@ -1,0 +1,72 @@
+body {
+	text-align: center;
+}
+
+.album-div {
+	min-width: 15%;
+	/*width: 40%;*/
+	text-align: center;
+
+	display: inline-block;
+	vertical-align: top;
+	padding: 1%;
+
+	zoom: 0.8;
+	-moz-transform: scale(0.8);
+}
+
+.album-img {
+	height: 200px;
+	width:  200px;
+	display: inline-block;
+
+	border: 2px solid black;
+	border-radius: 2px;
+	box-shadow: 5px 5px #333;
+}
+
+.album-title {
+	font-family: monospace;
+	font-weight: normal;
+	font-style: italic;
+}
+
+.album-audio {
+	margin-top: 2em;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	width: 90%;
+	height: 20px;
+}
+
+.track-time {
+	font-family: monospace;
+	margin-right: 1em;
+	font-size: 85%;
+	background-color: lightgray;
+	padding: 0.2%;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.track-time:hover {
+	background-color: gray;
+}
+
+.track-name {
+	font-family: "Georgia", "Bitstream Vera Serif", serif;
+}
+
+.tracklist-div p {
+	display: inline-block;
+	margin-bottom: 0;
+}
+
+.tracklist-div {
+	margin-left: 2em;
+	text-align: left;
+}
+
+.track-div {
+	white-space: nowrap;
+}

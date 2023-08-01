@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Room of records</title>
+	<link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="../favicon3.png">
+</head>
+
+<body>
+	<script>let albums = {};</script>
+ 	<script src="phat32/tracklist.js"></script>
+ 	<script src="carroll_gardens/tracklist.js"></script>
+ 	<script src="age_of_sail/tracklist.js"></script>
+ 	<script src="n64/tracklist.js"></script>
+ 	<script src="twin_peaks/tracklist.js"></script>
+ 	<script src="deep_in_thought/tracklist.js"></script>
+ 	<script src="green_line/tracklist.js"></script>
+	<script>
+		let CURRENTLY_PLAYING_AUDIO;
+
+		function seek(audio, time) {
+			let [start, stop] = time.split(" - ");
+			let [m, s] = start.split(":");
+			let timestamp_in_seconds = (parseInt(m) * 60) + parseInt(s);
+			audio.currentTime = timestamp_in_seconds;
+		}
+
+		function generate_tracklist(album, audio) {
+			let tracklist_div = document.createElement("div");
+			tracklist_div.className = "tracklist-div";
+
+			for(let i = 0; i < album["tracklist"].length; ++i) {
+				let track = album["tracklist"][i];
+
+				let track_div = document.createElement("div");
+				track_div.className = "track-div";
+
+				let p = document.createElement("p");
+				p.innerHTML = track["time"];
+				p.className = "track-time";
+				p.onclick = function() {
+					seek(audio, track["time"]);
+
+					/* feature: smart timestamps */
+					if(CURRENTLY_PLAYING_AUDIO == audio) {
+						return;
+					}
+					CURRENTLY_PLAYING_AUDIO.pause();
+					audio.play();
+					CURRENTLY_PLAYING_AUDIO = audio;
+				}
+				track_div.appendChild(p);
+
+				p = document.createElement("p");
+				p.innerHTML = track["name"];
+				p.className = "track-name";
+				track_div.appendChild(p);
+
+				tracklist_div.appendChild(track_div);
+			}
+
+			return tracklist_div;
+		}
+
+		function render(album, album_name, path) {
+			let div = document.createElement("div");
+			div.className = "album-div";
+
+			let img = document.createElement("img");
+			img.src = path + "/cover.png";
+			img.alt = path;
+			img.className = "album-img";
+
+			/* clicking album cover links to music video */
+			if("video" in album) {
+				let a = document.createElement("a");
+				a.href = album["video"];
+				a.appendChild(img);
+				img = a;
+			}
+
+			let audio = document.createElement("audio");
+			audio.controls = "controls";
+			audio.src      = path + "/audio.mp3";
+			audio.type     = "audio/mpeg";
+			audio.className = "album-audio";
+			audio.onplay = function() {
+				CURRENTLY_PLAYING_AUDIO = audio;
+			}
+
+			let tracklist_div = generate_tracklist(album, audio);
+
+			let h1 = document.createElement("h1");
+			h1.innerHTML = album_name;
+			h1.className = "album-title";
+
+			div.appendChild(h1);
+			div.appendChild(img);
+			div.appendChild(audio);
+			div.appendChild(tracklist_div);
+			document.body.appendChild(div);
+		}
+
+		for(let album_name in albums) {
+			let path = album_name.toLowerCase().replaceAll(" ", "_");
+			render(albums[album_name], album_name, path);
+		}
+	</script>
+</body>
+</html>
