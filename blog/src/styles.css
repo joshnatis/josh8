@@ -124,7 +124,7 @@ button {
 
 #footer {
 	padding-top: 10px;
-	padding-bottom: 1em;	
+	padding-bottom: 1em;
 	border-top: solid 1px #666;
 	color: #333333;
 	text-align: center;
@@ -201,9 +201,8 @@ button {
 	margin-right: 1%;
 }
 
-.pdf::before {
+.pdf::before, .video::before {
 	content: " ";
-	background: url("../img/paper.gif");
 	width: 20px; height: 15px;
 	display: inline-block;
 	margin-right: 5px;
@@ -211,10 +210,13 @@ button {
 	background-repeat: no-repeat;
 }
 
+.pdf::before   { background: url("../img/paper.gif"); }
+.video::before { background: url("../img/video.png"); }
+
 @media screen and (max-width: 750px) {
 	body {
-		width: 99%; 
-		overflow-x: hidden; 
+		width: 99%;
+		overflow-x: hidden;
 		margin: 0;
 	}
 
@@ -228,7 +230,7 @@ button {
 	.post   { font-size: small;  }
 	.year   { font-size: small;  }
 
-	.pdf::before {
+	.pdf::before, .video::before {
 		width: 11px; height: 10px;
 		background-size: 11px 10px;
 		vertical-align: unset;
