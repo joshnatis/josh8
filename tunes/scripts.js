@@ -965,7 +965,7 @@ const SONGS = [{
     "duration": "0:53",
     "file": "__russian_cybercriminals.mp3"
 }, {
-    "name": "woe is the transgression",
+    "name": "on sun kil moon",
     "duration": "1:09",
     "file": "__oe.mp3"
 }, {
