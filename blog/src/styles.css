@@ -210,6 +210,12 @@ button {
 	background-repeat: no-repeat;
 }
 
+.video::before {
+	width: 25px; height: 25px;
+	vertical-align: top;
+}
+
+
 .pdf::before   { background: url("../img/paper.gif"); }
 .video::before { background: url("../img/video.png"); }
 
@@ -230,11 +236,16 @@ button {
 	.post   { font-size: small;  }
 	.year   { font-size: small;  }
 
-	.pdf::before, .video::before {
+	.pdf::before {
 		width: 11px; height: 10px;
 		background-size: 11px 10px;
 		vertical-align: unset;
 		margin-right: 3px;
+	}
+
+	.video::before  {
+		width: 20px; height: 15px;
+		background-size: 25px 20px;
 	}
 }
 
