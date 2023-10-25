@@ -2000,6 +2000,186 @@ const SONGS = [{
     "name": "dat kokibucha",
     "duration": "0:24",
     "file": "__dat_kokibucha.mp3",
+}, {
+    "name": "gone (old)",
+    "duration": "1:04",
+    "file": "__gone_(old).mp3",
+}, {
+    "name": "rave in new york",
+    "duration": "0:55",
+    "file": "__rave_in_new_york.mp3",
+}, {
+    "name": "snowfield",
+    "duration": "1:23",
+    "file": "__snowfield.mp3",
+}, {
+    "name": "storage unit talisman",
+    "duration": "1:43",
+    "file": "__storage_unit_talisman.mp3",
+}, {
+    "name": "sun showers",
+    "duration": "0:55",
+    "file": "__sun_showers.mp3",
+}, {
+    "name": "sun kisss",
+    "duration": "0:34",
+    "file": "__sun_kisss.mp3",
+}, {
+    "name": "i walk you",
+    "duration": "1:23",
+    "file": "__i_walk_you.mp3",
+}, {
+    "name": "song of falling leaves",
+    "duration": "1:00",
+    "file": "__song_of_falling_leaves.mp3",
+}, {
+    "name": "sunrays",
+    "duration": "2:23",
+    "file": "__sunrays.mp3",
+}, {
+    "name": "angst and happiness",
+    "duration": "2:17",
+    "file": "__angst_and_happiness.mp3",
+}, {
+    "name": "we are happy to shred you",
+    "duration": "2:14",
+    "file": "__we_are_happy_to_shred_you.mp3",
+}, {
+    "name": "stringsurfer",
+    "duration": "1:31",
+    "file": "__stringsurfer.mp3",
+}, {
+    "name": "7713",
+    "duration": "0:40",
+    "file": "__7713.mp3",
+}, {
+    "name": "skull kid",
+    "duration": "1:07",
+    "file": "__skull_kid.mp3",
+}, {
+    "name": "i am studying the enemy",
+    "duration": "1:47",
+    "file": "__i_am_studying_the_enemy.mp3",
+}, {
+    "name": "nighthawks",
+    "duration": "2:58",
+    "file": "__nighthawks.mp3",
+}, {
+    "name": "turnstilez",
+    "duration": "2:01",
+    "file": "__turnstilez.mp3",
+}, {
+    "name": "real noodling",
+    "duration": "2:19",
+    "file": "__real_noodling.mp3",
+}, {
+    "name": "kitchen",
+    "duration": "0:54",
+    "file": "__kitchen.mp3",
+}, {
+    "name": "cold bricks and idling engine",
+    "duration": "0:30",
+    "file": "__cold_bricks_and_idling_engine.mp3",
+}, {
+    "name": "minimal warehouse rave",
+    "duration": "1:11",
+    "file": "__minimal_warehouse_rave.mp3",
+}, {
+    "name": "mr. buckshot",
+    "duration": "1:55",
+    "file": "__mr._buckshot.mp3",
+}, {
+    "name": "wait!",
+    "duration": "1:44",
+    "file": "__wait!.mp3",
+}, {
+    "name": "raygun",
+    "duration": "1:12",
+    "file": "__raygun.mp3",
+}, {
+    "name": "interdimensional toaster",
+    "duration": "1:14",
+    "file": "__interdimensional_toaster.mp3",
+}, {
+    "name": "swordfish biopic",
+    "duration": "1:18",
+    "file": "__swordfish_biopic.mp3",
+}, {
+    "name": "speeding by in italo high speed train",
+    "duration": "1:43",
+    "file": "__speeding_by_in_italo_high_speed_train.mp3",
+}, {
+    "name": "spacehi",
+    "duration": "2:00",
+    "file": "__spacehi.mp3",
+}, {
+    "name": "veena exercise",
+    "duration": "1:15",
+    "file": "__veena_exercise.mp3",
+}, {
+    "name": "shopkeeping song",
+    "duration": "0:50",
+    "file": "__shopkeeping_song.mp3",
+}, {
+    "name": "seafaring shit",
+    "duration": "0:35",
+    "file": "__seafaring_shit.mp3",
+}, {
+    "name": "stuk 0ff d4 r34ln355",
+    "duration": "1:16",
+    "file": "__stuk_0ff_d4_r34ln355.mp3",
+}, {
+    "name": "9",
+    "duration": "0:28",
+    "file": "__9.mp3",
+}, {
+    "name": "drippin",
+    "duration": "0:48",
+    "file": "__drippin.mp3",
+}, {
+    "name": "spoooky pumpkin",
+    "duration": "0:29",
+    "file": "__spoooky_pumpkin.mp3",
+}, {
+    "name": "debil",
+    "duration": "1:20",
+    "file": "__debil.mp3",
+}, {
+    "name": "desertstep",
+    "duration": "0:48",
+    "file": "__desertstep.mp3",
+}, {
+    "name": "zebra",
+    "duration": "1:00",
+    "file": "__zebra.mp3",
+}, {
+    "name": "ice spice",
+    "duration": "1:24",
+    "file": "__ice_spice.mp3",
+}, {
+    "name": "death's dynamic crap",
+    "duration": "0:54",
+    "file": "__death's_dynamic_crap.mp3",
+}, {
+    "name": "submarine guy fieri",
+    "duration": "1:50",
+    "file": "__submarine_guy_fieri.mp3",
+}, {
+    "name": "die for you",
+    "duration": "2:12",
+    "file": "__die_for_you.mp3",
+}, {
+    "name": "laura palmer's theme",
+    "duration": "0:39",
+    "file": "__laura_palmer's_theme.mp3",
+}, {
+    "name": "song",
+    "duration": "1:11",
+    "file": "__song.mp3",
+}, {
+    "name": "spindat",
+    "duration": "1:12",
+    "file": "__spindat.mp3",
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
