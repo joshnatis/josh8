@@ -10,9 +10,33 @@ body {
 	display: inline-block;
 	vertical-align: top;
 	padding: 1%;
+}
 
-	zoom: 0.8;
-	-moz-transform: scale(0.8);
+/*
+* Firefox does not support the `zoom` property as it is non-standard, see:
+* https://developer.mozilla.org/en-US/docs/Web/CSS/zoom. The recommendation
+* is to use `transform: scale()` instead, but the two properties have many
+* differences in behavior. I found that I could get my desired result of
+* un-zooming each album "card" to 80% without adversely affecting the rest
+* of the page via this hack of overcompensating the body width. I would
+* still rather use the straightforward `zoom` property when possible, so
+* I'm only falling back to the hack when necessary. There seems to be a lot
+* of recent traction for implementing `zoom` support on Firefox -- see:
+* https://bugzilla.mozilla.org/show_bug.cgi?id=390936.
+*/
+
+@supports (zoom: 0.8) {
+	.album-div {
+		zoom: 0.8;
+	}
+}
+
+@supports not (zoom: 0.8) {
+	body {
+		transform: scale(0.8);
+		transform-origin: 0 0;
+		width: 120%;
+	}
 }
 
 .album-img {
@@ -37,6 +61,7 @@ body {
 	padding-bottom: 0;
 	width: 90%;
 	height: 20px;
+	display: inline-block;
 }
 
 .track-time {
