@@ -64,6 +64,11 @@ body {
 	display: inline-block;
 }
 
+.album-date {
+	font-size: x-small;
+	margin-left: 1%;
+}
+
 .track-time {
 	font-family: monospace;
 	margin-right: 1em;

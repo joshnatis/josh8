@@ -95,6 +95,13 @@
 			h1.innerHTML = album_name;
 			h1.className = "album-title";
 
+			let small = document.createElement("small");
+			let year = album["date"].split(", ")[1]
+			small.innerHTML = "[" + year + "]";
+			small.className = "album-date";
+
+			h1.appendChild(small);
+
 			let br = document.createElement("br");
 
 			div.appendChild(h1);
