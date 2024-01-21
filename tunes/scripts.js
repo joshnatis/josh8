@@ -2180,6 +2180,66 @@ const SONGS = [{
     "name": "spindat",
     "duration": "1:12",
     "file": "__spindat.mp3",
+}, {
+    "name": "380SL Mercedes",
+    "duration": "1:55",
+    "file": "__380SL_Mercedes.mp3",
+}, {
+    "name": "frickin alien activities",
+    "duration": "1:06",
+    "file": "__frickin_alien_activities.mp3",
+}, {
+    "name": "heroin chic",
+    "duration": "0:49",
+    "file": "__heroin_chic.mp3",
+}, {
+    "name": "roddyricch",
+    "duration": "2:15",
+    "file": "__roddyrich-inst.mp3",
+}, {
+    "name": "leaf is loading",
+    "duration": "1:54",
+    "file": "__leaf_is_loading.mp3",
+}, {
+    "name": "see you on the boards",
+    "duration": "2:45",
+    "file": "__see_you_on_the_boards.mp3",
+}, {
+    "name": "break1",
+    "duration": "1:17",
+    "file": "__break1.mp3",
+}, {
+    "name": "dusty spoon",
+    "duration": "0:59",
+    "file": "__dusty_spoon.mp3",
+}, {
+    "name": "friccckkkkkk",
+    "duration": "1:02",
+    "file": "__friccckkkkkk.mp3",
+}, {
+    "name": "onwards taikonaut",
+    "duration": "0:39",
+    "file": "__onwards_taikonaut.mp3",
+}, {
+    "name": "no pussyfooting",
+    "duration": "1:10",
+    "file": "__no_pussyfooting.mp3",
+}, {
+    "name": "dxm5/terp",
+    "duration": "1:18",
+    "file": "__dxm5.terp.mp3",
+}, {
+    "name": "dual wield",
+    "duration": "0:45",
+    "file": "__dual_wield.mp3",
+}, {
+    "name": "tabla",
+    "duration": "0:15",
+    "file": "__tabla.mp3",
+}, {
+    "name": "hyperborean",
+    "duration": "1:15",
+    "file": "__hyperborean.mp3",
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
