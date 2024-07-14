@@ -2240,6 +2240,74 @@ const SONGS = [{
     "name": "hyperborean",
     "duration": "1:15",
     "file": "__hyperborean.mp3",
+}, {
+    "name": "bubbl",
+    "duration": "0:29",
+    "file": "__bubbl.mp3",
+}, {
+    "name": "getting specific at pacific street",
+    "duration": "1:45",
+    "file": "__getting_specific_at_pacific_street.mp3",
+}, {
+    "name": "a man with sunglasses approaches",
+    "duration": "1:13",
+    "file": "__a_man_with_sunglasses_approaches.mp3",
+}, {
+    "name": "zomb",
+    "duration": "0:59",
+    "file": "__zomb.mp3",
+}, {
+    "name": "floridian shmovements",
+    "duration": "1:26",
+    "file": "__floridian_shmovements.mp3",
+}, {
+    "name": "braintree",
+    "duration": "0:52",
+    "file": "__braintree.mp3",
+}, {
+    "name": "arnie",
+    "duration": "0:46",
+    "file": "__arnie.mp3",
+}, {
+    "name": "War Games",
+    "duration": "10:11",
+    "file": "__War_Games.mp3",
+}, {
+    "name": "space rover",
+    "duration": "0:39",
+    "file": "__space_rover.mp3",
+}, {
+    "name": "envelopes with your love",
+    "duration": "0:50",
+    "file": "__envelopes_with_your_love.mp3",
+}, {
+    "name": "fight scene (H)",
+    "duration": "0:26",
+    "file": "__fight_scene_(H).mp3",
+}, {
+    "name": "dat bitch",
+    "duration": "0:42",
+    "file": "__dat_bitch.mp3",
+}, {
+    "name": "kept (low peaceful remix)",
+    "duration": "1:35",
+    "file": "__kept_(low_peaceful_remix).mp3",
+}, {
+    "name": "juku4",
+    "duration": "0:23",
+    "file": "__juku4.mp3",
+}, {
+    "name": "f8",
+    "duration": "0:23",
+    "file": "__f8.mp3",
+}, {
+    "name": "the womb",
+    "duration": "1:40",
+    "file": "__the_womb.mp3",
+}, {
+    "name": "intoxicated",
+    "duration": "0:29",
+    "file": "__intoxicated.mp3",
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
