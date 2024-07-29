@@ -2308,6 +2308,114 @@ const SONGS = [{
     "name": "intoxicated",
     "duration": "0:29",
     "file": "__intoxicated.mp3",
+}, {
+    "name": "help me",
+    "duration": "1:38",
+    "file": "__help_me.mp3",
+}, {
+    "name": "out in the pasture",
+    "duration": "0:56",
+    "file": "__out_in_the_pasture.mp3",
+}, {
+    "name": "m. scruff kalimba",
+    "duration": "1:01",
+    "file": "__m_scruff_kalimba.mp3",
+}, {
+    "name": "campfire draft 46",
+    "duration": "0:43",
+    "file": "__campfire_draft_46.mp3",
+}, {
+    "name": "campfire draft 55",
+    "duration": "1:41",
+    "file": "__campfire_draft_55.mp3",
+}, {
+    "name": "campfire draft 58",
+    "duration": "0:53",
+    "file": "__campfire_draft_58.mp3",
+}, {
+    "name": "campfire draft 62",
+    "duration": "0:21",
+    "file": "__campfire_draft_62.mp3",
+}, {
+    "name": "campfire draft 63",
+    "duration": "0:27",
+    "file": "__campfire_draft_63.mp3",
+}, {
+    "name": "deborah",
+    "duration": "1:17",
+    "file": "__deborah.mp3",
+}, {
+    "name": "questions",
+    "duration": "0:43",
+    "file": "__questions.mp3",
+}, {
+    "name": "changes",
+    "duration": "1:11",
+    "file": "__changes.mp3",
+}, {
+    "name": "chamber",
+    "duration": "0:58",
+    "file": "__chamber.mp3",
+}, {
+    "name": "the looming feeling that something awful is going to happen [session]",
+    "duration": "3:02",
+    "file": "__the_looming_feeling_that_something_awful_is_going_to_happen_[session].mp3",
+}, {
+    "name": "Yasha Kniga 1",
+    "duration": "1:16",
+    "file": "__Yasha_Kniga_1.mp3",
+}, {
+    "name": "Yasha Kniga 2",
+    "duration": "1:49",
+    "file": "__Yasha_Kniga_2.mp3",
+}, {
+    "name": "Yasha Kniga 3",
+    "duration": "1:26",
+    "file": "__Yasha_Kniga_3.mp3",
+}, {
+    "name": "ship horn",
+    "duration": "1:54",
+    "file": "__ship_horn.mp3",
+}, {
+    "name": "jolene flip",
+    "duration": "1:01",
+    "file": "__jolene_flip.mp3",
+}, {
+    "name": "my boat",
+    "duration": "2:02",
+    "file": "__my_boat.mp3",
+}, {
+    "name": "unauthorized bite",
+    "duration": "2:13",
+    "file": "__unauthorized_bite.mp3",
+}, {
+    "name": "swaq",
+    "duration": "1:55",
+    "file": "__swaq.mp3",
+}, {
+    "name": "bandz anthology",
+    "duration": "0:42",
+    "file": "__bandz_anthology.mp3",
+}, {
+    "name": "microsoft teams type beat",
+    "duration": "2:14",
+    "file": "__microsoft_teams_type_beat.mp3",
+}, {
+    "name": "lemon tek",
+    "duration": "1:31",
+    "file": "__lemon_tek.mp3",
+}, {
+    "name": "pu2dprrtynwegtfkdup",
+    "duration": "0:33",
+    "file": "__pu2dprrtynwegtfkdup.mp3",
+}, {
+    "name": "can't stop juggin",
+    "duration": "1:23",
+    "file": "__can't_stop_juggin.mp3",
+}, {
+    "name": "frickyfrack",
+    "duration": "0:54",
+    "file": "__frickyfrack.mp3",
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
