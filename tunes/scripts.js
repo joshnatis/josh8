@@ -2416,6 +2416,50 @@ const SONGS = [{
     "name": "frickyfrack",
     "duration": "0:54",
     "file": "__frickyfrack.mp3",
+}, {
+    "name": "spooky alien",
+    "duration": "0:25",
+    "file": "__spooky_alien.mp3",
+}, {
+    "name": "sexy bitch",
+    "duration": "1:28",
+    "file": "__sexy_bitch.mp3",
+}, {
+    "name": "sexy bitch 500",
+    "duration": "1:06",
+    "file": "__sexy_bitch_500.mp3",
+}, {
+    "name": "2am burger rampage",
+    "duration": "1:04",
+    "file": "__2am_burger_rampage.mp3",
+}, {
+    "name": "magnolia remix (feat. ice spice, tekashi69, pop smoke)",
+    "duration": "1:35",
+    "file": "__magnolia_remix.mp3",
+}, {
+    "name": "sugar high",
+    "duration": "1:30",
+    "file": "__sugar_high.mp3",
+}, {
+    "name": "gentle wind",
+    "duration": "1:28",
+    "file": "__gentle_wind.mp3",
+}, {
+    "name": "a cold day at just the right time",
+    "duration": "1:39",
+    "file": "__a_cold_day_at_just_the_right_time.mp3",
+}, {
+    "name": "slateport city",
+    "duration": "1:55",
+    "file": "__slateport_city.mp3",
+}, {
+    "name": "idkp",
+    "duration": "1:03",
+    "file": "__idkp.mp3",
+}, {
+    "name": "hyperdrive",
+    "duration": "1:07",
+    "file": "__hyperdrive.mp3",
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
