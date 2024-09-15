@@ -2460,6 +2460,46 @@ const SONGS = [{
     "name": "hyperdrive",
     "duration": "1:07",
     "file": "__hyperdrive.mp3",
+}, {
+    "name": "the skreets",
+    "duration": "1:25",
+    "file": "__the_skreets.mp3",
+}, {
+    "name": "sky funky dub",
+    "duration": "1:03",
+    "file": "__sky_funky_dub.mp3",
+}, {
+    "name": "rrrrumble",
+    "duration": "1:17",
+    "file": "__rrrrumble.mp3",
+}, {
+    "name": "playing",
+    "duration": "2:22",
+    "file": "__playing.mp3",
+}, {
+    "name": "floatation",
+    "duration": "0:20",
+    "file": "__floatation.mp3",
+}, {
+    "name": "seagull riddim",
+    "duration": "2:05",
+    "file": "__seagull_riddim.mp3",
+}, {
+    "name": "tunnel riddim",
+    "duration": "1:40",
+    "file": "__tunnel_riddim.mp3",
+}, {
+    "name": "in for the kill (rated grimey remix)",
+    "duration": "1:51",
+    "file": "__in_for_the_kill_(rated_grimey_remix).mp3",
+}, {
+    "name": "dusty flip",
+    "duration": "1:27",
+    "file": "__dusty_flip.mp3",
+}, {
+    "name": "E2-E4",
+    "duration": "1:47",
+    "file": "__E2-E4.mp3",
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
