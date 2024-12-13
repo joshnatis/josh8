@@ -2497,9 +2497,81 @@ const SONGS = [{
     "duration": "1:27",
     "file": "__dusty_flip.mp3",
 }, {
-    "name": "E2-E4",
+    "name": "heavy mental",
     "duration": "1:47",
-    "file": "__E2-E4.mp3",
+    "file": "__heavy_mental.mp3",
+}, {
+    "name": "quick1 for buddy",
+    "duration": "1:06",
+    "file": "__quick1_for_buddy.mp3",
+}, {
+    "name": "menthols",
+    "duration": "2:33",
+    "file": "__menthols.mp3",
+}, {
+    "name": "it-gets",
+    "duration": "1:43",
+    "file": "__it-gets.mp3",
+}, {
+    "name": "american guy (me) finds out about out uk garage",
+    "duration": "1:51",
+    "file": "__american_guy_(me)_finds_out_about_out_uk_garage.mp3",
+}, {
+    "name": "I trusted you El-B",
+    "duration": "1:02",
+    "file": "__I_trusted_you_El-B.mp3",
+}, {
+    "name": "initial-d",
+    "duration": "1:25",
+    "file": "__initial-d.mp3",
+}, {
+    "name": "on horseback",
+    "duration": "1:29",
+    "file": "__on_horseback.mp3",
+}, {
+    "name": "red sky",
+    "duration": "0:25",
+    "file": "__red_sky.mp3",
+}, {
+    "name": "punches",
+    "duration": "1:03",
+    "file": "__punches.mp3",
+}, {
+    "name": "sunlol",
+    "duration": "0:24",
+    "file": "__sunlol.mp3",
+}, {
+    "name": "dark master",
+    "duration": "2:11",
+    "file": "__dark_master.mp3",
+}, {
+    "name": "guy named mark from estonia bleeds on my guitar at 4AM",
+    "duration": "3:54",
+    "file": "__guy_named_mark_from_estonia_bleeds_on_my_guitar_at_4AM.mp3",
+}, {
+    "name": "seeing olivia",
+    "duration": "1:01",
+    "file": "__seeing_olivia.mp3",
+}, {
+    "name": "um",
+    "duration": "1:08",
+    "file": "__um.mp3",
+}, {
+    "name": "spirit bomb",
+    "duration": "1:56",
+    "file": "__spirit_bomb.mp3",
+}, {
+    "name": "9mm-death-drive",
+    "duration": "1:45",
+    "file": "__9mm-death-drive.mp3",
+}, {
+    "name": "Can i have the vape",
+    "duration": "2:54",
+    "file": "__Can_i_have_the_vape.mp3",
+}, {
+    "name": "ice skate with you",
+    "duration": "1:25",
+    "file": "__ice_skate_with_you.mp3",
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
