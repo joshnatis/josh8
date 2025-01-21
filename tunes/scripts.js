@@ -2572,6 +2572,70 @@ const SONGS = [{
     "name": "ice skate with you",
     "duration": "1:25",
     "file": "__ice_skate_with_you.mp3",
+}, {
+    "name": "vitamin water xxx acai",
+    "duration": "1:42",
+    "file": "__vitamin_water_xxx_acai.mp3",
+}, {
+    "name": "cartridge",
+    "duration": "1:00",
+    "file": "__cartridge.mp3",
+}, {
+    "name": "chemical",
+    "duration": "2:22",
+    "file": "__chemical.mp3",
+}, {
+    "name": "endocrine disruptor",
+    "duration": "3:43",
+    "file": "__endocrine_disruptor.mp3",
+}, {
+    "name": "krutitsa shar (крутится шар)",
+    "duration": "3:28",
+    "file": "__krutitsa_shar.mp3",
+}, {
+    "name": "dance",
+    "duration": "1:57",
+    "file": "__dance.mp3",
+}, {
+    "name": "donk oblast",
+    "duration": "1:39",
+    "file": "__donk_oblast.mp3",
+}, {
+    "name": "1-800-clipped",
+    "duration": "2:07",
+    "file": "__1-800-clipped.mp3",
+}, {
+    "name": "chiefcockproduction999",
+    "duration": "1:30",
+    "file": "__chiefcockproduction999.mp3",
+}, {
+    "name": "and i dont care!!",
+    "duration": "2:07",
+    "file": "__and_i_dont_care!!.mp3",
+}, {
+    "name": "horse",
+    "duration": "1:31",
+    "file": "__horse.mp3",
+}, {
+    "name": "body modification #1 (prod. brigid)",
+    "duration": "0:27",
+    "file": "__body_modification_1_prod_brigid.mp3",
+}, {
+    "name": "seabird heart",
+    "duration": "2:52",
+    "file": "__seabird_heart.mp3",
+}, {
+    "name": "oxygen",
+    "duration": "2:01",
+    "file": "__oxygen.mp3",
+}, {
+    "name": "full metal jesus",
+    "duration": "2:02",
+    "file": "__full_metal_jesus.mp3",
+}, {
+    "name": "shampoo torture method",
+    "duration": "1:19",
+    "file": "__shampoo_torture_method.mp3",
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
