@@ -2636,6 +2636,58 @@ const SONGS = [{
     "name": "shampoo torture method",
     "duration": "1:19",
     "file": "__shampoo_torture_method.mp3",
+}, {
+    "name": "sealed train extracts the dream",
+    "duration": "2:03",
+    "file": "__sealed_train_extracts_the_dream.mp3",
+}, {
+    "name": "chill wayne - a chilly",
+    "duration": "2:52",
+    "file": "__chill_wayne_-_a_chilly.mp3",
+}, {
+    "name": "Frett - Runnin (Griminal x BBK!!! Rated Remix)",
+    "duration": "1:45",
+    "file": "__Frett_-_Runnin_(Griminal_x_BBK!!!_Rated_Remix).mp3",
+}, {
+    "name": "weather overground",
+    "duration": "2:21",
+    "file": "__weather_overground.mp3",
+}, {
+    "name": "listo",
+    "duration": "1:49",
+    "file": "__listo.mp3",
+}, {
+    "name": "headache",
+    "duration": "1:00",
+    "file": "__headache.mp3",
+}, {
+    "name": "rain",
+    "duration": "1:39",
+    "file": "__rain.mp3",
+}, {
+    "name": "deep space molotov",
+    "duration": "1:27",
+    "file": "__deep_space_molotov.mp3",
+}, {
+    "name": "riemann approximation of playboi carti 😭",
+    "duration": "1:27",
+    "file": "__riemann_approximation_of_playboi_carti_😭.mp3",
+}, {
+    "name": "ps2 boot menu",
+    "duration": "1:11",
+    "file": "__ps2_boot_menu.mp3",
+}, {
+    "name": "snowy road",
+    "duration": "4:33",
+    "file": "__snowy_road.mp3",
+}, {
+    "name": "strawberry synth jam",
+    "duration": "2:15",
+    "file": "__strawberry_synth_jam.mp3",
+}, {
+    "name": "human ecology fund",
+    "duration": "1:36",
+    "file": "__human_ecology_fund.mp3",
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
