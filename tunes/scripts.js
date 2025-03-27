@@ -2760,6 +2760,62 @@ const SONGS = [{
     "name": "200bpm cigarettttte",
     "duration": "0:49",
     "file": "__200bpm_cigarettttte.mp3",
+}, {
+    "name": "goldberg",
+    "duration": "1:20",
+    "file": "__goldberg.mp3",
+}, {
+    "name": "N1",
+    "duration": "1:36",
+    "file": "__N1.mp3",
+}, {
+    "name": "N2",
+    "duration": "1:18",
+    "file": "__N2.mp3",
+}, {
+    "name": "N3",
+    "duration": "1:54",
+    "file": "__N3.mp3",
+}, {
+    "name": "N4",
+    "duration": "1:36",
+    "file": "__N4.mp3",
+}, {
+    "name": "N5",
+    "duration": "2:05",
+    "file": "__N5.mp3",
+}, {
+    "name": "N6",
+    "duration": "1:42",
+    "file": "__N6.mp3",
+}, {
+    "name": "N7",
+    "duration": "1:36",
+    "file": "__N7.mp3",
+}, {
+    "name": "N8",
+    "duration": "1:35",
+    "file": "__N8.mp3",
+}, {
+    "name": "N9",
+    "duration": "1:21",
+    "file": "__N9.mp3",
+}, {
+    "name": "N10",
+    "duration": "1:12",
+    "file": "__N10.mp3",
+}, {
+    "name": "N11",
+    "duration": "1:15",
+    "file": "__N11.mp3",
+}, {
+    "name": "N12",
+    "duration": "1:15",
+    "file": "__N12.mp3",
+}, {
+    "name": "N13",
+    "duration": "1:20",
+    "file": "__N13.mp3",
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
