@@ -2688,6 +2688,78 @@ const SONGS = [{
     "name": "human ecology fund",
     "duration": "1:36",
     "file": "__human_ecology_fund.mp3",
+}, {
+    "name": "somewhere i belong flip",
+    "duration": "2:09",
+    "file": "__somewhere_i_belong_flip.mp3",
+}, {
+    "name": "small hands sal",
+    "duration": "2:28",
+    "file": "__small_hands_sal.mp3",
+}, {
+    "name": "fruity flip",
+    "duration": "2:14",
+    "file": "__fruity_flip.mp3",
+}, {
+    "name": "amai",
+    "duration": "2:19",
+    "file": "__amai.mp3",
+}, {
+    "name": "kublai",
+    "duration": "2:44",
+    "file": "__kublai.mp3",
+}, {
+    "name": "fat phacts",
+    "duration": "1:40",
+    "file": "__fat_phacts.mp3",
+}, {
+    "name": "genghis",
+    "duration": "1:02",
+    "file": "__genghis.mp3",
+}, {
+    "name": "night walk",
+    "duration": "2:24",
+    "file": "__night_walk.mp3",
+}, {
+    "name": "gagaaa",
+    "duration": "1:27",
+    "file": "__gagaaa.mp3",
+}, {
+    "name": "dream",
+    "duration": "1:49",
+    "file": "__dream.mp3",
+}, {
+    "name": "ummmmm2",
+    "duration": "2:15",
+    "file": "__ummmmm2.mp3",
+}, {
+    "name": "im clipster",
+    "duration": "2:05",
+    "file": "__im_clipster.mp3",
+}, {
+    "name": "nokia afghanistan",
+    "duration": "1:13",
+    "file": "__nokia_afghanistan.mp3",
+}, {
+    "name": "nokia albania",
+    "duration": "0:42",
+    "file": "__nokia_albania.mp3",
+}, {
+    "name": "xono2",
+    "duration": "1:54",
+    "file": "__xono2.mp3",
+}, {
+    "name": "blind date",
+    "duration": "1:36",
+    "file": "__blind_date.mp3",
+}, {
+    "name": "snowflakes on your eyelashes",
+    "duration": "1:54",
+    "file": "__snowflakes_on_your_eyelashes.mp3",
+}, {
+    "name": "200bpm cigarettttte",
+    "duration": "0:49",
+    "file": "__200bpm_cigarettttte.mp3",
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
