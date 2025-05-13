@@ -2816,6 +2816,74 @@ const SONGS = [{
     "name": "N13",
     "duration": "1:20",
     "file": "__N13.mp3",
+}, {
+    "name": "bloodstream",
+    "duration": "1:21",
+    "file": "__bloodstream.mp3",
+}, {
+    "name": "light from above",
+    "duration": "1:09",
+    "file": "__light_from_above.mp3",
+}, {
+    "name": "japanese kitkat",
+    "duration": "0:48",
+    "file": "__japanese_kitkat.mp3",
+}, {
+    "name": "the tragedy of stafford beer",
+    "duration": "3:15",
+    "file": "__the_tragedy_of_stafford_beer.mp3",
+}, {
+    "name": "pharmacy technician",
+    "duration": "1:15",
+    "file": "__pharmacy_technician.mp3",
+}, {
+    "name": "bluey vuitton",
+    "duration": "2:24",
+    "file": "__bluey_vuitton.mp3",
+}, {
+    "name": "faf de klerk",
+    "duration": "1:29",
+    "file": "__faf_de_klerk.mp3",
+}, {
+    "name": "signed with blood",
+    "duration": "1:34",
+    "file": "__signed_with_blood.mp3",
+}, {
+    "name": "stars",
+    "duration": "3:01",
+    "file": "__stars.mp3",
+}, {
+    "name": "remote girlfriend",
+    "duration": "2:16",
+    "file": "__remote_girlfriend.mp3",
+}, {
+    "name": "iron horse",
+    "duration": "1:57",
+    "file": "__iron_horse.mp3",
+}, {
+    "name": "still not a",
+    "duration": "2:17",
+    "file": "__still_not_a.mp3",
+}, {
+    "name": "picnic with god",
+    "duration": "2:09",
+    "file": "__picnic_with_god.mp3",
+}, {
+    "name": "bugs",
+    "duration": "1:25",
+    "file": "__bugs.mp3",
+}, {
+    "name": "recycling a soul",
+    "duration": "5:27",
+    "file": "__recycling_a_soul.mp3",
+}, {
+    "name": "on the road",
+    "duration": "2:49",
+    "file": "__on_the_road.mp3",
+}, {
+    "name": "broken promises",
+    "duration": "2:24",
+    "file": "__broken_promises.mp3",
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
