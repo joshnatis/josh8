@@ -2884,6 +2884,82 @@ const SONGS = [{
     "name": "broken promises",
     "duration": "2:24",
     "file": "__broken_promises.mp3",
+}, {
+    "name": "shuriken",
+    "duration": "2:59",
+    "file": "__shuriken.mp3",
+}, {
+    "name": "rrrrain",
+    "duration": "1:54",
+    "file": "__rrrrain.mp3",
+}, {
+    "name": "wasted life",
+    "duration": "1:54",
+    "file": "__wasted_life.mp3",
+}, {
+    "name": "fishbowl life",
+    "duration": "1:52",
+    "file": "__fishbowl_life.mp3",
+}, {
+    "name": "tiny flip",
+    "duration": "1:30",
+    "file": "__tiny_flip.mp3",
+}, {
+    "name": "ransom money",
+    "duration": "1:12",
+    "file": "__ransom_money.mp3",
+}, {
+    "name": "jimmy no good doer",
+    "duration": "2:22",
+    "file": "__jimmy_no_good_doer.mp3",
+}, {
+    "name": "serious mustache",
+    "duration": "2:14",
+    "file": "__serious_mustache.mp3",
+}, {
+    "name": "earl boykins",
+    "duration": "1:30",
+    "file": "__earl_boykins.mp3",
+}, {
+    "name": "rigas katya poison vsop",
+    "duration": "1:46",
+    "file": "__rigas_katya_poison_vsop.mp3",
+}, {
+    "name": "train",
+    "duration": "1:26",
+    "file": "__train.mp3",
+}, {
+    "name": "therapeutic window",
+    "duration": "2:03",
+    "file": "__therapeutic_window.mp3",
+}, {
+    "name": "bit of a sawtooth for chips",
+    "duration": "1:21",
+    "file": "__bit_of_a_sawtooth_for_chips.mp3",
+}, {
+    "name": "my amiga is my friend",
+    "duration": "1:39",
+    "file": "__my_amiga_is_my_friend.mp3",
+}, {
+    "name": "blood moon",
+    "duration": "1:02",
+    "file": "__blood_moon.mp3",
+}, {
+    "name": "santa smooth",
+    "duration": "0:51",
+    "file": "__santa_smooth.mp3",
+}, {
+    "name": "alej cooks",
+    "duration": "0:36",
+    "file": "__alej_cooks.mp3",
+}, {
+    "name": "just some stuff",
+    "duration": "1:36",
+    "file": "__just_some_stuff.mp3",
+}, {
+    "name": "siberia",
+    "duration": "2:37",
+    "file": "__siberia.mp3",
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
