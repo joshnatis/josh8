@@ -2960,6 +2960,66 @@ const SONGS = [{
     "name": "siberia",
     "duration": "2:37",
     "file": "__siberia.mp3",
+}, {
+    "name": "fruity loop number 782",
+    "duration": "1:40",
+    "file": "__fruity_loop_number_782.mp3",
+}, {
+    "name": "this song is called this song sucks",
+    "duration": "1:48",
+    "file": "__this_song_is_called_this_song_sucks.mp3",
+}, {
+    "name": "cardiod",
+    "duration": "1:48",
+    "file": "__cardiod.mp3",
+}, {
+    "name": "3PM",
+    "duration": "0:26",
+    "file": "__3PM.mp3",
+}, {
+    "name": "peso (flex on em refix)",
+    "duration": "1:28",
+    "file": "__peso_(flex_on_em_refix).mp3",
+}, {
+    "name": "purple train to nowhere",
+    "duration": "2:22",
+    "file": "__purple_train_to_nowhere.mp3",
+}, {
+    "name": "im wet",
+    "duration": "0:36",
+    "file": "__im_wet.mp3",
+}, {
+    "name": "jam on toast (june 22)",
+    "duration": "4:24",
+    "file": "__jam_on_toast_(june_22).mp3",
+}, {
+    "name": "jupiter 800",
+    "duration": "2:57",
+    "file": "__jupiter_800.mp3",
+}, {
+    "name": "Sam's dark place reprise",
+    "duration": "1:35",
+    "file": "__Sam's_dark_place_reprise.mp3",
+}, {
+    "name": "donut1",
+    "duration": "0:56",
+    "file": "__donut1.mp3",
+}, {
+    "name": "forest1",
+    "duration": "1:59",
+    "file": "__forest1.mp3",
+}, {
+    "name": "forest3",
+    "duration": "2:02",
+    "file": "__forest3.mp3",
+}, {
+    "name": "forest4",
+    "duration": "0:47",
+    "file": "__forest4.mp3",
+}, {
+    "name": "umma",
+    "duration": "3:23",
+    "file": "__umma.mp3",
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
