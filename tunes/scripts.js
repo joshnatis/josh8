@@ -3020,6 +3020,54 @@ const SONGS = [{
     "name": "umma",
     "duration": "3:23",
     "file": "__umma.mp3",
+}, {
+    "name": "big gun",
+    "duration": "3:45",
+    "file": "__big_gun.mp3",
+}, {
+    "name": "very low star power",
+    "duration": "5:13",
+    "file": "__very_low_star_power.mp3",
+}, {
+    "name": "the angels",
+    "duration": "0:46",
+    "file": "__the_angels.mp3",
+}, {
+    "name": "the angels (inst)",
+    "duration": "1:32",
+    "file": "__the_angels_(inst).mp3",
+}, {
+    "name": "elevator shaft rave",
+    "duration": "1:35",
+    "file": "__elevator_shaft_rave.mp3",
+}, {
+    "name": "plumes of smoke",
+    "duration": "0:50",
+    "file": "__plumes_of_smoke.mp3",
+}, {
+    "name": "dirge of cosines",
+    "duration": "2:26",
+    "file": "__dirge_of_cosines.mp3",
+}, {
+    "name": "jerk chicken type beat",
+    "duration": "2:11",
+    "file": "__jerk_chicken_type_beat.mp3",
+}, {
+    "name": "robin gan type beat",
+    "duration": "1:20",
+    "file": "__robin_gan_type_beat.mp3",
+}, {
+    "name": "dumbass type beat",
+    "duration": "1:19",
+    "file": "__dumbass_type_beat.mp3",
+}, {
+    "name": "quick1 for afx and wagonchrist",
+    "duration": "1:50",
+    "file": "__quick1_for_afx_and_wagonchrist.mp3",
+}, {
+    "name": "obshchina",
+    "duration": "1:07",
+    "file": "__obshchina.mp3",
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
