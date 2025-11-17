@@ -3068,6 +3068,70 @@ const SONGS = [{
     "name": "obshchina",
     "duration": "1:07",
     "file": "__obshchina.mp3",
+}, {
+    "name": "mesh sequins",
+    "duration": "1:36",
+    "file": "__mesh_sequins.mp3",
+}, {
+    "name": "cash",
+    "duration": "1:10",
+    "file": "__cash.mp3",
+}, {
+    "name": "pimptro",
+    "duration": "0:36",
+    "file": "__pimptro.mp3",
+}, {
+    "name": "unusual",
+    "duration": "1:22",
+    "file": "__unusual.mp3",
+}, {
+    "name": "angst",
+    "duration": "1:36",
+    "file": "__angst.mp3",
+}, {
+    "name": "ecology village",
+    "duration": "3:42",
+    "file": "__ecology_village.mp3",
+}, {
+    "name": "my organs",
+    "duration": "2:25",
+    "file": "__my_organs.mp3",
+}, {
+    "name": "glyphosate poisoning",
+    "duration": "1:36",
+    "file": "__glyphosate_poisoning.mp3",
+}, {
+    "name": "under the permafrost",
+    "duration": "0:57",
+    "file": "__under_the_permafrost.mp3",
+}, {
+    "name": "alert, canada",
+    "duration": "1:59",
+    "file": "__alert,_canada.mp3",
+}, {
+    "name": "rosehip loading menu",
+    "duration": "2:24",
+    "file": "__rosehip_loading_menu.mp3",
+}, {
+    "name": "polar alarm",
+    "duration": "0:40",
+    "file": "__polar_alarm.mp3",
+}, {
+    "name": "living room",
+    "duration": "2:19",
+    "file": "__living_room.mp3",
+}, {
+    "name": "press B to exit",
+    "duration": "1:45",
+    "file": "__press_B_to_exit.mp3",
+}, {
+    "name": "feverish",
+    "duration": "2:06",
+    "file": "__feverish.mp3",
+}, {
+    "name": "alien hand",
+    "duration": "1:49",
+    "file": "__alien_hand.mp3",
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
