@@ -3132,6 +3132,54 @@ const SONGS = [{
     "name": "alien hand",
     "duration": "1:49",
     "file": "__alien_hand.mp3",
+}, {
+    "name": "sad french movie alone",
+    "duration": "3:01",
+    "file": "__sad_french_movie_alone.mp3",
+}, {
+    "name": "last of november chune",
+    "duration": "2:03",
+    "file": "__last_of_november_chune.mp3",
+}, {
+    "name": "when the sky clears",
+    "duration": "1:51",
+    "file": "__when_the_sky_clears.mp3",
+}, {
+    "name": "reflection",
+    "duration": "2:52",
+    "file": "__reflection.mp3",
+}, {
+    "name": "mess is here",
+    "duration": "1:26",
+    "file": "__mess_is_here.mp3",
+}, {
+    "name": "reel life",
+    "duration": "1:30",
+    "file": "__reel_life.mp3",
+}, {
+    "name": "the warrior and the brahmin",
+    "duration": "1:27",
+    "file": "__the_warrior_and_the_brahmin.mp3",
+}, {
+    "name": "fucking epicsauce",
+    "duration": "0:48",
+    "file": "__fucking_epicsauce.mp3",
+}, {
+    "name": "in my dreams",
+    "duration": "3:09",
+    "file": "__in_my_dreams.mp3",
+}, {
+    "name": "jumanji",
+    "duration": "1:52",
+    "file": "__jumanji.mp3",
+}, {
+    "name": "intercom",
+    "duration": "1:10",
+    "file": "__intercom.mp3",
+}, {
+    "name": "syndrome",
+    "duration": "1:48",
+    "file": "__syndrome.mp3",
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
