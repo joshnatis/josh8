@@ -3180,6 +3180,222 @@ const SONGS = [{
     "name": "syndrome",
     "duration": "1:48",
     "file": "__syndrome.mp3",
+}, {
+    "name": "medicine",
+    "duration": "3:12",
+    "file": "__medicine.mp3",
+}, {
+    "name": "rest your head",
+    "duration": "1:55",
+    "file": "__rest_your_head.mp3",
+}, {
+    "name": "goodbye",
+    "duration": "3:15",
+    "file": "__goodbye.mp3",
+}, {
+    "name": "goodbye2",
+    "duration": "3:15",
+    "file": "__goodbye2.6.mp3",
+}, {
+    "name": "red nails",
+    "duration": "1:56",
+    "file": "__red_nails.mp3",
+}, {
+    "name": "poem",
+    "duration": "2:06",
+    "file": "__poem.mp3",
+}, {
+    "name": "chest",
+    "duration": "1:39",
+    "file": "__chest.mp3",
+}, {
+    "name": "january 29th",
+    "duration": "2:45",
+    "file": "__january_29th.mp3",
+}, {
+    "name": "djinn",
+    "duration": "1:54",
+    "file": "__djinn.mp3",
+}, {
+    "name": "jaguar meditation",
+    "duration": "2:49",
+    "file": "__jaguar_meditation.mp3",
+}, {
+    "name": "naa skrilleggs",
+    "duration": "0:36",
+    "file": "__naa_skrilleggs.mp3",
+}, {
+    "name": "flutter butterfly",
+    "duration": "1:21",
+    "file": "__flutter_butterfly.mp3",
+}, {
+    "name": "meowy dub",
+    "duration": "0:51",
+    "file": "__meowy_dub.mp3",
+}, {
+    "name": "fail",
+    "duration": "0:26",
+    "file": "__fail.mp3",
+}, {
+    "name": "swank",
+    "duration": "0:55",
+    "file": "__swank.mp3",
+}, {
+    "name": "blergh",
+    "duration": "0:25",
+    "file": "__blergh.mp3",
+}, {
+    "name": "this song fucks",
+    "duration": "0:15",
+    "file": "__this_song_fucks.mp3",
+}, {
+    "name": "nananana batman",
+    "duration": "0:32",
+    "file": "__nananana_batman.mp3",
+}, {
+    "name": "incoming call from kuwait",
+    "duration": "0:36",
+    "file": "__incoming_call_from_kuwait.mp3",
+}, {
+    "name": "gloworm",
+    "duration": "0:51",
+    "file": "__gloworm.mp3",
+}, {
+    "name": "twilight escape",
+    "duration": "2:27",
+    "file": "__twilight_escape.mp3",
+}, {
+    "name": "concrete",
+    "duration": "1:22",
+    "file": "__concrete.mp3",
+}, {
+    "name": "remnants of a room",
+    "duration": "1:18",
+    "file": "__remnants_of_a_room.mp3",
+}, {
+    "name": "mars",
+    "duration": "3:19",
+    "file": "__mars.mp3",
+}, {
+    "name": "neckbreak",
+    "duration": "0:48",
+    "file": "__neckbreak.mp3",
+}, {
+    "name": "shooooom",
+    "duration": "3:05",
+    "file": "__shooooom.mp3",
+}, {
+    "name": "albert's advice",
+    "duration": "2:22",
+    "file": "__albert's_advice.mp3",
+}, {
+    "name": "frostbite",
+    "duration": "2:32",
+    "file": "__frostbite.mp3",
+}, {
+    "name": "boat rock with lefty ruggiero",
+    "duration": "1:24",
+    "file": "__boat_rock_with_lefty_ruggiero.mp3",
+}, {
+    "name": "diamond",
+    "duration": "0:58",
+    "file": "__diamond.mp3",
+}, {
+    "name": "tophat",
+    "duration": "2:30",
+    "file": "__tophat.mp3",
+}, {
+    "name": "coke",
+    "duration": "1:12",
+    "file": "__coke.mp3",
+}, {
+    "name": "evolshitt",
+    "duration": "2:28",
+    "file": "__evolshitt.mp3",
+}, {
+    "name": "rust",
+    "duration": "1:14",
+    "file": "__rust.mp3",
+}, {
+    "name": "40",
+    "duration": "2:28",
+    "file": "__40.mp3",
+}, {
+    "name": "tomorrow",
+    "duration": "2:16",
+    "file": "__tomorrow.mp3",
+}, {
+    "name": "kblurri",
+    "duration": "6:39",
+    "file": "__kblurri.mp3",
+}, {
+    "name": "mother",
+    "duration": "2:09",
+    "file": "__mother.mp3",
+}, {
+    "name": "beautiful",
+    "duration": "2:21",
+    "file": "__beautiful.mp3",
+}, {
+    "name": "gentle tune",
+    "duration": "2:12",
+    "file": "__gentle_tune.mp3",
+}, {
+    "name": "high heels 27",
+    "duration": "0:28",
+    "file": "__high_heels_27.mp3",
+}, {
+    "name": "flesh pulse superstar",
+    "duration": "2:33",
+    "file": "__flesh_pulse_superstar.mp3",
+}, {
+    "name": "stolen youth",
+    "duration": "1:42",
+    "file": "__stolen_youth.mp3",
+}, {
+    "name": "norepinephrine",
+    "duration": "0:34",
+    "file": "__norepinephrine.mp3",
+}, {
+    "name": "an2",
+    "duration": "2:45",
+    "file": "__an2.mp3",
+}, {
+    "name": "hypersleepergenic",
+    "duration": "4:58",
+    "file": "__hypersleepergenic.mp3",
+}, {
+    "name": "B0000011.WAV (focus)",
+    "duration": "2:33",
+    "file": "__B0000011.WAV_(focus).mp3",
+}, {
+    "name": "midnight snak",
+    "duration": "1:06",
+    "file": "__midnight_snak.mp3",
+}, {
+    "name": "F0000002.WAV (sustenence out of grain)",
+    "duration": "2:17",
+    "file": "__F0000002.WAV_(sustenance_out_of_grain).mp3",
+}, {
+    "name": "F0000007.WAV (everything will be okay when you die)",
+    "duration": "2:13",
+    "file": "__F0000007.WAV_(everything_will_be_okay_when_you_die).mp3",
+}, {
+    "name": "B0000009.WAV (for peter rehberg)",
+    "duration": "3:16",
+    "file": "__B0000009.WAV_(for_peter_rehberg).mp3",
+}, {
+    "name": "a draft",
+    "duration": "1:12",
+    "file": "__a_draft.mp3",
+}, {
+    "name": "boobs",
+    "duration": "3:46",
+    "file": "__boobs.mp3",
+}, {
+    "name": "boobs1",
+    "duration": "3:46",
+    "file": "__boobs1.mp3",
 }];
 
 /*_____ _______    _______ ______   __      __     _____    _____
